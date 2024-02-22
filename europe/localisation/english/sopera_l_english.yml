@@ -1,0 +1,93 @@
+﻿l_english:
+ disabled_for_sopera:2 "§ROnly A §YHegemon Federation§R can have subjects join their federation.§!"
+ requires_endgame_reached:2 "$TRIGGER_FAIL$§!Endgame has not been reached yet.§!"
+   
+ federation_requires_materialist:2 "$TRIGGER_FAIL$§RRequires recipient to be some form of §YMaterialst§R, §YMachine Intelligence§R or §YHive Mind§R with the §YNatural Neural Network§R civic.§!"
+ federation_requires_militarist:2 "$TRIGGER_FAIL$§RRequires recipient to be some form of §YMilitarist§R or §YGestalt§R with the §YWarbots§R, §YStrength of Legions§R or §YSubspace Ephapse§R civic.§!"
+ federation_requires_trade:2 "$TRIGGER_FAIL$§RRequires recipient to be a §YMegacorporation§R, or have the §YMerchant Guilds§R civic.§!"
+ federation_size_limit_fail:2 "$TRIGGER_FAIL$§RThe Federation cannot handle any more members.§!"
+ 
+ form_federation_requires_materialist:2 "$TRIGGER_FAIL$§RRequires both you and the recipient to be some form of §YMaterialst§R, §YMachine Intelligence§R or §YHive Mind§R with the §YNatural Neural Network§R civic.§!"
+ form_federation_requires_spiritualist:2 "$TRIGGER_FAIL$§RRequires both you and the recipient to be some form of §YSpiritualist§R.§!"
+ form_federation_requires_militarist:2 "$TRIGGER_FAIL$§RRequires both you and the recipient to be some form of §YMilitarist§R, or be a §YGestalt§R with the §YWarbots§R, §YStrength of Legions§R or §YSubspace Ephapse§R civic.§!"
+ form_federation_requires_trade:2 "$TRIGGER_FAIL$§RRequires both you and the recipient to be either a §YMegacorporation§R, or have the §YMerchant Guilds§R civic.§!"
+ 
+ become_crisis_midgame:2 "$TRIGGER_FAIL$§WPlayers who are the §SCrisis§W will not be allowed to adopt the perk §Suntil the year 2250§W.§!"
+ 
+ requires_test:2 "$TRIGGER_FAIL$§RTest Failure.§!"
+ requires_embassy_with_nation:2 "$TRIGGER_FAIL$§RRequire you to have an §YEmbassy§R with this empire.§!"
+ 
+ mod_country_traditions_influence_produces_add:0 "$MOD_COUNTRY_INFLUENCE_GAIN_ADD$"
+ 
+  # Preset text icons
+ #text_icon_vacuum_flower:0 "£vacuum_flower£"
+ trade_action_r_ancient_sword: "£ancient_sword£ $r_ancient_sword$"
+ trade_action_r_ancient_sword_desc: "Trade away our £ancient_sword£ $r_ancient_sword$ relic."
+
+ trade_action_r_contingency_core: "£contingency_core£ $r_contingency_core$"
+ trade_action_r_contingency_core_desc: "Trade away our £contingency_core£ $r_contingency_core$ relic."
+
+ trade_action_r_cryo_core: "£cryo_core£ $r_cryo_core$"
+ trade_action_r_cryo_core_desc: "Trade away our £cryo_core£ $r_cryo_core$ relic."
+
+ trade_action_r_dragon_trophy: "£dragon_trophy£ $r_dragon_trophy$"
+ trade_action_r_dragon_trophy_desc: "Trade away our £dragon_trophy£ $r_dragon_trophy$ relic."
+
+ trade_action_r_galatron: "£galatron£ $r_galatron$"
+ trade_action_r_galatron_desc: "Trade away our £galatron£ $r_galatron$ relic."
+
+ trade_action_r_galaxy: "£galaxy£ $r_galaxy$"
+ trade_action_r_galaxy_desc: "Trade away our £galaxy£ $r_galaxy$ relic."
+
+ trade_action_r_khans_throne: "£khans_throne£ $r_khans_throne$"
+ trade_action_r_khans_throne_desc: "Trade away our £khans_throne£ $r_khans_throne$ relic."
+
+ trade_action_r_odryskan_crystal: "£odryskan_crystal£ $r_odryskan_crystal$"
+ trade_action_r_odryskan_crystal_desc: "Trade away our £odryskan_crystal£ $r_odryskan_crystal$ relic."
+
+ trade_action_r_omnicodex: "£omnicodex£ $r_omnicodex$"
+ trade_action_r_omnicodex_desc: "Trade away our £omnicodex£ $r_omnicodex$ relic."
+
+ trade_action_r_pox_sample: "£pox_sample£ $r_pox_sample$"
+ trade_action_r_pox_sample_desc: "Trade away our £pox_sample£ $r_pox_sample$ relic."
+
+ trade_action_r_prethoryn_queen: "£prethoryn_queen£ $r_prethoryn_queen$"
+ trade_action_r_prethoryn_queen_desc: "Trade away our £prethoryn_queen£ $r_prethoryn_queen$ relic."
+
+ trade_action_r_reality_perforator: "£reality_perforator£ $r_reality_perforator$"
+ trade_action_r_reality_perforator_desc: "Trade away our £reality_perforator£ $r_reality_perforator$ relic."
+
+ trade_action_r_rubricator: "£rubricator£ $r_rubricator$"
+ trade_action_r_rubricator_desc: "Trade away our £rubricator£ $r_rubricator$ relic."
+
+ trade_action_r_severed_head: "£severed_head£ $r_severed_head$"
+ trade_action_r_severed_head_desc: "Trade away our £severed_head£ $r_severed_head$ relic."
+
+ trade_action_r_surveyor: "£surveyor£ $r_surveyor$"
+ trade_action_r_surveyor_desc: "Trade away our £surveyor£ $r_surveyor$ relic."
+
+ trade_action_r_the_defragmentor: "£the_defragmentor£ $r_the_defragmentor$"
+ trade_action_r_the_defragmentor_desc: "Trade away our £the_defragmentor£ $r_the_defragmentor$ relic."
+
+ trade_action_r_the_last_baol: "£the_last_baol£ $r_the_last_baol$"
+ trade_action_r_the_last_baol_desc: "Trade away our £the_last_baol£ $r_the_last_baol$ relic."
+
+ trade_action_r_toxic_god: "£toxic_god£ $r_toxic_god$"
+ trade_action_r_toxic_god_desc: "Trade away our £toxic_god£ $r_toxic_god$ relic."
+
+ trade_action_r_unbidden_warlock: "£unbidden_warlock£ $r_unbidden_warlock$"
+ trade_action_r_unbidden_warlock_desc: "Trade away our £unbidden_warlock£ $r_unbidden_warlock$ relic."
+
+ trade_action_r_vacuum_flower: "£vacuum_flower£ $r_vacuum_flower$"
+ trade_action_r_vacuum_flower_desc: "Trade away our £vacuum_flower£ $r_vacuum_flower$ relic."
+
+ trade_action_r_war_forge: "£war_forge£ $r_war_forge$"
+ trade_action_r_war_forge_desc: "Trade away our £war_forge£ $r_war_forge$ relic."
+
+ trade_action_r_worm_scales: "£worm_scales£ $r_worm_scales$"
+ trade_action_r_worm_scales_desc: "Trade away our £worm_scales£ $r_worm_scales$ relic."
+
+ trade_action_r_zro_crystal: "£zro_crystal£ $r_zro_crystal$"
+ trade_action_r_zro_crystal_desc: "Trade away our £zro_crystal£ $r_zro_crystal$ relic."
+ 
+ 

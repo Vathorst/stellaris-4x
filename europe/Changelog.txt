@@ -1,0 +1,14 @@
+1. You can now only pick "Become The Crisis" if 50 game years have passed.
+2. Federation cohesion has been modified to heavily penalize oposing ethics.
+3. Market fee calculations have been modified to make market changes slower.
+4. You can now no longer join or create a federation if you do not meet the ethics requirements.
+5. Federations now have a size limit.
+6. Federations now set "Can subjects join" law to be "No" as standard upon creation.
+7. Made the crisis casus beli silent (no notification), and only active from crisis level 2. You can still see the casus beli from the diplomacy screen, so pay attention.
+8. The crisis can already construct menacing corvettes from level 1. Hide them well so other players don't notice.
+9. Fixed emnity tradition to give 2% bonus instead of 20%
+10. You can now trade relics under trade actions. Game icons have been altered to allow for easier localistaion.
+11. Halved most of the galactic community timers, slightly reduced the cost for veto.
+12. You can no longer trade relics if you have any relics activated (regardless of which relic is active).
+13. Upgraded the fleet cap of federations to be 600 - 1200 - 3600 for low, medium and high fleet contribution respectively.
+14. GDF now starts with size 400 and will upgrade to size 1000 upon expanding.

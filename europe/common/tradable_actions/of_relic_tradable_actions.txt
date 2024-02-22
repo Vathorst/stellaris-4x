@@ -1,0 +1,536 @@
+# Regex string replace using line seperated list of relic keys:
+#   trade_action_$1 = {\n\tfire_and_forget = yes\n\n\tpotential = {\n\t\thas_relic = $1\n\t\tis_country_type = default\n\t\tfrom = {\n\t\t\tis_country_type = default\n\t\t\tnot = { has_relic = $1 }\n\t\t}\n\t}\n\n\ton_traded_effect = {\n\t\tremove_relic = $1\n\t\tfrom = { add_relic = $1 }\n\t}\n\n\tai_weight = {\n\t\tweight = 1000\n\t}\n}\n
+
+# Relic Rankings:   (For determining ai_weight)
+# Isolated Contingency Core
+# War Forge (unnerfed)
+#
+trade_action_r_ancient_sword = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_ancient_sword
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_ancient_sword }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_ancient_sword
+		from = { add_relic = r_ancient_sword }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_contingency_core = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_contingency_core
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_contingency_core }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_contingency_core
+		from = { add_relic = r_contingency_core }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_cryo_core = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_cryo_core
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_cryo_core }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_cryo_core
+		from = { add_relic = r_cryo_core }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_dragon_trophy = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_dragon_trophy
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_dragon_trophy }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_dragon_trophy
+		from = { add_relic = r_dragon_trophy }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_galatron = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_galatron
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_galatron }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_galatron
+		from = { add_relic = r_galatron }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_galaxy = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_galaxy
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_galaxy }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_galaxy
+		from = { add_relic = r_galaxy }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_khans_throne = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_khans_throne
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_khans_throne }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_khans_throne
+		from = { add_relic = r_khans_throne }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_odryskan_crystal = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_odryskan_crystal
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_odryskan_crystal }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_odryskan_crystal
+		from = { add_relic = r_odryskan_crystal }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_omnicodex = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_omnicodex
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_omnicodex }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_omnicodex
+		from = { add_relic = r_omnicodex }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_pox_sample = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_pox_sample
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_pox_sample }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_pox_sample
+		from = { add_relic = r_pox_sample }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_prethoryn_queen = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_prethoryn_queen
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_prethoryn_queen }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_prethoryn_queen
+		from = { add_relic = r_prethoryn_queen }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_reality_perforator = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_reality_perforator
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_reality_perforator }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_reality_perforator
+		from = { add_relic = r_reality_perforator }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_rubricator = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_rubricator
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_rubricator }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_rubricator
+		from = { add_relic = r_rubricator }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_severed_head = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_severed_head
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_severed_head }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_severed_head
+		from = { add_relic = r_severed_head }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_surveyor = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_surveyor
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_surveyor }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_surveyor
+		from = { add_relic = r_surveyor }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_the_defragmentor = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_the_defragmentor
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_the_defragmentor }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_the_defragmentor
+		from = { add_relic = r_the_defragmentor }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_the_last_baol = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_the_last_baol
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_the_last_baol }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_the_last_baol
+		from = { add_relic = r_the_last_baol }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_toxic_god = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_toxic_god
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_toxic_god }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_toxic_god
+		from = { add_relic = r_toxic_god }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_unbidden_warlock = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_unbidden_warlock
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_unbidden_warlock }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_unbidden_warlock
+		from = { add_relic = r_unbidden_warlock }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_vacuum_flower = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_vacuum_flower
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_vacuum_flower }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_vacuum_flower
+		from = { add_relic = r_vacuum_flower }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_war_forge = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_war_forge
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_war_forge }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_war_forge
+		from = { add_relic = r_war_forge }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_worm_scales = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_worm_scales
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_worm_scales }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_worm_scales
+		from = { add_relic = r_worm_scales }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_zro_crystal = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_zro_crystal
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_zro_crystal }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_zro_crystal
+		from = { add_relic = r_zro_crystal }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
