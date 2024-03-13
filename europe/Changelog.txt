@@ -11,3 +11,4 @@
 11. Upgraded the fleet cap of federations to be 600 - 1200 - 3600 for low, medium and high fleet contribution respectively.
 12. GDF now starts with size 400 and will upgrade to size 1000 upon expanding.
 13. Authoritarian faction is no longer angry with Decadent Lifestyle living standards or any Assimilation citizenship type, but is no longer satisfied with robotic servitude if AI is outlawed.
+14. Spiritualist faction is no longer angry with Robots Allowed if Roboticists are set to assemble cybernetic components.
