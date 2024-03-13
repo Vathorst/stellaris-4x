@@ -15,3 +15,15 @@
 15. Owning vassals and/or being in breach of galactic law no longer generates Menace passively. Steal Technology, Extort Favors, Spark Diplomatic Incident, and Smear Campaign espionage actions no longer generate Menace. Lowered the Menace gain from destroying ships by 66% and the Menace gain from destroying starbases by 33%. People who want to become the Crisis will need to go out and actively act like it.
 16. Removed the cooldown from the Steal Technology espionage operation and increased the amount of tech progress stolen from 30% to 50%.
 17. Worker Cooperative empires no longer get access to Consumer Benefits or Marketplace of Ideas. Mutual Aid now gives 0.4 Energy, 0.2 Food, and 0.2 Consumer Goods (from 0.3 Energy, 0.2 Food, and 0.2 Minerals) for non-Lithoids and Minerals instead of Food for Lithoids. Worker cooperative empires get special versions of the Trade League and Holy Covenant Trade Policies that give -0.3 Energy, +0.1 Food (Minerals if Lithoid), and +0.1 Consumer Goods compared to normal to replicate the effects of Mutual Aid.
+18. Ship designer can now properly detect stealth roles regardless of what type of stealth tech a player has unlocked, and it can also now properly detect if the player has unlocked high-enough level stealth tech for stealth cruisers, battleships, and/or titans.
+19. Major changes to the base stats to ship types, mainly to buff non-Cruisers, especially Corvettes, Frigates, and Destroyers:
+  - Doubled the naval capacity usage of corvettes, frigates, destroyers, cruisers, battleships, titans, menacing corvettes, menacing destroyers, and menacing cruisers.
+  - Corvettes: Increased base HP from 200 to 350, increased base disengagement chance from 1.0 to 1.5.
+  - Frigates: Increased base HP from 400 to 700, increased base disengagement chance from 1.0 to 1.5.
+  - Destroyers: Increased base HP from 600 to 800, changed Picket Bow hull type from 1P 2S weapons to 1M 2P weapons, added Torpedo Bow hull type with 1G 2S weapons, added torpedo-related combat computers and ship roles, added 1 Aux slot to Picket Stern hull type.
+  - Cruisers: Reduced the number of utility slots given by bow and mid hull sections from 4 to 3.
+  - Battleships: Increased base HP from 3000 to 4000.
+  - Titans: Increased base HP from 15000 to 20000, changed Titan Core hull type from 4L weapons to 2X 2L weapons, added Supercarrier Core hull type with 2X 2H weapons, added Supercarrier Stern hull type with 2H weapons.
+  - Menacing Corvettes: Increased base HP and base disengagement chance to match Corvettes'.
+  - Menacing Destroyers: Increased base HP and base disengagement chance to match Destroyers', increased mineral cost from 550 to 600, switched all hull types from 3M utility slots to 6S utility slots to match how Destroyer hull types are set up.
+  - Menacing Cruisers: Increased base HP, base disengagement chance, acceleration, and turn rate to match Cruisers', increased mineral cost from 900 to 1200, changed Menacing Cruiser hull type from 1L 2M 2S weapons to 1L 4M weapons, added Menacing Carrier hull type with 2H 1M 2P weapons.

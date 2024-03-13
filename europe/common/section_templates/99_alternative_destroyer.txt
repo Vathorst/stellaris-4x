@@ -1,0 +1,540 @@
+@section_cost = 30
+
+#BOW
+
+ship_section_template = {
+	key = "DESTROYER_BOW_M1S2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added stealth tags
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "OFFSPRING_DESTROYER_BOW_M1S2"
+	ship_size = offspring_destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added stealth tags
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+
+ship_section_template = {
+	key = "DESTROYER_BOW_S3"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity" # Europe: switched to 1M2S entity from 3S entity
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { screen screen_stealth } # Europe: added stealth tags
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			has_technology = tech_battleships
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	# Europe: switched from 1P 2S slots to 1M 2P slots for weapon slot parity with other types
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "OFFSPRING_DESTROYER_BOW_S3"
+	ship_size = offspring_destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity" # Europe: switched to 1M2S entity from 3S entity
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { screen screen_stealth } # Europe: added stealth tags
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			has_technology = tech_battleships
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	# Europe: switched from 1P 2S slots to 1M 2P slots for weapon slot parity with other types
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+# Europe: added Torpedo bow
+ship_section_template = {
+	key = "DESTROYER_BOW_G1S2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
+
+	prerequisites = { tech_torpedoes_1 }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "OFFSPRING_DESTROYER_BOW_G1S2"
+	ship_size = offspring_destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
+
+	prerequisites = { tech_torpedoes_1 }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+# Stern
+
+ship_section_template = {
+	key = "DESTROYER_STERN_PD2"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { screen screen_stealth } # Europe: added stealth tags
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots = 2 # Europe: increased from 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "OFFSPRING_DESTROYER_STERN_PD2"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { screen screen_stealth } # Europe: added stealth tags
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots = 2 # Europe: increased from 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_STERN_S2"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added stealth tags
+
+	ai_weight = {
+		factor = 100
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "OFFSPRING_DESTROYER_STERN_S2"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added stealth tags
+
+	ai_weight = {
+		factor = 100
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+### Crisis Destroyer
+
+# 1M1G1S1P
+ship_section_template = {
+	key = "CRISIS_DESTROYER_1M2S1M"
+	ship_size = crisis_destroyer
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "crisis_destroyer_1M2S1M_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { brawler brawler_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth } # Europe: added stealth tags
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6 # Europe: changed from 3 medium utility for parity with destroyers
+	aux_utility_slots = 2
+}
+
+# 1L2S
+ship_section_template = {
+	key = "CRISIS_DESTROYER_1L2S"
+	ship_size = crisis_destroyer
+	fits_on_slot = mid
+	should_draw_components = yes
+	entity = "crisis_destroyer_1L2S_entity"
+	icon = "GFX_ship_part_core_mid"
+	ai_tags = { gunship gunship_stealth artillery artillery_stealth } # Europe: added stealth tags
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6 # Europe: changed from 3 medium utility for parity with destroyers
+	aux_utility_slots = 2
+}

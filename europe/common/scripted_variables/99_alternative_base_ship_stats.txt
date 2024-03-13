@@ -1,0 +1,5 @@
+@corvette_hp = 350 # Increased from 200
+@frigate_hp = 700 # Increased from 400
+@destroyer_hp = 800 # Increased from 600
+@battleship_hp = 4000 # Increased from 3000
+@titan_hp = 20000 # Increased from 15000

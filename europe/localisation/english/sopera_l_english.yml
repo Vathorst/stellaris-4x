@@ -18,6 +18,12 @@
  requires_embassy_with_nation:2 "$TRIGGER_FAIL$§RRequire you to have an §YEmbassy§R with this empire.§!"
  
  mod_country_traditions_influence_produces_add:0 "$MOD_COUNTRY_INFLUENCE_GAIN_ADD$"
+
+ DESTROYER_BOW_G1S2: "Torpedo"
+ OFFSPRING_DESTROYER_BOW_G1S2: "Torpedo"
+ CRISIS_CRUISER_SECTION_CARRIER: "Menacing Carrier"
+ TITAN_MID_CARRIER: "Supercarrier Core"
+ TITAN_STERN_CARRIER: "Supercarrier Stern"
  
   # Preset text icons
  #text_icon_vacuum_flower:0 "£vacuum_flower£"
