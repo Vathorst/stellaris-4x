@@ -1,6 +1,0 @@
-reaffirmed_superiority = {
-	country_physics_research_produces_mult = 0.01
-	country_society_research_produces_mult = 0.01
-	country_engineering_research_produces_mult = 0.01
-	country_unity_produces_mult = 0.01
-}
