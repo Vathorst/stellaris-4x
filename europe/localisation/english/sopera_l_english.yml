@@ -30,20 +30,38 @@
  trade_action_r_ancient_sword: "£ancient_sword£ $r_ancient_sword$"
  trade_action_r_ancient_sword_desc: "Trade away our £ancient_sword£ $r_ancient_sword$ relic."
 
+ trade_action_r_celestial_tear: "£celestial_tear£ $r_celestial_tear$"
+ trade_action_r_celestial_tear_desc: "Trade away our £celestial_tear£ $r_celestial_tear$ relic."
+
  trade_action_r_contingency_core: "£contingency_core£ $r_contingency_core$"
  trade_action_r_contingency_core_desc: "Trade away our £contingency_core£ $r_contingency_core$ relic."
+
+ trade_action_r_continuum: "£continuum£ $r_continuum$"
+ trade_action_r_continuum_desc: "Trade away our £continuum£ $r_continuum$ relic."
 
  trade_action_r_cryo_core: "£cryo_core£ $r_cryo_core$"
  trade_action_r_cryo_core_desc: "Trade away our £cryo_core£ $r_cryo_core$ relic."
 
+ trade_action_r_daedalus_seal: "£daedalus_seal£ $r_daedalus_seal$"
+ trade_action_r_daedalus_seal_desc: "Trade away our £daedalus_seal£ $r_daedalus_seal$ relic."
+
  trade_action_r_dragon_trophy: "£dragon_trophy£ $r_dragon_trophy$"
  trade_action_r_dragon_trophy_desc: "Trade away our £dragon_trophy£ $r_dragon_trophy$ relic."
+
+ trade_action_r_eternal_throne: "£eternal_throne£ $r_eternal_throne$"
+ trade_action_r_eternal_throne_desc: "Trade away our £eternal_throne£ $r_eternal_throne$ relic."
+
+ trade_action_r_ever_spinning_top: "£ever_spinning_top£ $r_ever_spinning_top$"
+ trade_action_r_ever_spinning_top_desc: "Trade away our £ever_spinning_top£ $r_ever_spinning_top$ relic."
 
  trade_action_r_galatron: "£galatron£ $r_galatron$"
  trade_action_r_galatron_desc: "Trade away our £galatron£ $r_galatron$ relic."
 
  trade_action_r_galaxy: "£galaxy£ $r_galaxy$"
  trade_action_r_galaxy_desc: "Trade away our £galaxy£ $r_galaxy$ relic."
+
+ trade_action_r_infinity_root: "£infinity_root£ $r_infinity_root$"
+ trade_action_r_infinity_root_desc: "Trade away our £infinity_root£ $r_infinity_root$ relic."
 
  trade_action_r_khans_throne: "£khans_throne£ $r_khans_throne$"
  trade_action_r_khans_throne_desc: "Trade away our £khans_throne£ $r_khans_throne$ relic."
@@ -53,6 +71,9 @@
 
  trade_action_r_omnicodex: "£omnicodex£ $r_omnicodex$"
  trade_action_r_omnicodex_desc: "Trade away our £omnicodex£ $r_omnicodex$ relic."
+
+ trade_action_r_plasmic_core: "£plasmic_core£ $r_plasmic_core$"
+ trade_action_r_plasmic_core_desc: "Trade away our £plasmic_core£ $r_plasmic_core$ relic."
 
  trade_action_r_pox_sample: "£pox_sample£ $r_pox_sample$"
  trade_action_r_pox_sample_desc: "Trade away our £pox_sample£ $r_pox_sample$ relic."
@@ -78,6 +99,9 @@
  trade_action_r_the_last_baol: "£the_last_baol£ $r_the_last_baol$"
  trade_action_r_the_last_baol_desc: "Trade away our £the_last_baol£ $r_the_last_baol$ relic."
 
+ trade_action_r_time_crystal: "£time_crystal£ $r_time_crystal$"
+ trade_action_r_time_crystal_desc: "Trade away our £time_crystal£ $r_time_crystal$ relic."
+
  trade_action_r_toxic_god: "£toxic_god£ $r_toxic_god$"
  trade_action_r_toxic_god_desc: "Trade away our £toxic_god£ $r_toxic_god$ relic."
 
@@ -95,5 +119,3 @@
 
  trade_action_r_zro_crystal: "£zro_crystal£ $r_zro_crystal$"
  trade_action_r_zro_crystal_desc: "Trade away our £zro_crystal£ $r_zro_crystal$ relic."
- 
- 

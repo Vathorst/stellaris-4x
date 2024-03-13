@@ -28,6 +28,29 @@ trade_action_r_ancient_sword = {
 	}
 }
 
+trade_action_r_celestial_tear = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_celestial_tear
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_celestial_tear }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_celestial_tear
+		from = { add_relic = r_celestial_tear }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
 trade_action_r_contingency_core = {
 	fire_and_forget = yes
 
@@ -44,6 +67,29 @@ trade_action_r_contingency_core = {
 	on_traded_effect = {
 		remove_relic = r_contingency_core
 		from = { add_relic = r_contingency_core }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_continuum = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_continuum
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_continuum }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_continuum
+		from = { add_relic = r_continuum }
 	}
 
 	ai_weight = {
@@ -74,6 +120,29 @@ trade_action_r_cryo_core = {
 	}
 }
 
+trade_action_r_daedalus_seal = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_daedalus_seal
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_daedalus_seal }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_daedalus_seal
+		from = { add_relic = r_daedalus_seal }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
 trade_action_r_dragon_trophy = {
 	fire_and_forget = yes
 
@@ -90,6 +159,52 @@ trade_action_r_dragon_trophy = {
 	on_traded_effect = {
 		remove_relic = r_dragon_trophy
 		from = { add_relic = r_dragon_trophy }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_eternal_throne = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_eternal_throne
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_eternal_throne }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_eternal_throne
+		from = { add_relic = r_eternal_throne }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_ever_spinning_top = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_ever_spinning_top
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_ever_spinning_top }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_ever_spinning_top
+		from = { add_relic = r_ever_spinning_top }
 	}
 
 	ai_weight = {
@@ -136,6 +251,29 @@ trade_action_r_galaxy = {
 	on_traded_effect = {
 		remove_relic = r_galaxy
 		from = { add_relic = r_galaxy }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_infinity_root = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_infinity_root
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_infinity_root }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_infinity_root
+		from = { add_relic = r_infinity_root }
 	}
 
 	ai_weight = {
@@ -205,6 +343,29 @@ trade_action_r_omnicodex = {
 	on_traded_effect = {
 		remove_relic = r_omnicodex
 		from = { add_relic = r_omnicodex }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_plasmic_core = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_plasmic_core
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_plasmic_core }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_plasmic_core
+		from = { add_relic = r_plasmic_core }
 	}
 
 	ai_weight = {
@@ -396,6 +557,29 @@ trade_action_r_the_last_baol = {
 	}
 }
 
+trade_action_r_time_crystal = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_time_crystal
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_time_crystal }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_time_crystal
+		from = { add_relic = r_time_crystal }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
 trade_action_r_toxic_god = {
 	fire_and_forget = yes
 
@@ -533,4 +717,3 @@ trade_action_r_zro_crystal = {
 		weight = 1000
 	}
 }
-
