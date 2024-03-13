@@ -1,5 +1,5 @@
 @StealTechnologyAmount = 1000 #Amount of science research in every discipline which will be granted if the operation cannot steal a Technology
-@StealTechnologyTimer = 2160 #days (6 years) until Steal Technology can be repeated. Referenced in tooltip strings "operation.1026.tooltip.cooldown" and "operation_steal_technology_too_recent".
+#@StealTechnologyTimer = 2160 #days (6 years) until Steal Technology can be repeated. Referenced in tooltip strings "operation.1026.tooltip.cooldown" and "operation_steal_technology_too_recent".
 
 # Finalé | fromfrom = operation
 country_event = {
@@ -254,14 +254,15 @@ country_event = {
 	}
 
 	after = {
-		custom_tooltip = operation.1026.tooltip.cooldown
-		fromfrom.spynetwork = {
-			set_saved_date = {
-				key = recently_stole_technology
-				days_from_present = @StealTechnologyTimer
-				expires = @StealTechnologyTimer
-			}
-		}
+		# Europe: removed cooldown
+		#custom_tooltip = operation.1026.tooltip.cooldown
+		#fromfrom.spynetwork = {
+		#	set_saved_date = {
+		#		key = recently_stole_technology
+		#		days_from_present = @StealTechnologyTimer
+		#		expires = @StealTechnologyTimer
+		#	}
+		#}
 		if = {
 			limit = {
 				can_copy_random_tech_from = { who = fromfrom.target }
@@ -280,7 +281,7 @@ country_event = {
 					copy_random_tech_from = {
 						who = fromfrom.target
 						area = physics
-						progress = 0.30
+						progress = 0.50 # Europe: increased
 					}
 				}
 				1 = {
@@ -296,7 +297,7 @@ country_event = {
 					copy_random_tech_from = {
 						who = fromfrom.target
 						area = society
-						progress = 0.30
+						progress = 0.50 # Europe: increased
 					}
 				}
 				1 = {
@@ -312,7 +313,7 @@ country_event = {
 					copy_random_tech_from = {
 						who = fromfrom.target
 						area = engineering
-						progress = 0.30
+						progress = 0.50 # Europe: increased
 					}
 				}
 			}
