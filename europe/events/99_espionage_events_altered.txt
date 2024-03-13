@@ -1,0 +1,611 @@
+@StealTechnologyAmount = 1000 #Amount of science research in every discipline which will be granted if the operation cannot steal a Technology
+@StealTechnologyTimer = 2160 #days (6 years) until Steal Technology can be repeated. Referenced in tooltip strings "operation.1026.tooltip.cooldown" and "operation_steal_technology_too_recent".
+
+# Finalé | fromfrom = operation
+country_event = {
+	id = operation.1026
+	title = operation.1026.name
+	desc = {
+		trigger = {
+			fromfrom = {
+				has_espionage_operation_flag = steal_tech_theft
+				has_espionage_operation_flag = smooth_exit
+			}
+		}
+		text = operation.1026.desc.ducts.smooth
+		text = operation.1026.desc.goods.smooth
+	}
+	desc = {
+		trigger = {
+			fromfrom = {
+				has_espionage_operation_flag = steal_tech_theft
+				NOT = { has_espionage_operation_flag = smooth_exit }
+			}
+		}
+		text = operation.1026.desc.ducts.messy
+		text = operation.1026.desc.goods.messy
+	}
+	desc = {
+		trigger = {
+			fromfrom = {
+				NOT = { has_espionage_operation_flag = steal_tech_theft }
+				has_espionage_operation_flag = smooth_exit
+			}
+		}
+		text = operation.1026.desc.invited.smooth
+	}
+	desc = {
+		trigger = {
+			fromfrom = {
+				NOT = {
+					has_espionage_operation_flag = steal_tech_theft
+					has_espionage_operation_flag = smooth_exit
+				}
+			}
+		}
+		text = operation.1026.desc.invited.messy
+	}
+	picture = GFX_evt_physics_research
+	show_sound = event_espionage_concluded
+	is_triggered_only = yes
+
+	trigger = {
+		exists = fromfrom
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				can_copy_random_tech_from = { who = fromfrom.target }
+			}
+			fromfrom = { set_espionage_operation_flag = reward_tech }
+			random_list = {
+				1 = {
+					modifier = {
+						factor = 3
+						root = {
+							relative_encryption_decryption = {
+								target = fromfrom.target
+								value > 1.6
+							}
+						}
+					}
+					modifier = {
+						factor = 0
+						fromfrom = {
+							NOR = {
+								has_espionage_operation_flag = smooth_exit
+								has_espionage_asset_subterfuge = yes
+								has_espionage_asset_technology = yes
+							}
+						}
+					}
+					fromfrom = { set_espionage_operation_flag = reward_extra } #Steal a bonus tech
+				}
+				5 = { }
+			}
+		}
+	}
+
+	option = { #We're done here (smooth)
+		name = operation.1026.a.smooth
+		trigger = {
+			fromfrom = { has_espionage_operation_flag = smooth_exit }
+		}
+		fromfrom.spynetwork = {
+			add_spy_network_level_on_success_effect = { VALUE = -20 }
+		}
+	}
+	option = { #We're done here (messy)
+		name = operation.1026.a.messy
+		trigger = {
+			fromfrom = { NOT = { has_espionage_operation_flag = smooth_exit } }
+		}
+		fromfrom.spynetwork = {
+			add_spy_network_level_on_success_effect = { VALUE = -30 }
+		}
+
+	}
+	option = { #Sabotage their current research
+		name = {
+			trigger = {
+				fromfrom = { has_espionage_operation_flag = smooth_exit }
+			}
+			text = operation.1026.b.smooth
+		}
+		name = {
+			trigger = {
+				fromfrom = { NOT = { has_espionage_operation_flag = smooth_exit } }
+			}
+			text = operation.1026.b.messy
+		}
+		icon = {
+			icon = GFX_espionage_asset_icon
+			text = ESPIONAGE_OPERATION_ASSET_EVENT_OPTION
+		}
+		trigger = {
+			fromfrom = {
+				OR = {
+					has_espionage_asset = asset_hacker
+					has_espionage_asset = asset_memory_cache
+				}
+			}
+		}
+		allow = {
+			exists = fromfrom.target
+			fromfrom.target = {
+				NOT = { has_modifier = research_stolen_sabotaged } #Not stackable
+			}
+		}
+		hidden_effect = {
+			fromfrom.target = {
+				country_event = { id = operation.1030 }
+			}
+		}
+		root = {
+			add_resource = { influence = -25 }
+		}
+		custom_tooltip = operation.1026.b.tooltip
+		fromfrom = {
+			if = {
+				limit = { has_espionage_operation_flag = smooth_exit }
+				spynetwork = {
+					add_spy_network_level_on_success_effect = { VALUE = -30 }
+				}
+			}
+			else = {
+				spynetwork = {
+					add_spy_network_level_on_success_effect = { VALUE = -40 }
+				}
+			}
+			destroy_espionage_asset_sabotage = yes
+		}
+		# Europe: removed
+		#owner = {
+		#	if = {
+		#		limit = { has_ascension_perk = ap_become_the_crisis }
+		#		complete_crisis_objective = crisobj_perform_upsetting_operations
+		#	}
+		#}
+	}
+	option = { #Research backdoor
+		name = operation.1026.c
+		icon = {
+			icon = GFX_espionage_asset_icon
+			text = ESPIONAGE_OPERATION_ASSET_EVENT_OPTION
+		}
+		trigger = {
+			root = {
+				relative_encryption_decryption = {
+					target = fromfrom.target
+					value > 1.4
+				}
+			}
+			fromfrom = {
+				OR = {
+					has_espionage_asset_subterfuge = yes
+					has_espionage_asset_technology = yes
+				}
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = "requires_not_espionage_research_backdoor"
+				NOT = { has_modifier = espionage_research_backdoor } #Not stackable
+			}
+		}
+		root = {
+			add_modifier = { modifier = espionage_research_backdoor days = 720 }
+		}
+		fromfrom = {
+			if = {
+				limit = { has_espionage_operation_flag = smooth_exit }
+				spynetwork = {
+					add_spy_network_level_on_success_effect = { VALUE = -20 }
+				}
+			}
+			else = {
+				spynetwork = {
+					add_spy_network_level_on_success_effect = { VALUE = -30 }
+				}
+			}
+			if = {
+				limit = { has_espionage_asset_technology = yes }
+				destroy_espionage_asset_technology = yes
+			}
+			else_if = {
+				limit = { has_espionage_asset_subterfuge = yes }
+				destroy_espionage_asset_subterfuge = yes
+			}
+		}
+	}
+	option = { #Steal extra technology
+		name = operation.1026.d
+		icon = {
+			icon = GFX_espionage_asset_icon
+			text = ESPIONAGE_OPERATION_ASSET_EVENT_OPTION
+		}
+		custom_tooltip = operation.1026.d.tooltip
+		trigger = {
+			fromfrom = {
+				has_espionage_operation_flag = reward_extra #Also requires "smooth_exit" and an Asset
+			}
+			can_copy_random_tech_from = { who = fromfrom.target }
+		}
+		root = {
+			copy_random_tech_from = {
+				who = fromfrom.target
+				progress = 0.10
+			}
+		}
+		fromfrom = {
+			if = {
+				limit = { has_espionage_asset_technology = yes }
+				destroy_espionage_asset_technology = yes
+			}
+			else_if = {
+				limit = { has_espionage_asset_subterfuge = yes }
+				destroy_espionage_asset_subterfuge = yes
+			}
+			spynetwork = {
+				add_spy_network_level_on_success_effect = { VALUE = -30 }
+			}
+		}
+	}
+
+	after = {
+		custom_tooltip = operation.1026.tooltip.cooldown
+		fromfrom.spynetwork = {
+			set_saved_date = {
+				key = recently_stole_technology
+				days_from_present = @StealTechnologyTimer
+				expires = @StealTechnologyTimer
+			}
+		}
+		if = {
+			limit = {
+				can_copy_random_tech_from = { who = fromfrom.target }
+			}
+			locked_random_list = {
+				1 = {
+					modifier = {
+						factor = 0
+						NOT = {
+							can_copy_random_tech_from = {
+								who = fromfrom.target
+								area = physics
+							}
+						}
+					}
+					copy_random_tech_from = {
+						who = fromfrom.target
+						area = physics
+						progress = 0.30
+					}
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						NOT = {
+							can_copy_random_tech_from = {
+								who = fromfrom.target
+								area = society
+							}
+						}
+					}
+					copy_random_tech_from = {
+						who = fromfrom.target
+						area = society
+						progress = 0.30
+					}
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						NOT = {
+							can_copy_random_tech_from = {
+								who = fromfrom.target
+								area = engineering
+							}
+						}
+					}
+					copy_random_tech_from = {
+						who = fromfrom.target
+						area = engineering
+						progress = 0.30
+					}
+				}
+			}
+		}
+		else = {
+			add_resource = { engineering_research = @StealTechnologyAmount }
+			add_resource = { physics_research = @StealTechnologyAmount }
+			add_resource = { society_research = @StealTechnologyAmount }
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					owner = { NOT = { has_country_flag = operation_complete_steal_technology } }
+				}
+				owner = {
+					change_variable = {
+						which = tinker_tailor_soldier_blorg_achievement_count
+						value = 1
+					}
+					set_country_flag = operation_complete_steal_technology
+				}
+			}
+		}
+		destroy_espionage_operation = fromfrom
+	}
+}
+
+# Finalé | from = operation; fromfrom = target (country)
+country_event = {
+	id = operation.3005
+	title = operation.3005.name
+	desc = {
+		text = operation.3005.desc.insult
+		trigger = {
+			from.target = { is_gestalt = no }
+			event_target:smear_campaign_recipient = {
+				has_country_flag = smear_campaign_insulted@root
+			}
+		}
+	}
+	desc = {
+		text = operation.3005.desc.trust
+		trigger = {
+			from.target = { is_gestalt = no }
+			event_target:smear_campaign_recipient = {
+				has_country_flag = smear_campaign_deceived@root
+			}
+		}
+	}
+	desc = {
+		text = operation.3005.desc.espionage
+		trigger = {
+			from.target = { is_gestalt = no }
+			event_target:smear_campaign_recipient = {
+				has_country_flag = smear_campaign_espionage@root
+			}
+		}
+	}
+	desc = {
+		text = operation.3005.desc.gestalt
+		trigger = {
+			from.target = {
+				is_gestalt = yes
+			}
+		}
+	}
+	picture = GFX_evt_smear_campaign
+	show_sound = event_espionage_concluded
+	is_triggered_only = yes
+
+	trigger = {
+		exists = event_target:smear_campaign_recipient
+	}
+
+	immediate = {
+		from = { save_event_target_as = operation }
+		save_event_target_as = smear_campaign_instigator
+		#Remove narrative-specific flags (only shown to the instigating empire)
+		event_target:smear_campaign_recipient = {
+			switch = {
+				trigger = has_country_flag
+				smear_campaign_insulted@root = { remove_smear_campaign_flags_insulted = yes }
+				smear_campaign_deceived@root = { remove_smear_campaign_flags_deceived = yes }
+				smear_campaign_espionage@root = { remove_smear_campaign_flags_espionage = yes }
+			}
+		}
+		from.target = { save_event_target_as = smear_campaign_target }
+	}
+
+	option = {
+		name = EXCELLENT
+		from.spynetwork = {
+			add_spy_network_level_on_success_effect = { VALUE = -20 }
+		}
+		hidden_effect = {
+			event_target:smear_campaign_recipient = {
+				switch = {
+					trigger = has_country_flag
+					smear_campaign_espionage@root = {
+						if = {
+							limit = {
+								relative_encryption_decryption = { target = root value > 1.7 }
+							}
+							country_event = { id = operation.3010 days = 1 } #False Smear Campaign (Espionage)
+						}
+						else = {
+							from.target = { save_event_target_as = hostile_infiltration_country }
+							country_event = { id = espionage.1070 days = 1 } #Hostile Infiltration Detected
+							remove_country_flag = smear_campaign_espionage@root
+						}
+					}
+					smear_campaign_insulted@root = {
+						if = {
+							limit = {
+								relative_encryption_decryption = { target = root value > 1.5 }
+							}
+							country_event = { id = operation.3011 days = 1 } #False Smear Campaign (Insult)
+						}
+						else = {
+							from.target = { save_event_target_as = scandalous_insult_country }
+							country_event = { id = envoy_events.100 days = 1 } #Scandalous Insult
+							remove_country_flag = smear_campaign_insulted@root
+						}
+					}
+					smear_campaign_deceived@root = {
+						if = {
+							limit = {
+								relative_encryption_decryption = { target = root value > 1.6 }
+							}
+							country_event = { id = operation.3012 days = 1 } #False Smear Campaign (Deception)
+						}
+						else = {
+							if = {
+								limit = { has_active_spynetwork = yes }
+								from.target = { save_event_target_as = insidious_plot_country }
+								country_event = { id = espionage.1080 days = 1 } #Insidious Plot Detected
+							}
+							else = {
+								from.target = { save_event_target_as = hostile_infiltration_country }
+								country_event = { id = espionage.1070 days = 1 } #Hostile Infiltration Detected
+								remove_country_flag = smear_campaign_deceived@root
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					owner = { NOT = { has_country_flag = operation_complete_smear_campaign } }
+				}
+				owner = {
+					change_variable = {
+						which = tinker_tailor_soldier_blorg_achievement_count
+						value = 1
+					}
+					set_country_flag = operation_complete_smear_campaign
+				}
+			}
+		}
+		destroy_espionage_operation = from
+
+		# Europe: removed
+		#owner = {
+		#	if = {
+		#		limit = { has_ascension_perk = ap_become_the_crisis }
+		#		complete_crisis_objective = crisobj_perform_upsetting_operations
+		#	}
+		#}
+	}
+}
+
+country_event = {
+	id = operation.6255
+	title = operation.6255.name
+	desc = operation.6255.desc
+	picture = GFX_evt_hand_shake
+	show_sound = event_hand_shake
+
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+		locked_random_list = {
+			80 = {
+				add_favors = {
+					target = event_target:target_country
+					value = 1
+				}
+			}
+			20 = {
+				add_favors = {
+					target = event_target:target_country
+					value = 2
+				}
+			}
+		}
+		from.spynetwork = {
+			add_spy_network_level_on_success_effect = { VALUE = -20 }
+		}
+		# Europe: removed
+		#owner = {
+		#	if = {
+		#		limit = { has_ascension_perk = ap_become_the_crisis }
+		#		complete_crisis_objective = crisobj_perform_upsetting_operations
+		#	}
+		#}
+	}
+
+	after = {
+		hidden_effect = {
+			if = {
+				limit = {
+					owner = { NOT = { has_country_flag = operation_complete_extort_favors } }
+				}
+				owner = {
+					change_variable = {
+						which = tinker_tailor_soldier_blorg_achievement_count
+						value = 1
+					}
+					set_country_flag = operation_complete_extort_favors
+				}
+			}
+			destroy_espionage_operation = from
+		}
+	}
+}
+
+# Finalé (succeeded)
+espionage_operation_event = {
+	id = operation.8230
+	title = operation.8230.name
+	desc = {
+		trigger = {
+			switch = {
+				trigger = has_espionage_operation_flag
+				salacious_affair = { text = operation.8230.desc.salacious_affair } #with event target offended_party
+				salacious_affair_self = { text = operation.8230.desc.salacious_affair_self } #in which event target offended_party = root
+				galactic_comedy = { text = operation.8230.desc.galactic_comedy }
+				insulting_envoy = { text = operation.8230.desc.insulting_envoy } #with event target offended_party
+				insulting_envoy_self = { text = operation.8230.desc.insulting_envoy_self } #in which event target offended_party = root
+				galcom_lobbying = { text = operation.8230.desc.lobbying }
+				eloping_envoy = { text = operation.8230.desc.elope }
+				wayward_envoy = { text = operation.8230.desc.wayward }
+				substance_abuse = { text = operation.8230.desc.substances }
+			}
+		}
+	}
+	picture = GFX_evt_tradedeal
+	location = target.capital_scope
+	show_sound = event_espionage_concluded
+	is_triggered_only = yes
+
+	immediate = {
+		random_country = {
+			limit = {
+				has_country_flag = offended_party@root
+			}
+			save_event_target_as = offended_party
+			remove_country_flag = offended_party@root
+		}
+	}
+
+	option = {
+		name = EXCELLENT
+
+		custom_tooltip = diplo_incident_succeeded
+		spynetwork = {
+			add_spy_network_level_on_success_effect = { VALUE = -10 }
+		}
+		# Europe: removed
+		#owner = {
+		#	if = {
+		#		limit = { has_ascension_perk = ap_become_the_crisis }
+		#		complete_crisis_objective = crisobj_perform_upsetting_operations
+		#	}
+		#}
+	}
+
+	after = {
+		hidden_effect = {
+			if = {
+				limit = {
+					owner = { NOT = { has_country_flag = operation_complete_diplo_incident } }
+				}
+				owner = {
+					change_variable = {
+						which = tinker_tailor_soldier_blorg_achievement_count
+						value = 1
+					}
+					set_country_flag = operation_complete_diplo_incident
+				}
+			}
+		}
+		destroy_espionage_operation = this
+	}
+}

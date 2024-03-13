@@ -12,3 +12,4 @@
 12. GDF now starts with size 400 and will upgrade to size 1000 upon expanding.
 13. Authoritarian faction is no longer angry with Decadent Lifestyle living standards or any Assimilation citizenship type, but is no longer satisfied with robotic servitude if AI is outlawed.
 14. Spiritualist faction is no longer angry with Robots Allowed if Roboticists are set to assemble cybernetic components.
+15. Owning vassals and/or being in breach of galactic law no longer generates Menace passively. Steal Technology, Extort Favors, Spark Diplomatic Incident, and Smear Campaign espionage actions no longer generate Menace. Lowered the Menace gain from destroying ships by 66% and the Menace gain from destroying starbases by 33%. People who want to become the Crisis will need to go out and actively act like it.
