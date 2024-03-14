@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ship_part_screen_1"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_screen_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_screen_2"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_screen_2.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_screen_3"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_screen_3.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dark_matter_screen"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_dark_matter_screen.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_psi_screen"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_psi_screen.dds"
+	}
+}

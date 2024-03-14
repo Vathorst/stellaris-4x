@@ -1,0 +1,330 @@
+weapon_component_template = {
+	key = "ARCHAEO_MISSILE"
+	size = small
+
+	icon = "GFX_ship_part_archaeo_missiles"
+	icon_frame = 1
+	type = missile
+
+	prerequisites = { "tech_archaeo_missiles" }
+	component_set = "ARCHAEO_MISSILE"
+	projectile_gfx = "swarmer_missiles" # Europe: changed from small_missile
+	tags = { weapon_type_explosive weapon_archaeotech}
+	ai_tags = { weapon_role_artillery artillery energy_torpedoes }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+			minor_artifacts = @minor_artifacts_cost_s # Europe: reduced to S cost
+		}
+		upkeep = {
+			energy = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			add = 2.5
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		modifier = {
+			factor = 0.0
+			owner = {
+				has_monthly_income = {
+					resource = minor_artifacts
+					value < 3
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			owner = {
+				resource_stockpile_compare = {
+					resource = minor_artifacts
+					value > 250
+				}
+			}
+		}
+	}
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "SMALL_ARCHAEO_KINETIC"
+	size = small
+
+	icon = "GFX_ship_part_archaeo_mass_driver"
+	icon_frame = 1
+
+	prerequisites = { "tech_archaeo_mass_drivers" }
+	component_set = "ARCHAEO_KINETIC"
+	projectile_gfx = "mass_driver_s"
+	tags = { weapon_type_kinetic weapon_archaeotech }
+	ai_tags = { weapon_role_anti_shield gunship }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+			minor_artifacts = @minor_artifacts_cost_s
+		}
+		upkeep = {
+			energy = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			add = 2.5
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		modifier = {
+			factor = 0.0
+			owner = {
+				has_monthly_income = {
+					resource = minor_artifacts
+					value < 3
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			owner = {
+				resource_stockpile_compare = {
+					resource = minor_artifacts
+					value > 250
+				}
+			}
+		}
+	}
+
+	hidden = yes # Europe: removed S- and M-slot versions of Macro Batteries
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "MEDIUM_ARCHAEO_KINETIC"
+	size = medium
+
+	icon = "GFX_ship_part_archaeo_mass_driver"
+	icon_frame = 1
+
+	prerequisites = { "tech_archaeo_mass_drivers" }
+	component_set = "ARCHAEO_KINETIC"
+	projectile_gfx = "mass_driver_m"
+	tags = { weapon_type_kinetic weapon_archaeotech }
+	ai_tags = { weapon_role_anti_shield gunship }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t3_cost
+			minor_artifacts = @minor_artifacts_cost_m
+		}
+		upkeep = {
+			energy = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			add = 2.5
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		modifier = {
+			factor = 0.0
+			owner = {
+				has_monthly_income = {
+					resource = minor_artifacts
+					value < 3
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			owner = {
+				resource_stockpile_compare = {
+					resource = minor_artifacts
+					value > 250
+				}
+			}
+		}
+	}
+
+	hidden = yes # Europe: removed S- and M-slot versions of Macro Batteries
+}
+
+@minor_artifacts_cost_macro = 4
+
+weapon_component_template = {
+	type = instant
+
+	key = "LARGE_ARCHAEO_KINETIC"
+	size = large
+
+	icon = "GFX_ship_part_archaeo_mass_driver"
+	icon_frame = 1
+
+	min_range = 45.0 # Europe: added minimum range to Macro Batteries
+
+	prerequisites = { "tech_archaeo_mass_drivers" }
+	component_set = "ARCHAEO_KINETIC"
+	projectile_gfx = "mass_driver_l"
+	tags = { weapon_type_kinetic weapon_archaeotech }
+	ai_tags = { weapon_role_anti_shield gunship }
+	resources = {
+		category = ship_components
+		# Europe: reduced cost and upkeep from Large T3 equivalent to Medium T1 equivalent, reduced minor artifact cost to 4
+		cost = {
+			alloys = @m_t1_cost
+			minor_artifacts = @minor_artifacts_cost_macro
+		}
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			add = 2.5
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		modifier = {
+			factor = 0.0
+			owner = {
+				has_monthly_income = {
+					resource = minor_artifacts
+					value < 3
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			owner = {
+				resource_stockpile_compare = {
+					resource = minor_artifacts
+					value > 250
+				}
+			}
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "ARCHAEO_POINTDEFENCE"
+	size = point_defence
+
+	icon = "GFX_ship_part_archaeo_point_defence"
+	icon_frame = 1
+
+	prerequisites = { "tech_archaeo_point_defence" }
+	component_set = "ARCHAEO_POINTDEFENCE"
+	type = point_defence
+
+	projectile_gfx = "white_laser_pd"
+	tags = { weapon_type_point_defense weapon_archaeotech } # Europe: removed weapon_type_energy to prevent problems with repeatables
+	ai_tags = { weapon_role_point_defense screen }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 13
+			minor_artifacts = @minor_artifacts_cost_s # Europe: reduced to S cost
+		}
+		upkeep = {
+			energy = 0.13
+			alloys = 0.013
+		}
+	}
+
+	point_defence_targets = { "missile" "strike_craft" }
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			add = 2.5
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		modifier = {
+			factor = 0.0
+			owner = {
+				has_monthly_income = {
+					resource = minor_artifacts
+					value < 3
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			owner = {
+				resource_stockpile_compare = {
+					resource = minor_artifacts
+					value > 250
+				}
+			}
+		}
+	}
+}
+
+
+# Europe: added M-slot version of the missile launcher
+weapon_component_template = {
+	key = "MEDIUM_ARCHAEO_MISSILE"
+	size = medium
+
+	icon = "GFX_ship_part_archaeo_missiles"
+	icon_frame = 1
+	type = missile
+
+	prerequisites = { "tech_archaeo_missiles" }
+	component_set = "ARCHAEO_MISSILE"
+	projectile_gfx = "swarmer_missiles"
+	tags = { weapon_type_explosive weapon_archaeotech}
+	ai_tags = { weapon_role_artillery artillery energy_torpedoes }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t3_cost
+			minor_artifacts = @minor_artifacts_cost_m
+		}
+		upkeep = {
+			energy = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			add = 2.5
+			owner = { has_ascension_perk = ap_archaeoengineers }
+		}
+		modifier = {
+			factor = 0.0
+			owner = {
+				has_monthly_income = {
+					resource = minor_artifacts
+					value < 3
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			owner = {
+				resource_stockpile_compare = {
+					resource = minor_artifacts
+					value > 250
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+component_set = {
+	key = "SCREEN_1"
+
+	icon = "GFX_ship_part_screen_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SCREEN_2"
+
+	icon = "GFX_ship_part_screen_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "SCREEN_3"
+
+	icon = "GFX_ship_part_screen_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "DARK_MATTER_SCREEN"
+
+	icon = "GFX_ship_part_dark_matter_screen"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PSI_SCREEN"
+
+	icon = "GFX_ship_part_psi_screen"
+	icon_frame = 1
+}

@@ -173,10 +173,10 @@ utility_component_template = {
 	ai_tag_weight = 0
 
 	modifier = {
-		ship_evasion_mult = 0.25
+		ship_evasion_mult = 0.15 # Europe: decreased from 0.25
 	}
 	ship_modifier = {
-		ship_fire_rate_mult = 0.15
+		ship_fire_rate_mult = 0.20 # Europe: increased from 0.15
 	}
 
 	ai_weight = {
@@ -216,10 +216,10 @@ utility_component_template = {
 	ai_tag_weight = 0
 
 	modifier = {
-		ship_evasion_mult = 0.25
+		ship_evasion_mult = 0.15 # Europe: decreased from 0.25
 	}
 	ship_modifier = {
-		ship_fire_rate_mult = 0.15
+		ship_fire_rate_mult = 0.20 # Europe: increased from 0.15
 	}
 
 	ai_weight = {
@@ -248,8 +248,8 @@ utility_component_template = {
 	ai_tag_weight = 0
 
 	modifier = {
-		ship_evasion_mult = 0.15
-		ship_speed_mult = 0.20
+		ship_evasion_mult = 0.25 # Europe: increased from +15%
+		#ship_speed_mult = 0.20 # Europe: removed
 	}
 	ship_modifier = {
 		ship_fire_rate_mult = 0.15
@@ -263,7 +263,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "COMBAT_COMPUTER_TORPEDO_BASIC"
 	size = small
-	icon = "GFX_ship_part_computer_swarm_basic"
+	icon = "GFX_ship_part_computer_platform_basic" # Europe: changed from Swarm to Platform because ships will never qualify for platform
 	icon_frame = 1
 	power = @power1
 	resources = {
@@ -278,12 +278,13 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_combat_computers_1" "tech_torpedoes_1" }
-	upgrades_to = "COMBAT_COMPUTER_SWARM_ADVANCED"
+	upgrades_to = "COMBAT_COMPUTER_TORPEDO_ADVANCED" # Europe: changed to Torpedo
 	ai_tags = { explosive explosive_stealth }
 	ai_tag_weight = 0
 
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.05
+		ship_evasion_mult = 0.05 # Europe: added to match Swarm computer's stats
 	}
 
 	ai_weight = {
@@ -294,7 +295,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "COMBAT_COMPUTER_TORPEDO_ADVANCED"
 	size = small
-	icon = "GFX_ship_part_computer_swarm_advanced"
+	icon = "GFX_ship_part_computer_platform_advanced" # Europe: changed from Swarm to Platform because ships will never qualify for platform
 	icon_frame = 1
 	power = @power2
 	resources = {
@@ -314,6 +315,7 @@ utility_component_template = {
 
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.10
+		ship_evasion_mult = 0.10 # Europe: added to match Swarm computer's stats
 	}
 
 	ai_weight = {
@@ -324,7 +326,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "COMBAT_COMPUTER_TORPEDO_SAPIENT"
 	size = small
-	icon = "GFX_ship_part_computer_swarm_sapient"
+	icon = "GFX_ship_part_computer_platform_sapient" # Europe: changed from Swarm to Platform because ships will never qualify for platform
 	icon_frame = 1
 	power = @power3
 	resources = {
@@ -342,8 +344,8 @@ utility_component_template = {
 	ai_tag_weight = 0
 
 	modifier = {
-		ship_evasion_mult = 0.10
-		weapon_type_explosive_weapon_damage_mult = 0.15
+		ship_evasion_mult = 0.15 # Europe: increased from 0.1 to match the Swarm computer's new stats
+		weapon_type_explosive_weapon_damage_mult = 0.2 # Europe: increased from +15% to match the Swarm computer's new stats
 	}
 
 	ai_weight = {
@@ -365,7 +367,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "COMBAT_COMPUTER_TORPEDO_AUTONOMOUS"
 	size = small
-	icon = "GFX_ship_part_computer_swarm_sapient"
+	icon = "GFX_ship_part_computer_platform_sapient" # Europe: changed from Swarm to Platform because ships will never qualify for platform
 	icon_frame = 1
 	power = @power3
 	resources = {
@@ -383,8 +385,8 @@ utility_component_template = {
 	ai_tag_weight = 0
 
 	modifier = {
-		ship_evasion_mult = 0.10
-		weapon_type_explosive_weapon_damage_mult = 0.15
+		ship_evasion_mult = 0.15 # Europe: increased from 0.1 to match the Swarm computer's new stats
+		weapon_type_explosive_weapon_damage_mult = 0.2 # Europe: increased from +15% to match the Swarm computer's new stats
 	}
 
 	ai_weight = {
@@ -395,7 +397,7 @@ utility_component_template = {
 utility_component_template = {
 	key = "COMBAT_COMPUTER_TORPEDO_PRECOG"
 	size = small
-	icon = "GFX_ship_part_computer_swarm_precog"
+	icon = "GFX_ship_part_computer_platform_precog" # Europe: changed from Swarm to Platform because ships will never qualify for platform
 	icon_frame = 1
 	power = @power3
 	resources = {
@@ -414,7 +416,8 @@ utility_component_template = {
 
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.15
-		ship_tracking_add = 10
+		#ship_tracking_add = 10 # Europe: removed
+		ship_evasion_mult = 0.25 # Europe: added to match Swarm computer's new stats
 	}
 
 	ai_weight = {
@@ -446,6 +449,7 @@ utility_component_template = {
 	ship_modifier = {
 		ship_fire_rate_mult = 0.05
 		ship_tracking_add = 10
+		weapon_type_point_defense_weapon_fire_rate_mult = 0.05 # Europe: added
 	}
 
 	ai_weight = {
@@ -477,6 +481,7 @@ utility_component_template = {
 	ship_modifier = {
 		ship_fire_rate_mult = 0.10
 		ship_tracking_add = 20
+		weapon_type_point_defense_weapon_fire_rate_mult = 0.10 # Europe: added
 	}
 
 	ai_weight = {
@@ -510,6 +515,7 @@ utility_component_template = {
 	ship_modifier = {
 		ship_fire_rate_mult = 0.15
 		ship_tracking_add = 30
+		weapon_type_point_defense_weapon_fire_rate_mult = 0.15 # Europe: added
 	}
 
 	ai_weight = {
@@ -554,6 +560,7 @@ utility_component_template = {
 	ship_modifier = {
 		ship_fire_rate_mult = 0.15
 		ship_tracking_add = 30
+		weapon_type_point_defense_weapon_fire_rate_mult = 0.15 # Europe: added
 	}
 
 	ai_weight = {
@@ -583,7 +590,9 @@ utility_component_template = {
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.20
-		ship_tracking_add = 40
+		ship_tracking_add = 35 # Europe: decreased from 40
+		ship_accuracy_add = 5 # Europe: added
+		weapon_type_point_defense_weapon_fire_rate_mult = 0.20 # Europe: added
 	}
 
 	ai_weight = {
@@ -747,7 +756,40 @@ utility_component_template = {
 	ship_modifier = {
 		ship_fire_rate_mult = 0.15
 		ship_accuracy_add = 15
-		ship_tracking_add = 10
+		ship_tracking_add = 5 # Europe: decreased from 10
+		ship_accuracy_add = 5 # Europe: added
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_ARTILLERY_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_artillery_precog"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase }
+	size_restriction = { frigate destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser offspring_destroyer offspring_cruiser offspring_battleship }
+	component_set = "combat_computers"
+	ship_behavior = "artillery"
+	prerequisites = { "tech_precognition_interface" }
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 5 # Europe: decreased from 10
+		ship_accuracy_add = 5 # Europe: added
 	}
 
 	ai_weight = {
@@ -778,6 +820,10 @@ utility_component_template = {
 
 	ship_modifier = {
 		ship_engagement_range_mult = 0.25
+	}
+	# Europe: added strike craft fire rate
+	modifier = {
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
 	}
 
 	ai_weight = {
@@ -813,6 +859,10 @@ utility_component_template = {
 	ship_modifier = {
 		ship_engagement_range_mult = 0.50
 	}
+	# Europe: added strike craft fire rate
+	modifier = {
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.1
+	}
 
 	ai_weight = {
 		weight = 3
@@ -844,7 +894,11 @@ utility_component_template = {
 	ai_tag_weight = 0
 
 	ship_modifier = {
-		ship_engagement_range_mult = 1.0
+		ship_engagement_range_mult = 0.75 # Europe: decreased from 1.0
+	}
+	# Europe: added strike craft fire rate
+	modifier = {
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.25
 	}
 
 	ai_weight = {
@@ -889,7 +943,11 @@ utility_component_template = {
 	ai_tag_weight = 0
 
 	ship_modifier = {
-		ship_engagement_range_mult = 1.0
+		ship_engagement_range_mult = 0.75 # Europe: decreased from 1.0
+	}
+	# Europe: added strike craft fire rate
+	modifier = {
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.25
 	}
 
 	ai_weight = {
@@ -918,12 +976,17 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_precognition_interface" }
-	ai_tags = { carrier }
+	ai_tags = { carrier carrier_stealth } # Europe: added stealth tag
 	ai_tag_weight = 0
 
 	ship_modifier = {
-		ship_engagement_range_mult = 0.75
-		ship_tracking_add = 10
+		ship_engagement_range_mult = 1.0 # Europe: increased from 0.75
+		#ship_tracking_add = 10 # Europe: removed because high-level strike craft have 100% Tracking anyway
+	}
+	# Europe: added strike craft fire rate (and strike craft speed, but only for Precognitive computers
+	modifier = {
+		weapon_type_strike_craft_weapon_fire_rate_mult = 0.2
+		weapon_type_strike_craft_speed_mult = 0.1
 	}
 
 	ai_weight = {
@@ -932,5 +995,33 @@ utility_component_template = {
 			factor = 5
 			is_preferred_weapons = weapon_type_strike_craft
 		}
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_PLATFORM_PRECOG"
+	size = small
+	icon = "GFX_ship_part_computer_platform_precog"
+	icon_frame = 1
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	class_restriction = { shipclass_military_station }
+	component_set = "combat_computers"
+	ship_behavior = "platform"
+	prerequisites = { "tech_precognition_interface" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.35
+		ship_tracking_add = 30 # Europe: decreased from 30
+		ship_accuracy_add = 5 # Europe: added
+	}
+
+	ai_weight = {
+		weight = 4
 	}
 }

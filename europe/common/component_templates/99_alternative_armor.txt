@@ -1,0 +1,309 @@
+# Nanocomposite Armor
+utility_component_template = {
+	key = "SMALL_ARMOR_4"
+	size = small
+	icon = "GFX_ship_part_armor_4"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_S4
+	}
+
+	prerequisites = { "tech_ship_armor_4" }
+	component_set = "ARMOR_4"
+	upgrades_to = "SMALL_ARMOR_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			volatile_motes = 0.25 # Europe: added for parity with shields costing rare resources
+		}
+		upkeep = {
+			energy = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = @T4_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARMOR_4"
+	size = medium
+	icon = "GFX_ship_part_armor_4"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_M4
+	}
+
+	prerequisites = { "tech_ship_armor_4" }
+	component_set = "ARMOR_4"
+	upgrades_to = "MEDIUM_ARMOR_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			volatile_motes = 0.5 # Europe: added for parity with shields costing rare resources
+		}
+		upkeep = {
+			energy = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = @T4_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_ARMOR_4"
+	size = large
+	icon = "GFX_ship_part_armor_4"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_L4
+	}
+
+	prerequisites = { "tech_ship_armor_4" }
+	component_set = "ARMOR_4"
+	upgrades_to = "LARGE_ARMOR_5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+			volatile_motes = 1 # Europe: added for parity with shields costing rare resources
+		}
+		upkeep = {
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = @T4_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+# Neutronium Armor
+utility_component_template = {
+	key = "SMALL_ARMOR_5"
+	size = small
+	icon = "GFX_ship_part_armor_5"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_S5
+	}
+
+	prerequisites = { "tech_ship_armor_5" }
+	component_set = "ARMOR_5"
+	upgrades_to = "SMALL_DRAGON_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			volatile_motes = 0.333 # Europe: added for parity with shields costing rare resources
+		}
+		upkeep = {
+			energy = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_ARMOR_5"
+	size = medium
+	icon = "GFX_ship_part_armor_5"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_M5
+	}
+
+	prerequisites = { "tech_ship_armor_5" }
+	component_set = "ARMOR_5"
+	upgrades_to = "MEDIUM_DRAGON_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			volatile_motes = 0.666 # Europe: added for parity with shields costing rare resources
+		}
+		upkeep = {
+			energy = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_ARMOR_5"
+	size = large
+	icon = "GFX_ship_part_armor_5"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_L5
+	}
+
+	prerequisites = { "tech_ship_armor_5" }
+	component_set = "ARMOR_5"
+	upgrades_to = "LARGE_DRAGON_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			volatile_motes = 1.333 # Europe: added for parity with shields costing rare resources
+		}
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+########################
+# Dragon Armor
+########################
+
+# Dragonscale Armor
+utility_component_template = {
+	key = "SMALL_DRAGON_ARMOR"
+	size = small
+	icon = "GFX_ship_part_dragon_armor"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_S6
+	}
+
+	prerequisites = { "tech_dragon_armor" }
+	component_set = "DRAGON_ARMOR"
+	resources = {
+		category = ship_components
+		# Europe: costs increased to account for not costing rare resources
+		cost = {
+			alloys = @s_t7_cost
+		}
+		upkeep = {
+			energy = @s_t7_upkeep_energy
+			alloys = @s_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = @T6_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_DRAGON_ARMOR"
+	size = medium
+	icon = "GFX_ship_part_dragon_armor"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_M6
+	}
+
+	prerequisites = { "tech_dragon_armor" }
+	component_set = "DRAGON_ARMOR"
+	resources = {
+		category = ship_components
+		# Europe: costs increased to account for not costing rare resources
+		cost = {
+			alloys = @m_t7_cost
+		}
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = @T6_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_DRAGON_ARMOR"
+	size = large
+	icon = "GFX_ship_part_dragon_armor"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = @armor_L6
+	}
+
+	prerequisites = { "tech_dragon_armor" }
+	component_set = "DRAGON_ARMOR"
+	resources = {
+		category = ship_components
+		# Europe: costs increased to account for not costing rare resources
+		cost = {
+			alloys = @l_t7_cost
+		}
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = @T6_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+	}
+}
