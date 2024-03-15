@@ -67,7 +67,12 @@
  ap_lord_of_war_tooltip:2 "§YMercenary Enclaves§! under our patronage pay more frequent §YDividends§!.\nIncreases the £opinion£ §YOpinion§! of §YMercenary Enclaves§! by §G+100§!"
  triggered_opinion_ap_lord_of_war: "$ap_lord_of_war$"
  menp_mobile_bulwark_desc:3 "Only a scant few systems are required for the continued operation of a ship under fire, and should be prioritized. Nonessential resources - sapient or otherwise - need not be protected."
- ap_archaeoengineers_tooltip:3 "Unlocks additional effects for §YAncient§! ship components and buildings.\n§Y$pc_relic$§! planets increase the maximum amount of §Y$building_archaeostudies_faculty$§! buildings that we can build.\n§G+2000§! £minor_artifacts£Minor Artifacts empire capacity for every built §Y$building_archaeostudies_faculty$§!"
+ ap_archaeoengineers_tooltip:3 "Unlocks additional effects for §YAncient§! ship components and buildings.\n§Y$pc_relic$§! planets increase the maximum amount of §Y$building_archaeostudies_faculty$§! buildings that we can build.\n§G+2000§! £minor_artifacts£ §YMinor Artifacts§! empire capacity for every built §Y$building_archaeostudies_faculty$§!"
+
+ tr_subterfuge_finish_effect:0 "Successful §YOperations§! refund §G50%§! of their Infiltration Level Cost and give £influence£ §YInfluence§! equal to §G50%§! of their Infiltration Level Cost."
+ tr_mercantile_customs_union:0 "Customs Union"
+ tr_mercantile_customs_union_desc:0 "T§YCommercial Pacts§! with fellow federation members longer cost £influence£ §YInfluence§! to maintain."
+ tr_mercantile_customs_union_delayed:0 "Waiving all tariffs and import duties between our federation allies allows trade to flow between us unimpeded."
  
   # Preset text icons
  #text_icon_vacuum_flower:0 "£vacuum_flower£"

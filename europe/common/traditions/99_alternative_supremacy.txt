@@ -1,0 +1,158 @@
+tr_supremacy_adopt = {
+	unlocks_agenda = agenda_military_buildup
+	modifier = {
+		#country_naval_cap_add = 20 # Europe: removed
+		army_attack_morale_mult = 0.25 # Europe: switched from regular army strength
+		army_defense_morale_mult = 0.25 # Europe: switched from regular army strength
+		armies_cost_mult = -0.2 # Europe: added
+	}
+}
+
+tr_supremacy_master_shipwrights = {
+	modifier = {
+		starbase_shipyard_build_speed_mult = 0.25
+		# Europe: added
+		starbase_shipyard_build_volatile_motes_cost_mult = -0.2
+		starbase_shipyard_build_exotic_gases_cost_mult = -0.2
+		starbase_shipyard_build_rare_crystals_cost_mult = -0.2
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_master_shipwrights_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_master_shipwrights_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_supremacy_overwhelming_force = {
+	modifier = {
+		ship_orbital_bombardment_mult = 0.25 # Europe: increased from 0.20
+		country_power_projection_influence_produces_add = 1 # Europe: added
+		#ship_fire_rate_mult = 0.10 # Europe: removed
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_supremacy_fleet_logistical_corps = {
+	modifier = {
+		ships_upkeep_mult = -0.10
+		armies_upkeep_mult = -0.1 # Europe: added
+		country_naval_cap_mult = 0.20
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_fleet_logistical_corps_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_fleet_logistical_corps_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+
+tr_supremacy_great_game = {
+	possible = {
+		has_tradition = tr_supremacy_overwhelming_force
+	}
+
+	modifier = {
+		country_claim_influence_cost_mult = -0.20 # Europe: added
+		country_war_exhaustion_mult = -0.25 # Europe: added
+		#ship_damage_against_starbases_mult = 0.2 # Europe: removed
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_great_game_hive
+		inherit_effects = no # Europe: added
+		inherit_icon = yes
+		trigger = {
+			has_valid_civic = civic_hive_devouring_swarm
+		}
+		modifier = {
+			ship_damage_against_starbases_mult = 0.2 # Europe: added/retained
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_great_game_machine
+		inherit_effects = no # Europe: added
+		inherit_icon = yes
+		trigger = {
+			has_valid_civic = civic_machine_terminator
+		}
+		modifier = {
+			ship_damage_against_starbases_mult = 0.2 # Europe: added/retained
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_supremacy_finish = {
+	custom_tooltip = tr_supremacy_finish_desc
+	modifier = {
+		# Europe: added
+		ship_hull_regen_add_perc = 0.05
+		ship_armor_regen_add_perc = 0.05
+		ascension_perks_add = 1
+	}
+}

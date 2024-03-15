@@ -65,3 +65,41 @@
   - Misconfigured Thrusters now gives +20% Evasion to all ships instead of +15% Evasion to Menacing Corvettes and +50% Disengagement Chance to Menacing Corvettes. Flyswatter now gives +30% Tracking to all ships instead of +30% Tracking to Menacing Destroyers. Harsh Priorities now gives +15% Daily Hull Regeneration and +30% Daily Armor Regeneration to all ships instead of +30% Menacing Cruiser Hull Strength.
   - Archaeo-Engineers now increases the maximum amount of Facility of Archaeostudies buildings that can be built in an empire by 1 for every relic world the empire owns.
   - Consecrated Worlds now reduces Pop Amenities usage on all planets instead of increasing Amenities production. This also synergizes better with Spiritualist cultural workers, who reduce Amenities usage as well.
+23. Major changes to various Traditions, generally buffing ones that are markedly underpowered and nerfing those that are seen as must-picks.
+  - Subterfuge finisher now also causes completed espionage operations to return 50% of their infiltration level cost in influence.
+  - Adaptibility opener now gives -10% Pop Amenities usage instead of -10% Pop Housing usage.
+  - Environmental Diversification (under Adaptibility) now also gives -5% Pop Upkeep.
+  - Appropriation (under Adaptibility) now also gives +1 Building slots and -10% Pop Housing usage.
+  - Adaptive Ecology (under Adaptibility) now also gives +25% Planetary Build Speed.
+  - Versatility opener now gives -20% Pop Assembly Cost and -10% Pop Housing usage instead of -10% Pop Assembly Cost.
+  - Versatility finisher no longer increases the Energy upkeep of Assembler jobs.
+  - Spatial Optimization (under Versatility) now gives -15% Pop Amenities usage instead of -10%.
+  - Material Analysis (under Versatility) now gives -15% Upkeep from Jobs instead of -5%.
+  - Operational Proxies (under Versatility) now also gives -25% Empire Size from Planets.
+  - Expansion opener now gives +50% Colony Development Speed instead of +25%.
+  - Expansion finisher now gives -33% Clear Blocker cost instead of +1 Max districts on planets. For Void Dwellers, it now gives -33% Clear Blocker cost and -10% Habitat build cost instead of +1 Max districts on habitats.
+  - A New Life (under Expansion) now gives +10% Pop Assembly Speed instead of +10% Pop Growth Speed for synthetically ascended empires as well.
+  - Courier Network (under Expansion) now also gives -25% Empire Size effect on Tradition Cost.
+  - Reach for the Stars (under Expansion) now also extends its -10% Outpost Influence cost to Outpost Alloy cost as well.
+  - Galactic Ambitions (under Expansion) now also gives -20% orbital stations upkeep.
+  - Unity of Self (under Harmony for Necrophages), Unity of Mind (under Synchronicity for Necrophages), and Self-Preservation (under Synchronicity for Machine Intelligences) now also still give the same effects as the traditions they replace, which are still important even if they are more negligible.
+  - Mind and Body (under Harmony) and Cloned Organs (under Synchronicity) now give +20 Leader Lifespan instead of +10.
+  - Synthetically ascended normal empires now have Mind and Body (under Harmony) replaced with Self-Preservation (normally under Synchronicity), which means they now benefit from halved leader accident chance because they would gain no benefit from increases to Leader Lifespan.
+  - Harmonious Directives (under Harmony), Flexible Thought Routines (under Synchronicity), and Grand Council (under Domination) now give +40 flat Edict Fund and +20% Edict Fund instead of just a flat +50 Edict Fund.
+  - The replacements of Adaptive Economic Policies (under Mercantile) now work differently. Mega-cooperative empires no longer have the tradition replaced after entering a Trade League federation. Empires that are in a Trade League or in a tier 3 or higher Holy Covenant now replace the tradition with "Customs Union", which removes the Influence cost of Commercial Pacts with fellow federation members. Non-megacooperative megacorporation empires that have also taken Universal Transactions will replace the tradition with Trade Fleets, which has the same effect of +50% Federation Naval Capacity Contribution.
+  - Prosperity opener now gives -25% Mining Station Cost and -25% Research Station Cost instead of +20% Mining Station Output.
+  - Prosperity finisher now gives +1 Max Districts for all habitables instead of -10% Station Upkeep.
+  - Standard Construction Templates (under Prosperity) now gives +50% Planetary Build Speed instead of +25%, but no longer gives -10% Building Cost.
+  - Void Works (under Prosperity as alternative to Public Works for Void Dwellers) no longer gives +1 max districts on habitats.
+  - Interstellar Franchising (under Prosperity) now gives -50% Empire Size from Districts instead of -5% Upkeep from Jobs.
+  - Modular Depot (under Domination, only for Machine Intelligences) now gives -10% Building Cost instead of -25% Empire Size from Districts.
+  - Synaptic Sub-processing (under Cybernetics, only for Hive Minds) now gives +15% Pop Assembly Speed instead of -50% Empire Size from Districts.
+  - War Doctrines no longer require the Supremacy finisher to unlock.
+  - Supremacy opener now gives +25% Army Morale Attack, +25% Army Morale Defense, and -20% Army Cost instead of +20% Army Damage and +20 Naval Capacity.
+  - Supremacy finisher now gives all ships +5% Daily Hull Regeneration and +5% Daily Armor Regeneration.
+  - Logistical Corps (under Supremacy) now also gives -10% Army Upkeep.
+  - Master Shipwrights (under Supremacy) now also gives -20% Ship Rare Crystals, Exotic Gases, and Volatiles Motes Build Cost.
+  - Overwhelming Force (under Supremacy) now gives +25% Orbital Bombardment damage instead of +20% and gives +1 Max Influence from Power Projection, but no longer gives +10% Ship Fire Rate.
+  - The Great Game (under Supremacy) now gives -25% War Exhaustion and -20% Claim Influence Cost instead of +20% Starbase Damage.
+  - Never Surrender (under Unyielding) now gives +25% Ship Disengagement Chance instead of -25% War Exhaustion.
+  - Bulwark of Harmony (under Unyielding) now gives +50% Defense Platform Build Speed instead of +15% Home Territory Ship Fire Rate.

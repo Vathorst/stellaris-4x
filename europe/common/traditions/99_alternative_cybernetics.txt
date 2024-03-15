@@ -1,0 +1,20 @@
+tr_cybernetics_assembly_standards = {
+	possible = {
+		has_tradition = tr_cybernetics_metabolic_reprocessing
+	}
+	custom_tooltip = tr_cybernetics_assembly_standards_desc
+	# Unlocks Assmebly Standards policy, allowing Roboticists to provide Organic Pop Assembly for Cyborgs
+
+	tradition_swap = {
+		name = tr_cybernetics_synaptic_sub_processing
+		inherit_name = no
+		inherit_icon = no
+		trigger = {
+			is_hive_empire = yes
+		}
+		modifier = {
+			planet_pop_assembly_mult = 0.15 # Europe: added
+			#empire_size_districts_mult = -0.5 # Europe: removed
+		}
+	}
+}

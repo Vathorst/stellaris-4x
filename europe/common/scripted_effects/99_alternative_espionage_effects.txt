@@ -1,0 +1,19 @@
+add_spy_network_level_on_success_effect = {
+	if = {
+		limit = {
+			owner = {
+				OR = {
+					has_active_tradition = tr_subterfuge_finish
+					has_active_tradition = tr_subterfuge_cloaking_finish
+				}
+			}
+		}
+		add_spy_network_level = @\[( $VALUE$ / 2 )]
+		add_resource = { # Europe: added
+			influence = @\[( $VALUE$ / -2 )]
+		}
+	}
+	else = {
+		add_spy_network_level = $VALUE$
+	}
+}
