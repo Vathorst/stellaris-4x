@@ -79,15 +79,14 @@ utility_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 4
+			alloys = 10 # Europe: increased from 10
 		}
 	}
 	ship_modifier = {
-		ships_upkeep_mult = 0.04 # Europe: added to compensate for low alloy cost and to generally discourage use on larger ships
+		ships_upkeep_mult = 0.04 # Europe: added to compensate for high value of sublight speed and to generally discourage use on larger ships
 	}
 	modifier = {
-		ship_speed_mult = 0.1
-		ship_interstellar_speed_mult = -0.09 # Europe: added to cancel out speed bonus when outside of combat
+		ship_speed_mult = 0.075 # Europe: lowered from +10%
 		ship_evasion_mult = 0.075 # Europe: increased from +5%
 	}
 	class_restriction = { shipclass_military }
@@ -117,15 +116,14 @@ utility_component_template = {
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = 6
+			alloys = 15 # Europe: increased from 6
 		}
 	}
 	ship_modifier = {
-		ships_upkeep_mult = 0.06 # Europe: added to compensate for low alloy cost and to generally discourage use on larger ships
+		ships_upkeep_mult = 0.06 # Europe: added to compensate for high value of sublight speed and to generally discourage use on larger ships
 	}
 	modifier = {
-		ship_speed_mult = 0.2
-		ship_interstellar_speed_mult = -0.16 # Europe: added to cancel out speed bonus when outside of combat
+		ship_speed_mult = 0.15 # Europe: lowered from +20%
 		ship_evasion_mult = 0.15 # Europe: increased from +10%
 	}
 	class_restriction = { shipclass_military }
