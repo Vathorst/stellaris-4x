@@ -103,3 +103,5 @@
   - The Great Game (under Supremacy) now gives -25% War Exhaustion and -20% Claim Influence Cost instead of +20% Starbase Damage.
   - Never Surrender (under Unyielding) now gives +25% Ship Disengagement Chance instead of -25% War Exhaustion.
   - Bulwark of Harmony (under Unyielding) now gives +50% Defense Platform Build Speed instead of +15% Home Territory Ship Fire Rate.
+24. Colonist jobs now give 3 Food instead of 1, and Lithoid Colonist jobs now give 2 Minerals instead of 1.
+25. Materialist now also gives +5% Organic Pop Assembly Speed to offset the fact that the Robot Upkeep reduction bonus is pointless for empires that do cybernetic or genetic ascension. Fanatic Materialist gives double this bonus.
