@@ -1,0 +1,43 @@
+artifact_sell_collector = {
+	resources = {
+		category = artifact_actions
+		cost = {
+			minor_artifacts = 50
+		}
+	}
+
+	potential = {
+		always = no # Europe: disabled action because minor artifacts can be bought and sold on the market
+		#NAND = {
+		#	is_gestalt = yes
+		#	is_homicidal = yes
+		#}
+	}
+
+	effect = {
+		add_resource = { energy = 500 }
+		hidden_effect = {
+			add_modifier = {
+				modifier = "artifact_sell_cooldown"
+				days = 180
+			}
+		}
+	}
+	allow = {
+		NOT = { has_modifier = artifact_sell_cooldown }
+		if = {
+			limit = { is_gestalt = yes }
+			custom_tooltip = {
+				fail_text = "GALACTIC_MARKET_NOT_FOUNDED"
+				has_global_flag = galactic_market_founded
+			}
+		}
+		if = {
+			limit = { is_gestalt = yes }
+			custom_tooltip = {
+				fail_text = "GALACTIC_MARKET_ACCESS"
+				is_galactic_community_member = yes
+			}
+		}
+	}
+}
