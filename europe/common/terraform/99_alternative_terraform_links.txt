@@ -1,0 +1,637 @@
+@highestCost = 12500
+@highestTime = 9000
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_ocean"
+
+	resources = {
+		category = terraforming_ocean
+
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	duration = @highestTime
+
+	potential = {
+		exists = owner
+		#has_trait = trait_aquatic # Europe: removed because of World Shaper
+		from = { has_modifier = frozen_terraforming_candidate }
+	}
+
+	condition = {
+		OR = {
+			has_ascension_perk = ap_hydrocentric
+			AND = { # Europe: added
+				has_aquatics = yes
+				has_ascension_perk = "ap_world_shaper"
+			}
+		}
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = frozen_terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 4
+			has_trait = trait_aquatic
+		}
+	}
+}
+
+# Europe: added terraform options for frozen planets to stuff other than ocean for World Shaper
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_arctic"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 7500
+		}
+	}
+
+	duration = 7200
+
+	potential = {
+		exists = owner
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		AND = { # Europe: added
+			has_aquatics = yes
+			has_ascension_perk = "ap_world_shaper"
+		}
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_tundra"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 7500
+		}
+	}
+
+	duration = 7200
+
+	potential = {
+		exists = owner
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		AND = { # Europe: added
+			has_aquatics = yes
+			has_ascension_perk = "ap_world_shaper"
+		}
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_alpine"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 7500
+		}
+	}
+
+	duration = 7200
+
+	potential = {
+		exists = owner
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		AND = { # Europe: added
+			has_aquatics = yes
+			has_ascension_perk = "ap_world_shaper"
+		}
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_tropical"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 12500
+		}
+	}
+
+	duration = 9000
+
+	potential = {
+		exists = owner
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		AND = { # Europe: added
+			has_aquatics = yes
+			has_ascension_perk = "ap_world_shaper"
+		}
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_continental"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 12500
+		}
+	}
+
+	duration = 9000
+
+	potential = {
+		exists = owner
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		AND = { # Europe: added
+			has_aquatics = yes
+			has_ascension_perk = "ap_world_shaper"
+		}
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_arid"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 17500
+		}
+	}
+
+	duration = 10800
+
+	potential = {
+		exists = owner
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		AND = { # Europe: added
+			has_aquatics = yes
+			has_ascension_perk = "ap_world_shaper"
+		}
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_savannah"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 17500
+		}
+	}
+
+	duration = 10800
+
+	potential = {
+		exists = owner
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		AND = { # Europe: added
+			has_aquatics = yes
+			has_ascension_perk = "ap_world_shaper"
+		}
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_desert"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 17500
+		}
+	}
+
+	duration = 10800
+
+	potential = {
+		exists = owner
+		from = { has_modifier = terraforming_candidate }
+	}
+
+	condition = {
+		AND = { # Europe: added
+			has_aquatics = yes
+			has_ascension_perk = "ap_world_shaper"
+		}
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { remove_modifier = terraforming_candidate }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_desert"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
+
+	duration = 3600
+
+	potential = {
+		exists = owner
+		from = { has_modifier = toxic_terraforming_candidate }
+	}
+	condition = {
+		host_has_dlc = "Toxoids Species Pack" # Europe: added
+		has_ascension_perk = "ap_world_shaper" # Europe: changed from ap_detox
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from  = { detox_hangover = yes }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_arid"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
+
+	duration = 3600
+
+	potential = {
+		exists = owner
+		from = { has_modifier = toxic_terraforming_candidate }
+	}
+	condition = {
+		host_has_dlc = "Toxoids Species Pack" # Europe: added
+		has_ascension_perk = "ap_world_shaper" # Europe: changed from ap_detox
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { detox_hangover = yes }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_savannah"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
+
+	duration = 3600
+
+	potential = {
+		exists = owner
+		from = { has_modifier = toxic_terraforming_candidate }
+	}
+	condition = {
+		host_has_dlc = "Toxoids Species Pack" # Europe: added
+		has_ascension_perk = "ap_world_shaper" # Europe: changed from ap_detox
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { detox_hangover = yes }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_continental"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
+
+	duration = 5400
+
+	potential = {
+		exists = owner
+		from = { has_modifier = toxic_terraforming_candidate }
+	}
+	condition = {
+		host_has_dlc = "Toxoids Species Pack" # Europe: added
+		has_ascension_perk = "ap_world_shaper" # Europe: changed from ap_detox
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { detox_hangover = yes }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_tropical"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
+
+	duration = 3600
+
+	potential = {
+		exists = owner
+		from = { has_modifier = toxic_terraforming_candidate }
+	}
+	condition = {
+		host_has_dlc = "Toxoids Species Pack" # Europe: added
+		has_ascension_perk = "ap_world_shaper" # Europe: changed from ap_detox
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { detox_hangover = yes }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_ocean"
+
+	resources = {
+		category = terraforming_ocean
+
+		cost = {
+			energy = 10000
+		}
+	}
+
+	duration = 3600
+
+	potential = {
+		exists = owner
+		from = { has_modifier = toxic_terraforming_candidate }
+	}
+	condition = {
+		host_has_dlc = "Toxoids Species Pack" # Europe: added
+		has_ascension_perk = "ap_world_shaper" # Europe: changed from ap_detox
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { detox_hangover = yes }
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 4
+			has_trait = trait_aquatic
+		}
+	}
+}
+
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_arctic"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
+
+	duration = 3600
+
+	potential = {
+		exists = owner
+		from = { has_modifier = toxic_terraforming_candidate }
+	}
+	condition = {
+		host_has_dlc = "Toxoids Species Pack" # Europe: added
+		has_ascension_perk = "ap_world_shaper" # Europe: changed from ap_detox
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { detox_hangover = yes }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_tundra"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
+
+	duration = 3600
+
+	potential = {
+		exists = owner
+		from = { has_modifier = toxic_terraforming_candidate }
+	}
+	condition = {
+		host_has_dlc = "Toxoids Species Pack" # Europe: added
+		has_ascension_perk = "ap_world_shaper" # Europe: changed from ap_detox
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { detox_hangover = yes }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_alpine"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = 10000
+		}
+	}
+
+	duration = 3600
+
+	potential = {
+		exists = owner
+		from = { has_modifier = toxic_terraforming_candidate }
+	}
+	condition = {
+		host_has_dlc = "Toxoids Species Pack" # Europe: added
+		has_ascension_perk = "ap_world_shaper" # Europe: changed from ap_detox
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = { detox_hangover = yes }
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}

@@ -1,0 +1,32 @@
+menp_ruthless_raiders = {
+	portrait = "GFX_crisis_icon_ruthlessraiders"
+
+	modifier = {
+		ship_evasion_mult = 0.2 # Europe: added
+		# Europe: removed
+		#shipsize_crisis_corvette_evasion_mult = 0.15
+		#shipsize_crisis_corvette_disengage_chance_mult = 0.5
+	}
+}
+
+menp_flyswatter = {
+	portrait = "GFX_crisis_icon_flyswatter"
+
+	modifier = {
+		ship_tracking_mult = 0.3 # Europe: added
+		# Europe: removed
+		#shipsize_crisis_destroyer_tracking_mult = 0.30
+	}
+}
+
+menp_mobile_bulwark = {
+	portrait = "GFX_crisis_icon_mobilebulwark"
+
+	modifier = {
+		# Europe: added
+		ship_hull_regen_add_perc = 0.15
+		ship_armor_regen_add_perc = 0.30
+		# Europe: removed
+		#shipsize_crisis_cruiser_hull_mult = 0.30
+	}
+}

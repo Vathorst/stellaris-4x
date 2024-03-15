@@ -57,6 +57,17 @@
  STRIKE_CRAFT_HANGAR_2_DESC:0 "$FIGHTERS_HANGAR_2_DESC$"
  STRIKE_CRAFT_HANGAR_3:0 "$FIGHTERS_HANGAR_3$"
  STRIKE_CRAFT_HANGAR_3_DESC:0 "$FIGHTERS_HANGAR_3_DESC$"
+
+ frozen_terraforming_candidate_tooltip:0 "If we pick the §Y$ap_hydrocentric$§! or §Y$ap_world_shaper$§! ascension perk and research the £society£ §Y$tech_climate_restoration$§! technology, we will be able to terraform this planet into a habitable world."
+ FROZEN_TERRAFORMING_CANDIDATE_EFFECT:0 "§Y[From.GetName]§! will be able to be terraformed if we choose the §H$ap_hydrocentric$§! or §H$ap_world_shaper$§! ascension perks and research the £society£ §H$tech_climate_restoration$§! technology."
+ toxic_terraforming_candidate_tooltip:0 "If we pick the §Y$ap_world_shaper$§! ascension perk, we will be able to terraform this planet into a habitable world."
+ TOXIC_TERRAFORMING_CANDIDATE_EFFECT:1 "§Y[From.GetName]§! may be terraformed if we choose the §H$ap_world_shaper$§! Ascension Perk."
+ melt_frozen_worlds:2 "Enables terraforming of §YFrozen World Terraforming Candidates§! into habitable worlds.\nWe have §Y[This.num_frozen_terraform_candidates]§! of these within our border."
+ new_world_shaper:2 "Enables terraforming of §YToxic World Terraforming Candidates§! and §YFrozen World Terraforming Candidates§! into habitable worlds.\nWe have §Y[This.num_toxic_or_frozen_terraform_candidates]§! of these within our border."
+ ap_lord_of_war_tooltip:2 "§YMercenary Enclaves§! under our patronage pay more frequent §YDividends§!.\nIncreases the £opinion£ §YOpinion§! of §YMercenary Enclaves§! by §G+100§!"
+ triggered_opinion_ap_lord_of_war: "$ap_lord_of_war$"
+ menp_mobile_bulwark_desc:3 "Only a scant few systems are required for the continued operation of a ship under fire, and should be prioritized. Nonessential resources - sapient or otherwise - need not be protected."
+ ap_archaeoengineers_tooltip:3 "Unlocks additional effects for §YAncient§! ship components and buildings.\n§Y$pc_relic$§! planets increase the maximum amount of §Y$building_archaeostudies_faculty$§! buildings that we can build.\n§G+2000§! £minor_artifacts£Minor Artifacts empire capacity for every built §Y$building_archaeostudies_faculty$§!"
  
   # Preset text icons
  #text_icon_vacuum_flower:0 "£vacuum_flower£"

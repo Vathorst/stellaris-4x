@@ -1,0 +1,36 @@
+frozen_terraforming_tooltip = {
+	custom_tooltip = {
+		success_text = has_frozen_terraforming_candidate
+
+		exists = from
+		from = {
+			OR = {
+				has_ascension_perk = ap_hydrocentric
+				AND = { # Europe: added
+					has_aquatics = yes
+					has_ascension_perk = ap_world_shaper
+				}
+			}
+		}
+
+		any_system_planet = {
+			has_modifier = frozen_terraforming_candidate
+		}
+	}
+}
+
+toxic_terraforming_tooltip = {
+	custom_tooltip = {
+		success_text = has_toxic_terraforming_candidate
+
+		exists = from
+		from = {
+			has_ascension_perk = ap_world_shaper # Europe: switched from ap_detox
+			host_has_dlc = "Toxoids Species Pack" # Europe: added
+		}
+
+		any_system_planet = {
+			has_modifier = toxic_terraforming_candidate
+		}
+	}
+}
