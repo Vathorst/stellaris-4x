@@ -10,13 +10,12 @@
 10. You can no longer trade relics if you have any relics activated (regardless of which relic is active).
 11. Upgraded the fleet cap of federations to be 600 - 1200 - 3600 for low, medium and high fleet contribution respectively.
 12. GDF now starts with size 400 and will upgrade to size 1000 upon expanding.
-13. Authoritarian faction is no longer angry with Decadent Lifestyle living standards or any Assimilation citizenship type, but is no longer satisfied with robotic servitude if AI is outlawed.
-14. Spiritualist faction is no longer angry with Robots Allowed if Roboticists are set to assemble cybernetic components.
-15. Owning vassals and/or being in breach of galactic law no longer generates Menace passively. Steal Technology, Extort Favors, Spark Diplomatic Incident, and Smear Campaign espionage actions no longer generate Menace. Lowered the Menace gain from destroying ships by 66% and the Menace gain from destroying starbases by 33%. People who want to become the Crisis will need to go out and actively act like it.
-16. Removed the cooldown from the Steal Technology espionage operation and increased the amount of tech progress stolen from 30% to 50%.
-17. Worker Cooperative empires no longer get access to Consumer Benefits or Marketplace of Ideas. Mutual Aid now gives 0.4 Energy, 0.2 Food, and 0.2 Consumer Goods (from 0.3 Energy, 0.2 Food, and 0.2 Minerals) for non-Lithoids and Minerals instead of Food for Lithoids. Worker cooperative empires get special versions of the Trade League and Holy Covenant Trade Policies that give -0.3 Energy, +0.1 Food (Minerals if Lithoid), and +0.1 Consumer Goods compared to normal to replicate the effects of Mutual Aid.
-18. Ship designer can now properly detect stealth roles regardless of what type of stealth tech a player has unlocked, and it can also now properly detect if the player has unlocked high-enough level stealth tech for stealth cruisers, battleships, and/or titans.
-19. Major changes to the base stats to ship types, mainly to buff non-Cruisers, especially Corvettes, Frigates, and Destroyers:
+13. Owning vassals and/or being in breach of galactic law no longer generates Menace passively. Steal Technology, Extort Favors, Spark Diplomatic Incident, and Smear Campaign espionage actions no longer generate Menace. Lowered the Menace gain from destroying ships by 66% and the Menace gain from destroying starbases by 33%. People who want to become the Crisis will need to go out and actively act like it.
+14. Removed the cooldown from the Steal Technology espionage operation and increased the amount of tech progress stolen from 30% to 50%.
+15. Ship designer can now properly detect stealth roles regardless of what type of stealth tech a player has unlocked, and it can also now properly detect if the player has unlocked high-enough level stealth tech for stealth cruisers, battleships, and/or titans.
+16. Minor Artifacts and Nanites can now be bought and sold on the market just like other resources. The "Sell to Private Collectors" minor artifact action is now disabled because it is now redundant.
+17. Materialist now also gives +5% Organic Pop Assembly Speed to offset the fact that the Robot Upkeep reduction bonus is pointless for empires that do cybernetic or genetic ascension. Fanatic Materialist gives double this bonus.
+18. Major changes to the base stats to ship types, mainly to buff non-Cruisers, especially Corvettes, Frigates, and Destroyers:
   - Doubled the naval capacity usage of corvettes, frigates, destroyers, cruisers, battleships, titans, menacing corvettes, menacing destroyers, and menacing cruisers.
   - Corvettes: Increased base HP from 200 to 350, increased base disengagement chance from 1.0 to 1.5.
   - Frigates: Increased base HP from 400 to 700, increased base disengagement chance from 1.0 to 1.5.
@@ -27,7 +26,7 @@
   - Menacing Corvettes: Increased base HP and base disengagement chance to match Corvettes'.
   - Menacing Destroyers: Increased base HP and base disengagement chance to match Destroyers', increased mineral cost from 550 to 600, switched all hull types from 3M utility slots to 2S 2M utility slots to match how Destroyer hull types are set up.
   - Menacing Cruisers: Increased base HP, base disengagement chance, acceleration, and turn rate to match Cruisers', increased mineral cost from 900 to 1200, changed Menacing Cruiser hull type from 1L 2M 2S weapons to 1L 4M weapons, added Menacing Carrier hull type with 2H 1M 2P weapons.
-20. Major changes to various ship components, focusing on buffing underpowered and underutilized components and nerfing components that are so good that they are treated as must-picks:
+19. Major changes to various ship components, focusing on buffing underpowered and underutilized components and nerfing components that are so good that they are treated as must-picks:
   - Cloaking modules now all add +1 Disengagement Opportunities. Enigmatic Encoder now also gives +5 Evasion to compensate for its old effects now being standard for all cloaking modules.
   - Reactor boosters now give 40/90/150 power instead of 20/50/100.
   - Mark of the Composer now also gives +15% Armor Hardening. Mark of the Eater now gives +20% Sublight Speed instead of +20% Orbital Bombardment Damage. Mark of the Instrument now gives +300 power instead of costing 20 power and giving +25% Sublight Speed. Mark of the Whisperers now also gives +1 Disengagement Opportunities, +1 Sensor Range, +1 Hyperlane Detection Range, and +5% Ship Disengagement Chance.
@@ -52,8 +51,7 @@
   - All player-buildable strike craft that used to have 100% Shield Penetration and +50% Damage vs. Armor now instead has +100% Damage vs. Shields. Ancient Driller Drones' armor is increased from 0 to 2 (making them a lot more resistant to flak artillery), but they can no longer target other strike craft. Basic Strike Craft, Improved Strike Craft, and Advanced Strike Craft are now called Basic Fighter Wing, Improved Fighter Wing, and Advanced Fighter Wing, respectively.
   - Bomber Wings have been (re-)added to the game. Their three tiers unlock with the same techs as the three tiers for Fighter Wings. Bomber Wings generally have +100% Shield Penetration and +50% Armor Damage, but cannot attack other strike craft. They generally have double the attack range of Fighter Wings, are fewer in number but with more health and shields per craft and even some armor at the highest tier, are slower and less maneuverable than Fighter Wing craft, have lower Evasion and Tracking than Fighter Wing craft, and deal their damage in large bursts with long cooldowns between attacks. As opposed to Fighter Wings, which orbit targets they are attacking, Bomber Wings will make bombing runs, retreat out of range after each attack, and wait until their attack comes off of cooldown to charge in again.
   - Nanite Flak Batteries now cost 0.25 Nanites, but has a Range of 40 from 30.
-21. Minor Artifacts and Nanites can now be bought and sold on the market just like other resources. The "Sell to Private Collectors" minor artifact action is now disabled because it is now redundant.
-22. Major changes to Ascension Perks, generally buffing ones that are rarely picked for being too niche or underpowered and nerfing those that are seen as must-picks.
+20. Major changes to Ascension Perks, generally buffing ones that are rarely picked for being too niche or underpowered and nerfing those that are seen as must-picks.
   - Detox has been removed from the game and its effects have been merged into World Shaper. World Shaper now also allows for the terraforming of Frozen Worlds without needing to have Hydrocentric.
   - Hydrocentric now gives -50% Ocean World terraforming cost instead of -25%.
   - Executive Vigor now gives +80 flat Edict Fund and +25% Edict Fund instead of just a flat +100 Edict Fund.
@@ -65,7 +63,7 @@
   - Misconfigured Thrusters now gives +20% Evasion to all ships instead of +15% Evasion to Menacing Corvettes and +50% Disengagement Chance to Menacing Corvettes. Flyswatter now gives +30% Tracking to all ships instead of +30% Tracking to Menacing Destroyers. Harsh Priorities now gives +15% Daily Hull Regeneration and +30% Daily Armor Regeneration to all ships instead of +30% Menacing Cruiser Hull Strength.
   - Archaeo-Engineers now increases the maximum amount of Facility of Archaeostudies buildings that can be built in an empire by 1 for every relic world the empire owns.
   - Consecrated Worlds now reduces Pop Amenities usage on all planets instead of increasing Amenities production. This also synergizes better with Spiritualist cultural workers, who reduce Amenities usage as well.
-23. Major changes to various Traditions, generally buffing ones that are markedly underpowered and nerfing those that are seen as must-picks.
+21. Major changes to various Traditions, generally buffing ones that are markedly underpowered and nerfing those that are seen as must-picks.
   - Subterfuge finisher now also causes completed espionage operations to return 50% of their infiltration level cost in influence.
   - Adaptibility opener now gives -10% Pop Amenities usage instead of -10% Pop Housing usage.
   - Environmental Diversification (under Adaptibility) now also gives -5% Pop Upkeep.
@@ -103,13 +101,13 @@
   - The Great Game (under Supremacy) now gives -25% War Exhaustion and -20% Claim Influence Cost instead of +20% Starbase Damage.
   - Never Surrender (under Unyielding) now gives +25% Ship Disengagement Chance instead of -25% War Exhaustion.
   - Bulwark of Harmony (under Unyielding) now gives +50% Defense Platform Build Speed instead of +15% Home Territory Ship Fire Rate.
-24. Various changes to jobs were introduced, generally to reduce the need for micromanagement from players and as part of balancing other parts of the game.
+22. Various changes to jobs were introduced, generally to reduce the need for micromanagement from players and as part of balancing other parts of the game.
   - Colonist jobs now give 3 Food instead of 1, and Lithoid Colonist jobs now give 2 Minerals instead of 1.
   - Military Academies generate Officer jobs instead of Politician jobs. Officers are effectively upgraded Soldiers, giving Stability, defense armies, naval capacity, and Amenities at the cost of Consumer Goods.
   - Artificers given by Masterful Crafters and Mastercraft Inc. now produce 6 Consumer Goods, 6 Trade Value, and 3 Amenities per month instead of 7 Consumer Goods and 2 Trade Value per month.
   - Jobs affected by Catalytic Recycling no longer generate +25% resources compared to regular jobs, but they are instead require -20% upkeep compared in terms of resources that a worker job would output.
-25. Materialist now also gives +5% Organic Pop Assembly Speed to offset the fact that the Robot Upkeep reduction bonus is pointless for empires that do cybernetic or genetic ascension. Fanatic Materialist gives double this bonus.
-26. Major changes to various civics, generally buffing ones that are incredibly bad and nerfing the ones that are oppressively good.
+23. Major changes to various civics, generally buffing ones that are incredibly bad and nerfing the ones that are oppressively good.
+  - Worker Cooperative empires no longer get access to Consumer Benefits or Marketplace of Ideas. Mutual Aid now gives 0.4 Energy, 0.2 Food, and 0.2 Consumer Goods (from 0.3 Energy, 0.2 Food, and 0.2 Minerals) for non-Lithoids and Minerals instead of Food for Lithoids. Worker cooperative empires get special versions of the Trade League and Holy Covenant Trade Policies that give -0.3 Energy, +0.1 Food (Minerals if Lithoid), and +0.1 Consumer Goods compared to normal to replicate the effects of Mutual Aid.
   - Imperial Cult now gives +80 flat Edict Fund and +25% Edict Fund instead of just flat +100 Edict Fund.
   - Meritocracy now gives +1 Starting Leader Level and +1 Leader Pool size instead of +10% Specialist Resource Output.
   - Vaults of Knowledge now gives -25% Leader Upkeep instead of +1 Starting Leader Level.
@@ -120,4 +118,7 @@
   - Citizen Service no longer gives +15% Naval Capacity. Instead, it replaces half of all Politician jobs on capital buildings with Officer jobs. It is also now incompatible with other civics that similarly replace Politicians jobs, including Merchant Guilds, Technocracy, Exalted Priesthood, and Aristocratic Elite.
   - Factions can now spawn after 6 months for everyone instead of spawning after 30 days for Parliamentary System empires and after 10 years for everyone else (and only if they encountered another player). However, the unity output of factions in general has been decreased by 33%.
   - Parliamentary System now increases Unity from factions by +100% instead of +40%, but also gets -10% faction approval, which cancels out the faction approval bonus normally given to Democratic authority empires.
-27. Promoting a faction now redues its unity output by 25%. This puts an actual cost on promoting factions that scales with the power of the faction, so players should only promote factions when they are small and stop promoting them when they have reached a critical size.
+24. Various changes to the faction system, mostly to fix weird niche cases and to prevent people from just promoting factions all the time.
+  - Authoritarian faction is no longer angry with Decadent Lifestyle living standards or any Assimilation citizenship type, but is no longer satisfied with robotic servitude if AI is outlawed.
+  - Spiritualist faction is no longer angry with Robots Allowed if Roboticists are set to assemble cybernetic components.
+  - Promoting a faction now redues its unity output by 25%. This puts an actual cost on promoting factions that scales with the power of the faction, so players should only promote factions when they are small and stop promoting them when they have reached a critical size.
