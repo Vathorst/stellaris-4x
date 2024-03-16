@@ -8,33 +8,6 @@ tr_expansion_adopt = {
 	# Additional effects are implemented in 00_capital_buildings.txt
 }
 
-tr_expansion_finish = {
-	modifier = {
-		deposit_blockers_cost_mult = -0.33 # Europe: added
-		#planet_non_artificial_max_districts_add = 1 # Europe: removed
-		ascension_perks_add = 1
-	}
-
-	tradition_swap = {
-		name = tr_expansion_finish_void
-		inherit_name = yes
-		inherit_icon = yes
-		trigger = {
-			has_origin = origin_void_dwellers
-		}
-
-		modifier = {
-			deposit_blockers_cost_mult = -0.33 # Europe: added, kept regardless of it doesn't benefit them as much
-			megastructures_habitat_cost_mult = -0.10 # Europe: added
-			#habitat_max_districts_add = 1 # Europe: Removed
-			ascension_perks_add = 1
-		}
-		weight = {
-			factor = 1
-		}
-	}
-}
-
 tr_expansion_a_new_life = {
 	modifier = {
 		pop_growth_speed = 0.10
@@ -165,7 +138,7 @@ tr_expansion_galactic_ambition = {
 
 	modifier = {
 		starbases_upkeep_mult = -0.2
-		stations_upkeep_mult = -0.2
+		stations_upkeep_mult = -0.2 # Europe: added
 	}
 
 	tradition_swap = {

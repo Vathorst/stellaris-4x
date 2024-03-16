@@ -2,7 +2,8 @@ tr_prosperity_sct = {
 	custom_tooltip = tr_prosperity_sct_desc
 	modifier = {
 		#planet_structures_cost_mult = -0.10 # Europe: removed
-		planet_building_build_speed_mult = 0.50 # Europe: increased from +25%
+		deposit_blockers_cost_mult = -0.15 # Europe: added
+		planet_building_build_speed_mult = 0.25
 	}
 
 	tradition_swap = {
@@ -37,7 +38,8 @@ tr_prosperity_adopt = {
 tr_prosperity_finish = {
 	modifier = {
 		#stations_upkeep_mult = -0.10 # Europe: removed
-		planet_max_districts_add = 1 # Europe: added
+		planet_jobs_ruler_produces_mult = 0.05 # Europe: added
+		planet_jobs_worker_produces_mult = 0.05 # Europe: added
 		ascension_perks_add = 1
 	}
 }

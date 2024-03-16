@@ -30,7 +30,7 @@ artificer = {
 	resources = {
 		category = planet_artisans
 		produces = {
-			consumer_goods = 6 # Europe: reduced from 7
+			consumer_goods = 7
 		}
 		upkeep = {
 			minerals = 6
@@ -57,16 +57,10 @@ artificer = {
 		}
 	}
 
-	triggered_planet_modifier = { # Europe: added
+	triggered_planet_modifier = {
 		potential = { always = yes }
-		trade_value_add = 6
+		trade_value_add = 2
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
-	}
-
-	triggered_planet_modifier = { # Europe: added
-		potential = { always = yes }
-		planet_amenities_add = 3
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
 	overlord_resources = {
@@ -87,7 +81,6 @@ artificer = {
 		weight = @specialist_job_weight
 		# Europe: added and tweaked weights
 		mult = value:job_weights_modifier|JOB|artificer|RESOURCE|consumer_goods|
-		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
 		modifier = {
 			factor = 2

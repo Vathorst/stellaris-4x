@@ -74,7 +74,6 @@
  tr_mercantile_customs_union_desc:0 "T§YCommercial Pacts§! with fellow federation members longer cost £influence£ §YInfluence§! to maintain."
  tr_mercantile_customs_union_delayed:0 "Waiving all tariffs and import duties between our federation allies allows trade to flow between us unimpeded."
  
- civic_tooltip_crafters_effects:2 "£job_artisan£ §Y$job_artisan_plural$§! are replaced with £job_artificer£ §Y$job_artificer_plural$§!.\n§Y$job_artificer_plural$§! produce §G6§! £consumer_goods£ §Y$consumer_goods$§!, §Y6§! £trade_value£ §YTrade Value§!, and §Y3§! £amenities£ §YAmenities§!."
  civic_tooltip_catalytic_processing_effects:0 "Enables §YManufacturing Policies§! that can replace £job_foundry£ §Y$job_foundry_plural$§! with £job_catalytic_technician£ §Y$job_catalytic_technician_plural$§!. $job_catalytic_technician_effect_desc$.\nThey can also replace the $r_minerals$ Upkeep of £job_chemist£ §Y$job_chemist_plural$§!, £job_translucer£ §Y$job_translucer_plural$§!, and £job_gas_refiner£ §Y$job_gas_refiner_plural$§! with $r_food$ Upkeep."
 
  policy_catalytic_policy:0 "Manufacturing Policy"

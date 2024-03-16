@@ -1,33 +1,3 @@
-tr_unyielding_never_surrender = {
-	possible = {
-		has_tradition = tr_unyielding_resistance_is_frugal
-	}
-
-	modifier = {
-		planet_orbital_bombardment_damage = -0.25
-		#country_war_exhaustion_mult = -0.25 # Europe: removed
-		ship_disengage_chance_mult = 0.25 # Europe: added
-		country_hostile_claim_influence_cost_mult = 0.25
-	}
-
-	tradition_swap = {
-		name = tr_unyielding_never_surrender_gestalt
-		inherit_effects = yes
-		inherit_icon = yes
-		trigger = {
-			is_gestalt = yes
-		}
-
-		weight = {
-			factor = 1
-		}
-	}
-
-	ai_weight = {
-		factor = 5000
-	}
-}
-
 tr_unyielding_bulwark_of_harmony = {
 	possible = {
 		has_tradition = tr_unyielding_never_surrender

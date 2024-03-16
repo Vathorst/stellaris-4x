@@ -60,10 +60,54 @@ tr_supremacy_overwhelming_force = {
 	}
 }
 
+tr_supremacy_war_games = {
+	possible = {
+		has_tradition = tr_supremacy_master_shipwrights
+		has_tradition = tr_supremacy_fleet_logistical_corps
+	}
+	modifier = {
+		#command_limit_add = 20 # Europe: removed
+		ship_starting_experience_add = 100 # Europe: added
+		country_commander_cap_add = 1
+		commander_initial_skill = 1
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_war_games_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_supremacy_war_games_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+
 tr_supremacy_fleet_logistical_corps = {
 	modifier = {
 		ships_upkeep_mult = -0.10
-		armies_upkeep_mult = -0.1 # Europe: added
+		armies_upkeep_mult = -0.10 # Europe: added
 		country_naval_cap_mult = 0.20
 	}
 
@@ -106,7 +150,7 @@ tr_supremacy_great_game = {
 
 	modifier = {
 		country_claim_influence_cost_mult = -0.20 # Europe: added
-		country_war_exhaustion_mult = -0.25 # Europe: added
+		command_limit_add = 20 # Europe: added
 		#ship_damage_against_starbases_mult = 0.2 # Europe: removed
 	}
 
@@ -150,9 +194,8 @@ tr_supremacy_great_game = {
 tr_supremacy_finish = {
 	custom_tooltip = tr_supremacy_finish_desc
 	modifier = {
-		# Europe: added
-		ship_hull_regen_add_perc = 0.05
-		ship_armor_regen_add_perc = 0.05
+		ship_disengage_chance_mult = 0.25 # Europe: added
+		ship_experience_gain_mult = 0.25 # Europe: added
 		ascension_perks_add = 1
 	}
 }
