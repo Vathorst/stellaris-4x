@@ -95,6 +95,9 @@
 
  civic_tooltip_citizen_service_effects:1 "- £building£ §YCapital Buildings§! replace some £job_politician£ §Y$job_politician$§! Jobs with £job_officer£ §Y$job_officer_plural$§!\n- Grants access to the £building£ §Y$holding_recruitment_office$§! Holding"
 
+ PROMOTE_FACTION_DESC:2 "Promote the policies and values of the §Y[Root.GetName]§!. This will make their ethics more attractive to our population for as long as it is active, but reduces its £unity£ Unity output by §R-25%§!."
+ CANCEL_PROMOTE_FACTION_DESC:1 "Stop promoting the policies and values of §Y[Root.GetName]§! and like-minded factions, but also restore its original £unity£ Unity output."
+
   # Preset text icons
  #text_icon_vacuum_flower:0 "£vacuum_flower£"
  trade_action_r_ancient_sword: "£ancient_sword£ $r_ancient_sword$"

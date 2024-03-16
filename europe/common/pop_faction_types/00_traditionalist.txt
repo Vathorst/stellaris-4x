@@ -13,7 +13,16 @@ traditionalist = {
 	resources = {
 		category = pop_factions
 		produces = {
+			trigger = {
+				owner = { NOT = { has_modifier = promoted_spiritualist } }
+			}
 			unity = @faction_base_unity
+		}
+		produces = {
+			trigger = {
+				owner = { has_modifier = promoted_spiritualist }
+			}
+			unity = @faction_base_unity_promoted
 		}
 	}
 
