@@ -103,5 +103,20 @@
   - The Great Game (under Supremacy) now gives -25% War Exhaustion and -20% Claim Influence Cost instead of +20% Starbase Damage.
   - Never Surrender (under Unyielding) now gives +25% Ship Disengagement Chance instead of -25% War Exhaustion.
   - Bulwark of Harmony (under Unyielding) now gives +50% Defense Platform Build Speed instead of +15% Home Territory Ship Fire Rate.
-24. Colonist jobs now give 3 Food instead of 1, and Lithoid Colonist jobs now give 2 Minerals instead of 1.
+24. Various changes to jobs were introduced, generally to reduce the need for micromanagement from players and as part of balancing other parts of the game.
+  - Colonist jobs now give 3 Food instead of 1, and Lithoid Colonist jobs now give 2 Minerals instead of 1.
+  - Military Academies generate Officer jobs instead of Politician jobs. Officers are effectively upgraded Soldiers, giving Stability, defense armies, naval capacity, and Amenities at the cost of Consumer Goods.
+  - Artificers given by Masterful Crafters and Mastercraft Inc. now produce 6 Consumer Goods, 6 Trade Value, and 3 Amenities per month instead of 7 Consumer Goods and 2 Trade Value per month.
+  - Jobs affected by Catalytic Recycling no longer generate +25% resources compared to regular jobs, but they are instead require -20% upkeep compared in terms of resources that a worker job would output.
 25. Materialist now also gives +5% Organic Pop Assembly Speed to offset the fact that the Robot Upkeep reduction bonus is pointless for empires that do cybernetic or genetic ascension. Fanatic Materialist gives double this bonus.
+26. Major changes to various civics, generally buffing ones that are incredibly bad and nerfing the ones that are oppressively good.
+  - Imperial Cult now gives +80 flat Edict Fund and +25% Edict Fund instead of just flat +100 Edict Fund.
+  - Meritocracy now gives +1 Starting Leader Level and +1 Leader Pool size instead of +10% Specialist Resource Output.
+  - Vaults of Knowledge now gives -25% Leader Upkeep instead of +1 Starting Leader Level.
+  - Oppressive Autocracy now gives -25% Leader Cost instead of -25% Leader Upkeep.
+  - Masterful Crafters and Mastercraft Inc. no longer make non-habitat industrial districts give +0.33 Building Slots. Instead, industrial districts give +0.25 Building Slots for all empires.
+  - Distinguished Admiralty now gives +1 Commander Starting Level and +1 Commander Capacity instead of +2 Commander Starting Level.
+  - Catalytic Processing can now toggle its effects through the newly added Manufacturing Policy, allowing empires to switch between using food and using minerals without needing to necessarily reform their government.
+  - Citizen Service no longer gives +15% Naval Capacity. Instead, it replaces half of all Politician jobs on capital buildings with Officer jobs. It is also now incompatible with other civics that similarly replace Politicians jobs, including Merchant Guilds, Technocracy, Exalted Priesthood, and Aristocratic Elite.
+  - Factions can now spawn after 6 months for everyone instead of spawning after 30 days for Parliamentary System empires and after 10 years for everyone else (and only if they encountered another player). However, the unity output of factions in general has been decreased by 33%.
+  - Parliamentary System now increases Unity from factions by +100% instead of +40%, but also gets -10% faction approval, which cancels out the faction approval bonus normally given to Democratic authority empires.

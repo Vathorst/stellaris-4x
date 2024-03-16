@@ -74,6 +74,27 @@
  tr_mercantile_customs_union_desc:0 "T§YCommercial Pacts§! with fellow federation members longer cost £influence£ §YInfluence§! to maintain."
  tr_mercantile_customs_union_delayed:0 "Waiving all tariffs and import duties between our federation allies allows trade to flow between us unimpeded."
  
+ civic_tooltip_crafters_effects:2 "£job_artisan£ §Y$job_artisan_plural$§! are replaced with £job_artificer£ §Y$job_artificer_plural$§!.\n§Y$job_artificer_plural$§! produce §G6§! £consumer_goods£ §Y$consumer_goods$§!, §Y6§! £trade_value£ §YTrade Value§!, and §Y3§! £amenities£ §YAmenities§!."
+ civic_tooltip_catalytic_processing_effects:0 "Enables §YManufacturing Policies§! that can replace £job_foundry£ §Y$job_foundry_plural$§! with £job_catalytic_technician£ §Y$job_catalytic_technician_plural$§!. $job_catalytic_technician_effect_desc$.\nThey can also replace the $r_minerals$ Upkeep of £job_chemist£ §Y$job_chemist_plural$§!, £job_translucer£ §Y$job_translucer_plural$§!, and £job_gas_refiner£ §Y$job_gas_refiner_plural$§! with $r_food$ Upkeep."
+
+ policy_catalytic_policy:0 "Manufacturing Policy"
+ catalytic_policy_regular:0 "Regular"
+ catalytic_policy_regular_name:0 "$catalytic_policy_regular$"
+ catalytic_policy_regular_desc:0 "£job_foundry£ §Y$job_foundry_plural$§! will be employed. $job_foundry_effect_desc$. £job_chemist£ §Y$job_chemist_plural$§!, £job_translucer£ §Y$job_translucer_plural$§!, and £job_gas_refiner£ §Y$job_gas_refiner_plural$§! will use $r_minerals$ Upkeep."
+ catalytic_policy_catalytic:0 "Catalytic"
+ catalytic_policy_catalytic_name:0 "$catalytic_policy_catalytic$"
+ catalytic_policy_catalytic_desc:0 "£job_catalytic_technician£ §Y$job_catalytic_technician_plural$§! will be employed. $job_catalytic_technician_effect_desc$. £job_chemist£ §Y$job_chemist_plural$§!, £job_translucer£ §Y$job_translucer_plural$§!, and £job_gas_refiner£ §Y$job_gas_refiner_plural$§! will use $r_food$ Upkeep."
+
+ job_officer:0 "Officer"
+ job_officer_plural:0 "Officers"
+ job_officer_desc:1 "Commanding enlisted soldiers, commissioned officers have devoted much of their lives to studying the art of war."
+ job_officer_effect_desc:1 "£job_officer£ $job_officer_plural$ turn £consumer_goods£ §Y$consumer_goods$§! into £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!, £stability£ §Y$MOD_PLANET_STABILITY_ADD$§!, and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!. They also spawn £defense_army£ §YDefense Armies§!."
+ mod_job_officer_add:0 "$job_officer$ Jobs"
+ mod_job_officer_per_pop:0 "§G+1§! $job_officer$ Job per $VALUE$ Pops"
+ mod_job_officer_per_pop_short:0 "\n§G+1§! £mod_job_officer_add£ per $VALUE$ £pop£"
+
+ civic_tooltip_citizen_service_effects:1 "- £building£ §YCapital Buildings§! replace some £job_politician£ §Y$job_politician$§! Jobs with £job_officer£ §Y$job_officer_plural$§!\n- Grants access to the £building£ §Y$holding_recruitment_office$§! Holding"
+
   # Preset text icons
  #text_icon_vacuum_flower:0 "£vacuum_flower£"
  trade_action_r_ancient_sword: "£ancient_sword£ $r_ancient_sword$"
