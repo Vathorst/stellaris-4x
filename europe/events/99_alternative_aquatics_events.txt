@@ -1,3 +1,5 @@
+namespace = aquatics
+
 ### Frozen Terraforming Candidate
 # on_survey
 # Scope = Ship

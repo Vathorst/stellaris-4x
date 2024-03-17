@@ -1,3 +1,4 @@
+# Europe: need to overwrite file because just overloading the key does not work
 ############
 # Cloaking #
 ############
@@ -1002,5 +1003,144 @@ utility_component_template = {
 			no_resource_for_component = { RESOURCE = rare_crystals }
 		}
 		inline_script = ship_components/weights/roles_cloaking_devices
+	}
+}
+
+#######################################
+# Science Ships and Observation Posts #
+#######################################
+
+# These go in a unique ship component slot and are automatically
+# equipped when the relevant technology is researched.
+
+
+utility_component_template = {
+	key = "SCIENCE_CLOAKING_EMPTY"
+	size = small
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+
+	size_restriction = {science explorer_vessel observation_station }
+	prerequisites = { }
+	component_set = "science_cloaking_components"
+	upgrades_to = "SCIENCE_CLOAKING_1"
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "SCIENCE_CLOAKING_1"
+	size = small
+	icon = "GFX_ship_part_cloak_1"
+	icon_frame = 1
+	power = 0
+
+	modifier = {
+		ship_cloaking_strength_add = @very_low_strength
+	}
+	inline_script = ship_components/cloaking_ship_shield_reduction
+	custom_tooltip = "CLOAKING_1_TOOLTIP"
+
+	size_restriction = {science explorer_vessel observation_station }
+	prerequisites = { "tech_cloaking_1" }
+	component_set = "science_cloaking_components"
+	upgrades_to = "SCIENCE_CLOAKING_2"
+
+	ai_weight = {
+		weight = @basic_cloaking_weight
+	}
+}
+
+utility_component_template = {
+	key = "SCIENCE_CLOAKING_2"
+	size = small
+	icon = "GFX_ship_part_cloak_2"
+	icon_frame = 1
+	power = 0
+
+	modifier = {
+		ship_cloaking_strength_add = @low_strength
+	}
+	inline_script = ship_components/cloaking_ship_shield_reduction
+	custom_tooltip = "CLOAKING_2_TOOLTIP"
+
+	size_restriction = {science explorer_vessel observation_station }
+	prerequisites = { "tech_cloaking_2" }
+	component_set = "science_cloaking_components"
+	upgrades_to = "SCIENCE_CLOAKING_3"
+
+	ai_weight = {
+		weight = @advanced_cloaking_weight
+	}
+}
+
+utility_component_template = {
+	key = "SCIENCE_CLOAKING_3"
+	size = small
+	icon = "GFX_ship_part_cloak_3"
+	icon_frame = 1
+	power = 0
+
+	modifier = {
+		ship_cloaking_strength_add = @medium_strength
+	}
+	inline_script = ship_components/cloaking_ship_shield_reduction
+	custom_tooltip = "CLOAKING_3_TOOLTIP"
+
+	size_restriction = {science explorer_vessel observation_station }
+	prerequisites = { "tech_cloaking_3" }
+	component_set = "science_cloaking_components"
+	upgrades_to = "SCIENCE_CLOAKING_DARK_MATTER"
+
+	ai_weight = {
+		weight = @elite_cloaking_weight
+	}
+}
+
+utility_component_template = {
+	key = "SCIENCE_CLOAKING_DARK_MATTER"
+	size = small
+	icon = "GFX_ship_part_cloak_dark_matter"
+	icon_frame = 1
+	power = 0
+
+	modifier = {
+		ship_cloaking_strength_add = @high_strength
+	}
+	inline_script = ship_components/dark_matter_cloaking_ship_shield_reduction
+	custom_tooltip = "CLOAKING_DARK_MATTER_TOOLTIP"
+
+	size_restriction = {science explorer_vessel observation_station }
+	prerequisites = { "tech_cloaking_dark_matter" }
+	component_set = "science_cloaking_components"
+	upgrades_to = "SCIENCE_CLOAKING_PSI"
+
+	ai_weight = {
+		weight = @dark_matter_cloaking_weight
+	}
+}
+
+utility_component_template = {
+	key = "SCIENCE_CLOAKING_PSI"
+	size = small
+	icon = "GFX_ship_part_cloak_psi"
+	icon_frame = 1
+	power = 0
+
+	modifier = {
+		ship_cloaking_strength_add = @very_high_strength
+	}
+	inline_script = ship_components/psi_cloaking_ship_shield_reduction
+	custom_tooltip = "CLOAKING_PSI_TOOLTIP"
+
+	size_restriction = {science explorer_vessel observation_station }
+	prerequisites = { "tech_cloaking_psi" }
+	component_set = "science_cloaking_components"
+
+	ai_weight = {
+		weight = @psi_cloaking_weight
 	}
 }

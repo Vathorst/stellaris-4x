@@ -1,3 +1,4 @@
+# Europe: need to overwrite file because just overloading the key does not work
 # Icons set here are the ones show in the actual slot.
 
 ### Point Defence 1
@@ -210,60 +211,6 @@ weapon_component_template = {
 			alloys = 0.013
 		}
 	}
-
-	point_defence_targets = { "missile" "strike_craft" }
-}
-
-# Critter PD weapons for those who can get resurrected or be player-controlled
-
-weapon_component_template = {
-	key = "DRAGON_TERTIARY_WEAPON"
-	size = point_defence
-	entity = "invisible_turret_entity"
-	type = point_defence
-
-	icon = "GFX_ship_part_energy_lance_2"
-	icon_frame = 1
-	#color = { 0.1 1.0 0.1 1 }
-
-	hidden = yes
-	projectile_gfx = "arc_emitter"
-	tags = { weapon_type_point_defense weapon_type_space_fauna } # Europe: removed weapon_type_energy to prevent problems with repeatables
-
-	point_defence_targets = { "missile" "strike_craft" }
-}
-
-weapon_component_template = {
-	key = "DRAGON_TERTIARY_WEAPON_ICE"
-	size = point_defence
-	entity = "invisible_turret_entity"
-	type = point_defence
-
-	icon = "GFX_ship_part_energy_lance_2"
-	icon_frame = 1
-	#color = { 0.1 1.0 0.1 1 }
-
-	hidden = yes
-	projectile_gfx = "dragon_tertiary_weapon_ice"
-	tags = { weapon_type_point_defense weapon_type_space_fauna } # Europe: removed weapon_type_energy to prevent problems with repeatables
-
-	point_defence_targets = { "missile" "strike_craft" }
-}
-
-weapon_component_template = {
-	key = "ED_POINT_DEFENCE"
-	size = point_defence
-	entity = "invisible_turret_entity"
-	type = point_defence
-
-	hidden = yes
-
-	icon = "GFX_ship_part_extradimensional_defense_1"
-	icon_frame = 1
-	#color = { 0.1 1.0 0.1 1 }
-
-	tags = { weapon_type_point_defense } # Europe: removed weapon_type_energy to prevent problems with repeatables
-	projectile_gfx = "arc_emitter"
 
 	point_defence_targets = { "missile" "strike_craft" }
 }

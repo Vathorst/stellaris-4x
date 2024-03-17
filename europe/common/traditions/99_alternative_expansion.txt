@@ -97,7 +97,7 @@ tr_expansion_courier_network = {
 tr_expansion_reach_for_the_stars = {
 	modifier = {
 		country_starbase_influence_cost_mult = -0.10
-		starbase_outpost_alloys_cost_mult = -0.10 # Europe: added
+		starbase_outpost_cost_mult = -0.10 # Europe: added
 	}
 
 	tradition_swap = {

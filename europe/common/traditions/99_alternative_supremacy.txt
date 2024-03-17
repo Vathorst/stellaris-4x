@@ -8,46 +8,6 @@ tr_supremacy_adopt = {
 	}
 }
 
-tr_supremacy_master_shipwrights = {
-	modifier = {
-		starbase_shipyard_build_speed_mult = 0.25
-		# Europe: added
-		starbase_shipyard_build_volatile_motes_cost_mult = -0.2
-		starbase_shipyard_build_exotic_gases_cost_mult = -0.2
-		starbase_shipyard_build_rare_crystals_cost_mult = -0.2
-	}
-
-	tradition_swap = {
-		name = tr_supremacy_master_shipwrights_machine
-		inherit_effects = yes
-		inherit_icon = yes
-		trigger = {
-			is_machine_empire = yes
-		}
-
-		weight = {
-			factor = 1
-		}
-	}
-
-	tradition_swap = {
-		name = tr_supremacy_master_shipwrights_hive
-		inherit_effects = yes
-		inherit_icon = yes
-		trigger = {
-			is_hive_empire = yes
-		}
-
-		weight = {
-			factor = 1
-		}
-	}
-
-	ai_weight = {
-		factor = 1000
-	}
-}
-
 tr_supremacy_overwhelming_force = {
 	modifier = {
 		ship_orbital_bombardment_mult = 0.25 # Europe: increased from 0.20

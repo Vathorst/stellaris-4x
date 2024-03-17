@@ -1,3 +1,5 @@
+namespace = toxoids
+
 ship_event = {
 	id = toxoids.500
 	title = toxoids.500.name

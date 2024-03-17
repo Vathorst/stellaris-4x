@@ -1,3 +1,5 @@
+namespace = origin
+
 # Broken Shackles Setup
 country_event = {
 	id = origin.110

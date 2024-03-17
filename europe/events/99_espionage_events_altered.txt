@@ -1,6 +1,8 @@
 @StealTechnologyAmount = 1000 #Amount of science research in every discipline which will be granted if the operation cannot steal a Technology
 #@StealTechnologyTimer = 2160 #days (6 years) until Steal Technology can be repeated. Referenced in tooltip strings "operation.1026.tooltip.cooldown" and "operation_steal_technology_too_recent".
 
+namespace = operation
+
 # Finalé | fromfrom = operation
 country_event = {
 	id = operation.1026

@@ -42,9 +42,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	# Europe: changed from 6S slots
-	small_utility_slots = 2
-	medium_utility_slots = 2
+	small_utility_slots = 6
 
 	resources = {
 		category = ship_sections
@@ -94,9 +92,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	# Europe: changed from 6S slots
-	small_utility_slots = 2
-	medium_utility_slots = 2
+	small_utility_slots = 6
 
 	resources = {
 		category = ship_sections
@@ -150,9 +146,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	# Europe: changed from 6S slots
-	small_utility_slots = 2
-	medium_utility_slots = 2
+	small_utility_slots = 6
 
 	resources = {
 		category = ship_sections
@@ -205,93 +199,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	# Europe: changed from 6S slots
-	small_utility_slots = 2
-	medium_utility_slots = 2
-
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = @section_cost
-		}
-	}
-}
-
-ship_section_template = {
-	key = "DESTROYER_BOW_L1"
-	ship_size = destroyer
-	fits_on_slot = bow
-	should_draw_components = yes
-	entity = "destroyer_bow_L1_entity"
-	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery artillery_stealth }
-
-	ai_weight = {
-		modifier = {
-			factor = 0.1
-			NOT = { has_technology = tech_battleships }
-		}
-		modifier = {
-			factor = 10.0
-			is_preferred_weapons = weapon_type_explosive
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_explosive }
-		}
-	}
-
-	component_slot = {
-		name = "LARGE_GUN_01"
-		template = "large_turret"
-		locatorname = "large_gun_01"
-	}
-
-	# Europe: changed from 6S slots
-	small_utility_slots = 2
-	medium_utility_slots = 2
-
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = @section_cost
-		}
-	}
-}
-
-ship_section_template = {
-	key = "OFFSPRING_DESTROYER_BOW_L1"
-	ship_size = offspring_destroyer
-	fits_on_slot = bow
-	should_draw_components = yes
-	entity = "destroyer_bow_L1_entity"
-	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery artillery_stealth }
-
-	ai_weight = {
-		modifier = {
-			factor = 0.1
-			NOT = { has_technology = tech_battleships }
-		}
-		modifier = {
-			factor = 10.0
-			is_preferred_weapons = weapon_type_explosive
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_explosive }
-		}
-	}
-
-	component_slot = {
-		name = "LARGE_GUN_01"
-		template = "large_turret"
-		locatorname = "large_gun_01"
-	}
-
-	# Europe: changed from 6S slots
-	small_utility_slots = 2
-	medium_utility_slots = 2
+	small_utility_slots = 6
 
 	resources = {
 		category = ship_sections
@@ -342,9 +250,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	# Europe: changed from 6S slots
-	small_utility_slots = 2
-	medium_utility_slots = 2
+	small_utility_slots = 6
 
 	resources = {
 		category = ship_sections
@@ -394,9 +300,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	# Europe: changed from 6S slots
-	small_utility_slots = 2
-	medium_utility_slots = 2
+	small_utility_slots = 6
 
 	resources = {
 		category = ship_sections
@@ -602,8 +506,7 @@ ship_section_template = {
 	}
 
 	# Europe: changed from 3 medium utility for parity with destroyers
-	small_utility_slots = 2
-	medium_utility_slots = 2
+	small_utility_slots = 6
 	aux_utility_slots = 2
 }
 
@@ -634,7 +537,6 @@ ship_section_template = {
 	}
 
 	# Europe: changed from 3 medium utility for parity with destroyers
-	small_utility_slots = 2
-	medium_utility_slots = 2
+	small_utility_slots = 6
 	aux_utility_slots = 2
 }
