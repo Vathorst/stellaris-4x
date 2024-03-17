@@ -31,7 +31,7 @@ tr_versatility_material_analysis = {
 	}
 
 	modifier = {
-		planet_jobs_upkeep_mult = -0.15 # Europe: increased from -5%
+		planet_jobs_upkeep_mult = -0.1 # Europe: increased from -5%
 	}
 
 	ai_weight = {

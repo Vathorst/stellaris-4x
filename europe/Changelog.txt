@@ -66,13 +66,12 @@
 21. Major changes to various Traditions, generally buffing ones that are markedly underpowered and nerfing those that are seen as must-picks.
   - Subterfuge finisher now also causes completed espionage operations to return 50% of their infiltration level cost in influence.
   - Adaptibility opener now gives -10% Pop Amenities usage instead of -10% Pop Housing usage.
-  - Environmental Diversification (under Adaptibility) now also gives -5% Pop Upkeep.
   - Appropriation (under Adaptibility) now also gives +1 Building slots and -10% Pop Housing usage.
-  - Adaptive Ecology (under Adaptibility) now also gives +25% Planetary Build Speed.
+  - Adaptive Ecology (under Adaptibility) now also gives -5% Pop Upkeep.
   - Versatility opener now gives -20% Pop Assembly Cost and -10% Pop Housing usage instead of -10% Pop Assembly Cost.
   - Versatility finisher no longer increases the Energy upkeep of Assembler jobs.
   - Spatial Optimization (under Versatility) now gives -15% Pop Amenities usage instead of -10%.
-  - Material Analysis (under Versatility) now gives -15% Upkeep from Jobs instead of -5%.
+  - Material Analysis (under Versatility) now gives -10% Upkeep from Jobs instead of -5%.
   - Operational Proxies (under Versatility) now also gives -25% Empire Size from Planets.
   - Expansion opener now gives +50% Colony Development Speed instead of +25%.
   - A New Life (under Expansion) now gives +10% Pop Assembly Speed instead of +10% Pop Growth Speed for synthetically ascended empires as well.
@@ -85,10 +84,11 @@
   - Harmonious Directives (under Harmony), Flexible Thought Routines (under Synchronicity), and Grand Council (under Domination) now give +45 flat Edict Fund and +10% Edict Fund instead of just a flat +50 Edict Fund.
   - The replacements of Adaptive Economic Policies (under Mercantile) now work differently. Mega-cooperative empires no longer have the tradition replaced after entering a Trade League federation. Empires that are in a Trade League or in a tier 3 or higher Holy Covenant now replace the tradition with "Customs Union", which removes the Influence cost of Commercial Pacts with fellow federation members. Non-megacooperative megacorporation empires that have also taken Universal Transactions will replace the tradition with Trade Fleets, which has the same effect of +50% Federation Naval Capacity Contribution.
   - Prosperity opener now gives +25% Mining Station Output instead of +20%.
-  - Prosperity finisher now gives +5% Resources from rulers and workers (almost its old effect of +5% Resources from jobs, but without the specialists because they already get a bonus elsewhere in Prosperity) instead of -10% Station Upkeep.
+  - Prosperity finisher now gives its old effect of +5% Resources from Jobs instead of -10% Station Upkeep.
   - Standard Construction Templates (under Prosperity) now gives -15% Clear Blocker cost instead of -10% Building Cost.
   - Void Works (under Prosperity as alternative to Public Works for Void Dwellers) no longer gives +1 max districts on habitats.
   - Interstellar Franchising (under Prosperity) now gives -50% Empire Size from Districts instead of -5% Upkeep from Jobs.
+  - Pursuit of Profit (under Prosperity) now gives +15% Amenities from Jobs instead of +5% Resources from Jobs. The change also applies to Gestalt Consciousness equivalents of the tradition that used to give +5% Complex Drone Output.
   - Modular Depot (under Domination, only for Machine Intelligences) now gives -10% Building Cost instead of -25% Empire Size from Districts.
   - Synaptic Sub-processing (under Cybernetics, only for Hive Minds) now gives +15% Pop Assembly Speed instead of -50% Empire Size from Districts.
   - War Doctrines no longer require the Supremacy finisher to unlock.

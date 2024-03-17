@@ -5,17 +5,6 @@ tr_adaptability_adopt = {
 	}
 }
 
-tr_adaptability_environmental_diversification = {
-	modifier = {
-		pop_environment_tolerance = 0.10
-		planet_pops_upkeep_mult = -0.10
-	}
-
-	ai_weight = {
-		factor = 5000
-	}
-}
-
 tr_adaptability_adaptive_ecology = {
 	possible = {
 		has_tradition = tr_adaptability_environmental_diversification
@@ -23,7 +12,7 @@ tr_adaptability_adaptive_ecology = {
 
 	modifier = {
 		planet_max_buildings_add = 1
-		planet_building_build_speed_mult = 0.25 # Europe: added
+		planet_pops_upkeep_mult = -0.05 # Europe: added
 	}
 
 	ai_weight = {
