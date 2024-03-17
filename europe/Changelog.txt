@@ -122,3 +122,4 @@
   - Promoting a faction now redues its unity output by 25%. This puts an actual cost on promoting factions that scales with the power of the faction, so players should only promote factions when they are small and stop promoting them when they have reached a critical size.
 25. Made it (functionally) impossible for a player to have more than two player vassals. Outside of a player vassalizing an AI and then having a player hotjoin as that AI, players should not longer be able to have more than two vassals who are players, including secret vassals from swearing secret fealties.
 26. Diplomacy actions between players no longer need trust. Trust requirements for pacts with AI empires remain unchanged.
+27. AI-Spawning origins have been disabled for players.
