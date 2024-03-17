@@ -485,8 +485,8 @@ utility_component_template = {
 		}
 
 		modifier = {
-			weapon_type_strike_craft_weapon_fire_rate_mult = 0.25 # Europe: changed from damage multiplier because fire rate is more efficient, increased from +20%
-			weapon_type_strike_craft_speed_mult = 0.25 # Europe: increased from +20%
+			weapon_type_strike_craft_weapon_fire_rate_mult = 0.20 # Europe: changed from damage multiplier because fire rate is more efficient
+			weapon_type_strike_craft_speed_mult = 0.20
 			ship_engagement_range_mult = 0.5 # Europe: added so it's better for long-range carrier-focused fleets than target acquisition array
 		}
 
