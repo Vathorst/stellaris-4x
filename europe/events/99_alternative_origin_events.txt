@@ -239,16 +239,16 @@ country_event = {
 			set_awareness = 75
 		}
 
-		# Europe: disabled
+		# Europe: made universal
 		# Parliamentary System interaction
 		#if = {
 		#	limit = {
 		#		has_valid_civic = civic_parliamentary_system
 		#	}
-		#	country_event = {
-		#		id = origin.5041
-		#		days = 30
-		#	}
+			country_event = {
+				id = origin.5041
+				days = 180 # Europe: changed from 30
+			}
 		#}
 	}
 }

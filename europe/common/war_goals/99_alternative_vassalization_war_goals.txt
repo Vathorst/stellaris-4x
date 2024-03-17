@@ -65,7 +65,70 @@ wg_subjugation = {
 				from = { is_galactic_community_member = yes }
 			}
 		}
-		vassalization_with_from_is_within_rules = yes # Europe: added
+		custom_tooltip = { # Europe: added
+			fail_text = requires_less_than_two_vassals
+			exists = from
+			OR = {
+				is_ai = yes
+				from = { is_ai = yes }
+				if = {
+					limit = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					from = {
+						NOT = {
+							count_country = {
+								count = 2
+								limit = {
+									is_ai = no
+									OR = {
+										has_overlord = prev
+										has_secret_fealty_with = prev
+										is_potential_vassal_after_war = { OVERLORD = prev }
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					from = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					NOT = {
+						count_country = {
+							count = 2
+							limit = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	on_accept = {
 		hidden_effect = {
@@ -299,7 +362,70 @@ wg_tribute = {
 				from = { is_galactic_community_member = yes }
 			}
 		}
-		vassalization_with_from_is_within_rules = yes # Europe: added
+		custom_tooltip = { # Europe: added
+			fail_text = requires_less_than_two_vassals
+			exists = from
+			OR = {
+				is_ai = yes
+				from = { is_ai = yes }
+				if = {
+					limit = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					from = {
+						NOT = {
+							count_country = {
+								count = 2
+								limit = {
+									is_ai = no
+									OR = {
+										has_overlord = prev
+										has_secret_fealty_with = prev
+										is_potential_vassal_after_war = { OVERLORD = prev }
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					from = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					NOT = {
+						count_country = {
+							count = 2
+							limit = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	on_accept = {
 		hidden_effect = {
@@ -442,7 +568,70 @@ wg_megacorp_subjugate = {
 				from = { is_galactic_community_member = yes }
 			}
 		}
-		vassalization_with_from_is_within_rules = yes # Europe: added
+		custom_tooltip = { # Europe: added
+			fail_text = requires_less_than_two_vassals
+			exists = from
+			OR = {
+				is_ai = yes
+				from = { is_ai = yes }
+				if = {
+					limit = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					from = {
+						NOT = {
+							count_country = {
+								count = 2
+								limit = {
+									is_ai = no
+									OR = {
+										has_overlord = prev
+										has_secret_fealty_with = prev
+										is_potential_vassal_after_war = { OVERLORD = prev }
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					from = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					NOT = {
+						count_country = {
+							count = 2
+							limit = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	on_accept = {
 		hidden_effect = {
@@ -620,7 +809,70 @@ wg_bring_into_the_fold = {
 			fail_text = "cannot_use_against_btc"
 			from = { has_been_declared_crisis = no }
 		}
-		vassalization_with_from_is_within_rules = yes # Europe: added
+		custom_tooltip = { # Europe: added
+			fail_text = requires_less_than_two_vassals
+			exists = from
+			OR = {
+				is_ai = yes
+				from = { is_ai = yes }
+				if = {
+					limit = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					from = {
+						NOT = {
+							count_country = {
+								count = 2
+								limit = {
+									is_ai = no
+									OR = {
+										has_overlord = prev
+										has_secret_fealty_with = prev
+										is_potential_vassal_after_war = { OVERLORD = prev }
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					from = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					NOT = {
+						count_country = {
+							count = 2
+							limit = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	on_accept = {
@@ -847,7 +1099,70 @@ wg_bring_into_the_fold_corporate = {
 			fail_text = "cannot_use_against_btc"
 			from = { has_been_declared_crisis = no }
 		}
-		vassalization_with_from_is_within_rules = yes # Europe: added
+		custom_tooltip = { # Europe: added
+			fail_text = requires_less_than_two_vassals
+			exists = from
+			OR = {
+				is_ai = yes
+				from = { is_ai = yes }
+				if = {
+					limit = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					from = {
+						NOT = {
+							count_country = {
+								count = 2
+								limit = {
+									is_ai = no
+									OR = {
+										has_overlord = prev
+										has_secret_fealty_with = prev
+										is_potential_vassal_after_war = { OVERLORD = prev }
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					from = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					NOT = {
+						count_country = {
+							count = 2
+							limit = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	on_accept = {

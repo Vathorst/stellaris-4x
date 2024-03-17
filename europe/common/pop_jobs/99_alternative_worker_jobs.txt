@@ -27,7 +27,7 @@ colonist = {
 	}
 
 	resources = {
-		category = planet_colonists
+		category = planet_jobs_productive
 		produces = {
 			trigger = {
 				is_lithoid = no

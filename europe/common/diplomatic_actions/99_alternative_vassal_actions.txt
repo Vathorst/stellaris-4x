@@ -160,7 +160,70 @@ action_demand_subjugation = {
 				}
 			}
 		}
-		vassalization_with_from_is_within_rules = yes # Europe: added
+		custom_tooltip = { # Europe: added
+			fail_text = requires_less_than_two_vassals
+			exists = from
+			OR = {
+				is_ai = yes
+				from = { is_ai = yes }
+				if = {
+					limit = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					from = {
+						NOT = {
+							count_country = {
+								count = 2
+								limit = {
+									is_ai = no
+									OR = {
+										has_overlord = prev
+										has_secret_fealty_with = prev
+										is_potential_vassal_after_war = { OVERLORD = prev }
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					from = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					NOT = {
+						count_country = {
+							count = 2
+							limit = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	proposable = {
@@ -346,7 +409,70 @@ action_ask_to_become_subjugated = {
 				has_active_tradition = tr_diplomacy_diplomatic_networking
 			}
 		}
-		vassalization_with_from_is_within_rules = yes # Europe: added
+		custom_tooltip = { # Europe: added
+			fail_text = requires_less_than_two_vassals
+			exists = from
+			OR = {
+				is_ai = yes
+				from = { is_ai = yes }
+				if = {
+					limit = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					from = {
+						NOT = {
+							count_country = {
+								count = 2
+								limit = {
+									is_ai = no
+									OR = {
+										has_overlord = prev
+										has_secret_fealty_with = prev
+										is_potential_vassal_after_war = { OVERLORD = prev }
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					from = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					NOT = {
+						count_country = {
+							count = 2
+							limit = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	should_ai_propose = {
@@ -598,7 +724,70 @@ action_pledge_secret_fealty = {
 				has_active_tradition = tr_diplomacy_diplomatic_networking
 			}
 		}
-		vassalization_with_from_is_within_rules = yes # Europe: added
+		custom_tooltip = { # Europe: added
+			fail_text = requires_less_than_two_vassals
+			exists = from
+			OR = {
+				is_ai = yes
+				from = { is_ai = yes }
+				if = {
+					limit = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					from = {
+						NOT = {
+							count_country = {
+								count = 2
+								limit = {
+									is_ai = no
+									OR = {
+										has_overlord = prev
+										has_secret_fealty_with = prev
+										is_potential_vassal_after_war = { OVERLORD = prev }
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					from = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					NOT = {
+						count_country = {
+							count = 2
+							limit = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -817,6 +1006,69 @@ action_propose_secret_fealty = {
 				has_active_tradition = tr_diplomacy_diplomatic_networking
 			}
 		}
-		vassalization_with_from_is_within_rules = yes # Europe: added
+		custom_tooltip = { # Europe: added
+			fail_text = requires_less_than_two_vassals
+			exists = from
+			OR = {
+				is_ai = yes
+				from = { is_ai = yes }
+				if = {
+					limit = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					from = {
+						NOT = {
+							count_country = {
+								count = 2
+								limit = {
+									is_ai = no
+									OR = {
+										has_overlord = prev
+										has_secret_fealty_with = prev
+										is_potential_vassal_after_war = { OVERLORD = prev }
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					from = {
+						NOT = {
+							any_country = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+					NOT = {
+						count_country = {
+							count = 2
+							limit = {
+								is_ai = no
+								OR = {
+									has_overlord = prev
+									has_secret_fealty_with = prev
+									is_potential_vassal_after_war = { OVERLORD = prev }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
