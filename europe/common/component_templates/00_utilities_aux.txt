@@ -436,7 +436,7 @@ utility_component_template = {
 	}
 
 	modifier = {
-		ship_evasion_mult = 0.15
+		ship_evasion_mult = 0.20 # Europe: increased from 0.15 to match Afterburners' bonus
 		ship_disengage_opportunities_add = 1 # Europe: added +1 disengagement opportunities
 		ship_sensor_range_add = 1 # Europe: added +1 sensor range
 		ship_hyperlane_range_add = 1 # Europe: added +1 hyperlane range
