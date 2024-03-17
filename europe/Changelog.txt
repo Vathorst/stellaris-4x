@@ -123,3 +123,4 @@
 25. Made it (functionally) impossible for a player to have more than two player vassals. Outside of a player vassalizing an AI and then having a player hotjoin as that AI, players should not longer be able to have more than two vassals who are players, including secret vassals from swearing secret fealties.
 26. Diplomacy actions between players no longer need trust. Trust requirements for pacts with AI empires remain unchanged.
 27. AI-Spawning origins have been disabled for players.
+28. Broken Shackles has been tweaked so that it will no longer spawn MSI or a Payback empire unless another AI Broken Shackles and/or Payback empire already exists.
