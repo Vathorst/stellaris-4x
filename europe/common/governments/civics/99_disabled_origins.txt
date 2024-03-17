@@ -146,6 +146,7 @@ origin_imperial_vassal = {
 	picture = GFX_origin_imperial_vassal
 
 	playable = {
+		always = no # Europe: disabled for players, AI-spawning origin
 		has_overlord_dlc = yes
 	}
 
