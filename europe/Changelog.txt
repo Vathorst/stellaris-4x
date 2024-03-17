@@ -124,3 +124,5 @@
 26. Diplomacy actions between players no longer need trust. Trust requirements for pacts with AI empires remain unchanged.
 27. AI-Spawning origins have been disabled for players.
 28. Broken Shackles has been tweaked so that it will no longer spawn MSI or a Payback empire unless another AI Broken Shackles and/or Payback empire already exists.
+29. Genius Armorer now gives +25% Ship Hull Points and +2% Daily Hull Regeneration instead of bonus Armor Hardening, Shield Hardening, Shield Points, and Armor Points. The new bonuses are the (old) effects of the Resilient Commander trait, but applied empire-wide instead of fleetwide.
+30. Resilient Commander now gives +20% Ship Shield Points, +20% Ship Armor Points, +20% Armor Hardening, and +20% Shield Hardening. These are mostly the (old) effects of Genius Armorer, but applied to a single fleet instead of empire-wide.
