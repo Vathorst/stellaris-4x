@@ -36,8 +36,7 @@ tr_prosperity_adopt = {
 tr_prosperity_finish = {
 	modifier = {
 		#stations_upkeep_mult = -0.10 # Europe: removed
-		planet_jobs_ruler_produces_mult = 0.05 # Europe: added
-		planet_jobs_worker_produces_mult = 0.05 # Europe: added
+		planet_jobs_produces_mult = 0.05 # Europe: added
 		ascension_perks_add = 1
 	}
 }
@@ -100,6 +99,66 @@ tr_prosperity_public_works = {
 		factor = 5000
 	}
 }
+
+tr_prosperity_pursuit_of_profit = {
+	possible = {
+		has_tradition = tr_prosperity_administrative_operations
+	}
+
+	modifier = {
+		#planet_jobs_produces_mult = 0.05 # Europe: moved back to finisher
+		planet_amenities_mult = 0.15 # Europe: added
+	}
+
+	tradition_swap = {
+		name = tr_prosperity_creative_collectives
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_egalitarian = yes
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_prosperity_hive_neural_signal_boosters
+		inherit_effects = yes # Europe: added
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+		# Europe: removed
+		#modifier = {
+		#	planet_jobs_complex_drone_produces_mult = 0.05
+		#}
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_prosperity_peak_performance
+		inherit_effects = yes # Europe: added
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+		# Europe: removed
+		#modifier = {
+		#	planet_jobs_complex_drone_produces_mult = 0.05
+		#}
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
 
 tr_prosperity_interstellar_franchising = {
 	possible = {
