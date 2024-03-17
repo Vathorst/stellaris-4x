@@ -10,3 +10,117 @@
 10. You can no longer trade relics if you have any relics activated (regardless of which relic is active).
 11. Upgraded the fleet cap of federations to be 600 - 1200 - 3600 for low, medium and high fleet contribution respectively.
 12. GDF now starts with size 400 and will upgrade to size 1000 upon expanding.
+13. Owning vassals and/or being in breach of galactic law no longer generates Menace passively. Steal Technology, Extort Favors, Spark Diplomatic Incident, and Smear Campaign espionage actions no longer generate Menace. Lowered the Menace gain from destroying ships by 66% and the Menace gain from destroying starbases by 33%. People who want to become the Crisis will need to go out and actively act like it.
+14. Removed the cooldown from the Steal Technology espionage operation and increased the amount of tech progress stolen from 30% to 50%.
+15. Ship designer can now properly detect stealth roles regardless of what type of stealth tech a player has unlocked, and it can also now properly detect if the player has unlocked high-enough level stealth tech for stealth cruisers, battleships, and/or titans.
+16. Minor Artifacts and Nanites can now be bought and sold on the market just like other resources. The "Sell to Private Collectors" minor artifact action is now disabled because it is now redundant.
+17. Materialist now also gives +5% Organic Pop Assembly Speed to offset the fact that the Robot Upkeep reduction bonus is pointless for empires that do cybernetic or genetic ascension. Fanatic Materialist gives double this bonus.
+18. Major changes to the base stats to ship types, mainly to buff non-Cruisers, especially Corvettes, Frigates, and Destroyers:
+  - Doubled the naval capacity usage of corvettes, frigates, destroyers, cruisers, battleships, titans, menacing corvettes, menacing destroyers, and menacing cruisers.
+  - Corvettes: Increased base HP from 200 to 350, increased base disengagement chance from 1.0 to 1.5.
+  - Frigates: Increased base HP from 400 to 700, increased base disengagement chance from 1.0 to 1.5.
+  - Destroyers: Increased base HP from 600 to 800, changed Picket Bow hull type from 1P 2S weapons to 1M 2P weapons, added Torpedo Bow hull type with 1G 2S weapons, added torpedo-related combat computers and ship roles, added 1 Aux slot to Picket Stern hull type.
+  - Cruisers: Reduced the number of utility slots given by bow and mid hull sections from 4 to 3.
+  - Battleships: Increased base HP from 3000 to 4000.
+  - Titans: Increased base HP from 15000 to 20000, changed Titan Core hull type from 4L weapons to 2X 2L weapons, added Supercarrier Core hull type with 2X 2H weapons, added Supercarrier Stern hull type with 2H weapons.
+  - Menacing Corvettes: Increased base HP and base disengagement chance to match Corvettes'.
+  - Menacing Destroyers: Increased base HP and base disengagement chance to match Destroyers', increased mineral cost from 550 to 600, switched all hull types from 3M utility slots to 6S utility slots to match how Destroyer hull types are set up.
+  - Menacing Cruisers: Increased base HP, base disengagement chance, acceleration, and turn rate to match Cruisers', increased mineral cost from 900 to 1200, changed Menacing Cruiser hull type from 1L 2M 2S weapons to 1L 4M weapons, added Menacing Carrier hull type with 2H 1M 2P weapons.
+19. Major changes to various ship components, focusing on buffing underpowered and underutilized components and nerfing components that are so good that they are treated as must-picks:
+  - Cloaking modules now all add +1 Disengagement Opportunities. Enigmatic Encoder now also gives +5 Evasion to compensate for its old effects now being standard for all cloaking modules.
+  - Reactor boosters now give 40/90/150 power instead of 20/50/100.
+  - Mark of the Composer now also gives +15% Armor Hardening. Mark of the Eater now gives +20% Sublight Speed instead of +20% Orbital Bombardment Damage. Mark of the Instrument now gives +300 power instead of costing 20 power and giving +25% Sublight Speed. Mark of the Whisperers now gives +20% Evasion instead of +15% and now also gives +1 Disengagement Opportunities, +1 Sensor Range, and +1 Hyperlane Detection Range.
+  - Orbital Trash Dispenser now gives +50% Orbital Bombardment Damage instead of +25%.
+  - Afterburners now give +10%/+20% Evasion instead of +5%/+10%, but no longer give bonus Sublight Speed. They now also cost 10/15 Alloys instead of 4/6.
+  - Inspiring Presence Titan aura now gives +10% Ship Fire Rate instead of +5%. Targeting Grid Titan aura now gives +10% Chance to Hit instead of +10 Tracking. Nanobot Cloud Titan aura now gives +15% Daily Hull Regeneration and +30% Daily Armor Regeneration instead of +5% and +10% respectively. Ancient Target Scrambler is now a hostile aura that gives 15% Chance to Hit Reduction instead of a friendly aura that gives +5 Evasion.
+  - Strike Command Juggernaut aura now gives +20% Strike Craft Fire Rate instead of +20% Strike Craft Damage, and it now also gives +50% Ship Engagement Range. Target Acquisition Array Juggernaut aura now gives +30% Weapons Range instead of +40%. Subspace Amplifier Juggernaut aura no longer gives Hyper Jump Charge Time and Hyper Jump Cooldown Time reductions and instead gives -40% Emergency FTL cooldown, +5% Ship Disengagement Chance, and -20% Fleet Missing-in-Action Time (the Jump Drive Cooldown Reduction remains). ECM Emitters Juggernaut aura no longer gives -30% Point Defense Damage, but now gives -50% Point Defense Fire Rate instead of -30% and also gives -20% Evasion. Munitions Plant Juggernaut aura now gives -25% Ship Upkeep and +25% Docked Ship Upkeep instead of +30% Orbital Bombardment Damage.
+  - Sapient and Autonomous Swarm combat computers now give +15% Evasion and +20% Ship Fire Rate instead of +25% Evasion and +15% Ship Fire Rate. Precognitive Swarm combat computers now give +25% Evasion instead of +15% Evasion and +20% Sublight Speed.
+  - Torpedo combat computers now give the same bonus Evasion and bonus Sublight Speed as Swarm combat computers. Torpedo combat computers now also use the graphics of defense platform computers instead of that of swarm computers to avoid confusion for ship types that would have access to both torpedo and swarm computers.
+  - Picket combat computers now give double their Fire Rate bonus to Point Defense weapons.
+  - Carrier combat computers now add strike craft fire rate. Precognitive Carrier computers now add more Ship Engagement Range, while Autonomous and Sapient Carrier computers add less Ship Engagement Range to compensate for adding more Strike Craft Fire Rate. Precognitive Carrier combat computers now also give +10% Strike Craft Speed, but no longer give +10 Tracking.
+  - Precognitive Picket, Line, Artillery, and Platform combat computers now give 5 less bonus Tracking, but now also give +5 Chance to Hit. This increases their effectiveness against large ships without affecting their effectiveness against smaller ones.
+  - Ancient Ruination Glare max range increased to 150 from 125. Ancient Cavitation Collapser bonus Damage vs. Armor increased from +50% to +200% (the overall effect after Armor Penetration is effectively still +50%, but enemy Armor Hardening will increase this). Ancient Nano-Missile Cloud Launcher no longer has Armor Penetration or bonus Damage vs. Hull and now costs 17 Power from 10, but costs 8 Minor Artifacts instead of 10, has 1 missile shields, has 6 missile hull instead of 5, has 3 missile armor instead of 5, has 25% missile evasion instead of 20%, and has a Medium slot version that is appropriately scaled up in terms of cost, power usage, damage, range, tracking, and missile health stats and scaled down in terms of missile evasion and rate of fire. Ancient Macro-Batteries now have 45-120 Range from 0-150, are no longer available as S- or M-slot weapons, have 75% Accuracy from 50%, have 23 Power usage from 51, cost 4 Minor Artifacts instead of 8, and have the alloy and energy costs and upkeep of a Tier 1 M-slot weapon instead of a Tier 3 L-slot weapon. Ancient Defensive Web Slinger Accuracy increased to 90% from 75%, Minor Artifact cost decreased to 8 from 12, and added 25% Shield Penetration.
+  - Ancient Suspension Field's Shield Hardening is now a variable +20%/+15%/+10% for S/M/L slots instead of a fixed +15%.
+  - Added Screens, Advanced Screens, Hyper Screens, Dark Matter Screens, and Psi Screens as new shield types that correspond to Shields, Advanced Shields, Hyper Shields, Dark Matter Shields, and Psi Shields, respectively. They are unlocked at the same techs, have the same costs and power usages, but offer shield points equivalent to those two tiers lower. In exchange, screens give +10%/+7.5%/+5% Shield Hardening for S/M/L slots, respectively. They are intended to be more easily available countermeasures against shield penetration weapons.
+  - Tier 4 and Tier 5 Armor now costs Volatile Motes equivalent to the amount of Exotic Gases that Tier 4 and Tier 5 Shields cost. Dragonscale Armor does not cost Volatile Motes, but is instead about 33% more expensive in terms of alloys compared to before.
+  - M-Slot Disruptors now do 2.5-28 Damage from 1-28, M-Slot Ion Disruptors now do 2.5-36.75 damage from 1-37, M-Slot Phased Disruptors now do 2.5-47.5 damage from 1-48, and all M-Slot Disruptor-type weapons now have a cooldown of 2.84 from 3.40. The overall effect of this is that M-Slot disruptors should now scale relative to S-Slot disruptors the same way most weapons do in terms of damage output.
+  - Point defense weapons no longer benefit from improvements to kinetic weapon damage, energy weapon damage, kinetic weapon fire rate, or energy weapon fire rate. This is primarily because the game does not support similar buffs to strike craft and missile health and armor, which can result in point defense weapons easily overpowering their targets once enough bonuses are stacked.
+  - Energy Siphon damage doubled to 16-42 from 8-21 and Accuracy increased to 90% from 75%; the weapon is no longer outclassed in terms of early anti-shield abilities by flak artillery.
+  - Null Void Beam no longer deals -75% damage to hull and now deals +500% damage to shields from +400%.
+  - Cloud Lightning Tracking decreased to 5% from 30%, power cost increased to 46 from 23, cooldown reduced to 3.35 days from 7.15 days (roughly doubling its DPS).
+  - All player-buildable strike craft that used to have 100% Shield Penetration and +50% Damage vs. Armor now instead has +100% Damage vs. Shields. Ancient Driller Drones' armor is increased from 0 to 2 (making them a lot more resistant to flak artillery), but they can no longer target other strike craft. Basic Strike Craft, Improved Strike Craft, and Advanced Strike Craft are now called Basic Fighter Wing, Improved Fighter Wing, and Advanced Fighter Wing, respectively.
+  - Bomber Wings have been (re-)added to the game. Their three tiers unlock with the same techs as the three tiers for Fighter Wings. Bomber Wings generally have +100% Shield Penetration and +50% Armor Damage, but cannot attack other strike craft. They generally have double the attack range of Fighter Wings, are fewer in number but with more health and shields per craft and even some armor at the highest tier, are slower and less maneuverable than Fighter Wing craft, have lower Evasion and Tracking than Fighter Wing craft, and deal their damage in large bursts with long cooldowns between attacks. As opposed to Fighter Wings, which orbit targets they are attacking, Bomber Wings will make bombing runs, retreat out of range after each attack, and wait until their attack comes off of cooldown to charge in again.
+  - Nanite Flak Batteries now cost 0.25 Nanites, but has a Range of 40 from 30.
+20. Major changes to Ascension Perks, generally buffing ones that are rarely picked for being too niche or underpowered and nerfing those that are seen as must-picks.
+  - Detox has been removed from the game and its effects have been merged into World Shaper. World Shaper now also allows for the terraforming of Frozen Worlds without needing to have Hydrocentric.
+  - Hydrocentric now gives -50% Ocean World terraforming cost instead of -25%.
+  - Executive Vigor now gives +80 flat Edict Fund and +25% Edict Fund instead of just a flat +100 Edict Fund.
+  - Grasp the Void now gives +4 flat Starbase Capacity and +20% Starbase Capacity instead of just a flat +5 Starbase Capacity.
+  - Interstellar Dominion now also gives +1 Influence per month.
+  - Galactic Wonders has been removed from the game and its effects are now automatic. Ring World, Dyson Sphere, and Matter Decompressor are now ordinary Tier 5 rare technologies that have a chance of appearing after a player has completed their first megastructure.
+  - Lord of War now also gives +100 Opinion with all Mercenary Enclaves
+  - Defender of the Galaxy no longer gives +200 Opinion with all empires, but instead now also gives -50% War Exhaustion gain. Defender of the Galaxy is now also mutually exclusive with Become the Crisis.
+  - Misconfigured Thrusters now gives +20% Evasion to all ships instead of +15% Evasion to Menacing Corvettes and +50% Disengagement Chance to Menacing Corvettes. Flyswatter now gives +30% Tracking to all ships instead of +30% Tracking to Menacing Destroyers. Harsh Priorities now gives +15% Daily Hull Regeneration and +30% Daily Armor Regeneration to all ships instead of +30% Menacing Cruiser Hull Strength.
+  - Archaeo-Engineers now increases the maximum amount of Facility of Archaeostudies buildings that can be built in an empire by 1 for every relic world the empire owns.
+  - Consecrated Worlds now reduces Pop Amenities usage on all planets instead of increasing Amenities production. This also synergizes better with Spiritualist cultural workers, who reduce Amenities usage as well.
+21. Major changes to various Traditions, generally buffing ones that are markedly underpowered and nerfing those that are seen as must-picks.
+  - Subterfuge finisher now also causes completed espionage operations to return 50% of their infiltration level cost in influence.
+  - Adaptibility opener now gives -10% Pop Amenities usage instead of -10% Pop Housing usage.
+  - Environmental Diversification (under Adaptibility) now also gives -5% Pop Upkeep.
+  - Appropriation (under Adaptibility) now also gives +1 Building slots and -10% Pop Housing usage.
+  - Adaptive Ecology (under Adaptibility) now also gives +25% Planetary Build Speed.
+  - Versatility opener now gives -20% Pop Assembly Cost and -10% Pop Housing usage instead of -10% Pop Assembly Cost.
+  - Versatility finisher no longer increases the Energy upkeep of Assembler jobs.
+  - Spatial Optimization (under Versatility) now gives -15% Pop Amenities usage instead of -10%.
+  - Material Analysis (under Versatility) now gives -15% Upkeep from Jobs instead of -5%.
+  - Operational Proxies (under Versatility) now also gives -25% Empire Size from Planets.
+  - Expansion opener now gives +50% Colony Development Speed instead of +25%.
+  - A New Life (under Expansion) now gives +10% Pop Assembly Speed instead of +10% Pop Growth Speed for synthetically ascended empires as well.
+  - Courier Network (under Expansion) now also gives -25% Empire Size effect on Tradition Cost.
+  - Reach for the Stars (under Expansion) now also extends its -10% Outpost Influence cost to Outpost Alloy cost as well.
+  - Galactic Ambitions (under Expansion) now also gives -20% orbital stations upkeep.
+  - Unity of Self (under Harmony for Necrophages), Unity of Mind (under Synchronicity for Necrophages), and Self-Preservation (under Synchronicity for Machine Intelligences) now also still give the same effects as the traditions they replace, which are still important even if they are more negligible.
+  - Mind and Body (under Harmony) and Cloned Organs (under Synchronicity) now give +20 Leader Lifespan instead of +10.
+  - Synthetically ascended normal empires now have Mind and Body (under Harmony) replaced with Self-Preservation (normally under Synchronicity), which means they now benefit from halved leader accident chance because they would gain no benefit from increases to Leader Lifespan.
+  - Harmonious Directives (under Harmony), Flexible Thought Routines (under Synchronicity), and Grand Council (under Domination) now give +40 flat Edict Fund and +20% Edict Fund instead of just a flat +50 Edict Fund.
+  - The replacements of Adaptive Economic Policies (under Mercantile) now work differently. Mega-cooperative empires no longer have the tradition replaced after entering a Trade League federation. Empires that are in a Trade League or in a tier 3 or higher Holy Covenant now replace the tradition with "Customs Union", which removes the Influence cost of Commercial Pacts with fellow federation members. Non-megacooperative megacorporation empires that have also taken Universal Transactions will replace the tradition with Trade Fleets, which has the same effect of +50% Federation Naval Capacity Contribution.
+  - Prosperity opener now gives +25% Mining Station Output instead of +20%.
+  - Prosperity finisher now gives +5% Resources from rulers and workers (almost its old effect of +5% Resources from jobs, but without the specialists because they already get a bonus elsewhere in Prosperity) instead of -10% Station Upkeep.
+  - Standard Construction Templates (under Prosperity) now gives -15% Clear Blocker cost instead of -10% Building Cost.
+  - Void Works (under Prosperity as alternative to Public Works for Void Dwellers) no longer gives +1 max districts on habitats.
+  - Interstellar Franchising (under Prosperity) now gives -50% Empire Size from Districts instead of -5% Upkeep from Jobs.
+  - Modular Depot (under Domination, only for Machine Intelligences) now gives -10% Building Cost instead of -25% Empire Size from Districts.
+  - Synaptic Sub-processing (under Cybernetics, only for Hive Minds) now gives +15% Pop Assembly Speed instead of -50% Empire Size from Districts.
+  - War Doctrines no longer require the Supremacy finisher to unlock.
+  - Supremacy opener now gives +25% Army Morale Attack, +25% Army Morale Defense, and -20% Army Cost instead of +20% Army Damage and +20 Naval Capacity.
+  - Supremacy finisher now gives +25% Ship Disengagement Chance and +25% Ship Experience Gain.
+  - Logistical Corps (under Supremacy) now also gives -10% Army Upkeep.
+  - War Games (under Supremacy) now gives +100 Ship Starting Experience instead of +20 Fleet Command Limit.
+  - Overwhelming Force (under Supremacy) now gives +25% Orbital Bombardment damage instead of +20% and gives +1 Max Influence from Power Projection, but no longer gives +10% Ship Fire Rate.
+  - The Great Game (under Supremacy) now gives +20 Fleet Command limit and -20% Claim Influence Cost instead of +20% Starbase Damage.
+  - Bulwark of Harmony (under Unyielding) now gives +50% Defense Platform Build Speed instead of +15% Home Territory Ship Fire Rate.
+  - Direct Diplomacy (under Diplomacy) now also gives +33% Immigration Pull to all planets.
+22. Various changes to jobs were introduced, generally to reduce the need for micromanagement from players and as part of balancing other parts of the game.
+  - Colonist jobs now give 3 Food instead of 1, and Lithoid Colonist jobs now give 2 Minerals instead of 1.
+  - Soldiers no longer have massively increased weights under a Commander governor (that tends to ruin planets' economies unless you micromanage them).
+  - Military Academies generate Officer jobs instead of Politician jobs. Officers are effectively upgraded Soldiers, giving Stability, defense armies, naval capacity, and Amenities at the cost of Consumer Goods.
+  - Jobs affected by Catalytic Recycling no longer generate +25% resources compared to regular jobs, but they are instead require -20% upkeep compared in terms of resources that a worker job would output.
+23. Major changes to various civics, generally buffing ones that are incredibly bad and nerfing the ones that are oppressively good.
+  - Worker Cooperative empires no longer get access to Consumer Benefits or Marketplace of Ideas. Mutual Aid now gives 0.4 Energy, 0.2 Food, and 0.2 Consumer Goods (from 0.3 Energy, 0.2 Food, and 0.2 Minerals) for non-Lithoids and Minerals instead of Food for Lithoids. Worker cooperative empires get special versions of the Trade League and Holy Covenant Trade Policies that give -0.3 Energy, +0.1 Food (Minerals if Lithoid), and +0.1 Consumer Goods compared to normal to replicate the effects of Mutual Aid.
+  - Imperial Cult now gives +80 flat Edict Fund and +25% Edict Fund instead of just flat +100 Edict Fund.
+  - Meritocracy now gives +1 Starting Leader Level and +1 Leader Pool size instead of +10% Specialist Resource Output.
+  - Vaults of Knowledge now gives -25% Leader Upkeep instead of +1 Starting Leader Level.
+  - Oppressive Autocracy now gives -25% Leader Cost instead of -25% Leader Upkeep.
+  - Distinguished Admiralty now gives +1 Commander Starting Level and +1 Commander Capacity instead of +2 Commander Starting Level.
+  - Catalytic Processing can now toggle its effects through the newly added Manufacturing Policy, allowing empires to switch between using food and using minerals without needing to necessarily reform their government.
+  - Citizen Service no longer gives +15% Naval Capacity. Instead, it replaces half of all Politician jobs on capital buildings with Officer jobs. It is also now incompatible with other civics that similarly replace Politicians jobs, including Merchant Guilds, Technocracy, Exalted Priesthood, and Aristocratic Elite.
+  - Factions can now spawn after 6 months for everyone instead of spawning after 30 days for Parliamentary System empires and after 10 years for everyone else (and only if they encountered another player). However, the unity output of factions in general has been decreased by 33%.
+  - Parliamentary System now increases Unity from factions by +100% instead of +40%, but also gets -10% faction approval, which cancels out the faction approval bonus normally given to Democratic authority empires.
+24. Various changes to the faction system, mostly to fix weird niche cases and to prevent people from just promoting factions all the time.
+  - Authoritarian faction is no longer angry with Decadent Lifestyle living standards or any Assimilation citizenship type, but is no longer satisfied with robotic servitude if AI is outlawed.
+  - Spiritualist faction is no longer angry with Robots Allowed if Roboticists are set to assemble cybernetic components.
+  - Promoting a faction now reduces its unity output by 25%. This puts an actual cost on promoting factions that scales with the power of the faction, so players should only promote factions when they are small and stop promoting them when they have reached a critical size.
+25. Made it (functionally) impossible for a player to have more than two player vassals. Outside of a player vassalizing an AI and then having a player hotjoin as that AI, players should not longer be able to have more than two vassals who are players, including secret vassals from swearing secret fealties.
+26. Diplomacy actions between players no longer need trust. Trust requirements for pacts with AI empires remain unchanged.
+27. AI-Spawning origins have been disabled for players.
+28. Broken Shackles has been tweaked so that it will no longer spawn MSI or a Payback empire unless another AI Broken Shackles and/or Payback empire already exists.

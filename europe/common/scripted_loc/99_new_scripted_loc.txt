@@ -1,0 +1,9 @@
+defined_text = {
+	name = num_toxic_or_frozen_terraform_candidates
+	value = value:num_toxic_or_frozen_terraform_candidates
+}
+
+defined_text = {
+	name = num_frozen_terraform_candidates
+	value = value:num_frozen_terraform_candidates
+}

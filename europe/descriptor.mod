@@ -1,4 +1,4 @@
-version="0.3"
+version="0.4"
 tags={
 	"Balance"
 	"Diplomacy"
@@ -6,5 +6,5 @@ tags={
 }
 name="europe"
 picture="thumbnail.png"
-supported_version="3.9.*"
+supported_version="3.11.*"
 remote_file_id="3036051012"

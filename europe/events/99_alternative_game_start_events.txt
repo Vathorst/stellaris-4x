@@ -1,0 +1,445 @@
+namespace = game_start
+
+### Hidden Game Start Event
+event = {
+	id = game_start.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = game_started
+
+
+		every_country = {
+			limit = { is_ai = no }
+			country_event = { id = country.900 days = 460 random = 60 }
+		}
+
+		### HUMAN SPAWNS
+		if = { #FTP spawner
+			limit = {
+				has_lithoids = yes
+				num_ai_empires_setting >= 1
+				any_country = { #First check that UNE has spawned
+					has_country_flag = human_1
+					is_human_species = yes
+					NOT = { has_origin = origin_lost_colony }
+					NOT = { has_origin = origin_broken_shackles }
+				}
+				any_country = { #Then check that FTP isn't around
+					NOR = {
+						species_portrait = lith_human
+						has_country_flag = human_lithoid
+					}
+				}
+			}
+			random_list = {
+				20 = {
+					modifier = {
+						any_country = { #If the UNE is spawned and is a human we increase the chance. This means it's only a 20% if you are playing as the CoM
+							has_country_flag = human_1
+							is_ai = no
+						}
+						factor = 5
+					}
+					random_system = {
+						limit = {
+							has_owner = no
+							has_special_star_flag_trigger = no
+						}
+						spawn_system = { initializer = "ai_titawin_init" }
+					}
+				}
+				80 = {}
+			}
+		}
+		if = { #If someone is playing human lithoids and there is no UNE lets give it a chance to spawn
+			limit = {
+				any_country = {
+					has_country_flag = human_lithoid
+					species_portrait = lith_human
+				}
+				NOR = {
+					any_country = {
+						has_country_flag = human_1
+					}
+					any_system = {
+						has_star_flag = sol
+					}
+				}
+				num_ai_empires_setting >= 1
+			}
+			random_list = {
+				80 = {
+					random_system = {
+						limit = {
+							has_owner = no
+							has_special_star_flag_trigger = no
+						}
+						spawn_system = { initializer = "ai_sol_system" }
+					}
+				}
+				20 = {}
+			}
+		}
+		if = {
+			# If there are no Sols
+			limit = {
+				NOT = {
+					any_system = {
+						has_star_flag = sol
+					}
+				}
+			}
+			random_list = {
+				50 = { }
+				40 = {
+					random_system = {
+						limit = { has_owner = no }
+						spawn_system = { initializer = "pre_ftl_init_sol" }
+					}
+					add_extra_hyperlane_to_spawned_system_effect = yes
+				}
+				10 = {
+					random_system = {
+						limit = { has_owner = no }
+						spawn_system = { initializer = "special_init_04" }
+					}
+					add_extra_hyperlane_to_spawned_system_effect = yes
+				}
+			}
+		}
+
+		### SPAWN INVISIBLE GLOBAL EVENT COUNTRY
+		create_country = {
+			name = "global_event_country"
+			type = global_event
+			effect = {
+				save_global_event_target_as = global_event_country
+			}
+		}
+
+		### SPAWN SPECIAL COUNTRIES
+		create_country = {
+			name = "NAME_The_Shroud"
+			type = shroud
+			flag = {
+				icon = {
+					category = "special"
+					file = "the_shroud.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors={
+					"red"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				set_country_flag = suppress_first_contact_comms
+			}
+		}
+
+		### HANDLE EMPIRE RELATIONS
+		every_country = {
+			limit = {
+				has_country_flag = fallen_empire_machine
+			}
+			every_country = {
+				limit = {
+					is_drone_country_type = yes
+				}
+				set_faction_hostility = {
+					target = prev
+					set_hostile = no
+					set_neutral = no
+					set_friendly = yes
+				}
+			}
+		}
+
+		every_country = {
+			limit = {
+				is_tiyanki_country_type = yes
+			}
+			every_country = {
+				limit = {
+					OR = {
+						is_amoeba_country_type = yes
+						is_drone_country_type = yes
+						is_crystal_country_type = yes
+						is_country_type = cloud
+					}
+				}
+				set_faction_hostility = {
+					target = prev
+					set_hostile = no
+					set_neutral = yes
+					set_friendly = no
+				}
+			}
+		}
+
+		### MARAUDER FLAGS
+		every_country = {
+			limit = { is_country_type = dormant_marauders }
+			randomize_flag_symbol = "pirate"
+		}
+
+		### MARAUDERS SHOULD NOT ATTACK ENCLAVES
+		every_country = {
+			limit = { is_country_type = enclave }
+			every_country = {
+				limit = { is_country_type = dormant_marauders }
+				set_faction_hostility = {
+					target = prev
+					set_hostile = no
+					set_neutral = no
+					set_friendly = yes
+				}
+			}
+		}
+
+		### SLOW DOWN PRE-FTL EVENTS
+		set_timed_global_flag = {
+			flag = asteroid_sighted_pre_ftl_global
+			years = 10
+		}
+		set_timed_global_flag = {
+			flag = nuclear_war_pre_ftl_global
+			years = 10
+		}
+
+		### ORIGINS
+
+		# Scion
+		every_playable_country = {
+			limit = { has_origin = origin_scion }
+			country_event = { id = origin.5 }
+		}
+
+		# Common Ground & Hegemon
+		every_playable_country = {
+			limit = {
+				OR = {
+					has_origin = origin_common_ground
+					has_origin = origin_hegemon
+				}
+			}
+			country_event = { id = origin.55 }
+		}
+
+		# Doomsday
+		every_playable_country = {
+			limit = { has_origin = origin_doomsday }
+			country_event = { id = origin.60 }
+		}
+
+		# Shattered Ring
+		every_playable_country = {
+			limit = { has_origin = origin_shattered_ring }
+			country_event = { id = origin.3150 }
+		}
+
+		# Slingshot to the Stars
+		every_playable_country = {
+			limit = { has_origin = origin_star_slingshot }
+			country_event = { id = origin.3500 }
+		}
+
+		## Lost Colony
+		# if advanced starts are enabled or a player has picked it, let it ride
+		if = {
+			limit = {
+				OR = {
+					any_playable_country = {
+						has_origin = origin_lost_colony
+						is_ai = no
+					}
+					check_galaxy_setup_value = { setting = num_advanced_empires value > 0 }
+				}
+			}
+			every_playable_country = {
+				limit = {
+					has_origin = origin_lost_colony
+					NOT = {has_country_flag = human_2 }
+					# no need to change the planet class of your planets if you're a machine
+					is_machine_empire = no
+				}
+				country_event = { id = origin.100 }
+			}
+		}
+		# if an AI has picked it and advanced starts are not enabled,
+		# give them default origin instead.
+		# also affects lost_colony_1 initializer
+		else = {
+			every_playable_country = {
+				limit = {
+					has_origin = origin_lost_colony
+					NOT = { has_country_flag = human_2 }
+				}
+				log = "REMOVED LOST COLONY"
+				set_origin = origin_default
+			}
+		}
+
+		# Galactic Doorstep
+		every_playable_country = {
+			limit = { has_origin = origin_galactic_doorstep }
+			country_event = { id = origin.1001 }
+		}
+
+		# On the Shoulders of Giants
+		every_playable_country = {
+			limit = { has_origin = origin_shoulders_of_giants }
+			country_event = { id = origin.1199 }
+		}
+
+		# Here Be Dragons
+		every_playable_country = {
+			limit = { has_origin = origin_here_be_dragons }
+			country_event = { id = aquatics.100 }
+		}
+
+		# Ocean Paradise
+		every_playable_country = {
+			limit = { has_origin = origin_ocean_paradise }
+			country_event = { id = aquatics.1000 }
+		}
+
+		# Broken Shackles
+		every_playable_country = {
+			limit = { has_origin = origin_broken_shackles }
+			country_event = { id = origin.110 }
+		}
+
+		# Teachers of the Shroud
+		every_playable_country = {
+			limit = { has_origin = origin_shroudwalker_apprentice }
+			country_event = { id = origin.5600 }
+		}
+
+		# Imperial Vassal
+		if = {
+			limit = {
+				any_playable_country = {
+					has_origin = origin_imperial_vassal
+				}
+			}
+			imperial_origin_start_effect = yes
+		}
+
+		# Payback
+		every_playable_country = {
+			limit = { has_origin = origin_payback }
+			country_event = { id = origin.4000 }
+		}
+
+		# Fruitful Partnership
+		every_playable_country = {
+			limit = { has_origin = origin_fruitful }
+			fruitful_start_effect = yes
+		}
+
+		## Payback/Escaped Slaves Slaver empire
+		# if advanced starts are enabled or a player has picked it, continue
+		if = {
+			limit = {
+				# Europe: do not spawn MSI if we have no advanced empires
+				#OR = {
+				#	any_playable_country = {
+				#		has_slave_origin = yes
+				#		is_ai = no
+				#	}
+					check_galaxy_setup_value = { setting = num_advanced_empires value > 0 }
+				#}
+			}
+		}
+		# if an AI has picked it and advanced starts are not enabled,
+		# give them default origin instead.
+		else = {
+			every_playable_country = {
+				limit = {
+					has_slave_origin = yes
+				}
+				log = "REMOVED SLAVE ORIGIN"
+				set_origin = origin_default
+			}
+		}
+
+		# Spawn Broken Shackles for Payback
+		every_playable_country = {
+			limit = {
+				has_origin = origin_payback
+			}
+			country_event = {
+				id = origin.112
+			}
+		}
+
+		# Spawn Payback for Broken Shackles
+		# Europe: disable spawning Payback for players unless there is an AI empire with either Broken Shackles or Payback, too
+		if = {
+			limit = {
+				any_playable_country = {
+					has_slave_origin = yes
+					is_ai = yes 
+				}
+			}
+			every_playable_country = {
+				limit = {
+					has_origin = origin_broken_shackles
+				}
+				country_event = {
+					id = origin.113
+				}
+			}
+		}
+		else = {
+			every_playable_country = {
+				limit = {
+					has_origin = origin_broken_shackles
+					is_ai = yes
+				}
+				country_event = {
+					id = origin.113
+				}
+			}
+		}
+
+		# Fear of the Dark
+		every_playable_country = {
+			limit = { has_origin = origin_fear_of_the_dark }
+			fear_of_the_dark_binary_planets = yes
+		}
+
+		# Legendary Leader
+		every_playable_country = {
+			limit = { has_origin = origin_legendary_leader }
+			country_event = { id = paragon.5000 }
+		}
+
+		# Eagar Explorers
+		every_playable_country = {
+			limit = {
+				is_eager_explorer_empire = yes
+			}
+			give_technology = { message = no tech = tech_subspace_drive }
+			low_tech_start_add_research_options_effect = yes
+			add_research_option = tech_hyper_drive_1
+		}
+
+		every_playable_country = {
+			limit = {
+				is_ascensionist_empire = yes
+			}
+			every_owned_planet = {
+				set_planetary_ascension_tier = 1
+			}
+		}
+	}
+}

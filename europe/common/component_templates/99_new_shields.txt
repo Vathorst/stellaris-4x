@@ -1,0 +1,637 @@
+
+# Europe: added Screen versions of all T3 and higher shields
+
+utility_component_template = {
+	key = "SMALL_SCREEN_1"
+	size = small
+	icon = "GFX_ship_part_screen_1"
+	icon_frame = 1
+	power = @power_S3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t3_cost
+		}
+		upkeep = {
+			energy = @shield_s_t3_upkeep_energy
+			alloys = @shield_s_t3_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S1
+		ship_shield_regen_add_static = @regen_S1 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_3" }
+	component_set = "SCREEN_1"
+	upgrades_to = "SMALL_SCREEN_2"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.1
+	}
+
+	ai_weight = {
+		weight = @T3_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SCREEN_1"
+	size = medium
+	icon = "GFX_ship_part_screen_1"
+	icon_frame = 1
+	power = @power_M3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t3_cost
+		}
+		upkeep = {
+			energy = @shield_m_t3_upkeep_energy
+			alloys = @shield_m_t3_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M1
+		ship_shield_regen_add_static = @regen_M1 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_3" }
+	component_set = "SCREEN_1"
+	upgrades_to = "MEDIUM_SCREEN_2"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.075
+	}
+
+	ai_weight = {
+		weight = @T3_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SCREEN_1"
+	size = large
+	icon = "GFX_ship_part_screen_1"
+	icon_frame = 1
+	power = @power_L3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t3_cost
+		}
+		upkeep = {
+			energy = @shield_l_t3_upkeep_energy
+			alloys = @shield_l_t3_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L1
+		ship_shield_regen_add_static = @regen_L1 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_3" }
+	component_set = "SCREEN_1"
+	upgrades_to = "LARGE_SCREEN_2"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.05
+	}
+
+	ai_weight = {
+		weight = @T3_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+# Advanced Shields
+utility_component_template = {
+	key = "SMALL_SCREEN_2"
+	size = small
+	icon = "GFX_ship_part_screen_2"
+	icon_frame = 1
+	power = @power_S4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t4_cost
+			exotic_gases = 0.25
+		}
+		upkeep = {
+			energy = @shield_s_t4_upkeep_energy
+			alloys = @shield_s_t4_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S2
+		ship_shield_regen_add_static = @regen_S2 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_4" }
+	component_set = "SCREEN_2"
+	upgrades_to = "SMALL_SCREEN_3"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.1
+	}
+
+	ai_weight = {
+		weight = @T4_weight
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SCREEN_2"
+	size = medium
+	icon = "GFX_ship_part_screen_2"
+	icon_frame = 1
+	power = @power_M4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t4_cost
+			exotic_gases = 0.50
+		}
+		upkeep = {
+			energy = @shield_m_t4_upkeep_energy
+			alloys = @shield_m_t4_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M2
+		ship_shield_regen_add_static = @regen_M2 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_4" }
+	component_set = "SCREEN_2"
+	upgrades_to = "MEDIUM_SCREEN_3"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.075
+	}
+
+	ai_weight = {
+		weight = @T4_weight
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SCREEN_2"
+	size = large
+	icon = "GFX_ship_part_screen_2"
+	icon_frame = 1
+	power = @power_L4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t4_cost
+			exotic_gases = 1
+		}
+		upkeep = {
+			energy = @shield_l_t4_upkeep_energy
+			alloys = @shield_l_t4_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L2
+		ship_shield_regen_add_static = @regen_L2 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_4" }
+	component_set = "SCREEN_2"
+	upgrades_to = "LARGE_SCREEN_3"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.05
+	}
+
+	ai_weight = {
+		weight = @T4_weight
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+# Hyper Shields
+utility_component_template = {
+	key = "SMALL_SCREEN_3"
+	size = small
+	icon = "GFX_ship_part_screen_3"
+	icon_frame = 1
+	power = @power_S5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t5_cost
+			exotic_gases = 0.333
+		}
+		upkeep = {
+			energy = @shield_s_t5_upkeep_energy
+			alloys = @shield_s_t5_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S3
+		ship_shield_regen_add_static = @regen_S3 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_5" }
+	upgrades_to = "SMALL_DARK_MATTER_SCREEN"
+	component_set = "SCREEN_3"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.1
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_SCREEN_3"
+	size = medium
+	icon = "GFX_ship_part_screen_3"
+	icon_frame = 1
+	power = @power_M5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t5_cost
+			exotic_gases = 0.666
+		}
+		upkeep = {
+			energy = @shield_m_t5_upkeep_energy
+			alloys = @shield_m_t5_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M3
+		ship_shield_regen_add_static = @regen_M3 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_5" }
+	upgrades_to = "MEDIUM_DARK_MATTER_SCREEN"
+	component_set = "SCREEN_3"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.075
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_SCREEN_3"
+	size = large
+	icon = "GFX_ship_part_screen_3"
+	icon_frame = 1
+	power = @power_L5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t5_cost
+			exotic_gases = 1.333
+		}
+		upkeep = {
+			energy = @shield_l_t5_upkeep_energy
+			alloys = @shield_l_t5_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L3
+		ship_shield_regen_add_static = @regen_L3 #Regeneration per day
+	}
+	prerequisites = { "tech_shields_5" }
+	upgrades_to = "LARGE_DARK_MATTER_SCREEN"
+	component_set = "SCREEN_3"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.05
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SMALL_DARK_MATTER_SCREEN"
+	size = small
+	icon = "GFX_ship_part_dark_matter_screen"
+	icon_frame = 1
+	power = @power_S6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t6_cost
+			sr_dark_matter = 0.25
+		}
+		upkeep = {
+			energy = @shield_s_t6_upkeep_energy
+			alloys = @shield_s_t6_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S4
+		ship_shield_regen_add_static = @regen_S4 #Regeneration per day
+	}
+	prerequisites = { "tech_dark_matter_deflector" }
+	component_set = "DARK_MATTER_SCREEN"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.1
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		modifier = {
+			factor = 0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_DARK_MATTER_SCREEN"
+	size = medium
+	icon = "GFX_ship_part_dark_matter_screen"
+	icon_frame = 1
+	power = @power_M6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t6_cost
+			sr_dark_matter = 0.5
+		}
+		upkeep = {
+			energy = @shield_m_t6_upkeep_energy
+			alloys = @shield_m_t6_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M4
+		ship_shield_regen_add_static = @regen_M4 #Regeneration per day
+	}
+	prerequisites = { "tech_dark_matter_deflector" }
+	component_set = "DARK_MATTER_SCREEN"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.075
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		modifier = {
+			factor = 0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_DARK_MATTER_SCREEN"
+	size = large
+	icon = "GFX_ship_part_dark_matter_screen"
+	icon_frame = 1
+	power = @power_L6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t6_cost
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			energy = @shield_l_t6_upkeep_energy
+			alloys = @shield_l_t6_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L4
+		ship_shield_regen_add_static = @regen_L4 #Regeneration per day
+	}
+	prerequisites = { "tech_dark_matter_deflector" }
+	component_set = "DARK_MATTER_SCREEN"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.05
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		modifier = {
+			factor = 0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SMALL_PSI_SCREEN"
+	size = small
+	icon = "GFX_ship_part_psi_screen"
+	icon_frame = 1
+	power = @power_S7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_s_t7_cost
+			sr_zro = 0.111
+		}
+		upkeep = {
+			energy = @shield_s_t7_upkeep_energy
+			alloys = @shield_s_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_S5
+		ship_shield_regen_add_static = @regen_S5 #Regeneration per day
+	}
+	prerequisites = { "tech_psionic_shield" }
+	component_set = "PSI_SCREEN"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.10
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_PSI_SCREEN"
+	size = medium
+	icon = "GFX_ship_part_psi_screen"
+	icon_frame = 1
+	power = @power_M7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_m_t7_cost
+			sr_zro = 0.222
+		}
+		upkeep = {
+			energy = @shield_m_t7_upkeep_energy
+			alloys = @shield_m_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_M5
+		ship_shield_regen_add_static = @regen_M5 #Regeneration per day
+	}
+	prerequisites = { "tech_psionic_shield" }
+	component_set = "PSI_SCREEN"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.075
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_PSI_SCREEN"
+	size = large
+	icon = "GFX_ship_part_psi_screen"
+	icon_frame = 1
+	power = @power_L7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @shield_l_t7_cost
+			sr_zro = 0.333
+		}
+		upkeep = {
+			energy = @shield_l_t7_upkeep_energy
+			alloys = @shield_l_t7_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @shield_L5
+		ship_shield_regen_add_static = @regen_L5 #Regeneration per day
+	}
+	prerequisites = { "tech_psionic_shield" }
+	component_set = "PSI_SCREEN"
+
+	ship_modifier = {
+		ship_shield_hardening_add = 0.05
+	}
+
+	ai_weight = {
+		weight = @T5_weight
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 0
+		}
+	}
+}

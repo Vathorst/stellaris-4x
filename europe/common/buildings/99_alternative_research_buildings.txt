@@ -1,0 +1,82 @@
+building_archaeostudies_faculty = {
+	base_buildtime = @b2_time
+	base_cap_amount = 1 # Europe: added
+	category = research
+
+	empire_limit = {
+		base = 1
+		modifier = { # Europe: added
+			add = value:num_owned_relic_worlds
+			owner = {
+				has_ascension_perk = ap_archaeoengineers
+			}
+		}
+	}
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+		exists = owner
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = crucible_colony
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			minor_artifacts = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b4_upkeep
+		}
+	}
+
+	inline_script = {
+		script = jobs/archaeoengineers_add
+		BASE_AMOUNT = 3
+		AP_AMOUNT = 2
+	}
+
+	country_modifier = {
+		category_archaeostudies_research_speed_mult = 0.5
+		country_resource_max_minor_artifacts_add = 1000
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_ascension_perk = ap_archaeoengineers
+			}
+		}
+		country_resource_max_minor_artifacts_add = 2000
+	}
+
+	triggered_country_modifier = {
+		potential = { planet = { is_planet_class = pc_relic } }
+		category_archaeostudies_research_speed_mult = 0.5
+	}
+
+	prerequisites = {
+		"tech_archaeostudies"
+	}
+
+	triggered_desc = {
+		text = building_archaeostudies_faculty_relic_effect
+	}
+}

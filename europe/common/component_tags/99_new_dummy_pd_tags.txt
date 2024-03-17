@@ -1,0 +1,2 @@
+weapon_type_energy_pd
+weapon_type_kinetic_pd

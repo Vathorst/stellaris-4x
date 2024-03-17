@@ -1,0 +1,221 @@
+origin_scion = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_scion_1.dds"
+	picture = GFX_origin_scion
+	max_once_global = yes
+
+	playable = {
+		always = no # Europe: disabled for players, AI-spawning origin
+		host_has_dlc = Federations
+	}
+
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_gestalt_consciousness
+				#value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+		}
+		civics = {
+			NOT = { value = civic_pompous_purists }
+		}
+	}
+
+	description = "origin_tooltip_scion_effects"
+	flags = { custom_start_screen }
+
+	random_weight = {
+		base = 0
+		modifier = {
+			add = 2
+			num_fallen_empires_setting >= 1
+		}
+	}
+}
+
+origin_common_ground = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_common_ground.dds"
+	picture = GFX_origin_common_ground
+	max_once_global = yes
+
+	playable = {
+		always = no # Europe: disabled for players, AI-spawning origin
+		host_has_dlc = "Federations"
+	}
+
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_barbaric_despoilers
+				value = civic_fanatic_purifiers
+				value = civic_inwards_perfection
+				value = civic_hive_devouring_swarm
+				value = civic_machine_terminator
+			}
+		}
+	}
+
+	description = "origin_tooltip_common_ground_effects"
+	flags = { custom_start_screen }
+
+	traits = {
+	}
+
+	random_weight = {
+		base = 5
+	}
+}
+
+origin_hegemon = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_hegemon.dds"
+	picture = GFX_origin_hegemon
+	max_once_global = yes
+
+	playable = {
+		always = no # Europe: disabled for players, AI-spawning origin
+		host_has_dlc = "Federations"
+	}
+
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+				value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_fanatic_purifiers
+				value = civic_inwards_perfection
+				value = civic_hive_devouring_swarm
+				value = civic_machine_terminator
+			}
+		}
+	}
+
+	description = "origin_tooltip_hegemon_effects"
+	flags = { custom_start_screen }
+
+	traits = {
+	}
+
+	random_weight = {
+		base = 5
+	}
+}
+
+origin_lost_colony = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_lost_colony.dds"
+	picture = GFX_origin_lost_colony
+	max_once_global = yes
+
+	playable = {
+		always = no # Europe: disabled for players, AI-spawning origin
+	}
+
+	possible = {
+	}
+
+	description = "origin_tooltip_lost_colony_effects"
+	negative_description = "origin_tooltip_lost_colony_negative_effects"
+	flags = { custom_start_screen }
+
+	traits = {
+	}
+
+	random_weight = {
+		base = 5
+	}
+}
+
+origin_imperial_vassal = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_imperial_vassal.dds"
+	picture = GFX_origin_imperial_vassal
+
+	playable = {
+		has_overlord_dlc = yes
+	}
+
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_inwards_perfection
+				value = civic_fanatic_purifiers
+				value = civic_hive_devouring_swarm
+				value = civic_machine_assimilator
+				value = civic_machine_terminator
+			}
+		}
+	}
+
+	description = "origin_tooltip_imperial_vassal_effects"
+	flags = { custom_start_screen }
+
+	traits = {}
+
+	random_weight = {
+		base = 0
+	}
+}
+
+origin_payback = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_payback.dds"
+	picture = GFX_origin_payback
+	max_once_global = yes
+
+	playable = {
+		always = no # Europe: disabled for players, AI-spawning origin
+		has_first_contact_dlc = yes
+	}
+
+	possible = {
+		ethics = {
+			NOT = {
+				value = ethic_gestalt_consciousness
+			}
+		}
+		civics = {
+			NOR = {
+				# No devourers or slavers
+				value = civic_dystopian_society
+				value = civic_fanatic_purifiers
+				value = civic_pompous_purists
+				value = civic_slaver_guilds
+				value = civic_indentured_assets
+				# Or low tech starts
+				value = civic_eager_explorers
+				value = civic_privatized_exploration
+				# Or advanced tech
+				value = civic_private_healthcare_corporate
+			}
+		}
+	}
+
+	modifier = {
+		damage_vs_superior_empires_mult = 0.15
+	}
+
+	description = "origin_tooltip_payback_effects"
+	negative_description = "origin_tooltip_payback_negative_effects"
+	flags = { custom_start_screen }
+
+	advanced_start = no
+
+	random_weight = {
+		base = 0
+	}
+}
