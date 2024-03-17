@@ -100,6 +100,7 @@
   - Overwhelming Force (under Supremacy) now gives +25% Orbital Bombardment damage instead of +20% and gives +1 Max Influence from Power Projection, but no longer gives +10% Ship Fire Rate.
   - The Great Game (under Supremacy) now gives +20 Fleet Command limit and -20% Claim Influence Cost instead of +20% Starbase Damage.
   - Bulwark of Harmony (under Unyielding) now gives +50% Defense Platform Build Speed instead of +15% Home Territory Ship Fire Rate.
+  - Direct Diplomacy (under Diplomacy) now also gives +33% Immigration Pull to all planets.
 22. Various changes to jobs were introduced, generally to reduce the need for micromanagement from players and as part of balancing other parts of the game.
   - Colonist jobs now give 3 Food instead of 1, and Lithoid Colonist jobs now give 2 Minerals instead of 1.
   - Soldiers no longer have massively increased weights under a Commander governor (that tends to ruin planets' economies unless you micromanage them).
@@ -121,3 +122,4 @@
   - Spiritualist faction is no longer angry with Robots Allowed if Roboticists are set to assemble cybernetic components.
   - Promoting a faction now redues its unity output by 25%. This puts an actual cost on promoting factions that scales with the power of the faction, so players should only promote factions when they are small and stop promoting them when they have reached a critical size.
 25. Made it (functionally) impossible for a player to have more than two player vassals. Outside of a player vassalizing an AI and then having a player hotjoin as that AI, players should not longer be able to have more than two vassals who are players, including secret vassals from swearing secret fealties.
+26. Diplomacy actions between players no longer need trust. Trust requirements for pacts with AI empires remain unchanged.

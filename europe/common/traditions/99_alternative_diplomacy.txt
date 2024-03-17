@@ -1,0 +1,15 @@
+tr_diplomacy_direct_diplomacy = {
+	possible = {
+		has_tradition = tr_diplomacy_diplomatic_networking
+	}
+
+	modifier = {
+		country_trust_cap_add = 50
+		country_trust_growth = 0.33
+		planet_immigration_pull_mult = 0.33 # Europe: added
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}

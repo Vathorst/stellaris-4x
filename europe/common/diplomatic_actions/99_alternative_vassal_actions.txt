@@ -136,6 +136,10 @@ action_demand_subjugation = {
 			custom_tooltip = {
 				fail_text = requires_50_trust_or_excellent
 				OR = {
+					AND = { # Europe: added
+						is_ai = no
+						from = { is_ai = no }
+					}
 					opinion_level = {
 						who = from
 						level >= excellent
@@ -319,6 +323,10 @@ action_ask_to_become_subjugated = {
 		custom_tooltip = {
 			fail_text = requires_50_trust_or_excellent
 			OR = {
+				AND = { # Europe: added
+					is_ai = no
+					from = { is_ai = no }
+				}
 				opinion_level = {
 					who = from
 					level >= excellent
@@ -567,6 +575,10 @@ action_pledge_secret_fealty = {
 		custom_tooltip = {
 			fail_text = requires_50_trust_or_excellent
 			OR = {
+				AND = { # Europe: added
+					is_ai = no
+					from = { is_ai = no }
+				}
 				opinion_level = {
 					who = from
 					level >= excellent
@@ -782,6 +794,10 @@ action_propose_secret_fealty = {
 		custom_tooltip = {
 			fail_text = requires_50_trust_or_excellent
 			OR = {
+				AND = { # Europe: added
+					is_ai = no
+					from = { is_ai = no }
+				}
 				opinion_level = {
 					who = from
 					level >= excellent
