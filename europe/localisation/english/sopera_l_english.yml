@@ -62,6 +62,8 @@
  STRIKE_CRAFT_HANGAR_2_DESC: "$FIGHTERS_HANGAR_2_DESC$"
  STRIKE_CRAFT_HANGAR_3: "$FIGHTERS_HANGAR_3$"
  STRIKE_CRAFT_HANGAR_3_DESC: "$FIGHTERS_HANGAR_3_DESC$"
+ weapon_type_energy_pd: "§YEnergy (Point-Defense)§!"
+ weapon_type_kinetic_pd: "§YKinetic (Point-Defense)§!"
 
  frozen_terraforming_candidate_tooltip: "If we pick the §Y$ap_hydrocentric$§! or §Y$ap_world_shaper$§! ascension perk and research the £society£ §Y$tech_climate_restoration$§! technology, we will be able to terraform this planet into a habitable world."
  FROZEN_TERRAFORMING_CANDIDATE_EFFECT: "§Y[From.GetName]§! will be able to be terraformed if we choose the §H$ap_hydrocentric$§! or §H$ap_world_shaper$§! ascension perks and research the £society£ §H$tech_climate_restoration$§! technology."

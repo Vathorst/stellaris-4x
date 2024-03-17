@@ -144,7 +144,7 @@ weapon_component_template = {
 	icon_frame = 1
 	#color = { 0.1 1.0 0.1 1 }
 
-	tags = { weapon_type_point_defense } # Europe: removed weapon_type_energy to prevent problems with repeatables
+	tags = { weapon_type_point_defense weapon_type_energy_pd } # Europe: removed weapon_type_energy to prevent problems with repeatables
 	projectile_gfx = "arc_emitter"
 
 	point_defence_targets = { "missile" "strike_craft" }

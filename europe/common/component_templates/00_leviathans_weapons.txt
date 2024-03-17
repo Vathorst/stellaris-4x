@@ -191,7 +191,7 @@ weapon_component_template = {
 
 	hidden = yes
 	projectile_gfx = "arc_emitter"
-	tags = { weapon_type_point_defense weapon_type_space_fauna } # Europe: removed weapon_type_energy to prevent problems with repeatables
+	tags = { weapon_type_point_defense weapon_type_space_fauna weapon_type_energy_pd } # Europe: removed weapon_type_energy to prevent problems with repeatables
 
 	point_defence_targets = { "missile" "strike_craft" }
 }
@@ -208,7 +208,7 @@ weapon_component_template = {
 
 	hidden = yes
 	projectile_gfx = "dragon_tertiary_weapon_ice"
-	tags = { weapon_type_point_defense weapon_type_space_fauna } # Europe: removed weapon_type_energy to prevent problems with repeatables
+	tags = { weapon_type_point_defense weapon_type_space_fauna weapon_type_energy_pd } # Europe: removed weapon_type_energy to prevent problems with repeatables
 
 	point_defence_targets = { "missile" "strike_craft" }
 }
