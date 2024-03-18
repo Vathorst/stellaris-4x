@@ -52,7 +52,7 @@
   - Bomber Wings have been (re-)added to the game. Their three tiers unlock with the same techs as the three tiers for Fighter Wings. Bomber Wings generally have +100% Shield Penetration and +50% Armor Damage, but cannot attack other strike craft. They generally have double the attack range of Fighter Wings, are fewer in number but with more health and shields per craft and even some armor at the highest tier, are slower and less maneuverable than Fighter Wing craft, have lower Evasion and Tracking than Fighter Wing craft, and deal their damage in large bursts with long cooldowns between attacks. As opposed to Fighter Wings, which orbit targets they are attacking, Bomber Wings will make bombing runs, retreat out of range after each attack, and wait until their attack comes off of cooldown to charge in again.
   - Nanite Flak Batteries now cost 0.25 Nanites, but has a Range of 40 from 30.
 20. Major changes to Ascension Perks, generally buffing ones that are rarely picked for being too niche or underpowered and nerfing those that are seen as must-picks.
-  - Detox has been removed from the game and its effects have been merged into World Shaper. World Shaper now also allows for the terraforming of Frozen Worlds without needing to have Hydrocentric.
+  - Detox has been removed from the game and its effects have been merged into World Shaper. World Shaper now also allows for the terraforming of Frozen Worlds without needing to have Hydrocentric, and it can now be taken by all Hive Mind and Machine Intelligence empires.
   - Hydrocentric now gives -50% Ocean World terraforming cost instead of -25%.
   - Executive Vigor now gives +80 flat Edict Fund and +25% Edict Fund instead of just a flat +100 Edict Fund.
   - Grasp the Void now gives +4 flat Starbase Capacity and +20% Starbase Capacity instead of just a flat +5 Starbase Capacity.
@@ -63,6 +63,7 @@
   - Misconfigured Thrusters now gives +20% Evasion to all ships instead of +15% Evasion to Menacing Corvettes and +50% Disengagement Chance to Menacing Corvettes. Flyswatter now gives +30% Tracking to all ships instead of +30% Tracking to Menacing Destroyers. Harsh Priorities now gives +15% Daily Hull Regeneration and +30% Daily Armor Regeneration to all ships instead of +30% Menacing Cruiser Hull Strength.
   - Archaeo-Engineers now increases the maximum amount of Facility of Archaeostudies buildings that can be built in an empire by 1 for every relic world the empire owns.
   - Consecrated Worlds now reduces Pop Amenities usage on all planets instead of increasing Amenities production. This also synergizes better with Spiritualist cultural workers, who reduce Amenities usage as well.
+  - Voidborn and the Void Dwellers origin now boost the final tier of yield-increasing buildings on habitats the same way they are boosted on ring worlds.
 21. Major changes to various Traditions, generally buffing ones that are markedly underpowered and nerfing those that are seen as must-picks.
   - Subterfuge finisher now also causes completed espionage operations to return 50% of their infiltration level cost in influence.
   - Adaptibility opener now gives -10% Pop Amenities usage instead of -10% Pop Housing usage.
@@ -132,3 +133,4 @@
 28. Broken Shackles has been tweaked so that it will no longer spawn MSI or a Payback empire unless another AI Broken Shackles and/or Payback empire already exists.
 29. Genius Armorer now gives +25% Ship Hull Points and +2% Daily Hull Regeneration instead of bonus Armor Hardening, Shield Hardening, Shield Points, and Armor Points. The new bonuses are the (old) effects of the Resilient Commander trait, but applied empire-wide instead of fleetwide.
 30. Resilient Commander now gives +20% Ship Shield Points, +20% Ship Armor Points, +20% Armor Hardening, and +20% Shield Hardening. These are mostly the (old) effects of Genius Armorer, but applied to a single fleet instead of empire-wide.
+31. Defense in Depth now gives +15% Home Territory Ship Fire Rate instead of +10%, and it also now gives +50% Starbase Shield Hardening, +25% Defense Platform Shield Hardening, and +25% Defense Platform Armor Hardening.

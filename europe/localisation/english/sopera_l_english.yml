@@ -75,6 +75,7 @@
  triggered_opinion_ap_lord_of_war: "$ap_lord_of_war$"
  menp_mobile_bulwark_desc: "Only a scant few systems are required for the continued operation of a ship under fire, and should be prioritized. Nonessential resources - sapient or otherwise - need not be protected."
  ap_archaeoengineers_tooltip: "Unlocks additional effects for §YAncient§! ship components and buildings. §Y$pc_relic$§! planets increase the maximum amount of §Y$building_archaeostudies_faculty$§! buildings that we can build. §G+2000§! £minor_artifacts£ §YMinor Artifacts§! empire capacity for every built §Y$building_archaeostudies_faculty$§!"
+ ap_voidborn_habitat_effect: "Can construct advanced housing buildings on §YHabitats§!. Improves the final tier of certain yield-increasing buildings on §YHabitats§!."
 
  tr_subterfuge_finish_effect: "Successful §YOperations§! refund §G50%§! of their Infiltration Level Cost and give £influence£ §YInfluence§! equal to §G50%§! of their Infiltration Level Cost."
  tr_mercantile_customs_union: "Customs Union"
@@ -112,6 +113,7 @@
  CANCEL_PROMOTE_FACTION_DESC: "Stop promoting the policies and values of §Y[Root.GetName]§! and like-minded factions, but also restore its original £unity£ Unity output."
 
  requires_less_than_two_vassals: "Players cannot have more than two player vassals at any time, including secret fealty pledges."
+ mod_divided_patrongage_max_subjects: "Max Player Subjects, Subjects Exempt from Divided Patronage"
 
   # Preset text icons
  #text_icon_vacuum_flower:0 "£vacuum_flower£"
