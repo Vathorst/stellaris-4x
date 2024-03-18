@@ -120,7 +120,7 @@
   - Catalytic Processing can now toggle its effects through the newly added Manufacturing Policy, allowing empires to switch between using food and using minerals without needing to necessarily reform their government.
   - Citizen Service no longer gives +15% Naval Capacity. Instead, it replaces half of all Politician jobs on capital buildings with Officer jobs. It is also now incompatible with other civics that similarly replace Politicians jobs, including Merchant Guilds, Technocracy, Exalted Priesthood, and Aristocratic Elite.
   - Factions can now spawn after 6 months for everyone instead of spawning after 30 days for Parliamentary System empires and after 10 years for everyone else (and only if they encountered another player). However, the unity output of factions in general has been decreased by 33%.
-  - Parliamentary System now increases Unity from factions by +100% instead of +40%, but also gets -10% faction approval, which cancels out the faction approval bonus normally given to Democratic authority empires.
+  - Parliamentary System now increases Unity from factions by +70% instead of +40%, but also gets -10% faction approval, which cancels out the faction approval bonus normally given to Democratic authority empires.
   - Heroic Past, Precision Cogs, Factory Overclocking, and Pooled Knowledge now all also give +1 Leader Pool Size.
 24. Various changes to the faction system, mostly to fix weird niche cases and to prevent people from just promoting factions all the time.
   - Authoritarian faction is no longer angry with Decadent Lifestyle living standards or any Assimilation citizenship type, but is no longer satisfied with robotic servitude if AI is outlawed.

@@ -393,7 +393,7 @@ civic_parliamentary_system = {
 	}
 	#description = "civic_tooltip_parliamentary_system_effects" # Europe: disabled because it's now universal for everyone
 	modifier = {
-		pop_factions_produces_mult = 1.0 # Europe: increased from 0.40, note that we also lowered base faction unity output, too, to compensate for everyone getting factions early
+		pop_factions_produces_mult = 0.70 # Europe: increased from 0.40, note that we also lowered base faction unity output, too, to compensate for everyone getting factions early
 		faction_approval = -0.10 # Europe: Parliamentary system negates the faction approval bonus from Democratic
 	}
 }
