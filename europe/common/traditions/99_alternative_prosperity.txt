@@ -107,7 +107,7 @@ tr_prosperity_pursuit_of_profit = {
 
 	modifier = {
 		#planet_jobs_produces_mult = 0.05 # Europe: moved back to finisher
-		planet_amenities_mult = 0.15 # Europe: added
+		planet_amenities_mult = 0.10 # Europe: added
 	}
 
 	tradition_swap = {

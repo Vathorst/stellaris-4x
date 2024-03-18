@@ -1,6 +1,6 @@
 tr_synchronicity_cloned_organs = {
 	modifier = {
-		leader_lifespan_add = 20 # Europe: increased from 10
+		leader_lifespan_add = 10
 		negative_traits_country = -1
 	}
 
@@ -14,7 +14,7 @@ tr_synchronicity_cloned_organs = {
 		}
 		custom_tooltip = tr_synchronicity_self_preservation_desc
 		modifier = { # Europe: added
-			leader_lifespan_add = 20
+			leader_lifespan_add = 10
 			negative_traits_country = -1
 		}
 		weight = {
@@ -27,7 +27,7 @@ tr_synchronicity_cloned_organs = {
 		# gain unity per pop necrophaged
 		custom_tooltip = tr_synchronicity_unity_of_mind_desc
 		modifier = { # Europe: added
-			leader_lifespan_add = 20
+			leader_lifespan_add = 10
 			negative_traits_country = -1
 		}
 		trigger = {

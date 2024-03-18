@@ -66,7 +66,7 @@
 21. Major changes to various Traditions, generally buffing ones that are markedly underpowered and nerfing those that are seen as must-picks.
   - Subterfuge finisher now also causes completed espionage operations to return 50% of their infiltration level cost in influence.
   - Adaptibility opener now gives -10% Pop Amenities usage instead of -10% Pop Housing usage.
-  - Appropriation (under Adaptibility) now also gives +1 Building slots and -10% Pop Housing usage.
+  - Appropriation (under Adaptibility) now also gives -10% Pop Housing usage.
   - Adaptive Ecology (under Adaptibility) now also gives -5% Pop Upkeep.
   - Versatility opener now gives -20% Pop Assembly Cost and -10% Pop Housing usage instead of -10% Pop Assembly Cost.
   - Versatility finisher no longer increases the Energy upkeep of Assembler jobs.
@@ -79,27 +79,32 @@
   - Reach for the Stars (under Expansion) now also extends its -10% Outpost Influence cost to Outpost Alloy cost as well.
   - Galactic Ambitions (under Expansion) now also gives -20% orbital stations upkeep.
   - Unity of Self (under Harmony for Necrophages), Unity of Mind (under Synchronicity for Necrophages), and Self-Preservation (under Synchronicity for Machine Intelligences) now also still give the same effects as the traditions they replace, which are still important even if they are more negligible.
-  - Mind and Body (under Harmony) and Cloned Organs (under Synchronicity) now give +20 Leader Lifespan instead of +10.
   - Synthetically ascended normal empires now have Mind and Body (under Harmony) replaced with Self-Preservation (normally under Synchronicity), which means they now benefit from halved leader accident chance because they would gain no benefit from increases to Leader Lifespan.
-  - Harmonious Directives (under Harmony), Flexible Thought Routines (under Synchronicity), and Grand Council (under Domination) now give +45 flat Edict Fund and +10% Edict Fund instead of just a flat +50 Edict Fund.
+  - Harmonious Directives (under Harmony), Flexible Thought Routines (under Synchronicity), Grand Council (under Domination), and the Statecraft Opener now give +45 flat Edict Fund and +10% Edict Fund instead of just a flat +50 Edict Fund.
   - The replacements of Adaptive Economic Policies (under Mercantile) now work differently. Mega-cooperative empires no longer have the tradition replaced after entering a Trade League federation. Empires that are in a Trade League or in a tier 3 or higher Holy Covenant now replace the tradition with "Customs Union", which removes the Influence cost of Commercial Pacts with fellow federation members. Non-megacooperative megacorporation empires that have also taken Universal Transactions will replace the tradition with Trade Fleets, which has the same effect of +50% Federation Naval Capacity Contribution.
   - Prosperity opener now gives +25% Mining Station Output instead of +20%.
   - Prosperity finisher now gives its old effect of +5% Resources from Jobs instead of -10% Station Upkeep.
   - Standard Construction Templates (under Prosperity) now gives -15% Clear Blocker cost instead of -10% Building Cost.
   - Void Works (under Prosperity as alternative to Public Works for Void Dwellers) no longer gives +1 max districts on habitats.
   - Interstellar Franchising (under Prosperity) now gives -50% Empire Size from Districts instead of -5% Upkeep from Jobs.
-  - Pursuit of Profit (under Prosperity) now gives +15% Amenities from Jobs instead of +5% Resources from Jobs. The change also applies to Gestalt Consciousness equivalents of the tradition that used to give +5% Complex Drone Output.
+  - Pursuit of Profit (under Prosperity) now gives +10% Amenities from Jobs instead of +5% Resources from Jobs. The change also applies to Gestalt Consciousness equivalents of the tradition that used to give +5% Complex Drone Output.
   - Modular Depot (under Domination, only for Machine Intelligences) now gives -10% Building Cost instead of -25% Empire Size from Districts.
   - Synaptic Sub-processing (under Cybernetics, only for Hive Minds) now gives +15% Pop Assembly Speed instead of -50% Empire Size from Districts.
   - War Doctrines no longer require the Supremacy finisher to unlock.
   - Supremacy opener now gives +25% Army Morale Attack, +25% Army Morale Defense, and -20% Army Cost instead of +20% Army Damage and +20 Naval Capacity.
   - Supremacy finisher now gives +25% Ship Disengagement Chance and +25% Ship Experience Gain.
   - Logistical Corps (under Supremacy) now also gives -10% Army Upkeep.
+  - Master Shipwrights (under Supremacy) now also gives -10% Ship Retrofit Cost.
   - War Games (under Supremacy) now gives +100 Ship Starting Experience instead of +20 Fleet Command Limit.
   - Overwhelming Force (under Supremacy) now gives +25% Orbital Bombardment damage instead of +20% and gives +1 Max Influence from Power Projection, but no longer gives +10% Ship Fire Rate.
   - The Great Game (under Supremacy) now gives +20 Fleet Command limit and -20% Claim Influence Cost instead of +20% Starbase Damage.
   - Bulwark of Harmony (under Unyielding) now gives +50% Defense Platform Build Speed instead of +15% Home Territory Ship Fire Rate.
   - Direct Diplomacy (under Diplomacy) now also gives +33% Immigration Pull to all planets.
+  - Aptitude finisher and The Empire Needs You (under Aptitude) now also give +1 Leader Pool Size.
+  - Healthcare Program (under Aptitude) now also gives +10 Leader Lifespan.
+  - Specialist Training (under Aptitude) now gives +10% Leader Experience Gain instead of +1 Leader Pool Size.
+  - Information Security (under Subterfuge) now gives +2 Encryption instead of +1 Encryption, but no longer gives +5 Evasion.
+  - Operational Security (under Subterfuge) no longer gives +10 Tracking.
 22. Various changes to jobs were introduced, generally to reduce the need for micromanagement from players and as part of balancing other parts of the game.
   - Colonist jobs now give 3 Food instead of 1, and Lithoid Colonist jobs now give 2 Minerals instead of 1.
   - Soldiers no longer have massively increased weights under a Commander governor (that tends to ruin planets' economies unless you micromanage them).
@@ -111,11 +116,12 @@
   - Meritocracy now gives +1 Starting Leader Level and +1 Leader Pool size instead of +10% Specialist Resource Output.
   - Vaults of Knowledge now gives -25% Leader Upkeep instead of +1 Starting Leader Level.
   - Oppressive Autocracy now gives -25% Leader Cost instead of -25% Leader Upkeep.
-  - Distinguished Admiralty now gives +1 Commander Starting Level and +1 Commander Capacity instead of +2 Commander Starting Level.
+  - Distinguished Admiralty, Strength of Legions, and Warbots now give +1 Commander Starting Level and +1 Commander Capacity instead of +2 Commander Starting Level.
   - Catalytic Processing can now toggle its effects through the newly added Manufacturing Policy, allowing empires to switch between using food and using minerals without needing to necessarily reform their government.
   - Citizen Service no longer gives +15% Naval Capacity. Instead, it replaces half of all Politician jobs on capital buildings with Officer jobs. It is also now incompatible with other civics that similarly replace Politicians jobs, including Merchant Guilds, Technocracy, Exalted Priesthood, and Aristocratic Elite.
   - Factions can now spawn after 6 months for everyone instead of spawning after 30 days for Parliamentary System empires and after 10 years for everyone else (and only if they encountered another player). However, the unity output of factions in general has been decreased by 33%.
-  - Parliamentary System now increases Unity from factions by +100% instead of +40%, but also gets -10% faction approval, which cancels out the faction approval bonus normally given to Democratic authority empires.
+  - Parliamentary System now increases Unity from factions by +70% instead of +40%, but also gets -10% faction approval, which cancels out the faction approval bonus normally given to Democratic authority empires.
+  - Heroic Past, Precision Cogs, Factory Overclocking, and Pooled Knowledge now all also give +1 Leader Pool Size.
 24. Various changes to the faction system, mostly to fix weird niche cases and to prevent people from just promoting factions all the time.
   - Authoritarian faction is no longer angry with Decadent Lifestyle living standards or any Assimilation citizenship type, but is no longer satisfied with robotic servitude if AI is outlawed.
   - Spiritualist faction is no longer angry with Robots Allowed if Roboticists are set to assemble cybernetic components.
@@ -124,3 +130,5 @@
 26. Diplomacy actions between players no longer need trust. Trust requirements for pacts with AI empires remain unchanged.
 27. AI-Spawning origins have been disabled for players.
 28. Broken Shackles has been tweaked so that it will no longer spawn MSI or a Payback empire unless another AI Broken Shackles and/or Payback empire already exists.
+29. Genius Armorer now gives +25% Ship Hull Points and +2% Daily Hull Regeneration instead of bonus Armor Hardening, Shield Hardening, Shield Points, and Armor Points. The new bonuses are the (old) effects of the Resilient Commander trait, but applied empire-wide instead of fleetwide.
+30. Resilient Commander now gives +20% Ship Shield Points, +20% Ship Armor Points, +20% Armor Hardening, and +20% Shield Hardening. These are mostly the (old) effects of Genius Armorer, but applied to a single fleet instead of empire-wide.
