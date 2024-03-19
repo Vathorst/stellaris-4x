@@ -116,7 +116,7 @@
   - Worker Cooperative empires no longer get access to Consumer Benefits or Marketplace of Ideas. Mutual Aid now gives 0.4 Energy, 0.2 Food, and 0.2 Consumer Goods (from 0.3 Energy, 0.2 Food, and 0.2 Minerals) for non-Lithoids and Minerals instead of Food for Lithoids. Worker cooperative empires get special versions of the Trade League and Holy Covenant Trade Policies that give -0.3 Energy, +0.1 Food (Minerals if Lithoid), and +0.1 Consumer Goods compared to normal to replicate the effects of Mutual Aid.
   - Imperial Cult now gives +80 flat Edict Fund and +25% Edict Fund instead of just flat +100 Edict Fund.
   - Meritocracy now gives +1 Starting Leader Level and +1 Leader Pool size instead of +10% Specialist Resource Output.
-  - Vaults of Knowledge now gives -25% Leader Upkeep instead of +1 Starting Leader Level.
+  - Vaults of Knowledge now gives -25% Leader Upkeep instead of +1 Starting Leader Level. The Vaults of Knowlege building now gives +2.5% Leader Experience Gain per Paragon that the empire has ever had instead of +1%, and it starts with +2.5% Leader Experience Gain instead of +1% as well.
   - Oppressive Autocracy now gives -25% Leader Cost instead of -25% Leader Upkeep.
   - Distinguished Admiralty, Strength of Legions, and Warbots now give +1 Commander Starting Level and +1 Commander Capacity instead of +2 Commander Starting Level.
   - Catalytic Processing can now toggle its effects through the newly added Manufacturing Policy, allowing empires to switch between using food and using minerals without needing to necessarily reform their government.
