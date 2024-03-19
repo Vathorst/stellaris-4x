@@ -97,14 +97,31 @@ isolationist = {
 		}
 
 		# Should really check for citizenship instead
-		#modifier = {
-		#	factor = 1.25
+		modifier = {
+			factor = 0.25 # Europe: re-enabled, but made attraction decrease for not having citizenship rights because we want citizenship rights
 		#	NOT = { is_same_species = owner_species }
-		#}
+			has_citizenship_rights = no
+		}
 	}
 
 	leader = {
 		base = 100
+
+		modifier = { # Shouldn't be xenophobic faction leader if we have no citizen rights
+			factor = 0
+			has_citizenship_rights = no
+		}
+
+		modifier = { # Europe: added because delegates are probably going to want to do diplomacy
+			factor = 0.1
+			OR = {
+				AND = {
+					has_paragon_dlc = no
+					leader_class = official
+				}
+				has_trait = subclass_official_delegate
+			}	
+		}
 
 		modifier = {
 			factor = 0.0
@@ -189,8 +206,17 @@ isolationist = {
 		}
 
 		trigger = {
-			owner = {
-				has_federation = no
+			OR = {
+				owner = {
+					has_federation = no
+				}
+				owner = {
+					has_federation = yes
+					federation = {
+						has_federation_type = hegemony_federation
+					}
+					is_federation_leader = yes
+				}
 			}
 		}
 	}

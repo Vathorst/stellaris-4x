@@ -45,15 +45,17 @@ technologist = {
 	}
 
 	can_join_faction = {
-		OR = {
-			has_ethic = ethic_materialist
-			is_robot_pop = yes
-		}
+		# Europe: disabled
+		#OR = {
+		#	has_ethic = ethic_materialist
+		#	is_robot_pop = yes
+		#}
 		is_shackled_robot = no
 		can_think = yes
-		NOT = {
-			has_ethic = ethic_spiritualist
-		}
+		# Europe: disabled
+		#NOT = {
+		#	has_ethic = ethic_spiritualist
+		#}
 	}
 
 	attraction = {
@@ -76,10 +78,11 @@ technologist = {
 			}
 		}
 
-		modifier = {
-			factor = 2.0
-			is_robot_pop = yes
-		}
+		# Europe: disabled
+		#modifier = {
+		#	factor = 2.0
+		#	is_robot_pop = yes
+		#}
 	}
 
 	leader = {
@@ -140,7 +143,7 @@ technologist = {
 				any_relation = {
 					has_communications = root.owner
 					is_country_type = default
-					NOT = { has_government = gov_successor_khanate }
+					#NOT = { has_government = gov_successor_khanate } # Europe: removed
 					root.owner = {
 						has_intel_level = {
 							who = prev
@@ -158,7 +161,7 @@ technologist = {
 					any_relation = {
 						has_communications = root.owner
 						is_country_type = default
-						NOT = { has_government = gov_successor_khanate }
+						#NOT = { has_government = gov_successor_khanate } # Europe: removed
 						root.owner = {
 							has_intel_level = {
 								who = prev
@@ -202,7 +205,24 @@ technologist = {
 							has_federation_perk = research_federation_passive
 						}
 					}
-					num_research_agreements > 2
+					# Europe: switched to also allowing Scholariums, whether it is us who own them or us being the Scholarium
+					#num_research_agreements > 2
+					count_country = {
+						count > 2
+						limit = {
+							exists = this
+							OR = {
+								root.owner = { has_research_agreement = prev }
+								AND = {
+									OR = {
+										has_overlord = root.owner
+										has_subject = root.owner
+									}
+									any_agreement = { has_active_specialization = specialist_scholarium }
+								}
+							}
+						}
+					}
 					any_relation = {
 						is_country_type = primitive
 						OR = {
@@ -224,11 +244,15 @@ technologist = {
 		fulfilled_effect = 0.001
 
 		potential = {
-			years_passed >= 50 #otherwise, just a penalty for meeting Mechanists early
 			exists = owner
+			OR = {
+				owner = { has_technology = tech_droid_workers } # We have the technology, we should have workers by now
+				years_passed >= 50 #otherwise, just a penalty for meeting Mechanists early
+			}
 			owner = {
-				NOT = { has_ascension_perk = ap_synthetic_evolution }
+				NOT = { has_tradition = tr_synthetics_finish } # Europe: switched from the AP because this requirement is when this desire is no longer relevant
 				any_relation = {
+					is_country_type = default # Europe: added to not have it trigger off of FEs
 					has_communications = root.owner
 					root.owner = {
 						has_intel_level = {
@@ -238,10 +262,18 @@ technologist = {
 						}
 					}
 					is_gestalt = no
-					any_owned_species = {
-						OR = {
-							has_trait = trait_mechanical
-							has_trait = trait_cybernetic
+					OR = {
+						any_owned_species = {
+							OR = {
+								has_trait = trait_mechanical
+								has_trait = trait_cybernetic
+							}
+						}
+						any_owned_planet = { # Europe: Added to not make them angry if we are going for Genetic Ascension
+							OR = {
+								has_building = building_clone_vats
+								has_building = building_clone_army_clone_vat
+							}
 						}
 					}
 				}
@@ -250,10 +282,17 @@ technologist = {
 
 		trigger = {
 			owner = {
+				NOT = { has_tradition = tr_synthetics_synthetic_age } # Europe: we will show the bubble for a while, on purpose
 				any_owned_species = {
 					OR = {
 						has_trait = trait_mechanical
 						has_trait = trait_cybernetic
+					}
+				}
+				any_owned_planet = { # Europe: added to not make them angry if we are going for Genetic Ascension
+					OR = {
+						has_building = building_clone_vats
+						has_building = building_clone_army_clone_vat
 					}
 				}
 			}

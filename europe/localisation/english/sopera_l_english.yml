@@ -111,6 +111,9 @@
 
  PROMOTE_FACTION_DESC: "Promote the policies and values of the §Y[Root.GetName]§!. This will make their ethics more attractive to our population for as long as it is active, but reduces its £unity£ Unity output by §R-25%§!."
  CANCEL_PROMOTE_FACTION_DESC: "Stop promoting the policies and values of §Y[Root.GetName]§! and like-minded factions, but also restore its original £unity£ Unity output."
+ SUPREMACIST_ISOLATIONIST_NO_FEDERATION_DESC: "Allowing the [Root.Owner.GetName] to be exploited by alien interests by §Yjoining a Federation§! will displease the [Root.GetName], unless it is a Hegemony."
+ TECHNOLOGIST_NO_SYNTH_ENVY_DESC: "Seeing other empires parade any kind of Robotic, Cybernetic, or Cloned Pops around - with no domestic equivalents on any of our worlds - is sure to displease the [Root.GetName]."
+ TECHNOLOGIST_RESEARCH_TREATIES_DESC: "Signing Research Agreements or Scholarium Treaties with at least §Y3§! other Empires, being in a Research Cooperative, or providing technological enlightenment to a [root.owner.GetPreFTLLower] civilization will please the [Root.GetName]."
 
  requires_less_than_two_vassals: "Players cannot have more than two player vassals at any time, including secret fealty pledges."
  mod_divided_patrongage_max_subjects: "Max Player Subjects, Subjects Exempt from Divided Patronage"

@@ -37,3 +37,11 @@
 		PRICE_CHANGE_EQ_NEG_D				= 10 		# Space_Opera: 20 Constant D in f(x) = ( c / ( x - xo ) ) + d for f(x) < 0
 		PRICE_CHANGE_EQ_NEG_X0				= -1000		# Space_Opera: -450 Constant X0 in f(x) = ( c / ( x - xo ) ) + d for f(x) < 0
 	}
+
+	NShip = {
+		DESIGNER_WEAPON_ROLE_MUL			= 100.00 # Increased from 5.33 because out-of-role weapons for a ship is generally not good
+		DESIGNER_UTILITY_ROLE_MUL			= 100.00 # Increased from 5.33 because out-of-role weapons for a ship is generally not good
+		DESIGNER_WEAPON_STACKING_DIV		= 0.01 # Decreased from 0.25. This is normally not-great, but it's the only way to prevent the AI from doing really bad stuff like mixing plasma cannons with disruptors
+		SHIP_MAX_EVASION					= 0.95 # Increased from 0.9 because it was too easy for corvettes to get 90%. 
+		DEFAULT_ARMOR_RATIO 				= 0.5 # Increased from 0.4 because hull plating is generally not a good module.
+	}

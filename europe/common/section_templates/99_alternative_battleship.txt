@@ -12,6 +12,16 @@ ship_section_template = {
 	icon_frame = 1
 	ai_tags = { gunship gunship_stealth } # Europe: added stealth tags
 
+	ai_weight = { # Europe: added, only good artillery design has no L slots, only M slots
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -54,6 +64,23 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { artillery artillery_stealth } # Europe: added stealth tags
 
+	ai_weight = { # Europe: added, only good artillery design has no L slots, only M slots
+		modifier = {
+			factor = 10.0
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -83,16 +110,22 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_bow_M1S2SHB_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { carrier carrier_stealth } # Europe: added stealth tags
+	ai_tags = { carrier carrier_stealth artillery artillery_stealth } # Europe: added stealth tags and artillery tags
 
 	ai_weight = {
 		modifier = {
 			factor = 10.0
-			is_preferred_weapons = weapon_type_strike_craft
+			OR = {
+				is_preferred_weapons = weapon_type_explosive  # Europe: added, only good artillery design has no L slots, only M slots
+				is_preferred_weapons = weapon_type_strike_craft
+			}
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive  # Europe: added, only good artillery design has no L slots, only M slots
+				is_preferred_weapons = weapon_type_strike_craft
+			}
 		}
 	}
 
@@ -137,13 +170,13 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_bow_XL1_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery artillery_stealth } # Europe: added stealth tags
+	ai_tags = { artillery artillery_stealth gunship gunship_stealth } # Europe: added stealth and gunship tags
 
 	prerequisites = { tech_energy_lance_1 tech_energy_lance_2 tech_arc_emitter_1 tech_arc_emitter_2 tech_mass_accelerator_1 tech_mass_accelerator_2 tech_archaeo_mass_accelerator }
 
 	ai_weight = {
 		modifier = {
-			factor = 10.0
+			factor = 100.0 # Europe: increased from 10 because of how good X-slots usually are
 			NOT = { is_preferred_weapons = weapon_type_explosive }
 		}
 		modifier = {
@@ -178,6 +211,16 @@ ship_section_template = {
 	entity = "battleship_mid_L2M2_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { gunship gunship_stealth } # Europe: added stealth tags
+
+	ai_weight = { # Europe: added, only good penetration designs have no L slots, only M slots
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -221,6 +264,23 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { artillery artillery_stealth } # Europe: added stealth tags
 
+	ai_weight = { # Europe: added, only good penetration designs have no L slots, only M slots
+		modifier = {
+			factor = 10
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -256,16 +316,23 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_mid_M4SHB_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier carrier_stealth } # Europe: added stealth tags
+	ai_tags = { carrier carrier_stealth artillery artillery_stealth } # Europe: added stealth tags and artillery tags
 
 	ai_weight = {
+		modifier = {
+			factor = 100.0
+			is_preferred_weapons = weapon_type_explosive  # Europe: added, only good artillery design has no L slots, only M slots
+		}
 		modifier = {
 			factor = 10.0
 			is_preferred_weapons = weapon_type_strike_craft
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive  # Europe: added, only good artillery design has no L slots, only M slots
+				is_preferred_weapons = weapon_type_strike_craft
+			}
 		}
 	}
 
@@ -317,7 +384,25 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_mid_S4LHB_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier carrier_stealth } # Europe: added stealth tags
+	ai_tags = { carrier carrier_stealth artillery artillery_stealth } # Europe: added stealth tags
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive  # Europe: added, only good artillery design has no L slots, only M slots
+		}
+		modifier = {
+			factor = 100.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.1
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive  # Europe: added, only good artillery design has no L slots, only M slots
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -376,6 +461,23 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { artillery artillery_stealth } # Europe: added stealth tags
 
+	ai_weight = { # Europe: added, only good penetration designs have no L slots, only M slots
+		modifier = {
+			factor = 10
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -399,7 +501,24 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_stern_M2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { gunship gunship_stealth carrier carrier_stealth } # Europe: added stealth tags
+	ai_tags = { gunship gunship_stealth carrier carrier_stealth artillery artillery_stealth } # Europe: added stealth tags
+
+	ai_weight = { # Europe: added, only good penetration designs have no L slots, only M slots
+		modifier = {
+			factor = 10
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -434,6 +553,16 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	icon_frame = 1
 	ai_tags = { gunship gunship_stealth } # Europe: added stealth tags
+
+	ai_weight = { # Europe: added, only good artillery design has no L slots, only M slots
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -477,6 +606,22 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { artillery artillery_stealth } # Europe: added stealth tags
 
+	ai_weight = { # Europe: added, only good artillery design has no L slots, only M slots
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 10.0
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -506,16 +651,22 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_bow_M1S2SHB_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { carrier carrier_stealth } # Europe: added stealth tags
+	ai_tags = { carrier carrier_stealth artillery artillery_stealth } # Europe: added stealth tags and artillery tags
 
 	ai_weight = {
 		modifier = {
 			factor = 10.0
-			is_preferred_weapons = weapon_type_strike_craft
+			OR = {
+				is_preferred_weapons = weapon_type_explosive  # Europe: added, only good artillery design has no L slots, only M slots
+				is_preferred_weapons = weapon_type_strike_craft
+			}
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive  # Europe: added, only good artillery design has no L slots, only M slots
+				is_preferred_weapons = weapon_type_strike_craft
+			}
 		}
 	}
 
@@ -560,13 +711,13 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_bow_XL1_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery artillery_stealth } # Europe: added stealth tags
+	ai_tags = { artillery artillery_stealth gunship gunship_stealth } # Europe: added stealth and gunship tags
 
 	prerequisites = { tech_energy_lance_1 tech_energy_lance_2 tech_arc_emitter_1 tech_arc_emitter_2 tech_mass_accelerator_1 tech_mass_accelerator_2 }
 
 	ai_weight = {
 		modifier = {
-			factor = 10.0
+			factor = 100.0 # Europe: increased from 10 because of how good X-slots usually are
 			NOT = { is_preferred_weapons = weapon_type_explosive }
 		}
 		modifier = {
@@ -599,6 +750,16 @@ ship_section_template = {
 	entity = "battleship_mid_L2M2_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { gunship gunship_stealth } # Europe: added stealth tags
+
+	ai_weight = { # Europe: added, only good penetration designs have no L slots, only M slots
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -642,6 +803,23 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { artillery artillery_stealth } # Europe: added stealth tags
 
+	ai_weight = { # Europe: added, only good penetration designs have no L slots, only M slots
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 10.0
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -677,16 +855,23 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_mid_M4SHB_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier carrier_stealth } # Europe: added stealth tags
+	ai_tags = { carrier carrier_stealth artillery artillery_stealth } # Europe: added stealth tags and artillery tags
 
 	ai_weight = {
+		modifier = {
+			factor = 100.0
+			is_preferred_weapons = weapon_type_explosive  # Europe: added, only good artillery design has no L slots, only M slots
+		}
 		modifier = {
 			factor = 10.0
 			is_preferred_weapons = weapon_type_strike_craft
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive  # Europe: added, only good artillery design has no L slots, only M slots
+				is_preferred_weapons = weapon_type_strike_craft
+			}
 		}
 	}
 
@@ -738,7 +923,25 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_mid_S4LHB_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier carrier_stealth } # Europe: added stealth tags
+	ai_tags = { carrier carrier_stealth artillery artillery_stealth } # Europe: added stealth tags
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive  # Europe: added, only good artillery design has no L slots, only M slots
+		}
+		modifier = {
+			factor = 100.0
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = 0.1
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive  # Europe: added, only good artillery design has no L slots, only M slots
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -795,6 +998,23 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { artillery artillery_stealth } # Europe: added stealth tags
 
+	ai_weight = { # Europe: added, only good penetration designs have no L slots, only M slots
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 10.0
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -818,7 +1038,24 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "battleship_stern_M2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { gunship gunship_stealth carrier carrier_stealth } # Europe: added stealth tags
+	ai_tags = { gunship gunship_stealth carrier carrier_stealth artillery artillery_stealth } # Europe: added stealth tags
+
+	ai_weight = { # Europe: added, only good penetration designs have no L slots, only M slots
+		modifier = {
+			factor = 0.1
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 10.0
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"

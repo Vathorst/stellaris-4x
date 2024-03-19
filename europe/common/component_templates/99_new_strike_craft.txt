@@ -68,7 +68,7 @@ strike_craft_component_template = {
 	upgrades_to = "BOMBERS_HANGAR_2"
 
 	tags = { weapon_type_strike_craft }
-	ai_tags = { weapon_role_anti_armor carrier}
+	ai_tags = { weapon_role_anti_armor carrier carrier_stealth }
 }
 
 strike_craft_component_template = {
@@ -123,7 +123,7 @@ strike_craft_component_template = {
 	upgrades_to = "BOMBERS_HANGAR_3"
 
 	tags = { weapon_type_strike_craft }
-	ai_tags = { weapon_role_anti_armor carrier }
+	ai_tags = { weapon_role_anti_armor carrier carrier_stealth }
 }
 
 strike_craft_component_template = {
@@ -177,5 +177,5 @@ strike_craft_component_template = {
 	prerequisites = { "tech_strike_craft_3" }
 
 	tags = { weapon_type_strike_craft }
-	ai_tags = { weapon_role_anti_armor carrier }
+	ai_tags = { weapon_role_anti_armor carrier carrier_stealth }
 }

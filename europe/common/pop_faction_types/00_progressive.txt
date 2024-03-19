@@ -71,8 +71,9 @@ progressive = {
 
 		# Should really check for citizenship instead
 		modifier = {
-			factor = 0.25
-			NOT = { is_same_species = owner_species }
+			factor = 1.25 # Europe: changed from 0.25 because aliens with no rights will want to be progressive to push for more equal
+			#NOT = { is_same_species = owner_species }
+			has_citizenship_rights = no
 		}
 	}
 

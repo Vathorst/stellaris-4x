@@ -16,7 +16,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "space_whale_weapon"
 	tags = { weapon_type_energy }
-	ai_tags = { weapon_role_anti_hull }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_armor gunship gunship_stealth } # Europe: added role tags, switched anti-hull for anti-armor
 
 	component_set = "EXTRADIMENSIONAL_1"
 	prerequisites = { "tech_extradimensional_weapon_1" }
@@ -51,7 +51,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "space_whale_weapon"
 	tags = { weapon_type_energy }
-	ai_tags = { weapon_role_anti_hull }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_armor gunship gunship_stealth } # Europe: added role tags, switched anti-hull for anti-armor
 
 	component_set = "EXTRADIMENSIONAL_1"
 	prerequisites = { "tech_extradimensional_weapon_1" }
@@ -86,7 +86,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "space_whale_weapon"
 	tags = { weapon_type_energy }
-	ai_tags = { weapon_role_anti_hull }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_armor gunship gunship_stealth } # Europe: added role tags, switched anti-hull for anti-armor
 
 	component_set = "EXTRADIMENSIONAL_1"
 	prerequisites = { "tech_extradimensional_weapon_1" }
@@ -122,7 +122,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "arc_emitter"
 	tags = { weapon_type_energy }
-	ai_tags = { weapon_role_anti_hull }
+	ai_tags = { weapon_role_artillery weapon_role_anti_hull artillery artillery_stealth } # Europe: added tags
 
 	resources = {
 		category = ship_components

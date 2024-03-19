@@ -30,22 +30,23 @@ ship_section_template = {
 	small_utility_slots = 3
 	aux_utility_slots = 1
 
-	ai_weight = {
-		modifier = {
-			factor = 10.0
-			OR = {
-				is_preferred_weapons = weapon_type_kinetic
-				is_preferred_weapons = weapon_type_energy
-			}
-		}
-		modifier = {
-			factor = 0.1
-			NOR = {
-				is_preferred_weapons = weapon_type_kinetic
-				is_preferred_weapons = weapon_type_energy
-			}
-		}
-	}
+	# Europe: removed
+	#ai_weight = {
+	#	modifier = {
+	#		factor = 10.0
+	#		OR = {
+	#			is_preferred_weapons = weapon_type_kinetic
+	#			is_preferred_weapons = weapon_type_energy
+	#		}
+	#	}
+	#	modifier = {
+	#		factor = 0.1
+	#		NOR = {
+	#			is_preferred_weapons = weapon_type_kinetic
+	#			is_preferred_weapons = weapon_type_energy
+	#		}
+	#	}
+	#}
 
 	resources = {
 		category = ship_sections
@@ -85,16 +86,17 @@ ship_section_template = {
 	small_utility_slots = 3
 	aux_utility_slots = 1
 
-	ai_weight = {
-		modifier = {
-			factor = 10.0
-			is_preferred_weapons = weapon_type_kinetic
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_kinetic }
-		}
-	}
+	# Europe: removed
+	#ai_weight = {
+	#	modifier = {
+	#		factor = 10.0
+	#		is_preferred_weapons = weapon_type_kinetic
+	#	}
+	#	modifier = {
+	#		factor = 0.1
+	#		NOT = { is_preferred_weapons = weapon_type_kinetic }
+	#	}
+	#}
 
 	resources = {
 		category = ship_sections
@@ -113,18 +115,19 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { screen screen_stealth } # Europe: added stealth tags
 
-	ai_weight = {
-		modifier = {
-			factor = 10.0
-			is_ai = yes
-			is_preferred_weapons = weapon_type_strike_craft
-			has_technology = tech_cruisers
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_strike_craft }
-		}
-	}
+	# Europe: removed
+	#ai_weight = {
+	#	modifier = {
+	#		factor = 10.0
+	#		is_ai = yes
+	#		is_preferred_weapons = weapon_type_strike_craft
+	#		has_technology = tech_cruisers
+	#	}
+	#	modifier = {
+	#		factor = 0.1
+	#		NOT = { is_preferred_weapons = weapon_type_strike_craft }
+	#	}
+	#}
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -164,16 +167,17 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { screen screen_stealth } # Europe: added stealth tags
 
-	ai_weight = {
-		modifier = {
-			factor = 10.0
-			is_preferred_weapons = weapon_type_energy
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_energy }
-		}
-	}
+	# Europe: removed
+	#ai_weight = {
+	#	modifier = {
+	#		factor = 10.0
+	#		is_preferred_weapons = weapon_type_energy
+	#	}
+	#	modifier = {
+	#		factor = 0.1
+	#		NOT = { is_preferred_weapons = weapon_type_energy }
+	#	}
+	#}
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -240,7 +244,17 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "crisis_corvette_S3_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { brawler brawler_stealth } # Europe: added stealth tags
+	ai_tags = { brawler brawler_stealth artillery artillery_stealth } # Europe: added stealth tags and artillery tags
+
+	ai_weight = { # Europe: added, only good artillery design uses swarmer missiles
+		modifier = {
+			factor = 0.1
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 
 	component_slot = {
 		name = "SMALL_GUN_01"
