@@ -14,7 +14,10 @@ war_doctrine = {
 
 		policy_flags = {}
 		modifier = {
-			ship_home_territory_fire_rate_mult = 0.10
+			ship_home_territory_fire_rate_mult = 0.15 # Europe: increased from 0.10
+			shipclass_starbase_shield_hardening_add = 0.50 # Europe: added
+			shipclass_military_station_shield_hardening_add = 0.25 # Europe: added
+			shipclass_military_station_armor_hardening_add = 0.25 # Europe: added
 		}
 
 		AI_weight = {

@@ -172,7 +172,7 @@ strike_craft_component_template = {
 	upgrades_to = "STRIKE_CRAFT_HANGAR_3"
 
 	tags = { weapon_type_strike_craft }
-	ai_tags = { weapon_role_point_defense carrier }
+	ai_tags = { weapon_role_point_defense weapon_role_anti_shield carrier carrier_stealth }
 	point_defence_targets = { "strike_craft" }
 }
 
@@ -228,7 +228,7 @@ strike_craft_component_template = {
 	upgrades_to = "STRIKE_CRAFT_SKRAND"
 
 	tags = { weapon_type_strike_craft }
-	ai_tags = { weapon_role_point_defense carrier }
+	ai_tags = { weapon_role_point_defense weapon_role_anti_shield carrier carrier_stealth }
 	point_defence_targets = { "strike_craft" }
 }
 
@@ -283,6 +283,6 @@ strike_craft_component_template = {
 	prerequisites = { "tech_strike_craft_skrand" }
 
 	tags = { weapon_type_strike_craft }
-	ai_tags = { weapon_role_point_defense carrier }
+	ai_tags = { weapon_role_point_defense weapon_role_anti_shield carrier carrier_stealth }
 	point_defence_targets = { "strike_craft" }
 }

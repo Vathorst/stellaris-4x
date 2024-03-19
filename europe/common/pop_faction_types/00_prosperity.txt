@@ -78,11 +78,12 @@ prosperity = {
 			}
 		}
 
+		# Europe: non-citizens don't particularly care
 		# Should really check for citizenship instead
-		modifier = {
-			factor = 1.25
-			NOT = { is_same_species = owner_species }
-		}
+		#modifier = {
+		#	factor = 1.25
+		#	NOT = { is_same_species = owner_species }
+		#}
 	}
 
 	leader = {
@@ -90,10 +91,13 @@ prosperity = {
 
 		modifier = {
 			factor = 0.0
-			OR = {
-				leader_class = commander
-				leader_class = commander
-			}
+			leader_class = commander
+			NOT = { has_ethic = ethic_pacifist }
+			# Europe: disabled, replaced with no non-pacifist commanders
+			#OR = {
+			#	leader_class = commander
+			#	leader_class = commander
+			#}
 		}
 
 		modifier = {

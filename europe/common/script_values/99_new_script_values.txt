@@ -36,3 +36,8 @@ num_owned_relic_worlds = {
 		mode = add
 	}
 }
+
+player_vassal_limit = {
+	base = 2
+	add = modifier:divided_patrongage_max_subjects
+}

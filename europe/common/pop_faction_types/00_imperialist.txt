@@ -265,7 +265,10 @@ imperialist = {
 		trigger = {
 			OR = {
 				owner = {
-					is_overlord = yes
+					OR = {
+						is_overlord = yes
+						is_galactic_emperor = yes # Europe: added
+					}
 				}
 				owner = {
 					has_federation = yes

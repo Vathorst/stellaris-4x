@@ -117,5 +117,5 @@ strike_craft_component_template = {
 	icon = "GFX_ship_part_amoeba_strike_craft_1"
 	icon_frame = 1
 	tags = { weapon_type_strike_craft weapon_type_space_fauna }
-	ai_tags = { weapon_role_anti_shield }
+	ai_tags = { weapon_role_anti_shield carrier carrier_stealth }
 }

@@ -31,3 +31,13 @@ is_faction_allowed = {
 	NOT = { has_ethic = ethic_gestalt_consciousness }
 	NOT = { has_country_flag = suppress_vanilla_factions }
 }
+
+has_ringworld_output_boost = {
+	OR = {
+		is_ringworld = yes
+		AND = {
+			habitable_structure = yes
+			owner = { is_void_dweller_empire = yes }
+		}
+	}
+}

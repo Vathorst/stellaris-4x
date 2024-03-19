@@ -69,23 +69,37 @@ xenoist = {
 			}
 		}
 
-		modifier = {
+		modifier = { # Europe: changed to citizenship rights because we want rights
 			factor = 2.0
-			NOT = { is_same_species = owner_species }
+			#NOT = { is_same_species = owner_species }
+			has_citizenship_rights = no
 		}
 	}
 
 	leader = {
 		base = 100
 
-		modifier = {
-			factor = 0.5
-			leader_class = scientist
+		# Europe: disabled
+		#modifier = {
+		#	factor = 0.5
+		#	leader_class = scientist
+		#}
+
+		modifier = { # Europe: changed to citizenship rights because we want rights
+			factor = 2.0
+			#NOT = { is_same_species = owner_species }
+			has_citizenship_rights = no
 		}
 
-		modifier = {
-			factor = 2.0
-			NOT = { is_same_species = owner_species }
+		modifier = { # Europe: added because delegates are probably going to want to do diplomacy
+			factor = 2
+			OR = {
+				AND = {
+					has_paragon_dlc = no
+					leader_class = official
+				}
+				has_trait = subclass_official_delegate
+			}	
 		}
 
 		modifier = {

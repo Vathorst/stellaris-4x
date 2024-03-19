@@ -9,19 +9,27 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added stealth tags
+	ai_tags = { gunship gunship_stealth brawler brawler_stealth artillery artillery_stealth } # Europe: added stealth and artillery tags
 
 	ai_weight = {
-		modifier = {
-			factor = 10.0
+		modifier = { # Europe: favor L-slot for artillery unless we are missile-focused
+			factor = 0.1
 			NOR = {
-				has_ai_personality = peaceful_traders
-				has_ai_personality = slaving_despots
-				has_ai_personality = migrating_flock
-				has_ai_personality = evangelising_zealots
-				has_ai_personality = hive_mind
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
 			}
 		}
+		# Europe: removed
+		#modifier = {
+		#	factor = 10.0
+		#	NOR = {
+		#		has_ai_personality = peaceful_traders
+		#		has_ai_personality = slaving_despots
+		#		has_ai_personality = migrating_flock
+		#		has_ai_personality = evangelising_zealots
+		#		has_ai_personality = hive_mind
+		#	}
+		#}
 	}
 
 	component_slot = {
@@ -59,19 +67,27 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added stealth tags
+	ai_tags = { gunship gunship_stealth brawler brawler_stealth artillery artillery_stealth } # Europe: added stealth and artillery tags
 
 	ai_weight = {
-		modifier = {
-			factor = 10.0
+		modifier = { # Europe: favor L-slot for artillery unless we are missile-focused
+			factor = 0.1
 			NOR = {
-				has_ai_personality = peaceful_traders
-				has_ai_personality = slaving_despots
-				has_ai_personality = migrating_flock
-				has_ai_personality = evangelising_zealots
-				has_ai_personality = hive_mind
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
 			}
 		}
+		# Europe: removed
+		#modifier = {
+		#	factor = 10.0
+		#	NOR = {
+		#		has_ai_personality = peaceful_traders
+		#		has_ai_personality = slaving_despots
+		#		has_ai_personality = migrating_flock
+		#		has_ai_personality = evangelising_zealots
+		#		has_ai_personality = hive_mind
+		#	}
+		#}
 	}
 
 	component_slot = {
@@ -112,20 +128,21 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { screen screen_stealth } # Europe: added stealth tags
 
-	ai_weight = {
-		modifier = {
-			factor = 10.0
-			is_preferred_weapons = weapon_type_explosive
-		}
-		modifier = {
-			factor = 0.1
-			has_technology = tech_battleships
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_explosive }
-		}
-	}
+	# Europe: disabled
+	#ai_weight = {
+	#	modifier = {
+	#		factor = 10.0
+	#		is_preferred_weapons = weapon_type_explosive
+	#	}
+	#	modifier = {
+	#		factor = 0.1
+	#		has_technology = tech_battleships
+	#	}
+	#	modifier = {
+	#		factor = 0.1
+	#		NOT = { is_preferred_weapons = weapon_type_explosive }
+	#	}
+	#}
 
 	# Europe: switched from 1P 2S slots to 1M 2P slots for weapon slot parity with other types
 	component_slot = {
@@ -165,20 +182,21 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { screen screen_stealth } # Europe: added stealth tags
 
-	ai_weight = {
-		modifier = {
-			factor = 10.0
-			is_preferred_weapons = weapon_type_explosive
-		}
-		modifier = {
-			factor = 0.1
-			has_technology = tech_battleships
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_explosive }
-		}
-	}
+	# Europe: disabled
+	#ai_weight = {
+	#	modifier = {
+	#		factor = 10.0
+	#		is_preferred_weapons = weapon_type_explosive
+	#	}
+	#	modifier = {
+	#		factor = 0.1
+	#		has_technology = tech_battleships
+	#	}
+	#	modifier = {
+	#		factor = 0.1
+	#		NOT = { is_preferred_weapons = weapon_type_explosive }
+	#	}
+	#}
 
 	# Europe: switched from 1P 2S slots to 1M 2P slots for weapon slot parity with other types
 	component_slot = {
@@ -197,6 +215,102 @@ ship_section_template = {
 		name = "SMALL_GUN_02"
 		template = "point_defence_turret"
 		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_BOW_L1"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery artillery_stealth }
+
+	ai_weight = {
+		modifier = { # Europe: favor M-slots for artillery if we are missile-focused
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		# Europe: disabled
+		#modifier = {
+		#	factor = 0.1
+		#	NOT = { has_technology = tech_battleships }
+		#}
+		#modifier = {
+		#	factor = 10.0
+		#	is_preferred_weapons = weapon_type_explosive
+		#}
+		#modifier = {
+		#	factor = 0.1
+		#	NOT = { is_preferred_weapons = weapon_type_explosive }
+		#}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "OFFSPRING_DESTROYER_BOW_L1"
+	ship_size = offspring_destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_L1_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery artillery_stealth }
+
+	ai_weight = {
+		modifier = { # Europe: favor M-slots for artillery if we are missile-focused
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		# Europe: disabled
+		#modifier = {
+		#	factor = 0.1
+		#	NOT = { has_technology = tech_battleships }
+		#}
+		#modifier = {
+		#	factor = 10.0
+		#	is_preferred_weapons = weapon_type_explosive
+		#}
+		#modifier = {
+		#	factor = 0.1
+		#	NOT = { is_preferred_weapons = weapon_type_explosive }
+		#}
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
 	}
 
 	small_utility_slots = 6
@@ -319,19 +433,27 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { screen screen_stealth } # Europe: added stealth tags
+	ai_tags = { screen screen_stealth artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth } # Europe: added stealth tags, energy torpedo tags, and artillery tags
 
 	ai_weight = {
 		modifier = {
-			factor = 10.0
-			NOR = {
-				has_ai_personality = peaceful_traders
-				has_ai_personality = slaving_despots
-				has_ai_personality = migrating_flock
-				has_ai_personality = evangelising_zealots
-				has_ai_personality = hive_mind
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
 			}
 		}
+		# Europe: removed
+		#modifier = {
+		#	factor = 10.0
+		#	NOR = {
+		#		has_ai_personality = peaceful_traders
+		#		has_ai_personality = slaving_despots
+		#		has_ai_personality = migrating_flock
+		#		has_ai_personality = evangelising_zealots
+		#		has_ai_personality = hive_mind
+		#	}
+		#}
 	}
 
 
@@ -364,21 +486,17 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { screen screen_stealth } # Europe: added stealth tags
+	ai_tags = { screen screen_stealth artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth } # Europe: added stealth tags, energy torpedo tags, and artillery tags
 
 	ai_weight = {
 		modifier = {
-			factor = 10.0
-			NOR = {
-				has_ai_personality = peaceful_traders
-				has_ai_personality = slaving_despots
-				has_ai_personality = migrating_flock
-				has_ai_personality = evangelising_zealots
-				has_ai_personality = hive_mind
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
 			}
 		}
 	}
-
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -409,11 +527,12 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added stealth tags
+	ai_tags = { gunship gunship_stealth brawler brawler_stealth explosive explosive_stealth } # Europe: added stealth tags and torpedo tags
 
-	ai_weight = {
-		factor = 100
-	}
+	# Europe: removed
+	#ai_weight = {
+	#	factor = 100
+	#}
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -444,11 +563,12 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added stealth tags
+	ai_tags = { gunship gunship_stealth brawler brawler_stealth explosive explosive_stealth } # Europe: added stealth tags and torpedo tags
 
-	ai_weight = {
-		factor = 100
-	}
+	# Europe: removed
+	#ai_weight = {
+	#	factor = 100
+	#}
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -472,6 +592,76 @@ ship_section_template = {
 	}
 }
 
+ship_section_template = {
+	key = "DESTROYER_STERN_M1"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_M1_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery artillery_stealth }
+
+	ai_weight = { # Europe: added, only good artillery design uses swarmer missiles
+		modifier = {
+			factor = 0.1
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "OFFSPRING_DESTROYER_STERN_M1"
+	ship_size = offspring_destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_M1_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery artillery_stealth }
+
+	ai_weight = { # Europe: added, only good artillery design uses swarmer missiles
+		modifier = {
+			factor = 0.1
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
 ### Crisis Destroyer
 
 # 1M1G1S1P
@@ -482,7 +672,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "crisis_destroyer_1M2S1M_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { brawler brawler_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth } # Europe: added stealth tags
+	ai_tags = { brawler brawler_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth artillery artillery_stealth } # Europe: added stealth and artillery tags
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -519,6 +709,23 @@ ship_section_template = {
 	entity = "crisis_destroyer_1L2S_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { gunship gunship_stealth artillery artillery_stealth } # Europe: added stealth tags
+
+	ai_weight = { # Europe: added, only good artillery design uses swarmer missiles
+		modifier = {
+			factor = 10
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 
 	component_slot = {
 		name = "LARGE_GUN_01"

@@ -44,7 +44,7 @@ utility_component_template = {
 	upgrades_to = "AFTERBURNER_2"
 
 	ai_weight = {
-		weight = 10
+		weight = 5 # Europe: lowered from 10
 		modifier = {
 			factor = 2.0
 			is_preferred_weapons = weapon_type_kinetic
@@ -77,7 +77,7 @@ utility_component_template = {
 	component_set = "AFTERBURNER_2"
 
 	ai_weight = {
-		weight = 15
+		weight = 7.5 # Europe: lowered from 15
 		modifier = {
 			factor = 2.0
 			is_preferred_weapons = weapon_type_kinetic

@@ -11,6 +11,23 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { artillery artillery_stealth } # Europe: added stealth tags
 
+	ai_weight = { # Europe: added
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 10
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -38,14 +55,20 @@ ship_section_template = {
 
 	prerequisites = { tech_torpedoes_1 }
 
-	ai_weight = {
+	ai_weight = { # Europe: added kinetic preferences because of synergy
 		modifier = {
 			factor = 10.0
-			is_preferred_weapons = weapon_type_explosive
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_kinetic
+			}
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_explosive }
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_kinetic
+			}
 		}
 	}
 
@@ -84,7 +107,24 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_bow_M2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { gunship gunship_stealth carrier carrier_stealth } # Europe: added stealth tags
+	ai_tags = { gunship gunship_stealth artillery artillery_stealth carrier carrier_stealth } # Europe: added stealth tags and artillery tags
+
+	ai_weight = { # Europe: added
+		modifier = {
+			factor = 0.1
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 10.0
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -165,6 +205,23 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { artillery artillery_stealth }
 
+	ai_weight = { # Europe: added
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 100
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -193,7 +250,18 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_mid_M3_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship gunship_stealth } # Europe: added stealth tags
+	ai_tags = { gunship gunship_stealth artillery artillery_stealth } # Europe: added stealth tags and artillery tags
+
+	ai_weight = { # Europe: added
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+	}
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -234,14 +302,20 @@ ship_section_template = {
 
 	prerequisites = { tech_torpedoes_1 }
 
-	ai_weight = {
+	ai_weight = { # Europe: added kinetic preferences because of synergy
 		modifier = {
 			factor = 10.0
-			is_preferred_weapons = weapon_type_explosive
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_kinetic
+			}
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_explosive }
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_kinetic
+			}
 		}
 	}
 
@@ -289,6 +363,23 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { artillery artillery_stealth }
 
+	ai_weight = { # Europe: added
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 10
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -316,14 +407,20 @@ ship_section_template = {
 
 	prerequisites = { tech_torpedoes_1 }
 
-	ai_weight = {
+	ai_weight = { # Europe: added kinetic preferences because of synergy
 		modifier = {
 			factor = 10.0
-			is_preferred_weapons = weapon_type_explosive
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_kinetic
+			}
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_explosive }
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_kinetic
+			}
 		}
 	}
 
@@ -362,7 +459,24 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_bow_M2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { gunship gunship_stealth carrier carrier_stealth } # Europe: added stealth tags
+	ai_tags = { gunship gunship_stealth carrier carrier_stealth artillery artillery_stealth } # Europe: added stealth tags and artillery tags
+
+	ai_weight = { # Europe: added
+		modifier = {
+			factor = 0.1
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 10.0
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -443,6 +557,23 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { artillery artillery_stealth }
 
+	ai_weight = { # Europe: added
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 100
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
+
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "large_turret"
@@ -471,7 +602,18 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_mid_M3_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship gunship_stealth } # Europe: added stealth tags
+	ai_tags = { gunship gunship_stealth artillery artillery_stealth } # Europe: added stealth tags and artillery tags
+
+	ai_weight = { # Europe: added
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+	}
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -512,14 +654,20 @@ ship_section_template = {
 
 	prerequisites = { tech_torpedoes_1 }
 
-	ai_weight = {
+	ai_weight = { # Europe: added kinetic preferences because of synergy
 		modifier = {
 			factor = 10.0
-			is_preferred_weapons = weapon_type_explosive
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_kinetic
+			}
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_explosive }
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_kinetic
+			}
 		}
 	}
 
@@ -557,6 +705,119 @@ ship_section_template = {
 	}
 }
 
+ship_section_template = {
+	key = "CRUISER_STERN_M1"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_M1_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery artillery_stealth carrier carrier_stealth gunship gunship_stealth	} # Europe: added stealth tags and gunship tags
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CRUISER_STERN_S2"
+	ship_size = cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {	gunship gunship_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth } # Europe: added stealth tags
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "OFFSPRING_CRUISER_STERN_M1"
+	ship_size = offspring_cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_M1_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery artillery_stealth carrier carrier_stealth	} # Europe: added stealth tags
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "OFFSPRING_CRUISER_STERN_S2"
+	ship_size = offspring_cruiser
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "cruiser_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = {	gunship gunship_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth } # Europe: added stealth tags
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots = 3
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+
 ### Crisis Cruiser
 
 ship_section_template = {
@@ -567,6 +828,23 @@ ship_section_template = {
 	entity = "crisis_cruiser_hull_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { artillery artillery_stealth gunship gunship_stealth } # Europe: added tags so that AI can choose between this and carrier version
+
+	ai_weight = { # Europe: added
+		modifier = {
+			factor = 0.1
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+		modifier = {
+			factor = 10
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
+		}
+	}
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -608,16 +886,22 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "crisis_cruiser_hull_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier carrier_stealth }
+	ai_tags = { carrier carrier_stealth artillery artillery_stealth }
 
 	ai_weight = {
 		modifier = {
-			factor = 10.0
-			is_preferred_weapons = weapon_type_strike_craft
+			factor = 0.1
+			NOR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
 		}
 		modifier = {
-			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+			factor = 10
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}
 		}
 	}
 

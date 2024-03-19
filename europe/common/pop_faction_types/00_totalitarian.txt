@@ -71,8 +71,9 @@ totalitarian = {
 
 		# Should really check for citizenship instead
 		modifier = {
-			factor = 0.25
-			NOT = { is_same_species = owner_species }
+			factor = 0.25 # Europe: switched to citizen's rights check
+			#NOT = { is_same_species = owner_species }
+			has_citizenship_rights = no
 		}
 	}
 
@@ -186,6 +187,7 @@ totalitarian = {
 						}
 					}
 					has_civic = civic_slaver_guilds
+					has_civic = civic_indentured_assets # Europe: added
 				}
 			}
 		}
@@ -236,7 +238,10 @@ totalitarian = {
 
 		trigger = {
 			owner = {
-				is_overlord = yes
+				OR = {
+					is_overlord = yes
+					is_galactic_emperor = yes # Europe: added
+				}
 			}
 		}
 	}

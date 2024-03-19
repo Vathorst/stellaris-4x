@@ -143,12 +143,13 @@ ap_world_shaper = {
 		NOT = {
 			has_ascension_perk = ap_world_shaper
 		}
-		NOT = { has_authority = auth_hive_mind }
-		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
-			has_valid_civic = civic_machine_servitor
-			has_valid_civic = civic_machine_assimilator
-		}
+		# Europe: removed because of having merged the effects of Detox and some of Hydrocentric (also, -25% terraforming cost for terraforming into hive or machine worlds isn't worth an ascension perk alone)
+		#NOT = { has_authority = auth_hive_mind }
+		#OR = {
+		#	NOT = { has_authority = auth_machine_intelligence }
+		#	has_valid_civic = civic_machine_servitor
+		#	has_valid_civic = civic_machine_assimilator
+		#}
 	}
 
 	ai_weight = {
