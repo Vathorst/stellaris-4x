@@ -47,13 +47,17 @@ supremacist = {
 	can_join_faction = {
 		is_shackled_robot = no
 		can_think = yes
-		owner = {
-			NOR = {
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
+		OR = {
+			owner = {
+				NOR = {
+					has_ethic = ethic_pacifist
+					has_ethic = ethic_fanatic_pacifist
+				}
 			}
+			has_ethic = ethic_militarist # Europe: added so that we can have this faction spawn for militarist pops
 		}
-		is_same_species = owner_species
+		has_citizenship_rights = yes # Europe: replaced below with citizenship rights version
+		#is_same_species = owner_species
 		NOR = { # Europe: added
 			has_ethic = ethic_xenophile
 			has_ethic = ethic_pacifist

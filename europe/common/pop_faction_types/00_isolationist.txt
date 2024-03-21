@@ -48,8 +48,12 @@ isolationist = {
 		is_shackled_robot = no
 		can_think = yes
 		OR = {
-			is_same_species = owner_species # Europe: switched up
 			#NOT = { is_same_species = owner_species }
+			AND = { # Europe: replaced above with citizenship rights version, but only we are xenophobic
+				has_citizenship_rights = no
+				has_ethic = ethic_xenophobe
+			}
+			has_ethic = ethic_pacifist # Europe: added
 			owner = {
 				OR = {
 					has_ethic = ethic_pacifist
