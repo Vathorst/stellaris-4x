@@ -54,10 +54,14 @@ supremacist = {
 			}
 		}
 		is_same_species = owner_species
+		NOR = { # Europe: added
+			has_ethic = ethic_xenophile
+			has_ethic = ethic_pacifist
+		}
 	}
 
 	attraction = {
-		base = 100
+		base = 150 # Europe: increased from 100 to be consistent
 
 		modifier = {
 			factor = 1.25
@@ -77,20 +81,20 @@ supremacist = {
 		}
 
 		modifier = { # Europe: added to mirror isolationists
-			factor = 1.5
-
-			OR = {
+			factor = 0.5
+			NOR = { 
 				has_ethic = ethic_xenophobe
 				has_ethic = ethic_fanatic_xenophobe
 			}
 		}
 
 		modifier = { # Europe: added to mirror isolationists
-			factor = 0.25
-
+			factor = 0.5
 			NOR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
 			}
 		}
 

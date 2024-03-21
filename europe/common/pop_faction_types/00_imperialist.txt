@@ -48,10 +48,13 @@ imperialist = {
 	can_join_faction = {
 		is_shackled_robot = no
 		can_think = yes
+		NOT = { # Europe: added
+			has_ethic = ethic_pacifist
+		}
 	}
 
 	attraction = {
-		base = 100
+		base = 150 # Europe: increased from 100 for consistency
 
 		modifier = {
 			factor = 1.25
@@ -70,9 +73,18 @@ imperialist = {
 			}
 		}
 
-		modifier = {
-			factor = 1.25
-			has_citizenship_rights = yes
+		# Europe: disabled
+		#modifier = {
+		#	factor = 1.25
+		#	has_citizenship_rights = yes
+		#}
+
+		modifier = { # Europe: added
+			factor = 0.5
+			NOR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
 		}
 	}
 

@@ -47,10 +47,13 @@ prosperity = {
 	can_join_faction = {
 		is_shackled_robot = no
 		can_think = yes
+		NOT = { # Europe: added
+			has_ethic = ethic_militarist
+		}
 	}
 
 	attraction = {
-		base = 100
+		base = 150 # Europe: increased from 100
 
 		modifier = {
 			factor = 1.25
@@ -70,9 +73,8 @@ prosperity = {
 		}
 
 		modifier = {
-			factor = 1.5
-
-			OR = {
+			factor = 0.5 # Europe: switched from 1.5x on pacifist to 0.5x if not pacifist
+			NOR = {
 				has_ethic = ethic_pacifist
 				has_ethic = ethic_fanatic_pacifist
 			}

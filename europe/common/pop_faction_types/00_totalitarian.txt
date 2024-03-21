@@ -47,6 +47,9 @@ totalitarian = {
 	can_join_faction = {
 		is_shackled_robot = no
 		can_think = yes
+		NOT = { # Europe: added
+			has_ethic = ethic_egalitarian
+		}
 	}
 
 	attraction = {
@@ -74,6 +77,15 @@ totalitarian = {
 			factor = 0.25 # Europe: switched to citizen's rights check
 			#NOT = { is_same_species = owner_species }
 			has_citizenship_rights = no
+		}
+
+		# Europe: added
+		modifier = {
+			factor = 0.5
+			NOR = { 
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
+			}
 		}
 	}
 

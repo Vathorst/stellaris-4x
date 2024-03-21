@@ -47,6 +47,9 @@ progressive = {
 	can_join_faction = {
 		is_shackled_robot = no
 		can_think = yes
+		NOT = { # Europe: added
+			has_ethic = ethic_authoritarian
+		}
 	}
 
 	attraction = {
@@ -69,9 +72,17 @@ progressive = {
 			}
 		}
 
+		modifier = { # Europe: added
+			factor = 0.5
+			NOR = {
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+
 		# Should really check for citizenship instead
 		modifier = {
-			factor = 1.25 # Europe: changed from 0.25 because aliens with no rights will want to be progressive to push for more equal
+			factor = 2.0 # Europe: changed from 0.25 because aliens with no rights will want to be progressive to push for more equal
 			#NOT = { is_same_species = owner_species }
 			has_citizenship_rights = no
 		}

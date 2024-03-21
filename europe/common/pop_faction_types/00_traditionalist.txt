@@ -48,6 +48,9 @@ traditionalist = {
 	can_join_faction = {
 		is_shackled_robot = no # Europe: added
 		can_think = yes
+		NOT = { # Europe: added
+			has_ethic = ethic_materialist
+		}
 	}
 
 	attraction = {
@@ -73,6 +76,15 @@ traditionalist = {
 		modifier = { # Europe: added, rare but possible
 			factor = 0.01
 			is_robot_pop = yes
+		}
+
+		# Europe: added
+		modifier = {
+			factor = 0.5
+			NOR = { 
+				has_ethic = ethic_spiritualist
+				has_ethic = ethic_fanatic_spiritualist
+			}
 		}
 	}
 

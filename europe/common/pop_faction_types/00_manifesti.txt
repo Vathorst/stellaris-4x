@@ -58,10 +58,16 @@ manifesti = {
 	}
 
 	can_join_faction = {
-		OR = {
-			has_ethic = ethic_egalitarian
-			has_ethic = ethic_xenophile
-			has_ethic = ethic_pacifist
+		# Europe: switched so that materialists and traditionalists should also be able to join, but with lower weight
+		#OR = {
+		#	has_ethic = ethic_egalitarian
+		#	has_ethic = ethic_xenophile
+		#	has_ethic = ethic_pacifist
+		#}
+		NOR = {
+			has_ethic = ethic_authoritarian
+			has_ethic = ethic_xenophobe
+			has_ethic = ethic_militarist
 		}
 		is_shackled_robot = no
 		can_think = yes
@@ -71,7 +77,7 @@ manifesti = {
 	}
 
 	attraction = {
-		base = 160
+		base = 150 # Europe: lowered from 160 for consistency
 
 		modifier = {
 			factor = 1.25
@@ -88,23 +94,88 @@ manifesti = {
 				NOT = { exists = leader }
 			}
 		}
+		# Europe: removed
+		#modifier = {
+		#	factor = 0.25
+		#	OR = {
+		#		has_trait = trait_conformists
+		#		has_trait = trait_thrifty
+		#		has_trait = trait_traditional
+		#	}
+		#}
+		modifier = { # Europe: added
+			factor = 0.5
+			NOR = {
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+			}
+		}
+		modifier = { # Europe: separated out from Outcasts and radicals check and increased from 1.5x to 2x
+			factor = 2.0
+			has_citizenship_rights = no
+		}
+		# Europe: separate traits checks so that those with multiple traits have the attraction bonuses and maluses applied multiple times
 		modifier = {
 			factor = 0.25
-			OR = {
-				has_trait = trait_conformists
-				has_trait = trait_thrifty
-				has_trait = trait_traditional
-			}
+			has_trait = trait_docile
 		}
-		modifier = { #Outcasts and radicals
+		modifier = {
 			factor = 1.5
-			OR = {
-				NOT = { is_same_species = owner_species }
-				has_citizenship_rights = no # Europe: replaced below with this trigger
-				#NOT = { has_citizenship_type = { type = citizenship_full country = owner } }
-				has_trait = trait_unruly
-			}
+			has_trait = trait_unruly
 		}
+		modifier = {
+			factor = 0.25
+			has_trait = trait_conformists
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_deviants
+		}
+		modifier = {
+			factor = 0.25
+			has_trait = trait_traditional
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_quarrelsome
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_repugnant
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_charismatic
+		}
+		modifier = {
+			factor = 0.25
+			has_trait = trait_robot_loyalty_circuits
+		}
+		modifier = {
+			factor = 0.25
+			has_trait = trait_robot_propaganda_machines
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_robot_uncanny
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_robot_emotion_emulators
+		}
+		# Europe: removed
+		#modifier = { #Outcasts and radicals
+		#	factor = 1.5
+		#	OR = {
+		#		NOT = { is_same_species = owner_species }
+		#		NOT = { has_citizenship_type = { type = citizenship_full country = owner } }
+		#		has_trait = trait_unruly
+		#	}
+		#}
 	}
 
 	leader = {
