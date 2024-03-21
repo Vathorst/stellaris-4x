@@ -369,7 +369,7 @@ weapon_component_template = {
 	type = point_defence
 
 	projectile_gfx = "white_laser_pd"
-	tags = { weapon_type_point_defense weapon_archaeotech } # Europe: removed weapon_type_energy to prevent problems with repeatables
+	tags = { weapon_type_point_defense weapon_archaeotech weapon_type_energy_pd } # Europe: removed weapon_type_energy to prevent problems with repeatables
 	ai_tags = { weapon_role_point_defense screen screen_stealth } # Europe: added stealth tag
 	resources = {
 		category = ship_components
