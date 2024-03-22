@@ -467,11 +467,11 @@ artifact_sell_collector = {
 	}
 
 	potential = {
-		always = no # Europe: disabled action because minor artifacts can be bought and sold on the market
-		#NAND = {
-		#	is_gestalt = yes
-		#	is_homicidal = yes
-		#}
+		NOT = { can_buy_on_market = minor_artifacts } # Europe: added this so that selling artifacts is disabled if we have market access
+		NAND = {
+			is_gestalt = yes
+			is_homicidal = yes
+		}
 	}
 
 	effect = {
