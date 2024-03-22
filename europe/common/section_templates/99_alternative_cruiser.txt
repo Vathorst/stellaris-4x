@@ -51,16 +51,21 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth carrier carrier_stealth } # Europe: added carrier tags because of new synergy with fighters
 
 	prerequisites = { tech_torpedoes_1 }
 
-	ai_weight = { # Europe: added kinetic preferences because of synergy
+	ai_weight = { # Europe: added kinetic and strike craft preferences because of synergy
 		modifier = {
 			factor = 10.0
 			OR = {
 				is_preferred_weapons = weapon_type_explosive
 				is_preferred_weapons = weapon_type_kinetic
+				AND = {
+					is_preferred_weapons = weapon_type_strike_craft
+					has_technology = tech_energy_torpedoes_1
+					NOT = { no_resource_for_component = { RESOURCE = exotic_gases } }
+				}
 			}
 		}
 		modifier = {
@@ -68,6 +73,11 @@ ship_section_template = {
 			NOR = {
 				is_preferred_weapons = weapon_type_explosive
 				is_preferred_weapons = weapon_type_kinetic
+				AND = {
+					is_preferred_weapons = weapon_type_strike_craft
+					has_technology = tech_energy_torpedoes_1
+					NOT = { no_resource_for_component = { RESOURCE = exotic_gases } }
+				}
 			}
 		}
 	}
@@ -114,14 +124,26 @@ ship_section_template = {
 			factor = 0.1
 			NOR = {
 				is_preferred_weapons = weapon_type_explosive
-				is_preferred_weapons = weapon_type_strike_craft
+				AND = {
+					is_preferred_weapons = weapon_type_strike_craft
+					OR = {
+						NOT = { has_technology = tech_energy_torpedoes_1 }
+						no_resource_for_component = { RESOURCE = exotic_gases }
+					}
+				}
 			}
 		}
 		modifier = {
 			factor = 10.0
 			OR = {
 				is_preferred_weapons = weapon_type_explosive
-				is_preferred_weapons = weapon_type_strike_craft
+				AND = {
+					is_preferred_weapons = weapon_type_strike_craft
+					OR = {
+						NOT = { has_technology = tech_energy_torpedoes_1 }
+						no_resource_for_component = { RESOURCE = exotic_gases }
+					}
+				}
 			}
 		}
 	}
@@ -403,16 +425,21 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth carrier carrier_stealth } # Europe: added carrier tags because of new synergy with fighters
 
 	prerequisites = { tech_torpedoes_1 }
 
-	ai_weight = { # Europe: added kinetic preferences because of synergy
+	ai_weight = { # Europe: added kinetic and strike craft preferences because of synergy
 		modifier = {
 			factor = 10.0
 			OR = {
 				is_preferred_weapons = weapon_type_explosive
 				is_preferred_weapons = weapon_type_kinetic
+				AND = {
+					is_preferred_weapons = weapon_type_strike_craft
+					has_technology = tech_energy_torpedoes_1
+					NOT = { no_resource_for_component = { RESOURCE = exotic_gases } }
+				}
 			}
 		}
 		modifier = {
@@ -420,6 +447,11 @@ ship_section_template = {
 			NOR = {
 				is_preferred_weapons = weapon_type_explosive
 				is_preferred_weapons = weapon_type_kinetic
+				AND = {
+					is_preferred_weapons = weapon_type_strike_craft
+					has_technology = tech_energy_torpedoes_1
+					NOT = { no_resource_for_component = { RESOURCE = exotic_gases } }
+				}
 			}
 		}
 	}
@@ -466,14 +498,26 @@ ship_section_template = {
 			factor = 0.1
 			NOR = {
 				is_preferred_weapons = weapon_type_explosive
-				is_preferred_weapons = weapon_type_strike_craft
+				AND = {
+					is_preferred_weapons = weapon_type_strike_craft
+					OR = {
+						NOT = { has_technology = tech_energy_torpedoes_1 }
+						no_resource_for_component = { RESOURCE = exotic_gases }
+					}
+				}
 			}
 		}
 		modifier = {
 			factor = 10.0
 			OR = {
 				is_preferred_weapons = weapon_type_explosive
-				is_preferred_weapons = weapon_type_strike_craft
+				AND = {
+					is_preferred_weapons = weapon_type_strike_craft
+					OR = {
+						NOT = { has_technology = tech_energy_torpedoes_1 }
+						no_resource_for_component = { RESOURCE = exotic_gases }
+					}
+				}
 			}
 		}
 	}

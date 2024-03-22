@@ -1056,8 +1056,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "space_whale_weapon"
 	tags = { weapon_type_energy weapon_type_space_fauna s_slot }
-	ai_tags = { weapon_role_anti_shield }
-
+	ai_tags = { weapon_role_anti_shield gunship gunship_stealth } # Europe: added gunship tags
 	component_set = "NULL_VOID"
 	prerequisites = { "null_void_beam" }
 	resources = {
@@ -1073,6 +1072,10 @@ weapon_component_template = {
 
 	ai_weight = {
 		weight = 1
+		modifier = { # Europe: added because this weapon is so hyper-specialized that the AI should generally not use it
+			factor = 0.1
+			always = yes
+		}
 	}
 }
 
@@ -1086,8 +1089,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "space_whale_weapon"
 	tags = { weapon_type_energy weapon_type_space_fauna m_slot }
-	ai_tags = { weapon_role_anti_shield }
-
+	ai_tags = { weapon_role_anti_shield gunship gunship_stealth } # Europe: added gunship tags
 	component_set = "NULL_VOID"
 	prerequisites = { "null_void_beam" }
 	resources = {
@@ -1103,6 +1105,10 @@ weapon_component_template = {
 
 	ai_weight = {
 		weight = 1
+		modifier = { # Europe: added because this weapon is so hyper-specialized that the AI should generally not use it
+			factor = 0.1
+			always = yes
+		}
 	}
 }
 
@@ -1116,8 +1122,7 @@ weapon_component_template = {
 	icon_frame = 1
 	projectile_gfx = "space_whale_weapon"
 	tags = { weapon_type_energy weapon_type_space_fauna l_slot }
-	ai_tags = { weapon_role_anti_shield }
-
+	ai_tags = { weapon_role_anti_shield gunship gunship_stealth } # Europe: added gunship tags
 	component_set = "NULL_VOID"
 	prerequisites = { "null_void_beam" }
 	resources = {
@@ -1133,6 +1138,10 @@ weapon_component_template = {
 
 	ai_weight = {
 		weight = 1
+		modifier = { # Europe: added because this weapon is so hyper-specialized that the AI should generally not use it
+			factor = 0.1
+			always = yes
+		}
 	}
 }
 

@@ -130,5 +130,5 @@ strike_craft_component_template = {
 	icon = "GFX_ship_part_swarm_strike_craft_1"
 	icon_frame = 1
 	tags = { weapon_type_strike_craft weapon_swarm weapon_type_space_fauna }
-	ai_tags = { weapon_role_anti_shield weapon_role_anti_armor weapon_role_anti_hull carrier carrier_stealth } # Europe: switched point defense role for anti-hull role and anti-armor role
+	ai_tags = { weapon_role_anti_shield weapon_role_anti_armor weapon_role_anti_hull carrier carrier_stealth energy_torpedoes energy_torpedoes_stealth } # Europe: switched point defense role for anti-hull role and anti-armor role, added energy torpedos tag because of new synergy with them
 }
