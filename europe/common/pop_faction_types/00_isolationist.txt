@@ -5,6 +5,7 @@
 isolationist = {
 	election_header = "GFX_faction_header_yellow"
 	guiding_ethic = ethic_xenophobe
+	use_guiding_ethic_as_pop_filter = no # Europe: added
 	visual_ethic = "isolationist_visual_ethic"
 
 	unique = yes
@@ -88,7 +89,7 @@ isolationist = {
 		}
 
 		modifier = {
-			factor = 0.5 # Europe switched from 1.5x if xenophobe to 0.5x if not xenophobe
+			factor = 0.1 # Europe switched from 1.5x if xenophobe to 0.1x if not xenophobe
 			NOR = {
 				has_ethic = ethic_xenophobe
 				has_ethic = ethic_fanatic_xenophobe

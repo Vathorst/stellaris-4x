@@ -5,6 +5,7 @@
 xenoist = {
 	election_header = "GFX_faction_header_yellow"
 	guiding_ethic = ethic_xenophile
+	use_guiding_ethic_as_pop_filter = no # Europe: added
 	visual_ethic = "xenoist_visual_ethic"
 
 	unique = yes
@@ -80,7 +81,7 @@ xenoist = {
 
 		# Europe: added
 		modifier = {
-			factor = 0.5
+			factor = 0.1
 			NOR = { 
 				has_ethic = ethic_xenophile
 				has_ethic = ethic_fanatic_xenophile

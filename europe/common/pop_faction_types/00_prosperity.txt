@@ -5,6 +5,7 @@
 prosperity = {
 	election_header = "GFX_faction_header_yellow"
 	guiding_ethic = ethic_pacifist
+	use_guiding_ethic_as_pop_filter = no # Europe: added
 	visual_ethic = "prosperity_visual_ethics"
 
 	unique = yes
@@ -73,7 +74,7 @@ prosperity = {
 		}
 
 		modifier = {
-			factor = 0.5 # Europe: switched from 1.5x on pacifist to 0.5x if not pacifist
+			factor = 0.1 # Europe: switched from 1.5x on pacifist to 0.1x if not pacifist
 			NOR = {
 				has_ethic = ethic_pacifist
 				has_ethic = ethic_fanatic_pacifist

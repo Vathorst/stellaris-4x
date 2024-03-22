@@ -2117,7 +2117,7 @@ nebula_names = {
 	"Oracles_Grave_Nebula"
 	#"Demons_Eye_Nebula"
 	#"Weeping_Ghost_Nebula"
-	$"Forbidden_Nebula"
+	"Forbidden_Nebula"
 	"Crossroads_Nebula"
 	#"Whispering_Garden_Nebula"
 	"Dark_Hopes_Nebula"

@@ -45,3 +45,8 @@
 		SHIP_MAX_EVASION					= 0.95 # Increased from 0.9 because it was too easy for corvettes to get 90%. 
 		DEFAULT_ARMOR_RATIO 				= 0.5 # Increased from 0.4 because hull plating is generally not a good module.
 	}
+
+	NAI = {
+		AI_ALLOWED_TO_BUY = { "minerals" "food" "alloys" "consumer_goods" "exotic_gases" "rare_crystals" "volatile_motes" "sr_living_metal" "sr_dark_matter" "sr_zro" "nanites" "minor_artifacts" } # Europe: added nanites and minor artifacts
+		AI_ALLOWED_TO_SELL = { "minerals" "food" "alloys" "consumer_goods" "exotic_gases" "rare_crystals" "volatile_motes" "sr_living_metal" "sr_dark_matter" "sr_zro" "nanites" "minor_artifacts" } # Europe: added nanites and minor artifacts
+	}

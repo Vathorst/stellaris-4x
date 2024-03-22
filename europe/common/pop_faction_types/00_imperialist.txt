@@ -5,6 +5,7 @@
 imperialist = {
 	election_header = "GFX_faction_header_yellow"
 	guiding_ethic = ethic_militarist #only pops of this ethic can join the faction
+	use_guiding_ethic_as_pop_filter = no # Europe: added
 	visual_ethic = "imperialist_visual_ethic"
 
 	unique = yes
@@ -80,7 +81,7 @@ imperialist = {
 		#}
 
 		modifier = { # Europe: added
-			factor = 0.5
+			factor = 0.1
 			NOR = {
 				has_ethic = ethic_militarist
 				has_ethic = ethic_fanatic_militarist

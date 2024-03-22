@@ -118,6 +118,9 @@
  requires_less_than_two_vassals: "Players cannot have more than two player vassals at any time, including secret fealty pledges."
  mod_divided_patrongage_max_subjects: "Max Player Subjects, Subjects Exempt from Divided Patronage"
 
+ leader_trait_armorer_desc: "In space warfare, any mistake can turn deadly. This leader insists on strict maintenance routines to keep the navy's fleets in excellent condition."
+ leader_trait_destiny_engineer_desc: "This leader has devised new ways to maintain and harden ship defenses. There are few weapons in the galaxy that can penetrate the hulls of [Root.GetHisHer] fleet's designs."
+
   # Preset text icons
  #text_icon_vacuum_flower:0 "£vacuum_flower£"
  trade_action_r_ancient_sword: "£ancient_sword£ $r_ancient_sword$"
