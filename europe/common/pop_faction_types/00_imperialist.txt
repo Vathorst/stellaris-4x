@@ -81,7 +81,7 @@ imperialist = {
 		#}
 
 		modifier = { # Europe: added
-			factor = 0.1
+			factor = 0.05
 			NOR = {
 				has_ethic = ethic_militarist
 				has_ethic = ethic_fanatic_militarist

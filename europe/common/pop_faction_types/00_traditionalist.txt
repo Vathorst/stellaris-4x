@@ -81,7 +81,7 @@ traditionalist = {
 
 		# Europe: added
 		modifier = {
-			factor = 0.1
+			factor = 0.05
 			NOR = { 
 				has_ethic = ethic_spiritualist
 				has_ethic = ethic_fanatic_spiritualist

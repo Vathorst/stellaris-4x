@@ -74,7 +74,7 @@ prosperity = {
 		}
 
 		modifier = {
-			factor = 0.1 # Europe: switched from 1.5x on pacifist to 0.1x if not pacifist
+			factor = 0.05 # Europe: switched from 1.5x on pacifist to 0.05x if not pacifist
 			NOR = {
 				has_ethic = ethic_pacifist
 				has_ethic = ethic_fanatic_pacifist
