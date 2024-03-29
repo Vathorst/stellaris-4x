@@ -117,6 +117,8 @@
 
  requires_less_than_two_vassals: "Players cannot have more than two player vassals at any time, including secret fealty pledges."
  mod_divided_patrongage_max_subjects: "Max Player Subjects, Subjects Exempt from Divided Patronage"
+ subject_can_do_diplomacy_but_not_vote_desc: "The Subject is free to engage in most diplomacy, but must follow their Overlord's votes in Federations and the Galactic Community.\n\nIf the Overlord is a member of the §YGalactic Community§!, the Subject will be forced to join it."
+ subject_can_not_do_diplomacy_desc: "The Subject may not engage in diplomacy with other Empires, nor vote independently.\n\nThis will force the Subject to join any §YFederation§! that the Overlord is a member of."
 
  leader_trait_armorer_desc: "In space warfare, any mistake can turn deadly. This leader insists on strict maintenance routines to keep the navy's fleets in excellent condition."
  leader_trait_destiny_engineer_desc: "This leader has devised new ways to maintain and harden ship defenses. There are few weapons in the galaxy that can penetrate the hulls of [Root.GetHisHer] fleet's designs."
