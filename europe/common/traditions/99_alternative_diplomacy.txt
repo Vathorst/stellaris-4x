@@ -19,7 +19,7 @@ tr_diplomacy_eminent_diplomats = {
 		has_tradition = tr_diplomacy_diplomatic_networking
 	}
 
-	#custom_tooltip = tr_diplomacy_eminent_diplomats_desc # Europe: removed because the favors effect is removed
+	custom_tooltip = tr_diplomacy_eminent_diplomats_desc
 
 	modifier = {
 		diplo_action_acceptance_add = 5

@@ -60,17 +60,28 @@ wg_plunder = {
 		from = {
 			export_resource_income_to_variable = {
 				resource = energy
-				variable = monthly_energy
+				variable = energy_reward
+			}
+			multiply_variable = {
+				which = energy_reward
+				value = 0.3
 			}
 			export_resource_income_to_variable = {
 				resource = minerals
-				variable = monthly_minerals
+				variable = minerals_reward
+			}
+			multiply_variable = {
+				which = minerals_reward
+				value = 0.3
 			}
 		}
 		add_resource = {
-			energy = $FROM$.monthly_energy
-			minerals = $FROM$.monthly_minerals
-			mult = 30
+			energy = 100
+			mult = from.energy_reward
+		}
+		add_resource = {
+			minerals = 100
+			mult = from.minerals_reward
 		}
 		hidden_effect = { from = { add_modifier = { modifier = raided days = 3600 } } }
 	}
@@ -142,20 +153,28 @@ wg_plunder_raid = {
 		from = {
 			export_resource_income_to_variable = {
 				resource = energy
-				variable = monthly_energy
+				variable = energy_reward
+			}
+			multiply_variable = {
+				which = energy_reward
+				value = 0.6
 			}
 			export_resource_income_to_variable = {
 				resource = minerals
-				variable = monthly_minerals
+				variable = minerals_reward
+			}
+			multiply_variable = {
+				which = minerals_reward
+				value = 0.06
 			}
 		}
 		add_resource = {
-			energy = $FROM$.monthly_energy
-			mult = 60
+			energy = 100
+			mult = from.energy_reward
 		}
 		add_resource = {
-			minerals = $FROM$.monthly_minerals
-			mult = 6
+			minerals = 100
+			mult = from.minerals_reward
 		}
 		hidden_effect = { from = { add_modifier = { modifier = raided days = 3600 } } }
 	}
