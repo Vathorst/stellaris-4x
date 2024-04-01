@@ -47,7 +47,7 @@
 @frigate_collision_radius = 3.0
 @frigate_formation_priority = 25
 
-@frigate_hp = 700 # Europe: increased from 400
+@frigate_hp = 500 # Europe: increased from 400
 @frigate_evasion = 20
 @frigate_build_time = 90
 

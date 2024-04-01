@@ -19,7 +19,7 @@
   - Doubled the naval capacity usage of corvettes, frigates, destroyers, cruisers, battleships, titans, menacing corvettes, menacing destroyers, and menacing cruisers.
   - Increased the maximum Evasion that a ship can have to 95% from 90%.
   - Corvettes: Increased base HP from 200 to 350, increased base disengagement chance from 1.0 to 1.5.
-  - Frigates: Increased base HP from 400 to 700, increased base disengagement chance from 1.0 to 1.5.
+  - Frigates: Increased base HP from 400 to 500, increased base disengagement chance from 1.0 to 1.5.
   - Destroyers: Increased base HP from 600 to 800, changed Picket Bow hull type from 1P 2S weapons to 1M 2P weapons, added Torpedo Bow hull type with 1G 2S weapons, added torpedo-related combat computers and ship roles, added 1 Aux slot to Picket Stern hull type.
   - Cruisers: Reduced the number of utility slots given by bow and mid hull sections from 4 to 3.
   - Battleships: Increased base HP from 3000 to 4000.
