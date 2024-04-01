@@ -67,6 +67,22 @@ tr_prosperity_public_works = {
 		custom_tooltip = tr_prosperity_optimized_nexus_desc
 		trigger = {
 			is_machine_empire = yes
+			NOR = { # Europe: changed NOT to NOR
+				has_origin = origin_void_dwellers
+				has_valid_civic = civic_machine_servitor # Europe: added
+			}
+		}
+		weight = {
+			factor = 1
+		}
+	}
+ 
+	tradition_swap = { # Europe: added
+		name = tr_prosperity_optimized_nexus_servitor
+		custom_tooltip = tr_prosperity_optimized_nexus_servitor_desc
+		trigger = {
+			is_machine_empire = yes
+			has_valid_civic = civic_machine_servitor
 			NOT = {
 				has_origin = origin_void_dwellers
 			}
@@ -79,6 +95,7 @@ tr_prosperity_public_works = {
 	tradition_swap = {
 		name = tr_prosperity_void_works
 		inherit_icon = yes
+		inherit_effects = yes # Europe: added
 		custom_tooltip = tr_prosperity_void_works_desc
 
 		# Effects are implemented in 03_habitat_districts.txt
@@ -172,13 +189,13 @@ tr_prosperity_interstellar_franchising = {
 
 	tradition_swap = {
 		name = tr_prosperity_efficiency_algorithms
+		inherit_effects = yes # Europe: added
 		trigger = {
 			is_machine_empire = yes
 		}
-		modifier = {
-			#planet_jobs_upkeep_mult = -0.05 # Europe: removed
-			empire_size_districts_mult = -0.5 # Europe: added
-		}
+		#modifier = { # Europe: removed
+		#	planet_jobs_upkeep_mult = -0.05
+		#}
 		weight = {
 			factor = 1
 		}
@@ -186,13 +203,13 @@ tr_prosperity_interstellar_franchising = {
 
 	tradition_swap = {
 		name = tr_prosperity_efficiency_instincts
+		inherit_effects = yes # Europe: added
 		trigger = {
 			is_hive_empire = yes
 		}
-		modifier = {
-			#planet_jobs_upkeep_mult = -0.05 # Europe: removed
-			empire_size_districts_mult = -0.5 # Europe: added
-		}
+		#modifier = { # Europe: removed
+		#	planet_jobs_upkeep_mult = -0.05
+		#}
 		weight = {
 			factor = 1
 		}

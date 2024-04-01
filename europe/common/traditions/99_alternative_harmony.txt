@@ -1,27 +1,8 @@
 tr_harmony_mind_and_body = {
-
+	custom_tooltip = tr_harmony_mind_and_body_desc # Europe: added to include machine leader accident chance modifier
 	modifier = {
 		leader_lifespan_add = 10
 		negative_traits_country = -1
-	}
-
-	tradition_swap = { # Europe: added
-		name = tr_synchronicity_self_preservation
-		inherit_effects = no # Europe: added
-		trigger = {
-			OR = {
-				is_machine_empire = yes
-				has_country_flag = synthetic_empire
-			}
-		}
-		custom_tooltip = tr_synchronicity_self_preservation_desc
-		modifier = {
-			leader_lifespan_add = 10
-			negative_traits_country = -1
-		}
-		weight = {
-			factor = 1
-		}
 	}
 
 	tradition_swap = {

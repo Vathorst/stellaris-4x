@@ -43,7 +43,7 @@ tr_versatility_operational_proxies = {
 	possible = {
 		has_tradition = tr_versatility_spatial_optimization
 	}
-	custom_tooltip = civic_tooltip_machine_maintenance_protocols_effects
+	custom_tooltip = tr_versatility_operational_proxies_desc # Europe: replaced civic_tooltip_machine_maintenance_protocols_effects because of added modifier
 
 	modifier = {
 		empire_size_colonies_mult = -0.25 # Europe: added

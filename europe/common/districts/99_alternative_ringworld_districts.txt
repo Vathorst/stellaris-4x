@@ -1,0 +1,302 @@
+@rw_cost = 1000
+@rw_cost_sr = 50
+@rw_maintenance = 5
+@rw_maintenance_sr = 2
+@rw_district_buildtime = 360
+
+district_rw_city = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = ring_world
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_regular_empire = yes }
+		uses_district_set = ring_world
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_hive
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 25
+		job_enforcer_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_agrarian_idyll
+			}
+		}
+		modifier = {
+			planet_housing_add = -5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_fallen_empire = no
+			}
+		}
+		modifier = {
+			job_clerk_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				OR = {
+					has_active_tradition = tr_prosperity_public_works 
+					has_active_tradition = tr_prosperity_void_works # Europe: added
+				}
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_1
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_housing_2
+				NOT = { has_valid_civic = civic_agrarian_idyll }
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			planet = {
+				has_deposit = d_arcane_generator
+				NOT = { has_district = district_rw_city }
+			}
+		}
+		text = arcane_generator_upkeep_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		text = job_clerk_effect_desc
+	}
+
+
+}
+
+district_rw_hive = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_hive_empire = yes }
+		uses_district_set = ring_world
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_hive_empire = yes }
+		uses_district_set = ring_world
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_nexus
+		district_rw_city
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 30
+		job_maintenance_drone_add = 15
+		job_synapse_drone_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_housing_1 }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_housing_2 }
+		}
+		modifier = {
+			planet_housing_add = 5
+			job_maintenance_drone_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				OR = {
+					has_active_tradition = tr_prosperity_extended_hives
+					has_active_tradition = tr_prosperity_void_works # Europe: added
+				}
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			planet = {
+				has_deposit = d_arcane_generator
+				NOT = { has_district = district_rw_hive }
+			}
+		}
+		text = arcane_generator_upkeep_desc
+	}
+}
+
+district_rw_nexus = {
+	base_buildtime = @rw_district_buildtime
+	is_capped_by_modifier = no
+	exempt_from_ai_planet_specialization = yes
+
+	show_on_uncolonized = {
+		exists = from
+		from = { is_machine_empire = yes }
+		uses_district_set = ring_world
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_machine_empire = yes }
+		uses_district_set = ring_world
+	}
+
+	conversion_ratio = 0.5
+	convert_to = {
+		district_rw_hive
+		district_rw_city
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @rw_cost
+		}
+		upkeep = {
+			energy = @rw_maintenance
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 25
+		job_maintenance_drone_add = 10
+		job_technician_drone_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_housing_1 }
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_housing_2 }
+		}
+		modifier = {
+			planet_housing_add = 5
+			job_maintenance_drone_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				OR = {
+					has_active_tradition = tr_prosperity_optimized_nexus
+					has_active_tradition = tr_prosperity_optimized_nexus_servitor # Europe: added
+					has_active_tradition = tr_prosperity_void_works # Europe: added
+				}
+			}
+		}
+		modifier = {
+			planet_housing_add = 5
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			planet = {
+				has_deposit = d_arcane_generator
+				NOT = { has_district = district_rw_nexus }
+			}
+		}
+		text = arcane_generator_upkeep_desc
+	}
+}

@@ -1,4 +1,5 @@
 tr_synchronicity_cloned_organs = {
+	custom_tooltip = tr_synchronicity_cloned_organs_desc # Europe: added to include machine leader accident chance modifier
 	modifier = {
 		leader_lifespan_add = 10
 		negative_traits_country = -1
@@ -6,6 +7,7 @@ tr_synchronicity_cloned_organs = {
 
 	tradition_swap = {
 		name = tr_synchronicity_self_preservation
+		inherit_effects = yes # Europe: added
 		trigger = {
 			OR = {
 				is_machine_empire = yes
@@ -13,10 +15,6 @@ tr_synchronicity_cloned_organs = {
 			}
 		}
 		custom_tooltip = tr_synchronicity_self_preservation_desc
-		modifier = { # Europe: added
-			leader_lifespan_add = 10
-			negative_traits_country = -1
-		}
 		weight = {
 			factor = 1
 		}
@@ -26,6 +24,7 @@ tr_synchronicity_cloned_organs = {
 		name = tr_synchronicity_unity_of_mind
 		# gain unity per pop necrophaged
 		custom_tooltip = tr_synchronicity_unity_of_mind_desc
+		inherit_effects = no # Europe: added
 		modifier = { # Europe: added
 			leader_lifespan_add = 10
 			negative_traits_country = -1
@@ -54,23 +53,23 @@ tr_synchronicity_harmonious_directives = {
 	}
 
 	modifier = {
-		country_edict_fund_add = 50
+		country_edict_fund_add = 45 # Europe: replaced from 50
+		country_edict_fund_mult = 0.1 # Europe: added
 		restored_node_bonus_skill = 1
 	}
 
 	tradition_swap = {
 		name = tr_synchronicity_harmonious_directives_machine
-		inherit_effects = no
+		inherit_effects = yes # Europe: changed from no
 		inherit_icon = yes
 		trigger = {
 			is_machine_empire = yes
 		}
 
-		modifier = {
-			country_edict_fund_add = 45 # Europe: replaced from 50
-			country_edict_fund_mult = 0.1 # Europe: added
-			restored_node_bonus_skill = 1
-		}
+		#modifier = { # Europe: removed
+		#	country_edict_fund_add = 50
+		#	restored_node_bonus_skill = 1
+		#}
 
 		weight = {
 			factor = 1

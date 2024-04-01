@@ -83,7 +83,22 @@
  tr_mercantile_customs_union_delayed: "Waiving all tariffs and import duties between our federation allies allows trade to flow between us unimpeded."
  tr_diplomacy_eminent_diplomats_desc: "Diplomatic Acceptance: §G+5§!\n$mod_country_official_cap_add$: §G+1§!\nEnvoys §YImproving Relations§! have a §G1%§! chance each month of acquiring a §YFavor§!."
  tr_politics_quid_pro_quo_desc: "§G+80§! £influence£ §YInfluence§! whenever another empire's proposed Resolution that you supported passes."
- 
+ tr_harmony_mind_and_body_desc: "$MOD_LEADER_LIFESPAN_ADD$: §G+10§!\n$mod_negative_traits_country$: §G-1§!\nMachine leaders are §Y30%§! less likely to suffer breakdowns and accidents."
+ tr_harmony_unity_of_self_desc: "Necrophaging £pop£ §YPops§! provides £unity£ Unity.\n$tr_harmony_mind_and_body_desc$"
+ tr_synchronicity_cloned_organs_desc: "$tr_harmony_mind_and_body_desc$"
+ tr_synchronicity_self_preservation_desc: "$tr_harmony_mind_and_body_desc$"
+ tr_synchronicity_unity_of_mind_desc: "$tr_harmony_unity_of_self_desc$"
+ tr_aptitude_healthcare_program_desc: "$MOD_LEADER_LIFESPAN_ADD$: §G+10§!\n$mod_negative_traits_country$: §G-1§!\nMachine leaders are §Y30%§! less likely to suffer breakdowns and accidents."
+ tr_aptitude_healthcare_program_hive_desc: "$tr_aptitude_healthcare_program_desc$"
+ tr_aptitude_healthcare_program_machine_desc: "$tr_aptitude_healthcare_program_desc$"
+ tr_versatility_operational_proxies_desc: "£job_maintenance_drone£ §Y$job_maintenance_drone_plural$§! also produce §Y1§! £unity£ Unity\nEmpire Size from Colonies: §G-25%§!"
+ tr_prosperity_public_works_desc: "§YCity Districts§! and Habitat §Y$district_hab_housing_plural$§! provide §Y1§! additional £housing£ §Y$MOD_PLANET_HOUSING_ADD$§!.\nRing World §Y$district_rw_city_plural$§! and Ecumenopolis §Y$district_arcology_housing_plural$§! also provide additional £housing£ §Y$MOD_PLANET_HOUSING_ADD$§!."
+ tr_prosperity_optimized_nexus_desc: "§YNexus Districts§! and Habitat §Y$district_hab_housing_plural$§! provide §Y1§! additional £housing£ §Y$MOD_PLANET_HOUSING_ADD$§!.\nRing World §Y$district_rw_nexus_plural$§! provide §Y5§! additional £housing£ §Y$MOD_PLANET_HOUSING_ADD$§!."
+ tr_prosperity_optimized_nexus_servitor: "$tr_prosperity_optimized_nexus$"
+ tr_prosperity_optimized_nexus_servitor_desc: "§YNexus Districts§! and Habitat §Y$district_hab_housing_plural$§! provide §Y1§! additional £housing£ §Y$MOD_PLANET_HOUSING_ADD$§!.\nRing World §Y$district_rw_city_plural$§! and Ecumenopolis §Y$district_arcology_housing_plural$§! also provide additional £housing£ §Y$MOD_PLANET_HOUSING_ADD$§!."
+ tr_prosperity_optimized_nexus_servitor_delayed: "$tr_prosperity_optimized_nexus_delayed$"
+ tr_prosperity_extended_hives_desc: "§YHive Districts§! and Habitat §Y$district_hab_housing_plural$§! provide §Y1§! additional £housing£ §Y$MOD_PLANET_HOUSING_ADD$§!.\nRing World §Y$district_rw_hive_plural$§! provide §Y5§! additional £housing£ §Y$MOD_PLANET_HOUSING_ADD$§!."
+
  civic_tooltip_catalytic_processing_effects: "Enables §YManufacturing Policies§! that can replace £job_foundry£ §Y$job_foundry_plural$§! with £job_catalytic_technician£ §Y$job_catalytic_technician_plural$§!. $job_catalytic_technician_effect_desc$.\n§YManufacturing Policies§! can also replace the $r_minerals$ Upkeep of £job_chemist£ §Y$job_chemist_plural$§!, £job_translucer£ §Y$job_translucer_plural$§!, and £job_gas_refiner£ §Y$job_gas_refiner_plural$§! with $r_food$ Upkeep."
 
  origin_tooltip_broken_shackles_effects: "- $INITIAL_POPS$ Species from ['concept_preftl_civilizations'] across the galaxy $NEW_LINE$- $STARTING_PLANET$ $TABBED_NEW_LINE$- ['concept_free_at_last_broken_shackles'] Planetary Modifier $TABBED_NEW_LINE$- ['concept_crashed_slaver_ship_broken_shackles'] Planetary Feature $TABBED_NEW_LINE$- ['concept_broken_shackles_buildings'] $NEW_LINE$- $STARTING_SYSTEM$ ['concept_broken_shackles_digsite'] ['concept_archaeology_site'] $NEW_LINE$- One Pre-FTL Civilization: Will be this empire's species and homeworld"

@@ -43,7 +43,7 @@ tr_aptitude_specialist_training = {
 }
 
 tr_aptitude_healthcare_program = {
-	custom_tooltip = BLANK_STRING	# Since the Modifier uses only a scripted modifier, we'll get an error without a custom tooltip.
+	custom_tooltip = tr_aptitude_healthcare_program_desc # Europe: replaced blank string tooltip to include machine leader accident chance modifier
 	possible = { has_tradition = tr_aptitude_the_empire_needs_you }
 	modifier = {
 		leader_lifespan_add = 10 # Europe: added
@@ -52,26 +52,26 @@ tr_aptitude_healthcare_program = {
 	ai_weight = { factor = 1000 }
 
 	tradition_swap = {
-		custom_tooltip = BLANK_STRING	# Since the Modifier uses only a scripted modifier, we'll get an error without a custom tooltip.
+		custom_tooltip = tr_aptitude_healthcare_program_hive_desc # Europe: replaced blank string tooltip to include machine leader accident chance modifier
 		trigger = { is_hive_empire = yes }
 		name = tr_aptitude_healthcare_program_hive
 		inherit_icon = yes
-		modifier = {
-			leader_lifespan_add = 10 # Europe: added
-			negative_traits_country = -1
-		}
+		inherit_effects = yes # Europe: added
+		#modifier = { Europe: removed
+		#	negative_traits_country = -1
+		#}
 		weight = { factor = 1 }
 	}
 
 	tradition_swap = {
-		custom_tooltip = BLANK_STRING	# Since the Modifier uses only a scripted modifier, we'll get an error without a custom tooltip.
+		custom_tooltip = tr_aptitude_healthcare_program_machine_desc # Europe: replaced blank string tooltip to include machine leader accident chance modifier
 		trigger = { is_machine_empire = yes }
 		name = tr_aptitude_healthcare_program_machine
 		inherit_icon = yes
-		modifier = {
-			leader_lifespan_add = 10 # Europe: added
-			negative_traits_country = -1
-		}
+		inherit_effects = yes # Europe: added
+		#modifier = { Europe: removed
+		#	negative_traits_country = -1
+		#}
 		weight = { factor = 1 }
 	}
 }

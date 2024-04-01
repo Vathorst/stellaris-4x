@@ -1,0 +1,49 @@
+# Machine & Synth Leaders malfunction (per empire)
+country_event = {
+	id = syndaw.11
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			90 = { } # nothing happens
+			10 = {
+				modifier = { # Tradition: Self-Preservation Protocols
+					factor = 0.7 # Europe: increased from 0.5
+					OR = {
+						has_active_tradition = tr_synchronicity_self_preservation
+						has_active_tradition = tr_synchronicity_cloned_organs # Europe: added
+						has_active_tradition = tr_synchronicity_unity_of_mind # Europe: added
+						has_active_tradition = tr_harmony_mind_and_body # Europe: added
+						has_active_tradition = tr_harmony_unity_of_self # Europe: added
+					}
+				}
+				modifier = { # Europe: added Tradition Healthcare Program
+					factor = 0.7
+					OR = {
+						has_active_tradition = tr_aptitude_healthcare_program
+						has_active_tradition = tr_aptitude_healthcare_program_hive
+						has_active_tradition = tr_aptitude_healthcare_program_machine
+					}
+				}
+				modifier = { # Edict: Zro Additives (via Psionic Archive Relic)
+					factor = 0.5
+					has_edict = zro_crystal_machine
+				}
+				if = { # Machine Intelligence
+					limit = {
+						has_authority = auth_machine_intelligence
+					}
+					fire_on_action = {
+						on_action = on_machine_leader_malfunction
+					}
+				}
+				else = { # Synthetic Ascension or Synth Workers Technology
+					fire_on_action = {
+						on_action = on_synth_leader_malfunction
+					}
+				}
+			}
+		}
+	}
+}

@@ -83,13 +83,14 @@
   - Reach for the Stars (under Expansion) now also extends its -10% Outpost Influence cost to Outpost Alloy cost as well.
   - Galactic Ambitions (under Expansion) now also gives -20% orbital stations upkeep.
   - Unity of Self (under Harmony for Necrophages), Unity of Mind (under Synchronicity for Necrophages), and Self-Preservation (under Synchronicity for Machine Intelligences) now also still give the same effects as the traditions they replace, which are still important even if they are more negligible.
-  - Synthetically ascended normal empires now have Mind and Body (under Harmony) replaced with Self-Preservation (normally under Synchronicity), which means they now benefit from halved leader accident chance because they would gain no benefit from increases to Leader Lifespan.
+  - Unity of Self (under Harmony for Necrophages), Unity of Mind (under Synchronicity for Necrophages), Mind and Body (under Harmony), and Cloned Organs (under Synchronicity for Hive Minds) now also give -30% Machine Leader Accident Chance.
+  - Self-Preservation (under Synchronicity for Machine Intelligences) now gives -30% Machine Leader Accident Chance instead of -50%.
   - Harmonious Directives (under Harmony), Flexible Thought Routines (under Synchronicity), Grand Council (under Domination), and the Statecraft Opener now give +45 flat Edict Fund and +10% Edict Fund instead of just a flat +50 Edict Fund.
   - The replacements of Adaptive Economic Policies (under Mercantile) now work differently. Mega-cooperative empires no longer have the tradition replaced after entering a Trade League federation. Empires that are in a Trade League or in a tier 3 or higher Holy Covenant now replace the tradition with "Customs Union", which removes the Influence cost of Commercial Pacts with fellow federation members. Non-megacooperative megacorporation empires that have also taken Universal Transactions will replace the tradition with Trade Fleets, which has the same effect of +50% Federation Naval Capacity Contribution.
   - Prosperity opener now gives +25% Mining Station Output instead of +20%.
   - Prosperity finisher now gives its old effect of +5% Resources from Jobs instead of -10% Station Upkeep.
   - Standard Construction Templates (under Prosperity) now gives -15% Clear Blocker cost instead of -10% Building Cost.
-  - Void Works (under Prosperity as alternative to Public Works for Void Dwellers) no longer gives +1 max districts on habitats.
+  - Void Works (under Prosperity as alternative to Public Works for Void Dwellers) has now been merged into the traditions it replaces (Public Works, Optimized Nexus, Extended Hives), but no longer gives +1 max habitat districts. The latter traditions now also make habitation districts give +1 housing, and Void Works now also increases the housing given by City districts and their equivalents on Ecumenopolii and Ring Worlds. It also means that Optimized Nexus for Rogue Servitors now also increases the amount of housing given by nexus districts on Ecumenopolii.
   - Interstellar Franchising (under Prosperity) now gives -50% Empire Size from Districts instead of -5% Upkeep from Jobs.
   - Pursuit of Profit (under Prosperity) now gives +10% Amenities from Jobs instead of +5% Resources from Jobs. The change also applies to Gestalt Consciousness equivalents of the tradition that used to give +5% Complex Drone Output.
   - Modular Depot (under Domination, only for Machine Intelligences) now gives -10% Building Cost instead of -25% Empire Size from Districts.
@@ -107,7 +108,7 @@
   - Eminent Diplomats (under Diplomacy) now gives +1 Official capacity to replace the effect of not being able to use favors in the galactic community.
   - The Federation (under Diplomacy) no longer gives +1 envoys, both because of the much stronger effect Eminent Diplomats has and also because envoys are nearly pointless for diplomacy in multiplayer with the other rules changes.
   - Aptitude finisher and The Empire Needs You (under Aptitude) now also give +1 Leader Pool Size.
-  - Healthcare Program (under Aptitude) now also gives +10 Leader Lifespan.
+  - Healthcare Program (under Aptitude) and its alternatives Physical Maintenance and Preventative Maintenance now also give +10 Leader Lifespan and -30% Machine Leader Accident Chance. The accident chance modifier stacks multiplicatively with the one found in Harmony and Synchronicity.
   - Specialist Training (under Aptitude) now gives +10% Leader Experience Gain instead of +1 Leader Pool Size.
   - Information Security (under Subterfuge) now gives +2 Encryption instead of +1 Encryption, but no longer gives +5 Evasion.
   - Operational Security (under Subterfuge) no longer gives +10 Tracking.
