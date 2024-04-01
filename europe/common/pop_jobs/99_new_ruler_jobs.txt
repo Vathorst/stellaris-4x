@@ -116,6 +116,7 @@ officer = {
 	weight = {
 		weight = @ruler_job_weight
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		mult = value:job_weights_officer_stability_modifier # Europe: added to factor in stability effect
 		modifier = {
 			factor = 0.1
 			has_citizenship_rights = no

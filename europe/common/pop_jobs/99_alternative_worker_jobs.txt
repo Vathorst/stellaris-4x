@@ -175,16 +175,17 @@ soldier = {
 
 	weight = {
 		weight = @soldier_job_weight
-		modifier = {
-			factor = 2 # Europe: reduced from 10
-			exists = planet
-			planet = {
-				exists = leader
-				leader = {
-					leader_class = commander
-				}
-			}
-		}
+		mult = value:job_weights_soldier_stability_modifier # Europe: added to factor in stability effect
+		#modifier = { # Europe: removed and replaced with the above
+		#	factor = 10
+		#	exists = planet
+		#	planet = {
+		#		exists = leader
+		#		leader = {
+		#			leader_class = commander
+		#		}
+		#	}
+		#}
 		modifier = {
 			factor = 2
 			has_trait = trait_resilient
@@ -238,3 +239,114 @@ soldier = {
 	}
 }
 
+miner = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_mineral_purification_plant
+	clothes_texture_index = 2
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_worker_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_gestalt = no
+		}
+	}
+
+	resources = {
+		category = planet_miners
+		produces = {
+			minerals = 4
+		}
+		produces = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_material_requisitorium
+				}
+			}
+			minerals = @requisitorium_minerals_reduction
+		}
+	}
+
+	triggered_planet_modifier = {
+		# Gives some Stability per "Mining Guild" Councilor level.
+		potential = {
+			has_councilor = { COUNCILOR = "councilor_mining_guilds" }
+		}
+		planet_stability_add = @councilor_mining_guilds_miner_stability
+		mult = value:councilor_level|TYPE|councilor_mining_guilds|
+	}
+
+	overlord_resources = {
+		category = planet_requisitioned_minerals
+		produces = {
+			trigger = {
+				planet = {
+					has_planet_flag = has_material_requisitorium
+				}
+			}
+			minerals = @requisitorium_minerals_overlord
+		}
+	}
+
+	weight = {
+		weight = @worker_job_weight
+		mult = value:job_weights_modifier|JOB|miner|RESOURCE|minerals|
+		modifier = {
+			mult = value:job_weights_miner_stability_modifier # Europe: added to factor in stability effect
+			has_councilor = { COUNCILOR = "councilor_mining_guilds" }
+		}
+		modifier = {
+			factor = 10
+			is_enslaved = yes
+			can_take_servant_job = no
+			NOT = { has_slavery_type = { type = slavery_indentured } }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { has_technology = tech_droid_workers }
+		}
+		modifier = {
+			factor = 200
+			OR = {
+				is_non_sapient_robot = yes
+				is_shackled_robot = yes
+			}
+			can_take_servant_job = no
+			owner = { NOT = { has_technology = tech_droid_workers } }
+		}
+		modifier = {
+			factor = 0.25
+			can_take_servant_job = yes
+		}
+
+		# low income modifier
+		modifier = {
+			factor = 1.1
+			exists = planet
+			planet = {
+				has_available_jobs = "miner"
+			}
+			exists = owner
+			owner = {
+				is_ai = yes
+				has_monthly_income = {
+					resource = minerals
+					value < 0
+				}
+			}
+		}
+	}
+}

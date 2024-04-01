@@ -152,3 +152,4 @@
 34. Halved the size of marauder raiding fleets, marauder mercenary fleets, fleets summoned by the Head of Zarqlan relic, and fleets summoned by the Summon Dimensional Fleet astral action to correspond to the doubled naval capacity cost of ships.
 35. Favors are now forcibly disabled for Galactic Community votes. They can still be used for federation votes, as that use of favors is not banned by the rules.
 36. Mutual Support now gives +40% Federation Delegate Cohesion Effect and +0.25 Federation Cohesion (+0.35 with the previous bonus) instead of +1 Favors and +5 Trust with empires whose proposed resolutions you have passed.
+37. Indentured Servitude slaves now always have lower priority for specialist-tier jobs than non-slaves. Among other things, this prevents weird situations where higher job attraction for indentured slaves leads to them being prioritized for jobs like Pearl Divers over non-slaves.

@@ -41,3 +41,121 @@ player_vassal_limit = {
 	base = 2
 	add = modifier:divided_patrongage_max_subjects
 }
+
+councilor_mining_guilds_stability = {
+	base = @councilor_mining_guilds_miner_stability
+	mult = value:councilor_level|TYPE|councilor_mining_guilds|
+}
+
+councilor_private_military_companies_stability = {
+	base = @councilor_private_military_companies_stability
+	mult = value:councilor_level|TYPE|councilor_private_military_companies|
+}
+
+job_soldier_total_stability = {
+	base = 1
+	mult = planet.modifier:job_soldier_stability_add
+	add = 0.25
+	modifier = {
+		has_councilor = { COUNCILOR = "councilor_private_military_companies" }
+		add = value:councilor_private_military_companies_stability
+	}
+}
+
+job_officer_total_stability = {
+	base = 2
+	mult = planet.modifier:job_soldier_stability_add
+	add = 0.5
+	modifier = {
+		has_councilor = { COUNCILOR = "councilor_private_military_companies" }
+		add = value:councilor_private_military_companies_stability
+	}
+}
+
+job_weights_miner_stability_modifier = {
+	add = value:councilor_mining_guilds_stability
+	modifier = { # Zero out this value if we are high enough stability
+		planet = {
+			NOR = {
+				planet_stability < @stabilitylevel2
+				AND = {
+					planet_stability < @stabilitylevel3
+					any_owned_pop = { is_enslaved = yes }
+				}
+			}
+		}
+		pow = 0
+	}
+	modifier = { # emergency situation if we are really low
+		planet = {
+			planet_stability < @stabilitylevel1
+		}
+		pow = 2
+	}
+}
+
+job_weights_soldier_stability_modifier = {
+	add = value:job_soldier_total_stability
+	modifier = { # Zero out this value if we are high enough stability
+		planet = {
+			NOR = {
+				planet_stability < @stabilitylevel2
+				AND = {
+					planet_stability < @stabilitylevel3
+					any_owned_pop = { is_enslaved = yes }
+				}
+			}
+		}
+		pow = 0
+	}
+	modifier = { # emergency situation if we are really low
+		planet = {
+			planet_stability < @stabilitylevel1
+		}
+		pow = 2
+	}
+}
+
+job_weights_officer_stability_modifier = {
+	add = value:job_officer_total_stability
+	modifier = { # Zero out this value if we are high enough stability
+		planet = {
+			NOR = {
+				planet_stability < @stabilitylevel2
+				AND = {
+					planet_stability < @stabilitylevel3
+					any_owned_pop = { is_enslaved = yes }
+				}
+			}
+		}
+		pow = 0
+	}
+	modifier = { # emergency situation if we are really low
+		planet = {
+			planet_stability < @stabilitylevel1
+		}
+		pow = 2
+	}
+}
+
+job_weights_stability_modifier = {
+	base = 1
+	modifier = { # If we are at low enough stability that we can trigger disorder events or modifiers, amp this value up more
+		planet = {
+			OR = {
+				planet_stability < @stabilitylevel2
+				AND = {
+					planet_stability < @stabilitylevel3
+					any_owned_pop = { is_enslaved = yes }
+				}
+			}
+		}
+		mult = $STABILITY$
+	}
+	modifier = { # emergency situation if we are really low
+		planet = {
+			planet_stability < @stabilitylevel1
+		}
+		mult = $STABILITY$
+	}
+}
