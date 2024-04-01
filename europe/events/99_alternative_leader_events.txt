@@ -1,0 +1,58 @@
+country_event = { # Mutual Support
+	id = leader.310
+
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = { # Europe: disabled, switched Mutual Support to instead support federations
+		always = no
+	}
+
+	immediate = {
+		every_galcom_member = {
+			limit = {
+				position_on_last_resolution = support
+				any_owned_leader = {
+					has_trait = leader_trait_supporting_voter
+					is_assigned_to_galcom = yes
+				}
+				NOT = {
+					is_same_value = root
+				}
+			}
+			random_owned_leader = {
+				limit = {
+					has_trait = leader_trait_supporting_voter
+					is_assigned_to_galcom = yes
+				}
+				save_event_target_as = galcom_delegate
+			}
+			add_favors = {
+				target = prev
+				value = 1
+			}
+			root = {
+				add_trust = {
+					amount = 5
+					who = prev
+				}
+			}
+			create_message = {
+				type = MESSAGE_SUPPORTING_VOTER
+				localization = MESSAGE_FAVOR_SUPPORTING_VOTER_DESC
+				days = 30
+				target = root.capital_scope
+				variable = {
+					type = name
+					localization = WHO
+					scope = root
+				}
+				variable = {
+					type = name
+					localization = LEADER
+					scope = event_target:galcom_delegate
+				}
+			}
+		}
+	}
+}

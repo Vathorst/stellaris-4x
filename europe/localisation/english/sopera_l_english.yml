@@ -81,6 +81,8 @@
  tr_mercantile_customs_union: "Customs Union"
  tr_mercantile_customs_union_desc: "T§YCommercial Pacts§! with fellow federation members longer cost £influence£ §YInfluence§! to maintain."
  tr_mercantile_customs_union_delayed: "Waiving all tariffs and import duties between our federation allies allows trade to flow between us unimpeded."
+ tr_diplomacy_eminent_diplomats_desc: "Diplomatic Acceptance: §G+5§!\n$mod_country_official_cap_add$: §G+1§!\nEnvoys §YImproving Relations§! have a §G1%§! chance each month of acquiring a §YFavor§!."
+ tr_politics_quid_pro_quo_desc: "§G+80§! £influence£ §YInfluence§! whenever another empire's proposed Resolution that you supported passes."
  
  civic_tooltip_catalytic_processing_effects: "Enables §YManufacturing Policies§! that can replace £job_foundry£ §Y$job_foundry_plural$§! with £job_catalytic_technician£ §Y$job_catalytic_technician_plural$§!. $job_catalytic_technician_effect_desc$.\n§YManufacturing Policies§! can also replace the $r_minerals$ Upkeep of £job_chemist£ §Y$job_chemist_plural$§!, £job_translucer£ §Y$job_translucer_plural$§!, and £job_gas_refiner£ §Y$job_gas_refiner_plural$§! with $r_food$ Upkeep."
 
@@ -122,6 +124,7 @@
 
  leader_trait_armorer_desc: "In space warfare, any mistake can turn deadly. This leader insists on strict maintenance routines to keep the navy's fleets in excellent condition."
  leader_trait_destiny_engineer_desc: "This leader has devised new ways to maintain and harden ship defenses. There are few weapons in the galaxy that can penetrate the hulls of [Root.GetHisHer] fleet's designs."
+ leader_trait_supporting_voter_desc: "This leader is always to support the efforts of their allies."
 
   # Preset text icons
  #text_icon_vacuum_flower:0 "£vacuum_flower£"

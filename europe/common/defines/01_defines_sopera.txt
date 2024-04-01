@@ -5,6 +5,9 @@
 		FEDERATION_MEMBERS_PENALTY			= -0.50		# Changed from -0.25 penalty for each federation member
 		FEDERATION_ETHICS_PENALTY			= -0.20		# Changed from -0.15 Federation cohesion penalty for extra unique ethics
 		FEDERATION_OPPOSING_ETHICS_PENALTY	= -2.0		# Changed from -0.5 Federation cohesion for opposing ethics
+
+		FAVORS_PER_RESOLUTION_CAP			= 0		# Reduced from 100 because using favors in the GalCom is disabled by the ruleset
+		BORROWED_DIPLO_WEIGHT_FAVOR_MULT	= 0		# Reduced from 0.1 because using favors in the GalCom is disabled by the ruleset
 		
 		RESOLUTION_VOTE_TIMER = 720						# halved. number of days a resolution will be on the senate floor before being passed/failed
 		RESOLUTION_VOTE_PREMATURE_TIMER = 360			# halved. number of days until the custodian/emperor can prematurely end the senate session
