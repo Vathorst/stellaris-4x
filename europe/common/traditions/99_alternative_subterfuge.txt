@@ -13,6 +13,7 @@ tr_subterfuge_operational_security = {
 	modifier = {
 		intel_decryption_add = 1
 		espionage_operation_skill_add = 2
+		envoys_add = 1 # Europe: added
 		#ship_tracking_add = 10 # Europe: removed
 	}
 

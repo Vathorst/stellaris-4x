@@ -111,7 +111,7 @@
   - Healthcare Program (under Aptitude) and its alternatives Physical Maintenance and Preventative Maintenance now also give +10 Leader Lifespan and -30% Machine Leader Accident Chance. The accident chance modifier stacks multiplicatively with the one found in Harmony and Synchronicity.
   - Specialist Training (under Aptitude) now gives +10% Leader Experience Gain instead of +1 Leader Pool Size.
   - Information Security (under Subterfuge) now gives +2 Encryption instead of +1 Encryption, but no longer gives +5 Evasion.
-  - Operational Security (under Subterfuge) no longer gives +10 Tracking.
+  - Operational Security (under Subterfuge) now gives +1 Envoys, but no longer gives +10 Tracking.
   - Quid Pro Quo (under Politics) now gives +80 Influence when a supported resolution proposed by another empire is passed instead of +1 Favor on them.
 22. Various changes to jobs were introduced, generally to reduce the need for micromanagement from players and as part of balancing other parts of the game.
   - Colonist jobs now give 3 Food instead of 1, and Lithoid Colonist jobs now give 2 Minerals instead of 1.
