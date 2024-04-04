@@ -3,6 +3,128 @@
 
 namespace = operation
 
+# Finding an 'in'
+espionage_operation_event = {
+	id = operation.1020
+	title = operation.1020.name
+	espionage_operation = yes
+	desc = {
+		text = operation.1020.desc.conf_external
+		trigger = {
+			has_espionage_operation_flag = steal_tech_conference
+			target = { is_xenophobe = no }
+		}
+	}
+	desc = {
+		text = operation.1020.desc.conf_hosted
+		trigger = {
+			has_espionage_operation_flag = steal_tech_conference
+		}
+	}
+	desc = {
+		text = operation.1020.desc.lecture
+		trigger = {
+			has_espionage_operation_flag = steal_tech_lecture
+		}
+	}
+	desc = {
+		text = operation.1020.desc.outreach
+		trigger = {
+			has_espionage_operation_flag = steal_tech_outreach
+		}
+	}
+	desc = {
+		text = operation.1020.desc.theft
+		trigger = {
+			has_espionage_operation_flag = steal_tech_theft
+		}
+	}
+	desc = {
+		text = operation.1020.desc.enigmatic
+		trigger = {
+			owner = {
+				has_country_flag = cannot_steal_enigmatic_tech@root.target
+			}
+		}
+	}
+	picture = {
+		trigger = {
+			OR = {
+				has_espionage_operation_flag = steal_tech_conference
+				has_espionage_operation_flag = steal_tech_lecture
+				has_espionage_operation_flag = steal_tech_outreach
+			}
+		}
+		picture = GFX_evt_voting
+	}
+	picture = {
+		trigger = {
+			has_espionage_operation_flag = steal_tech_theft
+		}
+		picture = GFX_evt_smugglers_in_bar
+	}
+	show_sound = event_default
+	is_triggered_only = yes
+
+	immediate = {
+		#if = { # Europe: Enigmatic Engineering just adds +8 Operation difficulty to tech steals instead of making them impossible
+		#	limit = {
+		#		target = { has_ascension_perk = ap_enigmatic_engineering }
+		#	}
+		#	set_espionage_operation_progress_locked = yes
+		#	owner = {
+		#		set_country_flag = cannot_steal_enigmatic_tech@root.target
+		#		country_event = { id = operation.1027 }
+		#	}
+		#}
+		#else = {
+			if = {
+				limit = { #Disregard empires which wouldn't hold a scientific debate
+					target = {
+						NOR = {
+							has_valid_civic = civic_fanatic_purifiers
+							has_valid_civic = civic_ruthless_competition
+							has_valid_civic = civic_hive_subsumed_will
+							has_valid_civic = civic_machine_introspective
+							is_homicidal = yes
+						}
+					}
+				}
+				random_list = {
+					1 = { set_espionage_operation_flag = steal_tech_conference }
+					1 = {
+						modifier = { factor = 0 target = { is_gestalt = yes } }
+						set_espionage_operation_flag = steal_tech_lecture
+					}
+					1 = {
+						modifier = { factor = 0 target = { is_gestalt = yes } }
+						set_espionage_operation_flag = steal_tech_outreach
+					}
+				}
+			}
+			else = {
+				set_espionage_operation_flag = steal_tech_theft
+			}
+		#}
+	}
+
+	option = {
+		name = CURIOUS
+		trigger = {
+			owner = { has_country_flag = cannot_steal_enigmatic_tech@root.target }
+		}
+	}
+	option = {
+		name = ACKNOWLEDGED
+		trigger = {
+			owner = {
+				NOT = { has_country_flag = cannot_steal_enigmatic_tech@root.target }
+			}
+		}
+	}
+}
+
+
 # Finalé | fromfrom = operation
 country_event = {
 	id = operation.1026

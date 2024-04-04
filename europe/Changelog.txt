@@ -73,6 +73,7 @@
   - Archaeo-Engineers now increases the maximum amount of Facility of Archaeostudies buildings that can be built in an empire by 1 for every relic world the empire owns.
   - Consecrated Worlds now reduces Pop Amenities usage on all planets instead of increasing Amenities production. This also synergizes better with Spiritualist cultural workers, who reduce Amenities usage as well.
   - Voidborn and the Void Dwellers origin now boost the final tier of yield-increasing buildings on habitats the same way they are boosted on ring worlds.
+  - Enigmatic Engineering now adds +6 to hostile Steal Technology operations instead of making the player immune to Steal Technology operations. This still makes them effectively immune to Steal Technology operations from most players, but does allow those who are focused on Espionage and/or those who have stolen Espionage assets to still do them in a timely manner.
 21. Major changes to various Traditions, generally buffing ones that are markedly underpowered and nerfing those that are seen as must-picks.
   - Subterfuge finisher now also causes completed espionage operations to return 50% of their infiltration level cost in influence.
   - Adaptibility opener now gives -10% Pop Amenities usage instead of -10% Pop Housing usage.
@@ -110,6 +111,7 @@
   - Overwhelming Force (under Supremacy) now gives +25% Orbital Bombardment damage instead of +20% and gives +1 Max Influence from Power Projection, but no longer gives +10% Ship Fire Rate.
   - The Great Game (under Supremacy) now gives +20 Fleet Command limit and -20% Claim Influence Cost instead of +20% Starbase Damage.
   - Bulwark of Harmony (under Unyielding) now gives +50% Defense Platform Build Speed instead of +15% Home Territory Ship Fire Rate.
+  - Fortress Doctrine (under Unyielding) now properly gives +4 difficulty to hostile Sabotage Starbase operations.
   - Direct Diplomacy (under Diplomacy) now also gives +33% Immigration Pull to all planets.
   - Eminent Diplomats (under Diplomacy) now gives +1 Official capacity to replace the effect of not being able to use favors in the galactic community.
   - The Federation (under Diplomacy) no longer gives +1 envoys, both because of the much stronger effect Eminent Diplomats has and also because envoys are nearly pointless for diplomacy in multiplayer with the other rules changes.
