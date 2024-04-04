@@ -48,7 +48,6 @@ district_arcology_housing = {
 			owner = {
 				OR = {
 					has_active_tradition = tr_prosperity_public_works
-					has_active_tradition = tr_prosperity_void_works # Europe: added
 					has_active_tradition = tr_prosperity_optimized_nexus_servitor # Europe: added
 				}
 			}

@@ -1,3 +1,5 @@
+namespace = action
+
 # Market forms (notifying the new host)
 # this = new host country
 country_event = {

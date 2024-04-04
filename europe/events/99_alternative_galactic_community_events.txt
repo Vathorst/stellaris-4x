@@ -1,3 +1,5 @@
+namespace = galcom
+
 country_event = { # Quid Pro Quo
 	id = galcom.300
 	

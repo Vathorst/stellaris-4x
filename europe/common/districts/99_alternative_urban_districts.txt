@@ -86,10 +86,7 @@ district_resort = {
 		potential = {
 			exists = owner
 			owner = {
-				OR = {
-					has_active_tradition = tr_prosperity_public_works
-					has_active_tradition = tr_prosperity_void_works # Europe: added
-				}
+				has_active_tradition = tr_prosperity_public_works
 			}
 		}
 		modifier = {
@@ -243,10 +240,7 @@ district_city = {
 		potential = {
 			exists = owner
 			owner = {
-				OR = {
-					has_active_tradition = tr_prosperity_public_works
-					has_active_tradition = tr_prosperity_void_works # Europe: added
-				}
+				has_active_tradition = tr_prosperity_public_works
 			}
 		}
 		modifier = {
@@ -379,7 +373,7 @@ district_hive = {
 			owner = {
 				OR = {
 					has_active_tradition = tr_prosperity_extended_hives
-					has_active_tradition = tr_prosperity_void_works # Europe: added
+					has_active_tradition = tr_prosperity_public_works # Europe: added
 				}
 			}
 		}
@@ -471,7 +465,7 @@ district_nexus = {
 				OR = {
 					has_active_tradition = tr_prosperity_optimized_nexus
 					has_active_tradition = tr_prosperity_optimized_nexus_servitor # Europe: added
-					has_active_tradition = tr_prosperity_void_works # Europe: added
+					has_active_tradition = tr_prosperity_public_works # Europe: added
 				}
 			}
 		}

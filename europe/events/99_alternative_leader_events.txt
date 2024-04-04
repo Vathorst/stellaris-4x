@@ -1,3 +1,5 @@
+namespace = leader
+
 country_event = { # Mutual Support
 	id = leader.310
 

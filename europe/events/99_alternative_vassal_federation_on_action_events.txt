@@ -1,3 +1,5 @@
+namespace = action
+
 # Federation On Subjects Can Join Law Change
 country_event = {
 	id = action.212
