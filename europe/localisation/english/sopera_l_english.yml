@@ -154,6 +154,9 @@
  leader_trait_destiny_engineer_desc: "This leader has devised new ways to maintain and harden ship defenses. There are few weapons in the galaxy that can penetrate the hulls of [Root.GetHisHer] fleet's designs."
  leader_trait_supporting_voter_desc: "This leader is always to support the efforts of their allies."
 
+ FEDERATION_ASSIGNED_ENVOYS: "Assigned Officials: $VALUE|2+=$"
+ ENVOYS_WEIGHT_VAL: "Assigned Official: §Y$VALUE$§!"
+
   # Preset text icons
  #text_icon_vacuum_flower:0 "£vacuum_flower£"
  trade_action_r_ancient_sword: "£ancient_sword£ $r_ancient_sword$"

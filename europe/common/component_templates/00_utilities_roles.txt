@@ -52,7 +52,7 @@ utility_component_template = {
 	component_set = "combat_computers"
 	upgrades_to = "COMBAT_COMPUTER_SWARM_BASIC"
 	ai_tags = { gunship gunship_stealth } # Europe: added gunship_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ai_weight = {
 		weight = 1
@@ -77,7 +77,7 @@ utility_component_template = {
 	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
 	component_set = "combat_computers"
 	ai_tags = { screen screen_stealth } # Europe: added screen_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 	upgrades_to = "COMBAT_COMPUTER_PICKET_BASIC"
 
 	ai_weight = {
@@ -104,7 +104,7 @@ utility_component_template = {
 	component_set = "combat_computers"
 	upgrades_to = "COMBAT_COMPUTER_LINE_BASIC"
 	ai_tags = { gunship gunship_stealth } # Europe: added gunship_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ai_weight = {
 		weight = 1
@@ -130,7 +130,7 @@ utility_component_template = {
 	component_set = "combat_computers"
 	upgrades_to = "COMBAT_COMPUTER_ARTILLERY_BASIC"
 	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ai_weight = {
 		weight = 1
@@ -181,7 +181,7 @@ utility_component_template = {
 	component_set = "combat_computers"
 	upgrades_to = "COMBAT_COMPUTER_TORPEDO_BASIC"
 	ai_tags = { explosive explosive_stealth }
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ai_weight = {
 		weight = 1
@@ -211,7 +211,7 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_1" }
 	upgrades_to = "COMBAT_COMPUTER_SWARM_ADVANCED"
 	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added gunship_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	modifier = {
 		ship_evasion_mult = 0.05
@@ -244,7 +244,7 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_2" }
 	upgrades_to = "COMBAT_COMPUTER_SWARM_SAPIENT"
 	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added gunship_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	modifier = {
 		ship_evasion_mult = 0.10
@@ -276,7 +276,7 @@ utility_component_template = {
 	ship_behavior = "swarm"
 	prerequisites = { "tech_combat_computers_3" }
 	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added gunship_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	modifier = {
 		ship_evasion_mult = 0.15 # Europe: decreased from 0.25
@@ -319,7 +319,7 @@ utility_component_template = {
 	ship_behavior = "swarm"
 	prerequisites = { "tech_combat_computers_autonomous" }
 	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added gunship_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	modifier = {
 		ship_evasion_mult = 0.15 # Europe: decreased from 0.25
@@ -351,7 +351,7 @@ utility_component_template = {
 	ship_behavior = "swarm"
 	prerequisites = { "tech_precognition_interface" }
 	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added gunship_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	modifier = {
 		ship_evasion_mult = 0.25 # Europe: increased from +15%
@@ -390,7 +390,7 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_1" "tech_torpedoes_1" }
 	upgrades_to = "COMBAT_COMPUTER_TORPEDO_ADVANCED" # Europe: changed to Torpedo
 	ai_tags = { explosive explosive_stealth }
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.05
@@ -421,7 +421,7 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_2" "tech_torpedoes_1" }
 	upgrades_to = "COMBAT_COMPUTER_TORPEDO_SAPIENT"
 	ai_tags = { explosive explosive_stealth }
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.10
@@ -451,7 +451,7 @@ utility_component_template = {
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_combat_computers_3" "tech_torpedoes_1" }
 	ai_tags = { explosive explosive_stealth }
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	modifier = {
 		ship_evasion_mult = 0.15 # Europe: increased from 0.1 to match the Swarm computer's new stats
@@ -492,7 +492,7 @@ utility_component_template = {
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_combat_computers_autonomous" "tech_torpedoes_1" }
 	ai_tags = { explosive explosive_stealth }
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	modifier = {
 		ship_evasion_mult = 0.15 # Europe: increased from 0.1 to match the Swarm computer's new stats
@@ -522,7 +522,7 @@ utility_component_template = {
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_precognition_interface" "tech_torpedoes_1" }
 	ai_tags = { explosive explosive_stealth }
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.15
@@ -557,7 +557,7 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_1" }
 	upgrades_to = "COMBAT_COMPUTER_PICKET_ADVANCED"
 	ai_tags = { screen screen_stealth } # Europe: added screen_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.05
@@ -589,7 +589,7 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_2" }
 	upgrades_to = "COMBAT_COMPUTER_PICKET_SAPIENT"
 	ai_tags = { screen screen_stealth } # Europe: added screen_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.10
@@ -620,7 +620,7 @@ utility_component_template = {
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_3" }
 	ai_tags = { screen screen_stealth } # Europe: added screen_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	modifier = {
 		ship_evasion_mult = 0.10
@@ -665,7 +665,7 @@ utility_component_template = {
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_autonomous" }
 	ai_tags = { screen screen_stealth } # Europe: added screen_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	modifier = {
 		ship_evasion_mult = 0.10
@@ -699,7 +699,7 @@ utility_component_template = {
 	ship_behavior = "picket"
 	prerequisites = { "tech_precognition_interface" }
 	ai_tags = { screen screen_stealth } # Europe: added screen_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.20
@@ -735,7 +735,7 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_1" }
 	upgrades_to = "COMBAT_COMPUTER_LINE_ADVANCED"
 	ai_tags = { gunship gunship_stealth } # Europe: added gunship_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.05
@@ -766,7 +766,7 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_2" }
 	upgrades_to = "COMBAT_COMPUTER_LINE_SAPIENT"
 	ai_tags = { gunship gunship_stealth } # Europe: added gunship_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.10
@@ -796,7 +796,7 @@ utility_component_template = {
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_3" }
 	ai_tags = { gunship gunship_stealth } # Europe: added gunship_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.20
@@ -837,7 +837,7 @@ utility_component_template = {
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_autonomous" }
 	ai_tags = { gunship gunship_stealth } # Europe: added gunship_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.20
@@ -867,7 +867,7 @@ utility_component_template = {
 	ship_behavior = "line"
 	prerequisites = { "tech_precognition_interface" }
 	ai_tags = { gunship gunship_stealth } # Europe: added gunship_stealth
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.15
@@ -903,7 +903,7 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_1" }
 	upgrades_to = "COMBAT_COMPUTER_ARTILLERY_ADVANCED"
 	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.05
@@ -934,7 +934,7 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_2" }
 	upgrades_to = "COMBAT_COMPUTER_ARTILLERY_SAPIENT"
 	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.10
@@ -964,7 +964,7 @@ utility_component_template = {
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_3" }
 	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.20
@@ -1006,7 +1006,7 @@ utility_component_template = {
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_autonomous" }
 	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.20
@@ -1036,7 +1036,7 @@ utility_component_template = {
 	ship_behavior = "artillery"
 	prerequisites = { "tech_precognition_interface" }
 	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.15
@@ -1072,7 +1072,7 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_1" }
 	upgrades_to = "COMBAT_COMPUTER_CARRIER_ADVANCED"
 	ai_tags = { carrier carrier_stealth } # Europe: added stealth tag
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_engagement_range_mult = 0.25
@@ -1110,7 +1110,7 @@ utility_component_template = {
 	prerequisites = { "tech_combat_computers_2" }
 	upgrades_to = "COMBAT_COMPUTER_CARRIER_SAPIENT"
 	ai_tags = { carrier carrier_stealth } # Europe: added stealth tag
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_engagement_range_mult = 0.50
@@ -1147,7 +1147,7 @@ utility_component_template = {
 	ship_behavior = "carrier"
 	prerequisites = { "tech_combat_computers_3" }
 	ai_tags = { carrier carrier_stealth } # Europe: added stealth tag
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_engagement_range_mult = 0.75 # Europe: decreased from 1.0
@@ -1196,7 +1196,7 @@ utility_component_template = {
 	ship_behavior = "carrier"
 	prerequisites = { "tech_combat_computers_autonomous" }
 	ai_tags = { carrier carrier_stealth } # Europe: added stealth tag
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_engagement_range_mult = 0.75 # Europe: decreased from 1.0
@@ -1233,7 +1233,7 @@ utility_component_template = {
 	ship_behavior = "carrier"
 	prerequisites = { "tech_precognition_interface" }
 	ai_tags = { carrier carrier_stealth } # Europe: added stealth tag
-	ai_tag_weight = 0
+	#ai_tag_weight = 0 # Europe: removed
 
 	ship_modifier = {
 		ship_engagement_range_mult = 1.0 # Europe: increased from 0.75

@@ -247,3 +247,15 @@ can_fill_specialist_job_trigger = {
 		}
 	}
 }
+
+has_been_declared_crisis = { # Europe: added
+	OR = {
+		has_country_flag = declared_crisis
+		has_crisis_level = crisis_level_5
+		AND = {
+			is_country_type = awakened_marauders
+			NOT = { has_global_flag = great_khan_dead }
+			has_global_flag = galactic_focus_crisis_greatkhan
+		}
+	}
+}

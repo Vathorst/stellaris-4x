@@ -189,7 +189,6 @@ tr_supremacy_great_game = {
 }
 
 tr_supremacy_finish = {
-	custom_tooltip = tr_supremacy_finish_desc
 	modifier = {
 		ship_disengage_chance_mult = 0.25 # Europe: added
 		ship_experience_gain_mult = 0.25 # Europe: added

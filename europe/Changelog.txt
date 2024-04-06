@@ -6,7 +6,7 @@
 6. Made the crisis casus belli silent (no notification), and only active from crisis level 2. You can still see the casus beli from the diplomacy screen, so pay attention.
 7. The crisis can already construct menacing corvettes from level 1. Hide them well so other players don't notice.
 8. You can now trade relics under trade actions. Game icons have been altered to allow for easier localistaion.
-9. Halved most of the galactic community timers, slightly reduced the cost for veto.
+9. Halved most of the Galactic Community/Empire timers, slightly reduced the cost for veto.
 10. You can no longer trade relics if you have any relics activated (regardless of which relic is active).
 11. Upgraded the fleet cap of federations to be 600 - 1200 - 3600 for low, medium and high fleet contribution respectively.
 12. GDF now starts with size 400 and will upgrade to size 1000 upon expanding.
@@ -113,7 +113,7 @@
   - Bulwark of Harmony (under Unyielding) now gives +50% Defense Platform Build Speed instead of +15% Home Territory Ship Fire Rate.
   - Fortress Doctrine (under Unyielding) now properly gives +4 difficulty to hostile Sabotage Starbase operations.
   - Direct Diplomacy (under Diplomacy) now also gives +33% Immigration Pull to all planets.
-  - Eminent Diplomats (under Diplomacy) now gives +1 Official capacity to replace the effect of not being able to use favors in the galactic community.
+  - Eminent Diplomats (under Diplomacy) now gives +1 Official capacity to replace the effect of not being able to use favors in the Galactic Community/Empire.
   - The Federation (under Diplomacy) no longer gives +1 envoys, both because of the much stronger effect Eminent Diplomats has and also because envoys are nearly pointless for diplomacy in multiplayer with the other rules changes.
   - Aptitude finisher and The Empire Needs You (under Aptitude) now also give +1 Leader Pool Size.
   - Healthcare Program (under Aptitude) and its alternatives Physical Maintenance and Preventative Maintenance now also give +10 Leader Lifespan and -30% Machine Leader Accident Chance. The accident chance modifier stacks multiplicatively with the one found in Harmony and Synchronicity.
@@ -159,6 +159,9 @@
 32. For people who like to leave the ship auto-designer on, the auto-designer should now make far fewer incredibly dumb design choices.
 33. Restricted Voting contract option for vassals no longer automatically invites them into the overlord's federation. This effect now only happens with the Limited Diplomacy option, and should make it easier for Hegemony federations to follow the rules around federation member limits. This change also includes a bug fix where all vassals would automatically join their overlord's federation the moment it passed the law to allow them in and/or upon initial vassalization if the overlord's federation allowed vassals in, regardless of what diplomacy contract option they had.
 34. Halved the size of marauder raiding fleets, marauder mercenary fleets, fleets summoned by the Head of Zarqlan relic, and fleets summoned by the Summon Dimensional Fleet astral action to correspond to the doubled naval capacity cost of ships.
-35. Favors are now forcibly disabled for Galactic Community votes. They can still be used for federation votes, as that use of favors is not banned by the rules.
+35. Favors are now forcibly disabled for Galactic Community/Empire votes. They can still be used for federation votes, as that use of favors is not banned by the rules.
 36. Mutual Support now gives +40% Federation Delegate Cohesion Effect and +0.25 Federation Cohesion (+0.35 with the previous bonus) instead of +1 Favors and +5 Trust with empires whose proposed resolutions you have passed.
 37. Slaves now always have lower priority for specialist-tier jobs than non-slaves, meaning if they are working a specialist-tier job while a non-slave worker- or specialist-tier pop is unemployed, they will unemploy themselves to make room for the unemployed non-slave pop. Among other things, this prevents weird situations where higher job attraction for indentured slaves leads to them being prioritized for jobs like Pearl Divers over non-slaves.
+38. "Envoys" in federations and in the Galactic Community/Empire is now correctly labeled as "Assigned Officials" instead.
+39. Hegemony federations no longer dissolve when their president is declared a crisis, and instead, all members of the Hegemony leave the Galactic Community/Empire with their president.
+40. If the Great Khan is declared a crisis, all of their satrapy vassals are kicked out of the Galactic Community/Empire and cannot join unless they rebel against the Great Khan, until the Great Khan dies, or until the Great Khan is no longer declared a crisis by the Galactic Community/Empire. This mimics what happens when a player is declared a crisis.

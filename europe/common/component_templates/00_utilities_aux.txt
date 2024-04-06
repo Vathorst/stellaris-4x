@@ -165,6 +165,7 @@ utility_component_template = {
 
 	prerequisites = { tech_auxiliary_fire_control }
 	component_set = "FIRE_CONTROL_1"
+	ai_tags = { artillery artillery_stealth screen screen_stealth energy_torpedoes energy_torpedoes_stealth } # Europe: added
 
 	ai_weight = {
 		weight = 10
@@ -373,6 +374,7 @@ utility_component_template = {
 
 	prerequisites = { tech_covenant_eater }
 	component_set = "EATER_MARK"
+	ai_tags = { brawler brawler_stealth gunship gunship_stealth artillery artillery_stealth carrier carrier_stealth explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth } # Europe: added
 
 	ai_weight = {
 		weight = 10
@@ -444,6 +446,7 @@ utility_component_template = {
 
 	prerequisites = { tech_covenant_whisperers }
 	component_set = "WHISPERERS_MARK"
+	ai_tags = { brawler brawler_stealth gunship_stealth artillery_stealth screen_stealth carrier_stealth explosive_stealth energy_torpedoes_stealth } # Europe: added
 
 	ai_weight = {
 		weight = 10

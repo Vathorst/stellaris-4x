@@ -42,6 +42,7 @@ utility_component_template = {
 	prerequisites = { "tech_afterburners_1" }
 	component_set = "AFTERBURNER_1"
 	upgrades_to = "AFTERBURNER_2"
+	ai_tags = { brawler brawler_stealth } # Europe: added
 
 	ai_weight = {
 		weight = 5 # Europe: lowered from 10
@@ -75,6 +76,7 @@ utility_component_template = {
 	class_restriction = { shipclass_military }
 	prerequisites = { "tech_afterburners_2" }
 	component_set = "AFTERBURNER_2"
+	ai_tags = { brawler brawler_stealth } # Europe: added
 
 	ai_weight = {
 		weight = 7.5 # Europe: lowered from 15

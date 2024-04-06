@@ -95,6 +95,29 @@ resolution_declare_crisis = {
 					remove_from_galactic_council = yes
 				}
 			}
+			if = { # Europe: added
+				limit = {
+					has_federation = yes
+					is_federation_leader = yes
+					exists = federation
+					federation = { has_federation_type = hegemony_federation }
+				}
+				federation = {
+					every_member = {
+						if = {
+							limit = { is_galactic_community_member = yes }
+							remove_from_galactic_community = yes
+						}
+						if = {
+							limit = {
+								is_galactic_council_established = yes
+								is_part_of_galactic_council = yes
+							}
+							remove_from_galactic_council = yes
+						}
+					}
+				}
+			}
 			set_country_flag = declared_crisis
 			save_event_target_as = new_crisis
 			country_event = { id = crisis.4105 }
@@ -453,6 +476,29 @@ resolution_declare_crisis_empire = {
 						is_part_of_galactic_council = yes
 					}
 					remove_from_galactic_council = yes
+				}
+			}
+			if = { # Europe: added
+				limit = {
+					has_federation = yes
+					is_federation_leader = yes
+					exists = federation
+					federation = { has_federation_type = hegemony_federation }
+				}
+				federation = {
+					every_member = {
+						if = {
+							limit = { is_galactic_community_member = yes }
+							remove_from_galactic_community = yes
+						}
+						if = {
+							limit = {
+								is_galactic_council_established = yes
+								is_part_of_galactic_council = yes
+							}
+							remove_from_galactic_council = yes
+						}
+					}
 				}
 			}
 

@@ -11586,6 +11586,23 @@ resolution_galactic_focus_crisis_greatkhan = {
 		custom_tooltip = resolution_galactic_focus_crisis_greatkhan_effect_success
 
 		hidden_effect = {
+			every_playable_country = { # Europe: added
+				limit = {
+					is_subject = yes
+					overlord = { is_country_type = awakened_marauders }
+				}
+				if = {
+					limit = { is_galactic_community_member = yes }
+					remove_from_galactic_community = yes
+				}
+				if = {
+					limit = {
+						is_galactic_council_established = yes
+						is_part_of_galactic_council = yes
+					}
+					remove_from_galactic_council = yes
+				}
+			}
 			repeal_all_galactic_focus_resolutions = yes
 			set_global_flag = galactic_focus_crisis_greatkhan
 			set_global_flag = galactic_community_crisis_fighting
