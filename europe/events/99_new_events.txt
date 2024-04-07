@@ -90,3 +90,56 @@ country_event = {
 		add_resource = { energy = -1000 }
 	}
 }
+
+# We got transferred the system with the Tiyanki Graveyard Site without having surveyed the planet for it
+ship_event = {
+	id = europe.4
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			is_ai = no
+			NOT = { has_country_flag = tiyanki_graveyard_survey }
+		}
+		solar_system = {
+			OR = {
+				is_same_value = event_target:tiyanki_graveyard_system
+				any_system_planet = {
+					has_planet_flag = graveyard_site
+				}
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = tiyanki_graveyard_survey
+		}
+		solar_system = {
+			random_system_planet = {
+				limit = {
+					has_planet_flag = graveyard_site
+				}
+				save_event_target_as = tiyanki_graveyard_planet
+			}
+			save_global_event_target_as = tiyanki_graveyard_system
+		}
+
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_communications = event_target:tiyanki_garrison_country
+						has_communications = event_target:tiyanki_country
+					}
+				}
+			}
+			owner = { country_event = { id = galactic_features.387 } }	# If player has communication with the Tiyanki, fire this
+		}
+		else = {
+			ship_event = { id = galactic_features.384 }	# If player has no communication with the Tiyanki, they will get a follow-up later
+		}
+	}
+}
