@@ -1,0 +1,16 @@
+# No scope, like on_game_start
+on_monthly_pulse = {
+	events = {
+		europe.1 # Spawn the phase-lock project for any empire that owns the currently-phasing system that doesn't have it. Backup in case the starbase transfer action doesn't work.
+	}
+}
+
+# This = owner of fleet 1 (combatant)
+# From = owner of fleet 2 (destroyed)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_fleet_destroyed_perp = {
+	events = {
+		europe.2 # Check if an amoeba was killed under the Space Amoeba Conservation Act
+	}
+}

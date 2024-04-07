@@ -12541,13 +12541,13 @@ resolution_amoeba_conservation_act = {
 	effect = {
 		custom_tooltip = resolution_amoeba_conservation_act_tooltip
 		hidden_effect = {
-			every_country = {
-				limit = {
-					is_galactic_community_member = yes
-					NOT = { has_modifier = pacified_amoebas }
-				}
-				country_event = { id = galactic_features.505 }
-			}
+			#every_country = { # Europe: disabled
+			#	limit = {
+			#		is_galactic_community_member = yes
+			#		NOT = { has_modifier = pacified_amoebas }
+			#	}
+			#	country_event = { id = galactic_features.505 }
+			#}
 			set_timed_country_flag = { flag = galactic_community_resolution_passed_general days = @resolution_flag_timer }
 			add_modifier = {
 				modifier = resolution_passed_diplomatic_weight
@@ -12576,7 +12576,8 @@ resolution_amoeba_conservation_act = {
 
 	breach = {
 		NOT = { has_country_flag = constitutional_immunity }
-		NOT = { has_modifier = pacified_amoebas }
+		#NOT = { has_modifier = pacified_amoebas } # Europe: disabled
+		has_country_flag = resolution_breached_killed_amoeba # Europe: added
 	}
 
 	ai_weight = {

@@ -154,6 +154,9 @@
  leader_trait_destiny_engineer_desc: "This leader has devised new ways to maintain and harden ship defenses. There are few weapons in the galaxy that can penetrate the hulls of [Root.GetHisHer] fleet's designs."
  leader_trait_supporting_voter_desc: "This leader is always to support the efforts of their allies."
 
+ europe.3.name: "$resolution_amoeba_conservation_act$ Violation"
+ europe.3.desc: "Officials from the Galactic Community have protested our recent killing of Amoebas in the §H[amoeba_kill_system.GetName]§! system, informing us that our actions have violated the §Y$resolution_amoeba_conservation_act$§!. As a consequence, the [Root.GetName] is to be considered in §RBreach of Galactic Law§! for the next ten years.\n\nWe have also been issued a fine."
+
  FEDERATION_ASSIGNED_ENVOYS: "Assigned Officials: $VALUE|2+=$"
  ENVOYS_WEIGHT_VAL: "Assigned Official: §Y$VALUE$§!"
 
