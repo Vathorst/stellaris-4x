@@ -4,96 +4,155 @@ spriteTypes = {
 		name = "GFX_text_ancient_sword"
 		textureFile = "gfx/interface/icons/text_icons/token_ancient_sword.dds"
 	}
+
+	spriteType = {
+		name = "GFX_text_celestial_tear"
+		textureFile = "gfx/interface/icons/text_icons/token_celestial_tear.dds"
+	}
+
 	spriteType = {
 		name = "GFX_text_contingency_core"
 		textureFile = "gfx/interface/icons/text_icons/token_contingency_core.dds"
 	}
+
+	spriteType = {
+		name = "GFX_text_continuum"
+		textureFile = "gfx/interface/icons/text_icons/token_continuum.dds"
+	}
+
 	spriteType = {
 		name = "GFX_text_cryo_core"
 		textureFile = "gfx/interface/icons/text_icons/token_cryo_core.dds"
 	}
+
+	spriteType = {
+		name = "GFX_text_daedalus_seal"
+		textureFile = "gfx/interface/icons/text_icons/token_daedalus_seal.dds"
+	}
+
 	spriteType = {
 		name = "GFX_text_dragon_trophy"
 		textureFile = "gfx/interface/icons/text_icons/token_dragon_trophy.dds"
 	}
+
+	spriteType = {
+		name = "GFX_text_eternal_throne"
+		textureFile = "gfx/interface/icons/text_icons/token_eternal_throne.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_ever_spinning_top"
+		textureFile = "gfx/interface/icons/text_icons/token_ever_spinning_top.dds"
+	}
+
 	spriteType = {
 		name = "GFX_text_galatron"
 		textureFile = "gfx/interface/icons/text_icons/token_galatron.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_galaxy"
 		textureFile = "gfx/interface/icons/text_icons/token_galaxy.dds"
 	}
+
+	spriteType = {
+		name = "GFX_text_infinity_root"
+		textureFile = "gfx/interface/icons/text_icons/token_infinity_root.dds"
+	}
+
 	spriteType = {
 		name = "GFX_text_khans_throne"
 		textureFile = "gfx/interface/icons/text_icons/token_khans_throne.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_odryskan_crystal"
 		textureFile = "gfx/interface/icons/text_icons/token_odryskan_crystal.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_omnicodex"
 		textureFile = "gfx/interface/icons/text_icons/token_omnicodex.dds"
 	}
+
+	spriteType = {
+		name = "GFX_text_plasmic_core"
+		textureFile = "gfx/interface/icons/text_icons/token_plasmic_core.dds"
+	}
+
 	spriteType = {
 		name = "GFX_text_pox_sample"
 		textureFile = "gfx/interface/icons/text_icons/token_pox_sample.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_prethoryn_queen"
 		textureFile = "gfx/interface/icons/text_icons/token_prethoryn_queen.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_reality_perforator"
 		textureFile = "gfx/interface/icons/text_icons/token_reality_perforator.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_rubricator"
 		textureFile = "gfx/interface/icons/text_icons/token_rubricator.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_severed_head"
 		textureFile = "gfx/interface/icons/text_icons/token_severed_head.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_surveyor"
 		textureFile = "gfx/interface/icons/text_icons/token_surveyor.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_the_defragmentor"
 		textureFile = "gfx/interface/icons/text_icons/token_the_defragmentor.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_the_last_baol"
 		textureFile = "gfx/interface/icons/text_icons/token_the_last_baol.dds"
 	}
+
+	spriteType = {
+		name = "GFX_text_time_crystal"
+		textureFile = "gfx/interface/icons/text_icons/token_time_crystal.dds"
+	}
+
 	spriteType = {
 		name = "GFX_text_toxic_god"
 		textureFile = "gfx/interface/icons/text_icons/token_toxic_god.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_unbidden_warlock"
 		textureFile = "gfx/interface/icons/text_icons/token_unbidden_warlock.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_vacuum_flower"
 		textureFile = "gfx/interface/icons/text_icons/token_vacuum_flower.dds"
 	}
-	spriteType = {
-		name = "GFX_text_vacuum_flower2"
-		textureFile = "gfx/interface/icons/text_icons/token_vacuum_flower2.dds"
-	}
+
 	spriteType = {
 		name = "GFX_text_war_forge"
 		textureFile = "gfx/interface/icons/text_icons/token_war_forge.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_worm_scales"
 		textureFile = "gfx/interface/icons/text_icons/token_worm_scales.dds"
 	}
+
 	spriteType = {
 		name = "GFX_text_zro_crystal"
 		textureFile = "gfx/interface/icons/text_icons/token_zro_crystal.dds"
 	}
+
 }
