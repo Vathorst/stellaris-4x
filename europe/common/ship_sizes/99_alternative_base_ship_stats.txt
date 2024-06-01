@@ -72,7 +72,7 @@ corvette = {
 
 	prerequisites = { "tech_corvettes" }
 
-	combat_disengage_chance = 1.50 # Europe: increased from 1.0
+	combat_disengage_chance = 1.00
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
@@ -184,7 +184,7 @@ frigate = {
 	}
 	prerequisites = { "tech_torpedoes_1" }
 
-	combat_disengage_chance = 1.50 # Europe: increased
+	combat_disengage_chance = 1.00
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
@@ -289,37 +289,6 @@ destroyer = {
 					has_technology = tech_cloaking_dark_matter
 					has_technology = tech_cloaking_psi
 				}
-			}
-		}
-		# Europe: added torpedo-based types because of new torpedo bow type
-		{
-			name = explosive
-			trigger = { has_technology = tech_torpedoes_1 }
-		}
-		{
-			name = explosive_stealth
-			trigger = {
-				has_technology = tech_torpedoes_1
-				OR = {
-					has_technology = tech_cloaking_2
-					has_technology = tech_cloaking_dark_matter
-					has_technology = tech_cloaking_psi
-				}
-			}
-		}
-		{
-			name = energy_torpedoes
-			trigger = { has_technology = tech_energy_torpedoes_1 }
-		}
-		{
-			name = energy_torpedoes_stealth
-			trigger = {
-				OR = {
-					has_technology = tech_cloaking_2
-					has_technology = tech_cloaking_dark_matter
-					has_technology = tech_cloaking_psi
-				}
-				has_technology = tech_energy_torpedoes_1
 			}
 		}
 	}
@@ -645,8 +614,8 @@ titan = {
 	selectable = { host_has_dlc = "Apocalypse" }
 
 	default_behavior = artillery
-	ship_roles = { artillery gunship carrier } # Europe: added carrier tag because of new supercarrier hull types
-	triggered_ship_roles = { # Europe: added gunship_stealth, artillery_stealth, and carrier_stealth types that unlock with psi cloaking
+	ship_roles = { artillery gunship }
+	triggered_ship_roles = { # Europe: added gunship_stealth and artillery_stealth types that unlock with psi cloaking
 		{
 			name = gunship_stealth
 			trigger = {
@@ -655,12 +624,6 @@ titan = {
 		}
 		{
 			name = artillery_stealth
-			trigger = {
-				has_technology = tech_cloaking_psi
-			}
-		}
-		{
-			name = carrier_stealth
 			trigger = {
 				has_technology = tech_cloaking_psi
 			}
@@ -832,7 +795,7 @@ offspring_corvette = {
 	prerequisites = { "tech_corvettes" }
 	potential_country = { has_origin = origin_progenitor_hive }
 
-	combat_disengage_chance = 1.50 # Europe: increased from 1.0
+	combat_disengage_chance = 1.00
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
@@ -940,37 +903,6 @@ offspring_destroyer = {
 					has_technology = tech_cloaking_dark_matter
 					has_technology = tech_cloaking_psi
 				}
-			}
-		}
-		# Europe: added torpedo-based types because of new torpedo bow type
-		{
-			name = explosive
-			trigger = { has_technology = tech_torpedoes_1 }
-		}
-		{
-			name = explosive_stealth
-			trigger = {
-				has_technology = tech_torpedoes_1
-				OR = {
-					has_technology = tech_cloaking_2
-					has_technology = tech_cloaking_dark_matter
-					has_technology = tech_cloaking_psi
-				}
-			}
-		}
-		{
-			name = energy_torpedoes
-			trigger = { has_technology = tech_energy_torpedoes_1 }
-		}
-		{
-			name = energy_torpedoes_stealth
-			trigger = {
-				OR = {
-					has_technology = tech_cloaking_2
-					has_technology = tech_cloaking_dark_matter
-					has_technology = tech_cloaking_psi
-				}
-				has_technology = tech_energy_torpedoes_1
 			}
 		}
 	}

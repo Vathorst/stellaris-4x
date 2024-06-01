@@ -59,8 +59,6 @@ crisis_corvette = {
 		}
 	}
 
-	combat_disengage_chance = 1.50 # Europe: added/increased
-
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	enable_default_design = yes
@@ -194,8 +192,6 @@ crisis_destroyer = {
 		has_crisis_level = crisis_level_3
 	}
 
-	combat_disengage_chance = 1.50 # Europe: added/increased
-
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	enable_default_design = yes
@@ -210,7 +206,7 @@ crisis_destroyer = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 600 # Europe: increased from 550
+			minerals = 550
 		}
 		upkeep = {
 			energy = @destroyer_upkeep_energy
@@ -226,9 +222,9 @@ crisis_destroyer = {
 crisis_cruiser = {
 	graphical_culture = yes
 	max_speed = @speed_fast
-	acceleration = 0.25 # Europe: matched with cruiser
-	rotation_speed = 0.175 # Europe: matched with cruiser
-	collision_radius = @cruiser_collision_radius # Europe: matched with cruiser
+	acceleration = 0.2
+	rotation_speed = 0.2
+	collision_radius = @destroyer_collision_radius
 	modifier = {
 		ship_evasion_add = 10
 		ship_armor_add = 34
@@ -296,8 +292,6 @@ crisis_cruiser = {
 		has_crisis_level = crisis_level_4
 	}
 
-	combat_disengage_chance = 1.50 # Europe: added/increased
-
 	class = shipclass_military
 	construction_type = starbase_shipyard
 	enable_default_design = yes
@@ -312,7 +306,7 @@ crisis_cruiser = {
 	resources = {
 		category = ships
 		cost = {
-			minerals = 1200 # Europe: increased from 900
+			minerals = 900
 		}
 		upkeep = {
 			energy = @cruiser_upkeep_energy

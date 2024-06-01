@@ -67,17 +67,17 @@ espionage_operation_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		#if = { # Europe: Enigmatic Engineering just adds +8 Operation difficulty to tech steals instead of making them impossible
-		#	limit = {
-		#		target = { has_ascension_perk = ap_enigmatic_engineering }
-		#	}
-		#	set_espionage_operation_progress_locked = yes
-		#	owner = {
-		#		set_country_flag = cannot_steal_enigmatic_tech@root.target
-		#		country_event = { id = operation.1027 }
-		#	}
-		#}
-		#else = {
+		if = {
+			limit = {
+				target = { has_ascension_perk = ap_enigmatic_engineering }
+			}
+			set_espionage_operation_progress_locked = yes
+			owner = {
+				set_country_flag = cannot_steal_enigmatic_tech@root.target
+				country_event = { id = operation.1027 }
+			}
+		}
+		else = {
 			if = {
 				limit = { #Disregard empires which wouldn't hold a scientific debate
 					target = {
@@ -378,15 +378,14 @@ country_event = {
 	}
 
 	after = {
-		# Europe: removed cooldown
-		#custom_tooltip = operation.1026.tooltip.cooldown
-		#fromfrom.spynetwork = {
-		#	set_saved_date = {
-		#		key = recently_stole_technology
-		#		days_from_present = @StealTechnologyTimer
-		#		expires = @StealTechnologyTimer
-		#	}
-		#}
+		custom_tooltip = operation.1026.tooltip.cooldown
+		fromfrom.spynetwork = {
+			set_saved_date = {
+				key = recently_stole_technology
+				days_from_present = @StealTechnologyTimer
+				expires = @StealTechnologyTimer
+			}
+		}
 		if = {
 			limit = {
 				can_copy_random_tech_from = { who = fromfrom.target }
@@ -405,7 +404,7 @@ country_event = {
 					copy_random_tech_from = {
 						who = fromfrom.target
 						area = physics
-						progress = 0.50 # Europe: increased
+						progress = 0.30
 					}
 				}
 				1 = {
@@ -421,7 +420,7 @@ country_event = {
 					copy_random_tech_from = {
 						who = fromfrom.target
 						area = society
-						progress = 0.50 # Europe: increased
+						progress = 0.30
 					}
 				}
 				1 = {
@@ -437,7 +436,7 @@ country_event = {
 					copy_random_tech_from = {
 						who = fromfrom.target
 						area = engineering
-						progress = 0.50 # Europe: increased
+						progress = 0.30
 					}
 				}
 			}

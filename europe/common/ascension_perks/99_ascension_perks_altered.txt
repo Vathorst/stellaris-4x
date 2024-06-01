@@ -324,7 +324,7 @@ ap_hydrocentric = {
 	}
 
 	modifier = {
-		terraforming_ocean_cost_mult = -0.5 # Europe: changed from -0.25
+		terraforming_ocean_cost_mult = -0.35 # Europe: changed from -0.25
 	}
 
 	ai_weight = {
@@ -373,7 +373,7 @@ ap_grasp_the_void = {
 
 	modifier = {
 		country_starbase_capacity_add = 4 # Europe: reduced from 5
-		country_starbase_capacity_mult = 0.2 # Europe: added to make AP be effective into the lategame
+		country_starbase_capacity_mult = 0.15 # Europe: added to make AP be effective into the lategame
 	}
 
 	potential = {
@@ -692,115 +692,3 @@ ap_defender_of_the_galaxy = {
 		}
 	}
 }
-
-ap_enigmatic_engineering = {
-	potential = {
-		host_has_dlc = "Apocalypse"
-		NOT = {
-			has_ascension_perk = ap_enigmatic_engineering
-		}
-	}
-
-	possible = {
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_1"
-			num_ascension_perks > 0
-		}
-	}
-
-	on_enabled = {
-		custom_tooltip = "no_rev_engineering_new"
-	}
-
-	modifier = {
-		intel_encryption_add = 2
-	}
-
-	tradition_swap = {
-		name = ap_enigmatic_engineering_cloaking
-		inherit_effects = no
-		inherit_icon = yes
-		trigger = {
-			has_first_contact_dlc = yes
-			has_nemesis = no # Europe: added
-		}
-
-		on_enabled = {
-			custom_tooltip = "no_rev_engineering_new"
-		}
-
-		modifier = {
-			ship_cloaking_strength_add = 2
-			intel_encryption_add = 2
-		}
-
-		weight = {
-			factor = 1
-		}
-	}
-
-	tradition_swap = { # Europe: added
-		name = ap_enigmatic_engineering_nemesis
-		inherit_effects = no
-		inherit_icon = yes
-		trigger = {
-			has_first_contact_dlc = no
-			has_nemesis = yes
-		}
-
-		on_enabled = {
-			custom_tooltip = "no_rev_engineering_new"
-		}
-
-		modifier = {
-			intel_encryption_add = 2
-			hostile_operation_steal_technology_difficulty_add = 6
-		}
-
-		weight = {
-			factor = 1
-		}
-	}
-
-	tradition_swap = { # Europe: added
-		name = ap_enigmatic_engineering_nemesis_cloaking
-		inherit_effects = no
-		inherit_icon = yes
-		trigger = {
-			has_first_contact_dlc = yes
-			has_nemesis = yes
-		}
-
-		on_enabled = {
-			custom_tooltip = "no_rev_engineering_new"
-		}
-
-		modifier = {
-			ship_cloaking_strength_add = 2
-			intel_encryption_add = 2
-			hostile_operation_steal_technology_difficulty_add = 6
-		}
-
-		weight = {
-			factor = 1
-		}
-	}
-
-	ai_weight = {
-		factor = 2
-		modifier = {
-			factor = 10
-			has_valid_civic = civic_inwards_perfection
-		}
-		modifier = {
-			factor = 2
-			is_materialist = yes
-			is_xenophobe = yes
-		}
-		modifier = {
-			factor = 10
-			has_origin = origin_slavers
-		}
-	}
-}
-

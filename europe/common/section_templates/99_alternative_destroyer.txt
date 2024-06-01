@@ -124,7 +124,7 @@ ship_section_template = {
 	ship_size = destroyer
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "destroyer_bow_M1S2_entity" # Europe: switched to 1M2S entity from 3S entity
+	entity = "destroyer_bow_S3_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { screen screen_stealth } # Europe: added stealth tags
 
@@ -144,13 +144,6 @@ ship_section_template = {
 	#	}
 	#}
 
-	# Europe: switched from 1P 2S slots to 1M 2P slots for weapon slot parity with other types
-	component_slot = {
-		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
-		locatorname = "medium_gun_01"
-	}
-
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "point_defence_turret"
@@ -159,8 +152,14 @@ ship_section_template = {
 
 	component_slot = {
 		name = "SMALL_GUN_02"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
 	}
 
 	small_utility_slots = 6
@@ -178,7 +177,7 @@ ship_section_template = {
 	ship_size = offspring_destroyer
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "destroyer_bow_M1S2_entity" # Europe: switched to 1M2S entity from 3S entity
+	entity = "destroyer_bow_S3_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { screen screen_stealth } # Europe: added stealth tags
 
@@ -198,13 +197,6 @@ ship_section_template = {
 	#	}
 	#}
 
-	# Europe: switched from 1P 2S slots to 1M 2P slots for weapon slot parity with other types
-	component_slot = {
-		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
-		locatorname = "medium_gun_01"
-	}
-
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "point_defence_turret"
@@ -213,8 +205,14 @@ ship_section_template = {
 
 	component_slot = {
 		name = "SMALL_GUN_02"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
 	}
 
 	small_utility_slots = 6
@@ -323,107 +321,6 @@ ship_section_template = {
 	}
 }
 
-# Europe: added Torpedo bow
-ship_section_template = {
-	key = "DESTROYER_BOW_G1S2"
-	ship_size = destroyer
-	fits_on_slot = bow
-	should_draw_components = yes
-	entity = "destroyer_bow_M1S2_entity"
-	icon = "GFX_ship_part_core_bow"
-	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
-
-	prerequisites = { tech_torpedoes_1 }
-
-	ai_weight = {
-		modifier = {
-			factor = 10.0
-			is_preferred_weapons = weapon_type_explosive
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_explosive }
-		}
-	}
-
-	component_slot = {
-		name = "TORPEDO_01"
-		template = "medium_missile_turret"
-		locatorname = "medium_gun_01"
-	}
-
-	component_slot = {
-		name = "SMALL_GUN_01"
-		template = "small_turret"
-		locatorname = "small_gun_01"
-	}
-
-	component_slot = {
-		name = "SMALL_GUN_02"
-		template = "small_turret"
-		locatorname = "small_gun_02"
-	}
-
-	small_utility_slots = 6
-
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = @section_cost
-		}
-	}
-}
-
-ship_section_template = {
-	key = "OFFSPRING_DESTROYER_BOW_G1S2"
-	ship_size = offspring_destroyer
-	fits_on_slot = bow
-	should_draw_components = yes
-	entity = "destroyer_bow_M1S2_entity"
-	icon = "GFX_ship_part_core_bow"
-	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
-
-	prerequisites = { tech_torpedoes_1 }
-
-	ai_weight = {
-		modifier = {
-			factor = 10.0
-			is_preferred_weapons = weapon_type_explosive
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_explosive }
-		}
-	}
-
-	component_slot = {
-		name = "TORPEDO_01"
-		template = "medium_missile_turret"
-		locatorname = "medium_gun_01"
-	}
-
-	component_slot = {
-		name = "SMALL_GUN_01"
-		template = "small_turret"
-		locatorname = "small_gun_01"
-	}
-
-	component_slot = {
-		name = "SMALL_GUN_02"
-		template = "small_turret"
-		locatorname = "small_gun_02"
-	}
-
-	small_utility_slots = 6
-
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = @section_cost
-		}
-	}
-}
-
 # Stern
 
 ship_section_template = {
@@ -433,7 +330,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { screen screen_stealth artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth } # Europe: added stealth tags, energy torpedo tags, and artillery tags
+	ai_tags = { screen screen_stealth artillery artillery_stealth } # Europe: added stealth tags and artillery tags
 
 	ai_weight = {
 		modifier = {
@@ -469,7 +366,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	aux_utility_slots = 2 # Europe: increased from 1
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -486,7 +383,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { screen screen_stealth artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth } # Europe: added stealth tags, energy torpedo tags, and artillery tags
+	ai_tags = { screen screen_stealth artillery artillery_stealth } # Europe: added stealth tags and artillery tags
 
 	ai_weight = {
 		modifier = {
@@ -510,7 +407,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	aux_utility_slots = 2 # Europe: increased from 1
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -527,7 +424,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { gunship gunship_stealth brawler brawler_stealth explosive explosive_stealth } # Europe: added stealth tags and torpedo tags
+	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added stealth tags
 
 	# Europe: removed
 	#ai_weight = {
@@ -563,7 +460,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { gunship gunship_stealth brawler brawler_stealth explosive explosive_stealth } # Europe: added stealth tags and torpedo tags
+	ai_tags = { gunship gunship_stealth brawler brawler_stealth } # Europe: added stealth tags
 
 	# Europe: removed
 	#ai_weight = {
@@ -695,8 +592,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	# Europe: changed from 3 medium utility for parity with destroyers
-	small_utility_slots = 6
+	medium_utility_slots = 3
 	aux_utility_slots = 2
 }
 
@@ -743,7 +639,6 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	# Europe: changed from 3 medium utility for parity with destroyers
-	small_utility_slots = 6
+	medium_utility_slots = 3
 	aux_utility_slots = 2
 }

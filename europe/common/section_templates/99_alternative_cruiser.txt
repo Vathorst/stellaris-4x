@@ -34,7 +34,7 @@ ship_section_template = {
 		locatorname = "large_gun_01"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -100,7 +100,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -160,7 +160,7 @@ ship_section_template = {
 		locatorname = "medium_gun_02"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -208,7 +208,7 @@ ship_section_template = {
 		locatorname = "strike_craft_locator_01"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -255,7 +255,7 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -303,7 +303,7 @@ ship_section_template = {
 		locatorname = "medium_gun_03"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -365,7 +365,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -408,7 +408,7 @@ ship_section_template = {
 		locatorname = "large_gun_01"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -474,7 +474,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -534,7 +534,7 @@ ship_section_template = {
 		locatorname = "medium_gun_02"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -582,7 +582,7 @@ ship_section_template = {
 		locatorname = "strike_craft_locator_01"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -629,7 +629,7 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -677,7 +677,7 @@ ship_section_template = {
 		locatorname = "medium_gun_03"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -739,7 +739,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	medium_utility_slots = 3 # Europe: reduced from 4
+	medium_utility_slots = 4
 
 	resources = {
 		category = ship_sections
@@ -871,24 +871,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "crisis_cruiser_hull_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery artillery_stealth gunship gunship_stealth } # Europe: added tags so that AI can choose between this and carrier version
-
-	ai_weight = { # Europe: added
-		modifier = {
-			factor = 0.1
-			OR = {
-				is_preferred_weapons = weapon_type_explosive
-				is_preferred_weapons = weapon_type_strike_craft
-			}
-		}
-		modifier = {
-			factor = 10
-			NOR = {
-				is_preferred_weapons = weapon_type_explosive
-				is_preferred_weapons = weapon_type_strike_craft
-			}
-		}
-	}
+	ai_tags = { artillery artillery_stealth gunship gunship_stealth } # Europe: added tags
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -905,73 +888,14 @@ ship_section_template = {
 		template = "medium_turret"
 		locatorname = "medium_gun_02"
 	}
-	# Europe: switched out 2S weapon slots for 2M weapon slots
-	component_slot = {
-		name = "MEDIUM_GUN_03"
-		template = "medium_turret"
-		locatorname = "small_gun_01"
-	}
-	component_slot = {
-		name = "MEDIUM_GUN_04"
-		template = "medium_turret"
-		locatorname = "small_gun_02"
-	}
-
-	medium_utility_slots = 6
-	aux_utility_slots = 2
-}
-
-#Europe: added Menacing Carrier section for Menacing Cruisers
-
-ship_section_template = {
-	key = "CRISIS_CRUISER_SECTION_CARRIER"
-	ship_size = crisis_cruiser
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "crisis_cruiser_hull_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier carrier_stealth artillery artillery_stealth }
-
-	ai_weight = {
-		modifier = {
-			factor = 0.1
-			NOR = {
-				is_preferred_weapons = weapon_type_explosive
-				is_preferred_weapons = weapon_type_strike_craft
-			}
-		}
-		modifier = {
-			factor = 10
-			OR = {
-				is_preferred_weapons = weapon_type_explosive
-				is_preferred_weapons = weapon_type_strike_craft
-			}
-		}
-	}
-
-	component_slot = {
-		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
-		locatorname = "large_gun_01"
-	}
-	component_slot = {
-		name = "STRIKE_CRAFT_01"
-		template = "large_strike_craft"
-		locatorname = "medium_gun_01"
-	}
-	component_slot = {
-		name = "STRIKE_CRAFT_02"
-		template = "large_strike_craft"
-		locatorname = "medium_gun_02"
-	}
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_01"
 	}
 	component_slot = {
 		name = "SMALL_GUN_02"
-		template = "point_defence_turret"
+		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
 

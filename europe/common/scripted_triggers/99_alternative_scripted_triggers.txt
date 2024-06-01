@@ -1,41 +1,7 @@
-is_catalytic_empire = {
-	OR = {
-		has_valid_civic = civic_catalytic_processing
-		has_valid_civic = civic_corporate_catalytic_processing
-		has_valid_civic = civic_hive_catalytic_processing
-		has_valid_civic = civic_machine_catalytic_processing
-	}
-	OR = {
-		has_policy_flag = catalytic_policy_catalytic
-		NOT = { has_global_flag = game_started }
-	}
-}
-
-is_faction_allowed = {
-	# Europe: factions spawn after 6 months for everyone
-	days_passed > 183
-	#OR = {
-	#	AND = {
-	#		years_passed > 10
-	#		has_encountered_other_species = yes
-	#	}
-	#	AND = {
-	#		days_passed > 30
-	#		has_valid_civic = civic_parliamentary_system
-	#	}
-	#	AND = {
-	#		days_passed > 350
-	#		has_origin = origin_broken_shackles
-	#	}
-	#}
-	NOT = { has_ethic = ethic_gestalt_consciousness }
-	NOT = { has_country_flag = suppress_vanilla_factions }
-}
-
 has_ringworld_output_boost = {
 	OR = {
 		is_ringworld = yes
-		AND = {
+		AND = { # Europe: added
 			habitable_structure = yes
 			owner = { is_void_dweller_empire = yes }
 		}

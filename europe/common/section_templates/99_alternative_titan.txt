@@ -7,7 +7,7 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "titan_bow_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery artillery_stealth gunship gunship_stealth carrier carrier_stealth } # Europe: added stealth and carrier tags
+	ai_tags = { artillery artillery_stealth gunship gunship_stealth } # Europe: added stealth tags
 
 	ai_weight = {
 		modifier = {
@@ -46,24 +46,23 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { artillery artillery_stealth gunship gunship_stealth } # Europe: added stealth tags
 
-	# Europe: switched two L-slot weapons to two X-slot weapons (so Titan firepower scales better with naval cap usage)
 	component_slot = {
-		name = "EXTRA_LARGE_01"
-		template = "extra_large_turret"
+		name = "LARGE_GUN_01"
+		template = "large_turret"
 		locatorname = "large_gun_01"
 	}
 	component_slot = {
-		name = "EXTRA_LARGE_02"
-		template = "extra_large_turret"
+		name = "LARGE_GUN_02"
+		template = "large_turret"
 		locatorname = "large_gun_02"
 	}
 	component_slot = {
-		name = "LARGE_GUN_01"
+		name = "LARGE_GUN_03"
 		template = "large_turret"
 		locatorname = "large_gun_03"
 	}
 	component_slot = {
-		name = "LARGE_GUN_02"
+		name = "LARGE_GUN_04"
 		template = "large_turret"
 		locatorname = "large_gun_04"
 	}
@@ -95,101 +94,6 @@ ship_section_template = {
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = "large_turret"
-		locatorname = "large_gun_02"
-	}
-
-	aux_utility_slots = 3
-
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = @section_cost
-		}
-	}
-}
-
-# Europe: added Carrier Mid and Stern sections for Titans
-
-ship_section_template = {
-	key = "TITAN_MID_CARRIER"
-	ship_size = titan
-	fits_on_slot = mid
-	should_draw_components = yes
-	entity = "titan_mid_entity"
-	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier carrier_stealth }
-
-	ai_weight = {
-		modifier = {
-			factor = 10.0
-			is_preferred_weapons = weapon_type_strike_craft
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_strike_craft }
-		}
-	}
-
-	# Europe: switched two L-slot weapons to two X-slot weapons (so Titan firepower scales better with naval cap usage)
-	component_slot = {
-		name = "EXTRA_LARGE_01"
-		template = "extra_large_turret"
-		locatorname = "large_gun_01"
-	}
-	component_slot = {
-		name = "EXTRA_LARGE_02"
-		template = "extra_large_turret"
-		locatorname = "large_gun_02"
-	}
-	component_slot = {
-		name = "STRIKE_CRAFT_01"
-		template = "large_strike_craft"
-		locatorname = "large_gun_03"
-	}
-	component_slot = {
-		name = "STRIKE_CRAFT_02"
-		template = "large_strike_craft"
-		locatorname = "large_gun_04"
-	}
-
-	large_utility_slots = 6
-
-	resources = {
-		category = ship_sections
-		cost = {
-			alloys = @section_cost
-		}
-	}
-}
-
-ship_section_template = {
-	key = "TITAN_STERN_CARRIER"
-	ship_size = titan
-	fits_on_slot = stern
-	should_draw_components = yes
-	entity = "titan_stern_entity"
-	icon = "GFX_ship_part_core_stern"
-	ai_tags = { carrier carrier_stealth }
-
-	ai_weight = {
-		modifier = {
-			factor = 10.0
-			is_preferred_weapons = weapon_type_strike_craft
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { is_preferred_weapons = weapon_type_strike_craft }
-		}
-	}
-
-	component_slot = {
-		name = "STRIKE_CRAFT_01"
-		template = "large_strike_craft"
-		locatorname = "large_gun_01"
-	}
-	component_slot = {
-		name = "STRIKE_CRAFT_02"
-		template = "large_strike_craft"
 		locatorname = "large_gun_02"
 	}
 

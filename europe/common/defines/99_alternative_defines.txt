@@ -45,19 +45,5 @@
 		DESIGNER_WEAPON_ROLE_MUL			= 100.00 # Increased from 5.33 because out-of-role weapons for a ship is generally not good
 		DESIGNER_UTILITY_ROLE_MUL			= 100.00 # Increased from 5.33 because out-of-role weapons for a ship is generally not good
 		DESIGNER_WEAPON_STACKING_DIV		= 0.01 # Decreased from 0.25. This is normally not-great, but it's the only way to prevent the AI from doing really bad stuff like mixing plasma cannons with disruptors
-		MAX_DAMAGE_SCALING					= 20 # Increased from 8 so that torpedos do extra damage against titans, juggernauts, and all starbases (compared to battleships)
-		SHIP_MAX_EVASION					= 0.95 # Increased from 0.9 because it was too easy for corvettes to get 90%. 
 		DEFAULT_ARMOR_RATIO 				= 0.5 # Increased from 0.4 because hull plating is generally not a good module.
-
-		MILITARY_POWER_TRACKING_WEIGHT      = -0.1 # At 0% tracking, decreased from -0.5 because this value is calibrated to make Small Plasma and Medium Plasma weapons have the same power per small-slot equivalent
-		MILITARY_POWER_HEALTH_WEIGHT        = 0.05 # Lowered from 0.5 as a way to fix overestimation of starbase strength and evasion strength
-		MILITARY_POWER_ARMOR_WEIGHT			= 15.0 # Relative to Health, increased to compensate for MILITARY_POWER_HEALTH_WEIGHT decrease
-		MILITARY_POWER_SHIELD_WEIGHT		= 15.0 # Relative to Health, increased to compensate for MILITARY_POWER_HEALTH_WEIGHT decrease
-		MILITARY_POWER_SIZE_MULTIPLIER_WEIGHT = 3.0 # Lowered from 4.0 to better represent what the average expected mixed fleet composition would be
-		MILITARY_POWER_PD_MULT = 1.0		# Lowered from 1.15 because we can just set point defense weapons' military multiplier manually (and it's more obvious that way)
-	}
-
-	NAI = {
-		AI_ALLOWED_TO_BUY = { "minerals" "food" "alloys" "consumer_goods" "exotic_gases" "rare_crystals" "volatile_motes" "sr_living_metal" "sr_dark_matter" "sr_zro" "nanites" "minor_artifacts" } # Europe: added nanites and minor artifacts
-		AI_ALLOWED_TO_SELL = { "minerals" "food" "alloys" "consumer_goods" "exotic_gases" "rare_crystals" "volatile_motes" "sr_living_metal" "sr_dark_matter" "sr_zro" "nanites" "minor_artifacts" } # Europe: added nanites and minor artifacts
 	}
