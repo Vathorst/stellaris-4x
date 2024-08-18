@@ -1,0 +1,42 @@
+	NGameplay = {
+		VICTORY_YEAR_SLIDER_INTERVAL = 25
+	
+		FEDERATION_BASE_ETHICS				= 4			# Changed from 3 count of unique ethics not penalized for federation cohesion
+		FEDERATION_MEMBERS_PENALTY			= -0.50		# Changed from -0.25 penalty for each federation member
+		FEDERATION_ETHICS_PENALTY			= -0.20		# Changed from -0.15 Federation cohesion penalty for extra unique ethics
+		FEDERATION_OPPOSING_ETHICS_PENALTY	= -2.0		# Changed from -0.5 Federation cohesion for opposing ethics
+
+		FAVORS_PER_RESOLUTION_CAP			= 0		# Reduced from 100 because using favors in the GalCom is disabled by the ruleset
+		BORROWED_DIPLO_WEIGHT_FAVOR_MULT	= 0		# Reduced from 0.1 because using favors in the GalCom is disabled by the ruleset
+		
+		RESOLUTION_VOTE_TIMER = 720						# halved. number of days a resolution will be on the senate floor before being passed/failed
+		RESOLUTION_VOTE_PREMATURE_TIMER = 360			# halved. number of days until the custodian/emperor can prematurely end the senate session
+		SENATE_RECESS_TIMER = 500						# lowered. number of days until the next proposed resolution will be put on the floor after the current vote
+		CHANGE_VOTE_COOLDOWN = 60						# halved. number of days after voting in a resolution before you can change your vote
+
+		CATEGORY_VOTE_COOLDOWN = 1260					# halved. time before another resolution in a given category can proposed again
+		TYPE_VOTE_COOLDOWN = 2520						# halved. time before a referendum of a given type can be proposed again
+		VETO_COOLDOWN = 900								# halved. time before a country can enact another veto
+		EMERGENCY_MEASURES_COOLDOWN = 3600				# halved. time before a country can propose another emergency measure
+	
+	}
+
+	NEconomy = {
+
+		MARKET_FLUCTUATION_ABOVE_BASE_PRICE		= 0.3	# Space_Opera: 1 Base fluctuation when trading a resource' base amount if price is > 0
+		MARKET_FLUCTUATION_BELOW_BASE_PRICE		= 0.1	# Space_Opera: 0.2 Base fluctuation when trading a resource' base amount if price is < 0
+		MARKET_MIN_FLUCTUATION_FROM_BASE_PRICE	= -90	# Space_Opera: -80 Min fluctuation from base price
+		MARKET_MAX_FLUCTUATION_FROM_BASE_PRICE	= 1000	# Space_Opera: 400 Max fluctuation from base price
+		MARKET_DAYS_TO_BASE_PRICE				= 9000	# Space_Opera: 1800 Days until resource price reaches base price from max or min price
+		MARKET_FLUCTUATION_EPSILON				= 0.2	# Space_Opera: 0.5 If | fluctuation | < epsilon, reset fluctuation to zero
+
+
+
+		PRICE_CHANGE_EQ_POS_C				= 2300000 	# Space_Opera: 320000 Constant C in f(x) = ( c / ( x - xo ) ) + d for f(x) > 0
+		PRICE_CHANGE_EQ_POS_D				= -211.023	# Space_Opera: -133.3 Constant D in f(x) = ( c / ( x - xo ) ) + d for f(x) > 0
+		PRICE_CHANGE_EQ_POS_X0				= -1899.22 	# Space_Opera: -600 Constant X0 in f(x) = ( c / ( x - xo ) ) + d for f(x) > 0
+
+		PRICE_CHANGE_EQ_NEG_C				= -100000	# Space_Opera: -45000 Constant C in f(x) = ( c / ( x - xo ) ) + d for f(x) < 0
+		PRICE_CHANGE_EQ_NEG_D				= 10 		# Space_Opera: 20 Constant D in f(x) = ( c / ( x - xo ) ) + d for f(x) < 0
+		PRICE_CHANGE_EQ_NEG_X0				= -1000		# Space_Opera: -450 Constant X0 in f(x) = ( c / ( x - xo ) ) + d for f(x) < 0
+	}
