@@ -29,9 +29,6 @@
  subject_can_do_diplomacy_but_not_vote_desc: "The Subject is free to engage in most diplomacy, but must follow their Overlord's votes in Federations and the Galactic Community.\n\nIf the Overlord is a member of the §YGalactic Community§!, the Subject will be forced to join it."
  subject_can_not_do_diplomacy_desc: "The Subject may not engage in diplomacy with other Empires, nor vote independently.\n\nThis will force the Subject to join any §YFederation§! that the Overlord is a member of."
 
- europe.3.name: "$resolution_amoeba_conservation_act$ Violation"
- europe.3.desc: "Officials from the Galactic Community have protested our recent killing of Amoebas in the §H[amoeba_kill_system.GetName]§! system, informing us that our actions have violated the §Y$resolution_amoeba_conservation_act$§!. As a consequence, the [Root.GetName] is to be considered in §RBreach of Galactic Law§! for the next ten years.\n\nWe have also been issued a fine."
-
   # Preset text icons
  #text_icon_vacuum_flower:0 "£vacuum_flower£"
  trade_action_r_ancient_sword: "£ancient_sword£ $r_ancient_sword$"
