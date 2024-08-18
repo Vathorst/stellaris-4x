@@ -11,6 +11,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_text_cetanas_heart"
+		textureFile = "gfx/interface/icons/text_icons/token_cetanas_heart.dds"
+	}
+
+	spriteType = {
 		name = "GFX_text_contingency_core"
 		textureFile = "gfx/interface/icons/text_icons/token_contingency_core.dds"
 	}
@@ -154,5 +159,4 @@ spriteTypes = {
 		name = "GFX_text_zro_crystal"
 		textureFile = "gfx/interface/icons/text_icons/token_zro_crystal.dds"
 	}
-
 }

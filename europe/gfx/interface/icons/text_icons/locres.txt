@@ -4,6 +4,9 @@
  trade_action_r_celestial_tear: "£celestial_tear£ $r_celestial_tear$"
  trade_action_r_celestial_tear_desc: "Trade away our £celestial_tear£ $r_celestial_tear$ relic."
 
+ trade_action_r_cetanas_heart: "£cetanas_heart£ $r_cetanas_heart$"
+ trade_action_r_cetanas_heart_desc: "Trade away our £cetanas_heart£ $r_cetanas_heart$ relic."
+
  trade_action_r_contingency_core: "£contingency_core£ $r_contingency_core$"
  trade_action_r_contingency_core_desc: "Trade away our £contingency_core£ $r_contingency_core$ relic."
 

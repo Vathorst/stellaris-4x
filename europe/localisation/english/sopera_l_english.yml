@@ -24,23 +24,6 @@
  
  mod_country_traditions_influence_produces_add: "$MOD_COUNTRY_INFLUENCE_GAIN_ADD$"
 
- frozen_terraforming_candidate_tooltip: "If we pick the §Y$ap_hydrocentric$§! or §Y$ap_world_shaper$§! ascension perk and research the £society£ §Y$tech_climate_restoration$§! technology, we will be able to terraform this planet into a habitable world."
- FROZEN_TERRAFORMING_CANDIDATE_EFFECT: "§Y[From.GetName]§! will be able to be terraformed if we choose the §H$ap_hydrocentric$§! or §H$ap_world_shaper$§! ascension perks and research the £society£ §H$tech_climate_restoration$§! technology."
- toxic_terraforming_candidate_tooltip: "If we pick the §Y$ap_world_shaper$§! ascension perk, we will be able to terraform this planet into a habitable world."
- TOXIC_TERRAFORMING_CANDIDATE_EFFECT: "§Y[From.GetName]§! may be terraformed if we choose the §H$ap_world_shaper$§! Ascension Perk."
- melt_frozen_worlds: "Enables terraforming of §YFrozen World Terraforming Candidates§! into habitable worlds.\nWe have §Y[This.num_frozen_terraform_candidates]§! of these within our border."
- new_world_shaper: "Enables terraforming of §YToxic World Terraforming Candidates§! and §YFrozen World Terraforming Candidates§! into habitable worlds.\nWe have §Y[This.num_toxic_or_frozen_terraform_candidates]§! of these within our border."
- ap_lord_of_war_tooltip: "§YMercenary Enclaves§! under our patronage pay more frequent §YDividends§!.\nIncreases the £opinion£ §YOpinion§! of §YMercenary Enclaves§! by §G+100§!"
- triggered_opinion_ap_lord_of_war: "$ap_lord_of_war$"
- ap_archaeoengineers_tooltip: "Unlocks additional effects for §YAncient§! ship components and buildings. §Y$pc_relic$§! planets increase the maximum amount of §Y$building_archaeostudies_faculty$§! buildings that we can build. §G+2000§! £minor_artifacts£ §YMinor Artifacts§! empire capacity for every built §Y$building_archaeostudies_faculty$§!"
- ap_voidborn_habitat_effect: "Can construct advanced housing buildings on §YHabitats§!. Improves the final tier of certain yield-increasing buildings on §YHabitats§!."
-
- origin_tooltip_broken_shackles_effects: "- $INITIAL_POPS$ Species from ['concept_preftl_civilizations'] across the galaxy $NEW_LINE$- $STARTING_PLANET$ $TABBED_NEW_LINE$- ['concept_free_at_last_broken_shackles'] Planetary Modifier $TABBED_NEW_LINE$- ['concept_crashed_slaver_ship_broken_shackles'] Planetary Feature $TABBED_NEW_LINE$- ['concept_broken_shackles_buildings'] $NEW_LINE$- $STARTING_SYSTEM$ ['concept_broken_shackles_digsite'] ['concept_archaeology_site'] $NEW_LINE$- One Pre-FTL Civilization: Will be this empire's species and homeworld"
- broken_shackles_desc: "Repairing the computer core of the crashed slaver ship should reveal the location of our former home worlds..."
- origin.5020.desc: "Say this much for our enslavers: the authoritarian scum know how to safeguard their secrets.\n\nPrying open the ship's blast doors has proven a monumental task. What few laser cutters we possess were designed for low-scale mining operations. Only by tunneling up from the deck below was the team able to make any progress. [engineering_shackled_species.GetAdj] engineers are now hard at work restoring power to the rest of the ship's systems."
- origin.5105.desc: "A monumental day at the Galactic Community, where members voted to ban all forms of slavery - including the vile practice of indentured servitude. No longer will organizations like our enslavers be able to exploit the innocent in the name of profit. At last, one of the darkest chapters in galactic history can finally come to a close."
- origin.5002.desc: "In casting off our shackles, we took the first step towards becoming a people. However, after returning to our former home world that sense of shared purpose has begun to wane.\n\nPopular media is awash with highly romanticized depictions of the 'simple life' enjoyed on our former home world before the arrival of our enslavers. Many have already returned.\n\nIf we are not careful, this could have a seriously destabilizing effect on our society."
-
  requires_less_than_two_vassals: "Players cannot have more than two player vassals at any time, including secret fealty pledges."
  mod_divided_patrongage_max_subjects: "Max Player Subjects, Subjects Exempt from Divided Patronage"
  subject_can_do_diplomacy_but_not_vote_desc: "The Subject is free to engage in most diplomacy, but must follow their Overlord's votes in Federations and the Galactic Community.\n\nIf the Overlord is a member of the §YGalactic Community§!, the Subject will be forced to join it."
@@ -56,6 +39,9 @@
 
  trade_action_r_celestial_tear: "£celestial_tear£ $r_celestial_tear$"
  trade_action_r_celestial_tear_desc: "Trade away our £celestial_tear£ $r_celestial_tear$ relic."
+
+ trade_action_r_cetanas_heart: "£cetanas_heart£ $r_cetanas_heart$"
+ trade_action_r_cetanas_heart_desc: "Trade away our £cetanas_heart£ $r_cetanas_heart$ relic."
 
  trade_action_r_contingency_core: "£contingency_core£ $r_contingency_core$"
  trade_action_r_contingency_core_desc: "Trade away our £contingency_core£ $r_contingency_core$ relic."

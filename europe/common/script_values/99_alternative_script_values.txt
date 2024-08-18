@@ -1,9 +1,0 @@
-zarqlan_fervor_three = {
-	base = 0
-	modifier = {
-		add = zarqlan_fervor
-	}
-	mult = 3
-	divide = 2 # Europe: added to correspond to changes in naval cap usage
-	floor = yes # Europe: added to correspond to changes in naval cap usage, round down because we are spawning small ships to accompany a big ship and have not modified the big ship spawn count because that is much harder to do
-}

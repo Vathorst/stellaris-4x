@@ -51,6 +51,29 @@ trade_action_r_celestial_tear = {
 	}
 }
 
+trade_action_r_cetanas_heart = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_cetanas_heart
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_cetanas_heart }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_cetanas_heart
+		from = { add_relic = r_cetanas_heart }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
 trade_action_r_contingency_core = {
 	fire_and_forget = yes
 
