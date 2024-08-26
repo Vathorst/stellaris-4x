@@ -7,9 +7,9 @@
 7. Made the crisis casus belli silent (no notification), and only active from crisis level 2. You can still see the casus beli from the diplomacy screen, so pay attention.
 8. The crisis can already construct menacing corvettes from level 1. Hide them well so other players don't notice.
 9. Removed some game hints that directly tell you who is the crisis.
+10. You can now no longer join or create a federation if you do not meet the ethics requirements.
+11. Federations now have a size limit.
 
-# 4. You can now no longer join or create a federation if you do not meet the ethics requirements.
-# 5. Federations now have a size limit.
 # 11. Upgraded the fleet cap of federations to be 600 - 1200 - 3600 for low, medium and high fleet contribution respectively.
 # 12. GDF now starts with size 400 and will upgrade to size 1000 upon expanding.
 # 13. Owning vassals and/or being in breach of galactic law no longer generates Menace passively. Steal Technology, Extort Favors, Spark Diplomatic Incident, and Smear Campaign espionage actions no longer generate Menace. Lowered the Menace gain from destroying ships by 66% and the Menace gain from destroying starbases by 33%. People who want to become the Crisis will need to go out and actively act like it.
