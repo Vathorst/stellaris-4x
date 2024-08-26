@@ -9,15 +9,15 @@
 9. Removed some game hints that directly tell you who is the crisis.
 10. You can now no longer join or create a federation if you do not meet the ethics requirements.
 11. Federations now have a size limit.
-
-# 11. Upgraded the fleet cap of federations to be 600 - 1200 - 3600 for low, medium and high fleet contribution respectively.
+12. Upgraded the fleet cap of federations to be 600 - 1200 - 3600 for low, medium and high fleet contribution respectively.
+13. Made it (functionally) impossible for a player to have more than two player vassals. Outside of a player vassalizing an AI and then having a player hotjoin as that AI, players should not longer be able to have more than two vassals who are players, including secret vassals from swearing secret fealties.
+14. Diplomacy actions between players no longer need trust. Trust requirements for pacts with AI empires remain unchanged.
+15. AI-Spawning origins have been disabled for players.
 # 12. GDF now starts with size 400 and will upgrade to size 1000 upon expanding.
 # 13. Owning vassals and/or being in breach of galactic law no longer generates Menace passively. Steal Technology, Extort Favors, Spark Diplomatic Incident, and Smear Campaign espionage actions no longer generate Menace. Lowered the Menace gain from destroying ships by 66% and the Menace gain from destroying starbases by 33%. People who want to become the Crisis will need to go out and actively act like it.
 # 14. Ship designer can now properly detect stealth roles regardless of what type of stealth tech a player has unlocked, and it can also now properly detect if the player has unlocked high-enough level stealth tech for stealth cruisers, battleships, and/or titans.
 # 15. Doubled the naval capacity usage of corvettes, frigates, destroyers, cruisers, battleships, titans, menacing corvettes, menacing destroyers, and menacing cruisers.
-# 17. Made it (functionally) impossible for a player to have more than two player vassals. Outside of a player vassalizing an AI and then having a player hotjoin as that AI, players should not longer be able to have more than two vassals who are players, including secret vassals from swearing secret fealties.
-# 18. Diplomacy actions between players no longer need trust. Trust requirements for pacts with AI empires remain unchanged.
-# 19. AI-Spawning origins have been disabled for players.
+
 # 20. Broken Shackles has been tweaked so that it will no longer spawn MSI or a Payback empire unless another AI Broken Shackles and/or Payback empire already exists.
 # 21. Defense in Depth now gives +15% Home Territory Ship Fire Rate instead of +10%, and it also now gives +50% Starbase Shield Hardening, +25% Defense Platform Shield Hardening, and +25% Defense Platform Armor Hardening.
 # 22. For people who like to leave the ship auto-designer on, the auto-designer should now be less schizophrenic with its weapon choices.
