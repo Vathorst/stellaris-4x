@@ -1,0 +1,4 @@
+player_vassal_limit = {
+	base = 2
+	add = modifier:divided_patrongage_max_subjects
+}

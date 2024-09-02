@@ -21,8 +21,6 @@
 21. Hegemony federations no longer dissolve when their president is declared a crisis, and instead, all members of the Hegemony leave the Galactic Community/Empire with their president.
 22. If the Great Khan is declared a crisis, all of their satrapy vassals are kicked out of the Galactic Community/Empire and cannot join unless they rebel against the Great Khan, until the Great Khan dies, or until the Great Khan is no longer declared a crisis by the Galactic Community/Empire. This mimics what happens when a player is declared a crisis.
 23. GDF now starts with size 400 and will upgrade to size 1000 upon expanding.
-
-# 24. Halved the size of marauder raiding fleets, marauder mercenary fleets, fleets summoned by the Head of Zarqlan relic, and fleets summoned by the Summon Dimensional Fleet astral action to correspond to the doubled naval capacity cost of ships.
-## 27. Slaves now always have lower priority for specialist-tier jobs than non-slaves, meaning if they are working a specialist-tier job while a non-slave worker- or specialist-tier pop is unemployed, they will unemploy themselves to make room for the unemployed non-slave pop. Among other things, this prevents weird situations where higher job attraction for indentured slaves leads to them being prioritized for jobs like Pearl Divers over non-slaves.
+24. Slaves now always have lower priority for specialist-tier jobs than non-slaves, meaning if they are working a specialist-tier job while a non-slave worker- or specialist-tier pop is unemployed, they will unemploy themselves to make room for the unemployed non-slave pop. Among other things, this prevents weird situations where higher job attraction for indentured slaves leads to them being prioritized for jobs like Pearl Divers over non-slaves.
 
 # 33. Fixed some issues related to planetary deposits modifiers not adding up.
