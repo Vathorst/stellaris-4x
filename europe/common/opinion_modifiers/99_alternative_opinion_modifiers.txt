@@ -1,0 +1,14 @@
+# Europe: added +100 opinion modifier with merc enclaves for Lord of War
+triggered_opinion_ap_lord_of_war = {
+	trigger = {
+		FROM = {
+			has_ascension_perk = ap_lord_of_war
+		}
+		# Is mercenary enclave
+		is_country_type = enclave_mercenary
+	}
+
+	opinion = {
+		base = 100 # remember to update the ascension perk's tooltip
+	}
+}

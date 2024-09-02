@@ -1,0 +1,7 @@
+gdf_naval_cap = {
+	country_naval_cap_add = 400
+}
+
+gdf_naval_cap_2 = {
+	country_naval_cap_add = 1000
+}
