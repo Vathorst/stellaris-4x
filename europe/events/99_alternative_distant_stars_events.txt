@@ -1,0 +1,50 @@
+namespace = distar
+
+country_event = { #Grants Special Project to Phase-Lock Planet
+	id = distar.255
+	title = "distar.255.name"
+	desc = {
+		trigger = {
+			has_country_flag = surveyed_phaseshift_planet
+		}
+		text = "distar.255.desc"
+	}
+	desc = {
+		trigger = {
+			NOT = { has_country_flag = surveyed_phaseshift_planet }
+		}
+		text = "distar.255.desc.first"
+	}
+	picture = GFX_evt_surreal_visions
+	show_sound = event_mystic_reveal
+	location = event_target:phaseshift_planet
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { #Don't grant temporary wartime occupiers the Special Project
+			is_at_war_with = from
+		}
+	}
+
+	option = {
+		name = "distar.255.a"
+		event_target:phaseshift_planet = {
+			enable_special_project = {
+				name = "PHASESHIFT_PROJECT"
+				location = this
+				owner = root
+			}
+		}
+	}
+
+	#option = { # Europe: removed to prevent bugs and an exploit with the trading of systems
+	#	name = "distar.255.b"
+	#	add_monthly_resource_mult = {
+	#		resource = influence
+	#		value = @tier2influencereward
+	#		min = @tier2influencemin
+	#		max = @tier2influencemax
+	#	}
+	#}
+}

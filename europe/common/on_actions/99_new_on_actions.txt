@@ -1,0 +1,15 @@
+# No scope, like on_game_start
+on_monthly_pulse = {
+	events = {
+		europe.1 # Spawn the phase-lock project for any empire that owns the currently-phasing system that doesn't have it. Backup in case the starbase transfer action doesn't work.
+	}
+}
+
+# Called when a Starbase changes owner
+# THIS = Ship (Starbase)
+# FROM = Former Owner (Country)
+on_starbase_transfer = {
+	events = {
+		europe.4 # Check if it is the Tiyanki Graveyard System that we have not surveyed (because we cannot survey other players' systems)
+	}
+}
