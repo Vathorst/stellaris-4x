@@ -38,7 +38,7 @@ country_event = { #Grants Special Project to Phase-Lock Planet
 		}
 	}
 
-	#option = { # Europe: removed to prevent bugs and an exploit with the trading of systems
+	#option = { # 4xGames: removed to prevent bugs and an exploit with the trading of systems
 	#	name = "distar.255.b"
 	#	add_monthly_resource_mult = {
 	#		resource = influence

@@ -1,10 +1,10 @@
-version="0.4"
+version="0.5"
 tags={
 	"Balance"
 	"Diplomacy"
 	"Fixes"
 }
-name="europe"
+name="4xGames"
 picture="thumbnail.png"
-supported_version="3.12.*"
+supported_version="3.13.*"
 remote_file_id="3036051012"

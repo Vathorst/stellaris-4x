@@ -47,7 +47,7 @@ ap_become_the_crisis = {
 
 	on_enabled = {
 		hidden_effect = {
-			#set_ai_personality = became_the_crisis # Europe: removed
+			#set_ai_personality = became_the_crisis # 4xGames: removed
 		}
 		activate_crisis_progression = nemesis_path
 	}

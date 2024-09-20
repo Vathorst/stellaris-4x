@@ -1,4 +1,4 @@
-# Europe: added +100 opinion modifier with merc enclaves for Lord of War
+# 4xGames: added +100 opinion modifier with merc enclaves for Lord of War
 triggered_opinion_ap_lord_of_war = {
 	trigger = {
 		FROM = {

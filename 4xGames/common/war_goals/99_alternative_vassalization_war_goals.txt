@@ -65,7 +65,7 @@ wg_subjugation = {
 				from = { is_galactic_community_member = yes }
 			}
 		}
-		custom_tooltip = { # Europe: added
+		custom_tooltip = { # 4xGames: added
 			fail_text = requires_less_than_two_vassals
 			exists = from
 			OR = {
@@ -362,7 +362,7 @@ wg_tribute = {
 				from = { is_galactic_community_member = yes }
 			}
 		}
-		custom_tooltip = { # Europe: added
+		custom_tooltip = { # 4xGames: added
 			fail_text = requires_less_than_two_vassals
 			exists = from
 			OR = {
@@ -568,7 +568,7 @@ wg_megacorp_subjugate = {
 				from = { is_galactic_community_member = yes }
 			}
 		}
-		custom_tooltip = { # Europe: added
+		custom_tooltip = { # 4xGames: added
 			fail_text = requires_less_than_two_vassals
 			exists = from
 			OR = {
@@ -809,7 +809,7 @@ wg_bring_into_the_fold = {
 			fail_text = "cannot_use_against_btc"
 			from = { has_been_declared_crisis = no }
 		}
-		custom_tooltip = { # Europe: added
+		custom_tooltip = { # 4xGames: added
 			fail_text = requires_less_than_two_vassals
 			exists = from
 			OR = {
@@ -1099,7 +1099,7 @@ wg_bring_into_the_fold_corporate = {
 			fail_text = "cannot_use_against_btc"
 			from = { has_been_declared_crisis = no }
 		}
-		custom_tooltip = { # Europe: added
+		custom_tooltip = { # 4xGames: added
 			fail_text = requires_less_than_two_vassals
 			exists = from
 			OR = {

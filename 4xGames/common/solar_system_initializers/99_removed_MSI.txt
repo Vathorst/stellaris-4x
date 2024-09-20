@@ -20,7 +20,7 @@ msi_home_system = {
 			NOT = { exists = event_target:MSI_country }
 			any_country = {
 				has_slave_origin = yes
-				is_ai = yes # Europe: only spawn MSI if we have an AI who gets Broken Shackles or Payback
+				is_ai = yes # 4xGames: only spawn MSI if we have an AI who gets Broken Shackles or Payback
 				NOR = {
 					has_country_flag = slavers_assigned
 					# don't spawn if AI-generated and adv start disabled

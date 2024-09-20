@@ -6,7 +6,7 @@ country_event = { # Mutual Support
 	hide_window = yes
 	is_triggered_only = yes
 
-	trigger = { # Europe: disabled, switched Mutual Support to instead support federations
+	trigger = { # 4xGames: disabled, switched Mutual Support to instead support federations
 		always = no
 	}
 

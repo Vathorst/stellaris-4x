@@ -40,7 +40,7 @@ crisobj_destroy_empires = {
 
 crisobj_destroy_enemy_ships = {
 	reward = {
-		base = 1000 # Europe: lowered
+		base = 1000 # 4xGames: lowered
 		divide = trigger:num_galaxy_systems 	#on huge, this is 3. On smallest, it is 15
 		round = yes 							#we don't want 3.124 menace
 		min = 3									#just in case
@@ -49,7 +49,7 @@ crisobj_destroy_enemy_ships = {
 
 crisobj_destroy_starbases = {
 	reward = {
-		base = 2000 # Europe: lowered
+		base = 2000 # 4xGames: lowered
 		divide = trigger:num_galaxy_systems 	#on huge, this is 3. On smallest, it is 15
 		round = yes 							#we don't want 3.124 menace
 		min = 3									#just in case
@@ -111,7 +111,7 @@ crisobj_vassalise_empires = {
 	}
 }
 
-# Europe: removed
+# 4xGames: removed
 #crisobj_have_vassals = {
 #	reward = {
 #		base = 50
@@ -139,7 +139,7 @@ crisobj_perform_upsetting_operations = {
 	}
 }
 
-# Europe: removed
+# 4xGames: removed
 #crisobj_be_in_breach_of_galcom_law = {
 #	reward = {
 #		base = 250

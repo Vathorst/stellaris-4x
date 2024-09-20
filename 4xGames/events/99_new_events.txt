@@ -1,7 +1,7 @@
-namespace = europe
+namespace = 4xGames
 
-country_event = { # Europe: as a backup, spawns the phase shift project for any empire that owns the Veil before it has been phase-locked
-	id = europe.1
+country_event = { # 4xGames: as a backup, spawns the phase shift project for any empire that owns the Veil before it has been phase-locked
+	id = 4xGames.1
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -37,7 +37,7 @@ country_event = { # Europe: as a backup, spawns the phase shift project for any 
 
 # We got transferred the system with the Tiyanki Graveyard Site without having surveyed the planet for it
 ship_event = {
-	id = europe.4
+	id = 4xGames.4
 	hide_window = yes
 
 	is_triggered_only = yes

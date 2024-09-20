@@ -161,7 +161,7 @@ action_invite_to_federation = {
 					from = {
 						OR = {
 							has_country_flag = synthetic_empire
-							has_authority = auth_machine_intelligence
+							is_machine_empire = yes
 							is_individual_machine = yes
 						}
 					}
@@ -178,7 +178,7 @@ action_invite_to_federation = {
 					from = { has_civic = civic_machine_terminator }
 					OR = {
 						has_country_flag = synthetic_empire
-						has_authority = auth_machine_intelligence
+						is_machine_empire = yes
 						is_individual_machine = yes
 					}
 				}
@@ -216,7 +216,7 @@ action_invite_to_federation = {
 		custom_tooltip = {
 			fail_text = requires_30_trust_or_excellent
 			OR = {
-				AND = { # Europe: added
+				AND = { # 4xGames: added
 					is_ai = no
 					from = { is_ai = no }
 				}
@@ -345,7 +345,7 @@ action_ask_to_join_federation = {
 					from = {
 						OR = {
 							has_country_flag = synthetic_empire
-							has_authority = auth_machine_intelligence
+							is_machine_empire = yes
 							is_individual_machine = yes
 						}
 					}
@@ -361,7 +361,7 @@ action_ask_to_join_federation = {
 					from = { has_civic = civic_machine_terminator }
 					OR = {
 						has_country_flag = synthetic_empire
-						has_authority = auth_machine_intelligence
+						is_machine_empire = yes
 						is_individual_machine = yes
 					}
 				}
@@ -398,7 +398,7 @@ action_ask_to_join_federation = {
 		custom_tooltip = {
 			fail_text = requires_30_trust_or_excellent
 			OR = {
-				AND = { # Europe: added
+				AND = { # 4xGames: added
 					is_ai = no
 					from = { is_ai = no }
 				}

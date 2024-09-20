@@ -1,4 +1,4 @@
-# Europe: need to overwrite file because just overloading the key does not work
+# 4xGames: need to overwrite file because just overloading the key does not work
 @t1_mult = 0.05
 @t2_mult = 0.15
 @t3_mult = 0.25
@@ -1532,20 +1532,20 @@ leader_trait_supporting_voter = {
 		COUNCIL = yes
 		TIER = none
 	}
-	#custom_tooltip = leader_trait_supporting_voter_tt # Europe: removed
-	# Effects handled through leader.310 # Europe: removed
+	#custom_tooltip = leader_trait_supporting_voter_tt # 4xGames: removed
+	# Effects handled through leader.310 # 4xGames: removed
 	leader_potential_add = {
 		has_paragon_dlc = yes
 		has_trait = subclass_official_delegate
 	}
-	federation_modifier = { # Europe: added
+	federation_modifier = { # 4xGames: added
 		delegate_cohesion_effect_mult = 0.4
 		cohesion_add = 0.25
 	}
 	leader_class = { official }
 	selectable_weight = {
 		weight = @subclass_trait_weight
-		inline_script = paragon/federation_weight_mult # Europe: replaced from galcom_weight_mult to correspond to new effects
+		inline_script = paragon/federation_weight_mult # 4xGames: replaced from galcom_weight_mult to correspond to new effects
 	}
 	background_icon = "GFX_leader_background_destiny_1"
 }

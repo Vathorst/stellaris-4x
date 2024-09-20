@@ -73,6 +73,9 @@
  trade_action_r_the_last_baol: "£the_last_baol£ $r_the_last_baol$"
  trade_action_r_the_last_baol_desc: "Trade away our £the_last_baol£ $r_the_last_baol$ relic."
 
+ trade_action_r_the_tempest_invocator: "£the_tempest_invocator£ $r_the_tempest_invocator$"
+ trade_action_r_the_tempest_invocator_desc: "Trade away our £the_tempest_invocator£ $r_the_tempest_invocator$ relic."
+
  trade_action_r_time_crystal: "£time_crystal£ $r_time_crystal$"
  trade_action_r_time_crystal_desc: "Trade away our £time_crystal£ $r_time_crystal$ relic."
 
@@ -87,6 +90,9 @@
 
  trade_action_r_war_forge: "£war_forge£ $r_war_forge$"
  trade_action_r_war_forge_desc: "Trade away our £war_forge£ $r_war_forge$ relic."
+
+ trade_action_r_weather_manipulator: "£weather_manipulator£ $r_weather_manipulator$"
+ trade_action_r_weather_manipulator_desc: "Trade away our £weather_manipulator£ $r_weather_manipulator$ relic."
 
  trade_action_r_worm_scales: "£worm_scales£ $r_worm_scales$"
  trade_action_r_worm_scales_desc: "Trade away our £worm_scales£ $r_worm_scales$ relic."

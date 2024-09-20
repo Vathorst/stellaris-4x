@@ -5,7 +5,7 @@ origin_scion = {
 	max_once_global = yes
 
 	playable = {
-		always = no # Europe: disabled for players, AI-spawning origin
+		always = no # 4xGames: disabled for players, AI-spawning origin
 		host_has_dlc = Federations
 	}
 
@@ -44,7 +44,7 @@ origin_common_ground = {
 	max_once_global = yes
 
 	playable = {
-		always = no # Europe: disabled for players, AI-spawning origin
+		always = no # 4xGames: disabled for players, AI-spawning origin
 		host_has_dlc = "Federations"
 	}
 
@@ -88,7 +88,7 @@ origin_hegemon = {
 	max_once_global = yes
 
 	playable = {
-		always = no # Europe: disabled for players, AI-spawning origin
+		always = no # 4xGames: disabled for players, AI-spawning origin
 		host_has_dlc = "Federations"
 	}
 
@@ -159,33 +159,6 @@ origin_hegemon_npc = {
 	}
 }
 
-origin_doomsday = {
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_doomsday.dds"
-	picture = GFX_origin_doomsday
-	max_once_global = yes
-
-	non_colonizable_planet_class_neighbor = yes
-
-	playable = {
-		host_has_dlc = "Federations"
-	}
-
-	possible = {
-	}
-
-#	description = "origin_tooltip_doomsday_effects"
-	negative_description = "origin_tooltip_doomsday_negative_effects"
-	flags = { custom_start_screen }
-
-	traits = {
-	}
-
-	random_weight = {
-		base = 5
-	}
-}
-
 origin_lost_colony = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_lost_colony.dds"
@@ -193,7 +166,7 @@ origin_lost_colony = {
 	max_once_global = yes
 
 	playable = {
-		always = no # Europe: disabled for players, AI-spawning origin
+		always = no # 4xGames: disabled for players, AI-spawning origin
 	}
 
 	possible = {
@@ -217,7 +190,7 @@ origin_imperial_vassal = {
 	picture = GFX_origin_imperial_vassal
 
 	playable = {
-		always = no # Europe: disabled for players, AI-spawning origin
+		always = no # 4xGames: disabled for players, AI-spawning origin
 		has_overlord_dlc = yes
 	}
 
@@ -253,7 +226,7 @@ origin_payback = {
 	max_once_global = yes
 
 	playable = {
-		always = no # Europe: disabled for players, AI-spawning origin
+		always = no # 4xGames: disabled for players, AI-spawning origin
 		has_first_contact_dlc = yes
 	}
 

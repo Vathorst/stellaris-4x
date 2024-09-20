@@ -59,7 +59,7 @@ action_form_defensive_pact = {
 					from = {
 						OR = {
 							has_country_flag = synthetic_empire
-							has_authority = auth_machine_intelligence
+							is_machine_empire = yes
 							is_individual_machine = yes
 						}
 					}
@@ -75,7 +75,7 @@ action_form_defensive_pact = {
 					from = { has_civic = civic_machine_terminator }
 					OR = {
 						has_country_flag = synthetic_empire
-						has_authority = auth_machine_intelligence
+						is_machine_empire = yes
 						is_individual_machine = yes
 					}
 				}
@@ -136,7 +136,7 @@ action_form_defensive_pact = {
 		custom_tooltip = {
 			fail_text = requires_20_trust_or_good
 			OR = {
-				AND = { # Europe: added
+				AND = { # 4xGames: added
 					is_ai = no
 					from = { is_ai = no }
 				}
@@ -203,7 +203,7 @@ action_form_non_aggression_pact = {
 					from = {
 						OR = {
 							has_country_flag = synthetic_empire
-							has_authority = auth_machine_intelligence
+							is_machine_empire = yes
 							is_individual_machine = yes
 						}
 					}
@@ -219,7 +219,7 @@ action_form_non_aggression_pact = {
 					from = { has_civic = civic_machine_terminator }
 					OR = {
 						has_country_flag = synthetic_empire
-						has_authority = auth_machine_intelligence
+						is_machine_empire = yes
 						is_individual_machine = yes
 					}
 				}
@@ -255,7 +255,7 @@ action_form_non_aggression_pact = {
 		custom_tooltip = {
 			fail_text = requires_10_trust_or_neutral
 			OR = {
-				AND = { # Europe: added
+				AND = { # 4xGames: added
 					is_ai = no
 					from = { is_ai = no }
 				}
@@ -418,7 +418,7 @@ action_form_commercial_pact = {
 		custom_tooltip = {
 			fail_text = requires_20_trust_or_good
 			OR = {
-				AND = { # Europe: added
+				AND = { # 4xGames: added
 					is_ai = no
 					from = { is_ai = no }
 				}
@@ -534,7 +534,7 @@ action_form_research_agreement = {
 					from = {
 						OR = {
 							has_country_flag = synthetic_empire
-							has_authority = auth_machine_intelligence
+							is_machine_empire = yes
 							is_individual_machine = yes
 						}
 					}
@@ -551,7 +551,7 @@ action_form_research_agreement = {
 					from = { has_civic = civic_machine_terminator }
 					OR = {
 						has_country_flag = synthetic_empire
-						has_authority = auth_machine_intelligence
+						is_machine_empire = yes
 						is_individual_machine = yes
 					}
 				}
@@ -621,7 +621,7 @@ action_form_research_agreement = {
 		custom_tooltip = {
 			fail_text = requires_20_trust_or_good
 			OR = {
-				AND = { # Europe: added
+				AND = { # 4xGames: added
 					is_ai = no
 					from = { is_ai = no }
 				}
@@ -757,7 +757,7 @@ action_guarantee_independence = {
 					from = {
 						OR = {
 							has_country_flag = synthetic_empire
-							has_authority = auth_machine_intelligence
+							is_machine_empire = yes
 							is_individual_machine = yes
 						}
 					}
@@ -773,7 +773,7 @@ action_guarantee_independence = {
 					from = { has_civic = civic_machine_terminator }
 					OR = {
 						has_country_flag = synthetic_empire
-						has_authority = auth_machine_intelligence
+						is_machine_empire = yes
 						is_individual_machine = yes
 					}
 				}
@@ -813,7 +813,7 @@ action_guarantee_independence = {
 		custom_tooltip = {
 			fail_text = requires_10_trust_or_neutral
 			OR = {
-				AND = { # Europe: added
+				AND = { # 4xGames: added
 					is_ai = no
 					from = { is_ai = no }
 				}
@@ -908,7 +908,7 @@ action_support_independence = {
 					from = {
 						OR = {
 							has_country_flag = synthetic_empire
-							has_authority = auth_machine_intelligence
+							is_machine_empire = yes
 							is_individual_machine = yes
 						}
 					}
@@ -924,7 +924,7 @@ action_support_independence = {
 					from = { has_civic = civic_machine_terminator }
 					OR = {
 						has_country_flag = synthetic_empire
-						has_authority = auth_machine_intelligence
+						is_machine_empire = yes
 						is_individual_machine = yes
 					}
 				}
@@ -940,7 +940,7 @@ action_support_independence = {
 		custom_tooltip = {
 			fail_text = requires_10_trust_or_neutral
 			OR = {
-				AND = { # Europe: added
+				AND = { # 4xGames: added
 					is_ai = no
 					from = { is_ai = no }
 				}
@@ -1150,7 +1150,7 @@ action_form_migration_pact = {
 		custom_tooltip = {
 			fail_text = requires_20_trust_or_good
 			OR = {
-				AND = { # Europe: added
+				AND = { # 4xGames: added
 					is_ai = no
 					from = { is_ai = no }
 				}
@@ -1220,7 +1220,7 @@ action_offer_federation_association_status = {
 					from = {
 						OR = {
 							has_country_flag = synthetic_empire
-							has_authority = auth_machine_intelligence
+							is_machine_empire = yes
 							is_individual_machine = yes
 						}
 					}
@@ -1237,7 +1237,7 @@ action_offer_federation_association_status = {
 					from = { has_civic = civic_machine_terminator }
 					OR = {
 						has_country_flag = synthetic_empire
-						has_authority = auth_machine_intelligence
+						is_machine_empire = yes
 						is_individual_machine = yes
 					}
 				}
@@ -1249,7 +1249,7 @@ action_offer_federation_association_status = {
 		custom_tooltip = {
 			fail_text = requires_20_trust_or_good
 			OR = {
-				AND = { # Europe: added
+				AND = { # 4xGames: added
 					is_ai = no
 					from = { is_ai = no }
 				}
@@ -1345,7 +1345,7 @@ action_ask_for_federation_association_status = {
 					from = {
 						OR = {
 							has_country_flag = synthetic_empire
-							has_authority = auth_machine_intelligence
+							is_machine_empire = yes
 							is_individual_machine = yes
 						}
 					}
@@ -1361,7 +1361,7 @@ action_ask_for_federation_association_status = {
 					from = { has_civic = civic_machine_terminator }
 					OR = {
 						has_country_flag = synthetic_empire
-						has_authority = auth_machine_intelligence
+						is_machine_empire = yes
 						is_individual_machine = yes
 					}
 				}
@@ -1373,7 +1373,7 @@ action_ask_for_federation_association_status = {
 		custom_tooltip = {
 			fail_text = requires_20_trust_or_good
 			OR = {
-				AND = { # Europe: added
+				AND = { # 4xGames: added
 					is_ai = no
 					from = { is_ai = no }
 				}

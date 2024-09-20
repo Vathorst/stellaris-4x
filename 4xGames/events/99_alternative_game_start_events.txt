@@ -352,7 +352,7 @@ event = {
 		# if advanced starts are enabled or a player has picked it, continue
 		if = {
 			limit = {
-				# Europe: do not spawn MSI if we have no advanced empires
+				# 4xGames: do not spawn MSI if we have no advanced empires
 				#OR = {
 				#	any_playable_country = {
 				#		has_slave_origin = yes
@@ -385,7 +385,7 @@ event = {
 		}
 
 		# Spawn Payback for Broken Shackles
-		# Europe: disable spawning Payback for players unless there is an AI empire with either Broken Shackles or Payback, too
+		# 4xGames: disable spawning Payback for players unless there is an AI empire with either Broken Shackles or Payback, too
 		if = {
 			limit = {
 				any_playable_country = {

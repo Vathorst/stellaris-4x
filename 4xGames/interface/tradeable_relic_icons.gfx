@@ -126,6 +126,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_text_the_tempest_invocator"
+		textureFile = "gfx/interface/icons/text_icons/token_the_tempest_invocator.dds"
+	}
+
+	spriteType = {
 		name = "GFX_text_time_crystal"
 		textureFile = "gfx/interface/icons/text_icons/token_time_crystal.dds"
 	}
@@ -151,6 +156,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_text_weather_manipulator"
+		textureFile = "gfx/interface/icons/text_icons/token_weather_manipulator.dds"
+	}
+
+	spriteType = {
 		name = "GFX_text_worm_scales"
 		textureFile = "gfx/interface/icons/text_icons/token_worm_scales.dds"
 	}
@@ -159,4 +169,5 @@ spriteTypes = {
 		name = "GFX_text_zro_crystal"
 		textureFile = "gfx/interface/icons/text_icons/token_zro_crystal.dds"
 	}
+
 }

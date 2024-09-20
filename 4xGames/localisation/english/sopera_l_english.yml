@@ -29,9 +29,13 @@
  subject_can_do_diplomacy_but_not_vote_desc: "The Subject is free to engage in most diplomacy, but must follow their Overlord's votes in Federations and the Galactic Community.\n\nIf the Overlord is a member of the §YGalactic Community§!, the Subject will be forced to join it."
  subject_can_not_do_diplomacy_desc: "The Subject may not engage in diplomacy with other Empires, nor vote independently.\n\nThis will force the Subject to join any §YFederation§! that the Overlord is a member of."
 
+ IW_already_warned: "$TRIGGER_FAIL$§WWe have already warned this empire of their impending doom."
+ IW_already_warned_cooldown_only: "$TRIGGER_FAIL$§WWe can't declare our intent to declare war on them so soon after doing it already."
+ IW_requires_recipient_got_warning: "$TRIGGER_FAIL$§WWe need to declare our intent to go to war at least §Ythree months§W in advance."
+
   # Preset text icons
  #text_icon_vacuum_flower:0 "£vacuum_flower£"
- trade_action_r_ancient_sword: "£ancient_sword£ $r_ancient_sword$"
+  trade_action_r_ancient_sword: "£ancient_sword£ $r_ancient_sword$"
  trade_action_r_ancient_sword_desc: "Trade away our £ancient_sword£ $r_ancient_sword$ relic."
 
  trade_action_r_celestial_tear: "£celestial_tear£ $r_celestial_tear$"
@@ -106,6 +110,9 @@
  trade_action_r_the_last_baol: "£the_last_baol£ $r_the_last_baol$"
  trade_action_r_the_last_baol_desc: "Trade away our £the_last_baol£ $r_the_last_baol$ relic."
 
+ trade_action_r_the_tempest_invocator: "£the_tempest_invocator£ $r_the_tempest_invocator$"
+ trade_action_r_the_tempest_invocator_desc: "Trade away our £the_tempest_invocator£ $r_the_tempest_invocator$ relic."
+
  trade_action_r_time_crystal: "£time_crystal£ $r_time_crystal$"
  trade_action_r_time_crystal_desc: "Trade away our £time_crystal£ $r_time_crystal$ relic."
 
@@ -121,8 +128,12 @@
  trade_action_r_war_forge: "£war_forge£ $r_war_forge$"
  trade_action_r_war_forge_desc: "Trade away our £war_forge£ $r_war_forge$ relic."
 
+ trade_action_r_weather_manipulator: "£weather_manipulator£ $r_weather_manipulator$"
+ trade_action_r_weather_manipulator_desc: "Trade away our £weather_manipulator£ $r_weather_manipulator$ relic."
+
  trade_action_r_worm_scales: "£worm_scales£ $r_worm_scales$"
  trade_action_r_worm_scales_desc: "Trade away our £worm_scales£ $r_worm_scales$ relic."
 
  trade_action_r_zro_crystal: "£zro_crystal£ $r_zro_crystal$"
  trade_action_r_zro_crystal_desc: "Trade away our £zro_crystal£ $r_zro_crystal$ relic."
+

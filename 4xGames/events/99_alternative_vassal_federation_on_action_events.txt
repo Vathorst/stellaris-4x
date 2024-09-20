@@ -13,7 +13,7 @@ country_event = {
 				is_overlord = yes
 				any_subject = {
 					NOT = { is_in_federation_with = prev }
-					any_agreement = { # Europe: added so that we don't auto-join unless we have No Diplomacy as part of our agreement
+					any_agreement = { # 4xGames: added so that we don't auto-join unless we have No Diplomacy as part of our agreement
 						has_term_value = {
 							term = subject_diplomacy
 							value = subject_can_not_do_diplomacy
@@ -56,7 +56,7 @@ country_event = {
 			has_federation = yes
 			federation = { has_federation_law = allow_subjects_to_join_yes }
 		}
-		this = { # Europe: added so that we don't auto-join unless we have No Diplomacy as part of our agreement
+		this = { # 4xGames: added so that we don't auto-join unless we have No Diplomacy as part of our agreement
 			NOT = { is_in_federation_with = owner }
 			any_agreement = {
 				has_term_value = {
@@ -85,7 +85,7 @@ agreement_event = {
 	trigger = {
 		has_term_value = {
 			term = subject_diplomacy
-			value = subject_can_not_do_diplomacy # Europe: changed from subject_can_do_diplomacy_but_not_vote
+			value = subject_can_not_do_diplomacy # 4xGames: changed from subject_can_do_diplomacy_but_not_vote
 		}
 		owner = {
 			has_federation = yes
@@ -119,7 +119,7 @@ agreement_event = {
 	trigger = {
 		has_term_value = {
 			term = subject_diplomacy
-			value = subject_can_not_do_diplomacy # Europe: changed from subject_can_do_diplomacy_but_not_vote
+			value = subject_can_not_do_diplomacy # 4xGames: changed from subject_can_do_diplomacy_but_not_vote
 		}
 		owner = {
 			has_federation = yes

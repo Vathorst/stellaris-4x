@@ -573,6 +573,29 @@ trade_action_r_the_last_baol = {
 	}
 }
 
+trade_action_r_the_tempest_invocator = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_the_tempest_invocator
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_the_tempest_invocator }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_the_tempest_invocator
+		from = { add_relic = r_the_tempest_invocator }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
 trade_action_r_time_crystal = {
 	fire_and_forget = yes
 
@@ -681,6 +704,29 @@ trade_action_r_war_forge = {
 	on_traded_effect = {
 		remove_relic = r_war_forge
 		from = { add_relic = r_war_forge }
+	}
+
+	ai_weight = {
+		weight = 1000
+	}
+}
+
+trade_action_r_weather_manipulator = {
+	fire_and_forget = yes
+
+	potential = {
+		has_relic = r_weather_manipulator
+		is_country_type = default
+		from = {
+			is_country_type = default
+			not = { has_relic = r_weather_manipulator }
+		}
+		NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	on_traded_effect = {
+		remove_relic = r_weather_manipulator
+		from = { add_relic = r_weather_manipulator }
 	}
 
 	ai_weight = {

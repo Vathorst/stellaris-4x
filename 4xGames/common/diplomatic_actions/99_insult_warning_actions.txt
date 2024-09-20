@@ -1,0 +1,153 @@
+# Send an insult. Harms relations.
+action_insult = {
+	icon = "GFX_diplomacy_status_war"
+	requires_recipient_independence = no
+	requires_actor_independence = no
+	auto_accepted = yes
+	should_show_auto_accept_message_recipient = yes
+	action_type = aggressive
+
+	potential = {
+		hidden_trigger = {
+			from = {
+				NOT = { is_country_type = mirrored_country }
+			}
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_poor_or_worse_opinion"
+
+			OR = {
+				opinion_level = { who = from level <= poor }
+				is_fallen_empire = yes
+				from = { is_fallen_empire = yes }
+				is_harming_relations_with = from
+				from = { is_at_war_with = prev }
+				always = yes
+			}
+		}
+		custom_tooltip = {
+			fail_text = "the_fe_is_busy_with_synth_queen"
+			OR = {
+				from = { is_fallen_empire = no }
+				AND = {
+					NOT = { has_global_flag = synth_queen_happened }
+					from = {
+						is_fallen_empire = yes
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "IW_already_warned_cooldown_only"
+			OR = {
+				NOT = {
+					has_country_flag = IW_warned_cooldown@from
+				}
+				from = {
+					has_country_flag = IW_warned_2_by@root
+				}
+				from = { is_at_war_with = prev }
+			}
+		}
+		custom_tooltip = {
+			fail_text = "IW_already_warned"
+			OR =	{
+				NOT = {
+					from = { has_country_flag = IW_warned_2_by@root }
+				}
+				from = { is_at_war_with = prev }
+			}
+		}
+	}
+
+	on_accept = {
+		from = {
+			add_trust = {
+				amount = -5
+				who = root
+			}
+			set_timed_country_flag = {
+				flag = IW_warned_by@root
+				days = 90
+			}
+			set_timed_country_flag = {
+				flag = IW_warned_2_by@root
+				days = 180
+			}
+		}
+		set_timed_country_flag = {
+			flag = IW_warned_cooldown@from
+			days = 540
+		}
+		if = {
+			limit = {
+				has_technology = tech_satisfying_insults
+				NOT = {
+					has_modifier = satisfying_insult_recently
+				}
+			}
+			add_modifier = {
+				modifier = satisfying_insult_recently
+				days = 1800
+			}
+			add_resource = { influence = 50 }
+			country_event = {
+				id = fircon.20
+				days = 1800
+			}
+		}
+	}
+}
+
+# Declare war, usable by regular, fallen & awakened empires
+action_declare_war = {
+	icon = "GFX_diplomacy_status_war"
+	requires_actor_independence = no # You are able to declare war only on your overlord when being a vassal, this special case is handled in code instead.
+	requires_recipient_independence = no
+	requires_alliance_vote = yes
+	requires_unanimous_vote = yes
+	auto_accepted = yes
+	should_show_auto_accept_message_actor = yes
+	should_show_auto_accept_message_recipient = yes
+	should_open_auto_accept_message_recipient = yes
+	should_notify_all_communications = yes
+	action_type = aggressive
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_recipient_not_subject_of_federation_member"
+			NOT = {
+				any_federation_ally = {
+					is_overlord_to = fromfrom
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "the_fe_is_busy_with_synth_queen"
+			OR = {
+				from = { is_fallen_empire = no }
+				AND = {
+					NOT = { has_global_flag = synth_queen_happened }
+					from = {
+						is_fallen_empire = yes
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "IW_requires_recipient_got_warning"
+			OR = {
+				NOT = { is_country_type = default }
+				AND = {
+					from = {
+						has_country_flag = IW_warned_2_by@root
+						NOT = { has_country_flag = IW_warned_by@root }
+					}
+				}
+			}
+		}
+	}
+}

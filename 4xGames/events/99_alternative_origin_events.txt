@@ -9,7 +9,7 @@ fleet_event = {
 		text = "origin.5035.desc"
 		trigger = {
 			OR = {
-				NOT = { exists = event_target:MSI_country } # Europe: added
+				NOT = { exists = event_target:MSI_country } # 4xGames: added
 				owner = {
 					has_communications = event_target:MSI_country
 				}
@@ -19,7 +19,7 @@ fleet_event = {
 	desc = {
 		text = "origin.5035.desc.MSInocontact"
 		trigger = {
-			exists = event_target:MSI_country # Europe: added
+			exists = event_target:MSI_country # 4xGames: added
 			owner = {
 				NOT = { has_communications = event_target:MSI_country }
 			}
@@ -37,7 +37,7 @@ fleet_event = {
 		owner = {
 			if = {
 				limit = {
-					exists = event_target:MSI_country # Europe: added
+					exists = event_target:MSI_country # 4xGames: added
 					NOT = { has_communications = event_target:MSI_country }
 				}
 				set_visited = event_target:MSI_country.capital_scope.solar_system
@@ -88,7 +88,7 @@ fleet_event = {
 			}
 			if = {
 				limit = {
-					exists = event_target:MSI_country # Europe: added
+					exists = event_target:MSI_country # 4xGames: added
 					NOT = { has_communications = event_target:MSI_country }
 				}
 				add_modifier = {
@@ -131,7 +131,7 @@ fleet_event = {
 			}
 			if = {
 				limit = {
-					exists = event_target:MSI_country # Europe: added
+					exists = event_target:MSI_country # 4xGames: added
 					NOT = { has_communications = event_target:MSI_country }
 				}
 				add_modifier = {

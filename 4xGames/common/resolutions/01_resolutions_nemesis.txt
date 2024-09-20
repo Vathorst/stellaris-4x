@@ -95,7 +95,7 @@ resolution_declare_crisis = {
 					remove_from_galactic_council = yes
 				}
 			}
-			if = { # Europe: added
+			if = { # 4xGames: added
 				limit = {
 					has_federation = yes
 					is_federation_leader = yes
@@ -481,7 +481,7 @@ resolution_declare_crisis_empire = {
 					remove_from_galactic_council = yes
 				}
 			}
-			if = { # Europe: added
+			if = { # 4xGames: added
 				limit = {
 					has_federation = yes
 					is_federation_leader = yes
