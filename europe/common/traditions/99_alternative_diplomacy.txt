@@ -1,0 +1,30 @@
+tr_diplomacy_eminent_diplomats = {
+	possible = {
+		has_tradition = tr_diplomacy_diplomatic_networking
+	}
+
+	custom_tooltip = tr_diplomacy_eminent_diplomats_desc
+
+	modifier = {
+		diplo_action_acceptance_add = 5
+		# 2nd half is in action.325
+		country_official_cap_add = 1 # Europe: added
+	}
+
+	tradition_swap = {
+		name = tr_diplomacy_eminent_diplomats_gestalt
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_gestalt = yes
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
