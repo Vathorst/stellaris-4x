@@ -4,8 +4,8 @@ tags={
 	"Diplomacy"
 	"Fixes"
 }
-name="europe"
+name="4xGames"
 picture="thumbnail.png"
 supported_version="3.12.*"
-path="C:/Users/jvl99/Documents/Paradox Interactive/Stellaris/mod/europe"
+path="C:/Users/jvl99/Documents/Paradox Interactive/Stellaris/mod/4xGames"
 remote_file_id="3036051012"
