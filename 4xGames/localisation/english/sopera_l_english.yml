@@ -137,3 +137,17 @@
  trade_action_r_zro_crystal: "£zro_crystal£ $r_zro_crystal$"
  trade_action_r_zro_crystal_desc: "Trade away our £zro_crystal£ $r_zro_crystal$ relic."
 
+# Renaming insults to Threaten war
+ ACTION_INSULT_TITLE:0 "Threaten War"
+ ACTION_INSULT_DESC:2 "Threatening to declare war against them will greatly reduce their Opinion and Trust of us.[Actor.GetCreativeInsultTooltip]"
+ ACTION_INSULT_OFFER_DESC:0 "Wanton abuse like this cannot be overlooked. Our relationship with §H[Actor.GetName]§! has declined, and we will be able to declare war against them after 3 months."
+
+# Pop-up event reminding the player who threatened another empire that they can now declare war against them
+ 4xGames.6.name: "You can now declare war"
+ 4xGames.6.desc: "This is a friendly reminder telling you that you can now declare war against the empire you threatened 3 months ago. However, you only have 3 months to declare the war before the opportunity passes."
+ 4xGames.6.a: "The drums of war are beating, and we must answer the call."
+
+# Pop-up event reminding the player who has been threatened that they can now be declared against by the empire who threatened them
+ 4xGames.7.name: "They can now declare war against us"
+ 4xGames.7.desc: "This is a cautious reminder warning you that the empire who threatened you 3 months ago are now able to declare war against you. However, they will only have 3 months to declare the war before theit opportunity passes."
+ 4xGames.7.a: "War is coming, whether we are ready or not."

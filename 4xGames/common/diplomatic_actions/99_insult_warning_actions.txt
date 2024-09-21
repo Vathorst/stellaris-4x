@@ -77,10 +77,20 @@ action_insult = {
 				flag = IW_warned_2_by@root
 				days = 180
 			}
+			# Remind the player being threatened that they can now be declared on by the empire threatening them
+			country_event = {
+				id = 4xGames.7
+				days = 91
+			}
 		}
 		set_timed_country_flag = {
 			flag = IW_warned_cooldown@from
 			days = 540
+		}
+		# Remind the player who has threatened an empire that they can now declare war on the empire they threatened
+		country_event = {
+			id = 4xGames.6
+			days = 91
 		}
 		if = {
 			limit = {

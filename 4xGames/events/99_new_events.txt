@@ -87,3 +87,53 @@ ship_event = {
 		}
 	}
 }
+
+# Pop-up to remind the player they can now declare war against the empire they threatened
+country_event = {
+	id = 4xGames.6
+
+	title = 4xGames.6.name
+	desc = 4xGames.6.desc
+
+	picture = GFX_evt_fallen_empire_awakes
+	show_sound = event_alien_signal
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			is_ai = no
+		}
+	}
+
+	immediate = {}
+
+	option = {
+		name = 4xGames.6.a
+	}
+}
+
+# Pop-up to remind the player they can now be attacked by the empire who threatened them
+country_event = {
+	id = 4xGames.7
+
+	title = 4xGames.7.name
+	desc = 4xGames.7.desc
+
+	picture = GFX_evt_fallen_empire_awakes
+	show_sound = event_alien_signal
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			is_ai = no
+		}
+	}
+
+	immediate = {}
+
+	option = {
+		name = 4xGames.7.a
+	}
+}
