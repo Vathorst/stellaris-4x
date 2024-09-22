@@ -23,6 +23,8 @@
 
 	NEconomy = {
 
+		CLAIM_COST_DISTANCE						= 75.0	# Influence cost of claim increase per hyperjump away
+
 		MARKET_FLUCTUATION_ABOVE_BASE_PRICE		= 0.3	# Space_Opera: 1 Base fluctuation when trading a resource' base amount if price is > 0
 		MARKET_FLUCTUATION_BELOW_BASE_PRICE		= 0.1	# Space_Opera: 0.2 Base fluctuation when trading a resource' base amount if price is < 0
 		MARKET_MIN_FLUCTUATION_FROM_BASE_PRICE	= -90	# Space_Opera: -80 Min fluctuation from base price
