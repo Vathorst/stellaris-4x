@@ -25,7 +25,7 @@ action_insult = {
 				from = { is_fallen_empire = yes }
 				is_harming_relations_with = from
 				from = { is_at_war_with = prev }
-				always = yes
+				always = yes #4xGames: always allow threaten war regardless of opinion level
 			}
 		}
 		custom_tooltip = {
