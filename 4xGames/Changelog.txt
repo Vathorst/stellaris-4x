@@ -20,7 +20,10 @@
 20. To prevent certain bugs and exploits, empires will always get the special project to attempt to phase-lock The Veil if it is within their borders and can no longer use the option "We have better things to do."
 21. Hegemony federations no longer dissolve when their president is declared a crisis, and instead, all members of the Hegemony leave the Galactic Community/Empire with their president.
 22. If the Great Khan is declared a crisis, all of their satrapy vassals are kicked out of the Galactic Community/Empire and cannot join unless they rebel against the Great Khan, until the Great Khan dies, or until the Great Khan is no longer declared a crisis by the Galactic Community/Empire. This mimics what happens when a player is declared a crisis.
-23. GDF now starts with size 400 and will upgrade to size 1000 upon expanding.
+23. GDF now starts with size 800 and will upgrade to size 2000 upon expanding.
 24. Slaves now always have lower priority for specialist-tier jobs than non-slaves, meaning if they are working a specialist-tier job while a non-slave worker- or specialist-tier pop is unemployed, they will unemploy themselves to make room for the unemployed non-slave pop. Among other things, this prevents weird situations where higher job attraction for indentured slaves leads to them being prioritized for jobs like Pearl Divers over non-slaves.
+25. Added a 'Threaten War' mechanic. You can now declare your intent for war. It takes 3 months before you can actually declare war now.
+26. Claim cost distance modifier has been increased to 75, reducing the maximum distance you can claim before claim cost is maximized. 
+27. Doubled the cost of hiring mercenary fleets.
 
 # 33. Fixed some issues related to planetary deposits modifiers not adding up.

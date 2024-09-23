@@ -1,7 +1,0 @@
-﻿### MARAUDERS
-@largemercallow = 18000             # Doubled cost. Was 9000
-@largemerccost = -18000             # Doubled cost. Was -9000
-@mediummercallow = 13000            # Doubled cost. Was 6500
-@mediummerccost = -13000            # Doubled cost. Was -6500
-@smallmercallow = 8000              # Doubled cost. Was 4000
-@smallmerccost = -8000              # Doubled cost. Was -4000
