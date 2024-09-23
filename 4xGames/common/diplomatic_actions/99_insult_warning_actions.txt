@@ -82,6 +82,11 @@ action_insult = {
 				id = 4xGames.7
 				days = 91
 			}
+			# Tell the player being threatened that an empire plans on attacking them within the next 3 to 6 months in game
+			country_event = {
+				id = 4xGames.8
+				days = 1
+			}
 		}
 		set_timed_country_flag = {
 			flag = IW_warned_cooldown@from
