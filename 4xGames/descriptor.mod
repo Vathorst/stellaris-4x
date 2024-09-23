@@ -5,5 +5,6 @@ tags={
 	"Fixes"
 }
 name="4xGames"
+picture="thumbnail.png"
 supported_version="3.13.*"
 remote_file_id="3036051012"
