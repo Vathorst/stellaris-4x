@@ -17,6 +17,8 @@
  join_federation_requires_militarist: "$TRIGGER_FAIL$§RRequires you to be some form of §YMilitarist§R, or be a §YGestalt§R with the §YWarbots§R, §YStrength of Legions§R or §YSubspace Ephapse§R civic.§!"
  join_federation_requires_trade: "$TRIGGER_FAIL$§RRequires you to be either a §YMegacorporation§R, or have the §YMerchant Guilds§R civic.§!"
  
+ federation_action_no_low_intel: "$TRIGGER_FAIL$§RWe lack the intel to know why they do not accept us§!"
+
  become_crisis_midgame: "$TRIGGER_FAIL$§WPlayers who are the §SCrisis§W will not be allowed to adopt the perk §Suntil the year 2250§W.§!"
  
  requires_test: "$TRIGGER_FAIL$§RTest Failure.§!"
@@ -136,11 +138,6 @@
 
  trade_action_r_zro_crystal: "£zro_crystal£ $r_zro_crystal$"
  trade_action_r_zro_crystal_desc: "Trade away our £zro_crystal£ $r_zro_crystal$ relic."
-
-# Renaming insults to Threaten war
- ACTION_INSULT_TITLE:0 "Threaten War"
- ACTION_INSULT_DESC:2 "Threatening to declare war against them will greatly reduce their Opinion and Trust of us.[Actor.GetCreativeInsultTooltip]"
- ACTION_INSULT_OFFER_DESC:0 "Wanton abuse like this cannot be overlooked. Our relationship with §H[Actor.GetName]§! has declined, and we will be able to declare war against them after 3 months."
 
 # Pop-up event reminding the player who threatened another empire that they can now declare war against them
  4xGames.6.name: "You can now declare war"
