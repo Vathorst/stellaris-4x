@@ -100,11 +100,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		owner = {
-			is_ai = no
-		}
-	}
+	trigger = {}
 
 	immediate = {}
 
@@ -125,15 +121,32 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		owner = {
-			is_ai = no
-		}
-	}
+	trigger = {}
 
 	immediate = {}
 
 	option = {
 		name = 4xGames.7.a
+	}
+}
+
+# Pop-up to remind the player they can now be attacked by the empire who threatened them
+country_event = {
+	id = 4xGames.8
+
+	title = 4xGames.8.name
+	desc = 4xGames.8.desc
+
+	picture = GFX_evt_fallen_empire_awakes
+	show_sound = event_alien_signal
+
+	is_triggered_only = yes
+
+	trigger = {}
+
+	immediate = {}
+
+	option = {
+		name = 4xGames.8.a
 	}
 }

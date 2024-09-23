@@ -140,11 +140,16 @@
  trade_action_r_zro_crystal_desc: "Trade away our £zro_crystal£ $r_zro_crystal$ relic."
 
 # Pop-up event reminding the player who threatened another empire that they can now declare war against them
- 4xGames.6.name: "You can now declare war"
- 4xGames.6.desc: "This is a friendly reminder telling you that you can now declare war against the empire you threatened 3 months ago. However, you only have 3 months to declare the war before the opportunity passes."
+ 4xGames.6.name: "You can now declare war against the [FromFrom.GetName]"
+ 4xGames.6.desc: "This is a friendly reminder telling you that you can now declare war against the [FromFrom.GetName] who you threatened 3 months ago. However, you only have 3 months to declare the war before the opportunity passes."
  4xGames.6.a: "The drums of war are beating, and we must answer the call."
 
 # Pop-up event reminding the player who has been threatened that they can now be declared against by the empire who threatened them
- 4xGames.7.name: "They can now declare war against us"
- 4xGames.7.desc: "This is a cautious reminder warning you that the empire who threatened you 3 months ago are now able to declare war against you. However, they will only have 3 months to declare the war before theit opportunity passes."
+ 4xGames.7.name: "The [From.GetName] can now declare war against us"
+ 4xGames.7.desc: "This is a cautious reminder warning you that the [From.GetName] who threatened you 3 months ago are now able to declare war against you. However, they will only have 3 months to declare the war before the opportunity passes and they must threaten us again."
  4xGames.7.a: "War is coming, whether we are ready or not."
+
+# Pop-up event telling the player who has been threatened that they are being threatened and that they have 3 - 6 months in game before war is declared against them
+ 4xGames.8.name: "The [From.GetName] is threatening us with war"
+ 4xGames.8.desc: "The [From.GetName] has just threatened us with war. After 3 months they will be able to decalre war against us, but will only have a 3 month window of opportunity to declare war against us. If they do not declare war against us after 6 months, they must threaten us again before they can declare war against us."
+ 4xGames.8.a: "War is what happens when language fails."
