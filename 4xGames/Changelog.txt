@@ -25,5 +25,6 @@
 25. Added a 'Threaten War' mechanic. You can now declare your intent for war. It takes 3 months before you can actually declare war now.
 26. Claim cost distance modifier has been increased to 75, reducing the maximum distance you can claim before claim cost is maximized. 
 27. Doubled the cost of hiring mercenary fleets.
+28. Removed Exterminator civics.
 
 # 33. Fixed some issues related to planetary deposits modifiers not adding up.
