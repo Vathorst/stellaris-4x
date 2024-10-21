@@ -1,4 +1,4 @@
-@StealTechnologyAmount = 1000 #Amount of science research in every discipline which will be granted if the operation cannot steal a Technology
+#@StealTechnologyAmount = 1000 #Amount of science research in every discipline which will be granted if the operation cannot steal a Technology
 #@StealTechnologyTimer = 2160 #days (6 years) until Steal Technology can be repeated. Referenced in tooltip strings "operation.1026.tooltip.cooldown" and "operation_steal_technology_too_recent".
 
 namespace = operation
@@ -382,8 +382,8 @@ country_event = {
 		fromfrom.spynetwork = {
 			set_saved_date = {
 				key = recently_stole_technology
-				days_from_present = @StealTechnologyTimer
-				expires = @StealTechnologyTimer
+				days_from_present = 2160
+				expires = 2160
 			}
 		}
 		if = {
@@ -442,9 +442,9 @@ country_event = {
 			}
 		}
 		else = {
-			add_resource = { engineering_research = @StealTechnologyAmount }
-			add_resource = { physics_research = @StealTechnologyAmount }
-			add_resource = { society_research = @StealTechnologyAmount }
+			add_resource = { engineering_research = 1000 }
+			add_resource = { physics_research = 1000 }
+			add_resource = { society_research = 1000 }
 		}
 		hidden_effect = {
 			if = {
