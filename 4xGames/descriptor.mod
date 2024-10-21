@@ -6,5 +6,5 @@ tags={
 }
 name="4xGames"
 picture="thumbnail.png"
-supported_version="v3.13."
+supported_version="v3.13.*"
 remote_file_id="3036051012"
