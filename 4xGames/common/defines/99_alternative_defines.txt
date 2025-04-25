@@ -20,6 +20,8 @@
 		EMERGENCY_MEASURES_COOLDOWN 			= 3600		# halved. time before a country can propose another emergency measure
 
 		NAVAL_CAPACITY_BASE_GALACTIC_COMMUNITY	= 800		# Base value of Naval Capacity for the Galactic Defense Force/Imperial Armada
+
+		GOVERNMENT_CIVIC_POINTS_BASE			= 3			# Was 3. Base amount of civic points (to "pay" for government civic costs)
 	
 	}
 
